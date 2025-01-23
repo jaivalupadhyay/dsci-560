@@ -1,24 +1,155 @@
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
+from selenium import webdriver
+from selenium.webdriver.edge.service import Service as EdgeService
+import time
+
+driver_path = '/Users/prathamsolanki/PycharmProjects/DSCi-560/msedgedriver'
+output_file_path = "forum_page.html"
+url = "https://discuss.huggingface.co/t/fine-tune-llms-on-pdf-documents/71374"
+# url ="https://discuss.huggingface.co/t/how-do-i-create-a-image-segmentation-dataset/23123"
+
+def fetch_html(url,driver_path,output_path):
+    service = EdgeService(executable_path=driver_path)
+    driver = webdriver.Edge(service=service)
+
+    try:
+        start_time = time.time()
+        driver.get(url)
+
+        driver.implicitly_wait(10)
+        time.sleep(20)
+
+        html_content = driver.page_source
+
+        html_parsed = BeautifulSoup(html_content, 'html.parser')
+
+        with open(output_path, "w", encoding="utf-8") as file:
+            file.write(html_parsed.prettify())
+        print("Data Successfully Written")
+    finally:
+        driver.quit()
+
+    return None
 
 
-url = "https://discuss.huggingface.co/t/nlp-for-summarization-and-classification/136871"
+def read_html(output_path):
+    with open(output_path, "r", encoding="utf-8") as file:
+        html_list = file.readlines()
 
-response = requests.get(url)
-soup = BeautifulSoup(response.text, 'html.parser')
+    html_str = "\n".join(html_list)
 
-posts = soup.find_all('div', class_='post')
-data = []
+    html_parsed = BeautifulSoup(html_str, 'html.parser')
 
-for post in posts:
-    content = post.find('div', class_='cooked')  # Extract the text content
-    if content:
-        data.append(content.text.strip())
+    return html_parsed
+
+def extract_data(html_parsed):
+    all_responses_list = []
+    question_dict = {}
+    related_topics_dict = {}
+
+    title = html_parsed.find('a', class_="fancy-title").get_text(strip=True)
+    question_dict['title']=title
+
+    post_stream = html_parsed.find('div',class_='post-stream')
+
+    def get_question_dict(article,main_dict):
+        row = article.find('div',class_= 'row')
+
+        name = row.find('span', class_="first username").find('a', class_="").get_text(strip=True)
+        main_dict['name'] = name
+
+        date_time = row.find('span',class_="relative-date").get('title')
+        main_dict['date_time'] =date_time
+
+        content_text_list = [text.get_text(strip=True) for text in row.find('div',class_='regular contents').find('div',class_="cooked").find_all('p')]
+        main_dict['content_text_list'] = content_text_list
+
+        page_stats = article.\
+            find('div',class_='topic-map --op').find('section',class_='topic-map__contents').\
+            find('div',class_='topic-map__stats --many-stats').\
+            find_all('button')
+
+        for page_stat in page_stats:
+            main_dict[page_stat.find('span',class_='topic-map__stat-label').get_text(strip=True)] = page_stat.find('span',class_='number').get_text(strip=True)
+
+        return question_dict
 
 
-df = pd.DataFrame(data, columns=['Post Content'])
-df.to_csv('huggingface_forum_posts.csv', index=False)
-print("Data saved to csv")
+    responses = post_stream.find_all('article')
+
+    for response in responses:
+        if response.get('id')=='post_1':
+            article1 = post_stream.find('article',id = "post_1")
+            question_dict = get_question_dict(article1,question_dict)
+            # print(question_dict)
+
+        else:
+            individual_response_dict = {}
+            content_list= []
+            individual_response_dict['post_no'] = response.get('id')
+
+            def get_name(response):
+                #Get Name
+                name_tag = response. \
+                        find('div', class_='row'). \
+                        find('div', class_='names trigger-user-card')
+
+                if name_tag.find('span',class_= 'first username') is not None:
+                    name = name_tag.find('span', class_='first username').find('a').get_text(strip=True)
+
+                elif name_tag.find('span',class_='first username new-user') is not None:
+                    name = name_tag.find('span', class_='first username new-user').find('a').get_text(strip=True)
+
+                elif name_tag.find('span', class_='first username staff moderator') is not None:
+                    name = name_tag.find('span', class_='first username staff moderator').find('a').get_text(strip=True)
+
+                else:
+                    name = ""
+
+                return name
+
+            def get_content(response):
+                content_tag = response.find('div', class_="cooked")
+                content_list = [text.get_text(strip=True) for text in content_tag.find_all(['p', 'li', 'strong', 'a'])]
+
+                return content_list
+
+            def get_date_time(response):
+                return response.find('span',class_='relative-date').get('title')
+
+            # Etract name
+            individual_response_dict['name'] = get_name(response)
+
+            #Extract content
+            individual_response_dict['content'] = get_content(response)
+
+            #Extract Date time
+            individual_response_dict['date_time'] =get_date_time(response)
+
+            # print(individual_response_dict)
+            #appending individual response dict to list
+            all_responses_list.append(individual_response_dict)
+
+
+    # Get related Topics
+    related_topics =html_parsed.find('tbody',class_ = 'topic-list-body').find_all('tr')
+
+    for topic in related_topics:
+        topic_title = topic.find('span',class_='link-top-line').find('a').get_text(strip = True)
+        topic_link = 'https://discuss.huggingface.co' + topic.find('span',class_='link-top-line').find('a').get('href')
+        related_topics_dict[topic_title] = topic_link
+
+    return question_dict,all_responses_list,related_topics_dict
+
+# fetch_html(url,driver_path,output_file_path)
+
+html_parsed = read_html(output_file_path)
+
+question_dict,all_responses_list,related_topics_dict = extract_data(html_parsed)
+print(related_topics_dict)
+# print(all_responses_list)
+
 
 
