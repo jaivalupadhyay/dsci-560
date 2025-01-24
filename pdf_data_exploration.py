@@ -28,7 +28,7 @@ class Path:
 
 
 class Settings:
-    SITE_URL: str = "https://www.cs.cmu.edu/~ninamf/courses/601sp15/lectures.shtml"
+    SITE_URL: str = "https://www.cs.cmu.edu/~ninamf/courses/601sp15/lectures.shtml"  
     BASE_URL: str = "https://www.cs.cmu.edu/~ninamf/courses/601sp15/"
 
 
@@ -50,19 +50,19 @@ class CourseItem(BaseModel):
     class Config:
         arbitrary_types_allowed = True
 
-
+#(link)
 def is_relative_url(link):
     parsed_url = urlsplit(link)
     return not parsed_url.scheme and not parsed_url.netloc
 
-
+#colums
 def get_lecture_info(columns):
     lecture = re.sub(r"\s+", " ", columns[1].get_text(separator=" ")).strip()
     topics = columns[2].find_all("li")
     topics_list = [Topic(name=re.sub(r"\s+", " ", detail.text).strip()) for detail in topics]
     return lecture, topics_list
 
-
+#handouts
 def get_handouts(columns):
     slides_video_links = columns[4].find_all("a")
     handouts = [
@@ -78,7 +78,7 @@ def get_handouts(columns):
     ]
     return handouts
 
-
+#reading
 def get_readings(columns):
     readings_links = columns[3].find_all("a")
     readings = [
