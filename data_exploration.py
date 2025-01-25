@@ -269,6 +269,134 @@ def Extract_CSV_data():
 
 
     return None
+def extract_course_data():
+    logging.basicConfig(level=logging.INFO)
+
+    class Path:
+        data_dir = os.path.join(os.getcwd(), "data")
+        os.makedirs(data_dir, exist_ok=True)
+
+        COURSE_DATA_SAVE_PATH = os.path.join(data_dir, "ml.csv")
+        PDF_FILE_DIR = os.path.join(data_dir, "pdfs")
+        os.makedirs(PDF_FILE_DIR, exist_ok=True)
+
+    class Settings:
+        SITE_URL: str = "https://www.cs.cmu.edu/~ninamf/courses/601sp15/lectures.shtml"
+        BASE_URL: str = "https://www.cs.cmu.edu/~ninamf/courses/601sp15/"
+
+    class Topic(BaseModel):
+        name: str | None
+
+    class ReadingUsefulLinks(BaseModel):
+        name: str
+        link: str | None
+
+    class CourseItem(BaseModel):
+        lecture: str
+        topics: list[Topic]
+        readings: list[ReadingUsefulLinks]
+        handouts: list[ReadingUsefulLinks]
+
+        class Config:
+            arbitrary_types_allowed = True
+
+    def is_relative_url(link):
+        parsed_url = urlsplit(link)
+        return not parsed_url.scheme and not parsed_url.netloc
+
+    def get_lecture_info(columns):
+        lecture = re.sub(r"\s+", " ", columns[1].get_text(separator=" ")).strip()
+        topics = columns[2].find_all("li")
+        topics_list = [Topic(name=re.sub(r"\s+", " ", detail.text).strip()) for detail in topics]
+        return lecture, topics_list
+
+    def get_handouts(columns):
+        slides_video_links = columns[4].find_all("a")
+        handouts = [
+            ReadingUsefulLinks(
+                name=link.text.strip(),
+                link=(urljoin(Settings.BASE_URL, link["href"]) if is_relative_url(link["href"]) else link["href"]),
+            )
+            for link in slides_video_links
+        ]
+        return handouts
+
+    def get_readings(columns):
+        readings_links = columns[3].find_all("a")
+        readings = [
+            ReadingUsefulLinks(name=re.sub(r"\s+", " ", link.text).strip(), link=link["href"])
+            for link in readings_links
+        ]
+
+        other_readings = re.sub(r"\s+", " ", columns[3].get_text(separator=" ")).strip()
+        if len(readings) > 0:
+            for r in readings:
+                other_readings = other_readings.replace(r.name, "").strip()
+        if other_readings != "":
+            readings.append(ReadingUsefulLinks(name=other_readings, link=None))
+        return readings
+
+    def scrape_course_page():
+        try:
+            resp = requests.get(Settings.SITE_URL)
+            resp.raise_for_status()
+            soup = BeautifulSoup(resp.text, "lxml")
+            table = soup.find("table", class_="schedule")
+            if table:
+                items = table.find("tbody").find_all("tr")[1:]
+                course_items = []
+                for item in items:
+                    columns = item.find_all("td")
+                    if len(columns) == 5:
+                        lecture, topics_list = get_lecture_info(columns)
+                        handouts = get_handouts(columns)
+                        readings = get_readings(columns)
+
+                        course_item = CourseItem(
+                            lecture=lecture, topics=topics_list, readings=readings, handouts=handouts
+                        )
+                        course_items.append(course_item.dict())
+                return course_items
+            else:
+                logging.warning("No schedule table found on the page.")
+        except requests.exceptions.RequestException as e:
+            logging.exception(f"Error during HTTP request: {e}")
+        except Exception as e:
+            logging.exception(f"An unexpected error occurred: {e}")
+
+    def read_pdf_from_url(url, output_folder):
+        try:
+            if os.path.exists(output_folder):
+                shutil.rmtree(output_folder)
+            os.makedirs(output_folder, exist_ok=True)
+            pdf_data = requests.get(url).content
+            pdf_document = fitz.open(stream=pdf_data, filetype="pdf")
+            for page_number in range(pdf_document.page_count):
+                page = pdf_document[page_number]
+                text = page.get_text()
+                output_file_path = os.path.join(output_folder, f"page_{page_number + 1}.txt")
+                with open(output_file_path, "w", encoding="utf-8") as output_file:
+                    output_file.write(text)
+            logging.info(f"Text files created in `{os.path.relpath(output_folder)}`")
+            pdf_document.close()
+        except Exception as e:
+            logging.exception(f"Error: {e}")
+
+    def extract_text_from_pdfs(data):
+        for row in tqdm(data.to_dict(orient="records")):
+            title = row["lecture"].replace(" ", "_").lower()
+            handouts = [item for item in eval(row["handouts"]) if item["name"] == "Slides"]
+            output_dir = os.path.join(Path.PDF_FILE_DIR, title)
+            for h in handouts:
+                read_pdf_from_url(h["link"], output_dir)
+
+    course_page_content = scrape_course_page()
+    if course_page_content:
+        course_page_content_df = pd.DataFrame(course_page_content)
+        course_page_content_df.to_csv(Path.COURSE_DATA_SAVE_PATH, index=False)
+        df = pd.read_csv(Path.COURSE_DATA_SAVE_PATH, usecols=["lecture", "handouts"])
+        extract_text_from_pdfs(df)
+
 
 
 
@@ -277,3 +405,5 @@ def Extract_CSV_data():
 Extract_Forum_data()
 
 Extract_CSV_data()
+
+extract_course_data()
