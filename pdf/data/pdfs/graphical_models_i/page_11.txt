@@ -1,0 +1,29 @@
+Bayesian Network 
+StormClouds 
+Lightning 
+Rain 
+Thunder 
+WindSurf 
+What can we say about conditional 
+independencies in a Bayes Net? 
+One thing is this: 
+Each node is conditionally independent of 
+its non-descendents, given only its 
+immediate parents. 
+  
+Parents 
+P(W|Pa) 
+P(¬W|Pa) 
+L, R  
+0 
+1.0 
+L, ¬R 
+0 
+1.0 
+¬L, R 
+0.2 
+0.8 
+¬L, ¬R 
+0.9 
+0.1 
+WindSurf 

@@ -1,0 +1,17 @@
+Bayes Network for a Hidden Markov Model 
+Implies the future is conditionally independent of the past, 
+given the present 
+St-2 
+St-1 
+St 
+St+1 
+St+2 
+Ot-2 
+Ot-1 
+Ot 
+Ot+1 
+Ot+2 
+Unobserved 
+state: 
+Observed 
+output: 

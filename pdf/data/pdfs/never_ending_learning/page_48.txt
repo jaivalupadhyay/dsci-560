@@ -1,0 +1,52 @@
+Example Discovered Relations 
+Category Pair 
+Frequent Instance Pairs 
+Text Contexts 
+Suggested 
+Name 
+MusicInstrument 
+Musician 
+sitar, George Harrison 
+tenor sax, Stan Getz 
+trombone, Tommy Dorsey 
+vibes, Lionel Hampton 
+ARG1 master ARG2 
+ARG1 virtuoso ARG2 
+ARG1 legend ARG2 
+ARG2 plays ARG1 
+Master 
+Disease 
+Disease 
+pinched nerve, herniated disk 
+tennis elbow, tendonitis 
+blepharospasm, dystonia 
+ARG1 is due to ARG2 
+ARG1 is caused by ARG2 
+IsDueTo 
+CellType 
+Chemical 
+ 
+epithelial cells, surfactant 
+neurons, serotonin 
+mast cells, histomine 
+ARG1 that release ARG2 
+ARG2 releasing ARG1 
+ThatRelease 
+Mammals 
+Plant 
+koala bears, eucalyptus 
+sheep, grasses 
+goats, saplings 
+ARG1 eat ARG2 
+ARG2 eating ARG1 
+Eat 
+River 
+City 
+Seine, Paris 
+Nile, Cairo 
+Tiber river, Rome 
+ARG1 in heart of ARG2 
+ARG1 which flows through 
+ARG2 
+InHeartOf 
+[Mohamed et al. EMNLP 2011] 

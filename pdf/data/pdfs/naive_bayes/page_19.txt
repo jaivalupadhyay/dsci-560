@@ -1,0 +1,4 @@
+Estimating Parameters: Y, Xi discrete-valued  
+Maximum likelihood estimates (MLE’s): 
+Number of items in 
+dataset D for which Y=yk 

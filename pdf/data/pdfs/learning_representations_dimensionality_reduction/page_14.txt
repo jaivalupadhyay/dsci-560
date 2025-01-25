@@ -1,0 +1,9 @@
+Two Interpretations 
+So far: Maximum Variance Subspace. PCA finds vectors v such that 
+projections on to the  vectors capture maximum variance in the data 
+Alternative viewpoint:  Minimum Reconstruction Error. PCA 
+finds vectors v such that projection on to the vectors yields 
+minimum MSE reconstruction  
+xi 
+v 
+v ⋅  xi 

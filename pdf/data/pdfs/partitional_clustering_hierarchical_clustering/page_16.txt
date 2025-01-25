@@ -1,0 +1,19 @@
+Input: A set of n datapoints 𝐱𝟏, 𝐱𝟐, … , 𝐱𝐧 in Rd 
+Initialization  for the Lloyd’s method 
+Initialize centers 𝐜𝟏, 𝐜𝟐, … , 𝐜𝐤∈Rd and 
+               clusters C1, C2, … , Ck in any way. 
+Repeat until there is no further change in the cost. 
+•
+For each j:  Cj ←{𝑥∈𝑆 whose closest center is 𝐜𝐣} 
+•
+For each j: 𝐜𝐣←mean of Cj 
+•
+Initialization is crucial (how fast it converges, quality of solution output) 
+•
+Discuss techniques  commonly used in practice  
+•
+Random centers from the datapoints (repeat a few times) 
+•
+K-means ++ (works well and has provable guarantees) 
+•
+Furthest traversal 

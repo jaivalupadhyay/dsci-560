@@ -1,0 +1,10 @@
+Announcements 
+•  Class is using Piazza for questions/discussions 
+about homeworks, etc. 
+–  see class website for Piazza address 
+–  http://www.cs.cmu.edu/~ninamf/courses/601sp15/ 
+•  Recitations thursdays 7-8pm, Wean 5409 
+–  videos for future recitations (class website) 
+•  HW1 was accepted to Sunday 5pm for full credit 
+•  HW2 out today on class website, due in 1 week 
+•  HW3 will involve programming (in Octave ) 

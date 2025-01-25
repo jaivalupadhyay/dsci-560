@@ -1,0 +1,23 @@
+Machine Learning 10-601 
+ 
+Tom M. Mitchell 
+Machine Learning Department 
+Carnegie Mellon University 
+ 
+January 21, 2015 
+Today: 
+•  Bayes Rule 
+•  Estimating parameters 
+•  MLE 
+•  MAP 
+Readings: 
+ 
+Probability review 
+•  Bishop Ch. 1 thru 1.2.3 
+•  Bishop, Ch. 2 thru 2.2 
+•  Andrew Moore’s online 
+tutorial 
+some of these slides are derived 
+from William Cohen, Andrew 
+Moore, Aarti Singh, Eric Xing, 
+Carlos Guestrin.   - Thanks! 

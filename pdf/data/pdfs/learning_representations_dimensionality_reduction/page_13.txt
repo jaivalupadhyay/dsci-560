@@ -1,0 +1,14 @@
+x1 
+x2 vTx1vTx2
+ 
+•
+Transformed features are uncorrelated. 
+•
+So, the new axes are the eigenvectors of the matrix of sample 
+correlations 𝑋 𝑋𝑇 of the data. 
+•
+Geometrically: centering followed by rotation. 
+Principal Component Analysis (PCA) 
+– Linear transformation 
+Key computation: eigendecomposition of 𝑋𝑋𝑇 (closely related 
+to SVD of 𝑋). 

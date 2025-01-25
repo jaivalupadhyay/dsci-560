@@ -1,0 +1,4 @@
+Questions to think about (1) 
+•  ID3 and C4.5 are heuristic algorithms that 
+search through the space of decision trees.  
+Why not just do an exhaustive search? 

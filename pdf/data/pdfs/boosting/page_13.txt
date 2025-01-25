@@ -1,0 +1,38 @@
+Informal Description Adaboost 
+•
+For t=1,2, … ,T 
+ 
+•
+Construct Dt on {x1, …, xm} 
+•
+Run A on Dt producing ht: 𝑋→{−1,1} (weak classifier) 
+xi ∈𝑋, 𝑦𝑖∈𝑌= {−1,1} 
++ 
++ 
++ 
++ 
++ 
++ 
++ 
++ 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+ht 
+• Boosting: turns a weak algo into a strong (PAC) learner. 
+•
+Output Hfinal 𝑥= sign  
+𝛼𝑡ℎ𝑡𝑥
+𝑡=1
+ 
+ 
+Input: S={(x1, 𝑦1), …,(xm, 𝑦m)};  
+Roughly speaking Dt+1 increases weight on xi if ht incorrect on xi ; 
+decreases it on xi if ht  correct. 
+weak learning algo A (e.g., Naïve Bayes, decision stumps) 
+ϵt = Pxi ~Dt(ht xi ≠yi) error of ht over Dt 

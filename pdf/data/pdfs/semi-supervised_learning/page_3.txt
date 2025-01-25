@@ -1,0 +1,17 @@
+   Labeled Examples   
+Learning 
+Algorithm 
+Expert / Oracle 
+Data 
+Source 
+Alg.outputs 
+Distribution D on X 
+c* : X ! Y 
+(x1,c*(x1)),…, (xm,c*(xm)) 
+h : X ! Y (x1,…,xm)
+ Goal:  h has small error over D. 
+ errD h = Pr
+x~ D(h x ≠c∗(x)) 
+ Sl={(x1, y1), …,(xml, yml)}  
+xi drawn i.i.d from D, yi = c∗(xi) 
+Fully Supervised Learning 

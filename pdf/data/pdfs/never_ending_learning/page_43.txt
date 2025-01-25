@@ -1,0 +1,18 @@
+can refer to 
+hometown 
+c:penguins 
+c:pittsburgh 
+river flows 
+ 
+ through 
+c:monongahela 
+ “Pgh” 
+ “Pittsburgh” 
+ “Monongahela” 
+ “Mon river” 
+ “Penguins” 
+ “Pens” 
+can refer to 
+can refer to 
+NELL:  concepts  and “noun phrases” 
+[Gardner et al, 2014] 

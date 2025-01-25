@@ -1,0 +1,16 @@
+Tom Mitchell, April 2011 
+Interestingly, value iteration works even if we randomly traverse the 
+environment instead of looping through each state and action 
+methodically  
+•
+but we must still visit each state infinitely often on an infinite run 
+•
+For details: [Bertsekas 1989] 
+•
+Implications: online learning as agent randomly roams 
+ 
+If for our DP,  max (over states) difference between two successive 
+value function estimates is less than , then the value of the greedy 
+policy differs from the optimal policy by no more than  
+Value Iteration 
+So far, in our DP, each round we cycled through each state exactly once. 

@@ -1,0 +1,16 @@
+Minimum/Multiway Cut[Blum&Chawla01] 
+Objective: Solve for labels on unlabeled points that minimize total 
+weight of edges whose endpoints have different labels. 
+•
+If just two labels, can be solved 
+efficiently using max-flow min-cut 
+algorithms 
+-
+Create super-source 𝑠 connected by 
+edges of weight ∞ to all + labeled pts. 
+-
+Create super-sink 𝑡 connected by 
+edges of weight ∞ to all − labeled pts. 
+-
+Find minimum-weight 𝑠-𝑡 cut 
+(i.e., the total weight of bad edges) 

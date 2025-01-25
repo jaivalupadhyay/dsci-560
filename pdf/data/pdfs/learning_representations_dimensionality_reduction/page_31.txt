@@ -1,0 +1,23 @@
+Eigendecomposition 
+Any symmetric matrix 𝐴= 𝑋𝑋𝑇 is guaranteed to have an 
+eigendecomposition with real eigenvalues: 𝐴= 𝑉 Λ 𝑉𝑇. 
+A 
+(DxD) 
+= 
+V 
+(DxD) 
+Λ 
+(DxD) 
+𝜆1 
+𝜆2 
+𝜆3 … 
+0 
+0 
+𝑉𝑇 
+(DxD) 
+=  𝜆𝑖𝑣𝑖𝑣𝑖
+𝑇
+𝑖
+  
+Matrix Λ is diagonal with eigenvalues 𝜆1 ≥𝜆2 ≥⋯ on the 
+diagonal.  Matrix V has the eigenvectors as the columns. 

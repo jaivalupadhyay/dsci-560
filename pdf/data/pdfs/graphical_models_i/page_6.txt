@@ -1,0 +1,1 @@
+Represent Joint Probability Distribution over Variables 

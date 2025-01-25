@@ -1,0 +1,8 @@
+Estimating Parameters: Y discrete, Xi continuous  
+Maximum likelihood estimates: 
+jth training 
+example 
+δ(z)=1 if z true, 
+else 0 
+ith feature 
+kth class 

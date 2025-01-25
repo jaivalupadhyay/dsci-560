@@ -1,0 +1,43 @@
+Handwri4ng	  Recogni4on	  
+Learning	  Algorithm	  
+Error	  
+Logis4c	  regression	  
+12.0%	  
+K-­‐NN	  	  
+3.09%	  
+Neural	  Net	  (Plal	  2005)	  
+1.53%	  
+SVM	  (Decoste	  et.al.	  2002)	  
+1.40%	  
+Deep	  Autoencoder	  
+(Bengio	  et.	  al.	  2007)	  	  
+1.40%	  
+Deep	  Belief	  Net	  
+(Hinton	  et.	  al.	  2006)	  	  
+1.20%	  
+DBM	  	  
+0.95%	  
+Learning	  Algorithm	  
+Error	  
+Logis4c	  regression	  
+22.14%	  
+K-­‐NN	  	  
+18.92%	  
+Neural	  Net	  
+14.62%	  
+SVM	  (Larochelle	  et.al.	  2009)	  
+9.70%	  
+Deep	  Autoencoder	  
+(Bengio	  et.	  al.	  2007)	  	  
+10.05%	  
+Deep	  Belief	  Net	  
+(Larochelle	  et.	  al.	  2009)	  	  
+9.68%	  
+DBM	  
+8.40%	  
+MNIST	  Dataset	  
+Op4cal	  Character	  Recogni4on	  
+60,000	  examples	  of	  10	  digits	  
+42,152	  examples	  of	  26	  English	  lelers	  	  
+Permuta4on-­‐invariant	  version.	  
+[Courtesy,	  R.	  Salakhutdinov]	  

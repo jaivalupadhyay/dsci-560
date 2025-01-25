@@ -1,0 +1,18 @@
+•
+Goal:  h has small error over D.
+•
+Algo sees training sample S: (x1,c*(x1)),…, (xm,c*(xm)), xi i.i.d. from D
+Training error: 𝑒𝑟𝑟𝑆ℎ= 1
+𝑚 𝑖𝐼ℎ𝑥𝑖≠𝑐∗𝑥𝑖
+True error: 𝑒𝑟𝑟𝐷ℎ= Pr
+𝑥~ 𝐷(ℎ𝑥≠𝑐∗(𝑥))
+•
+Does optimization over S, find hypothesis ℎ∈𝐻.
+PAC/SLT models for Supervised Learning
+How often ℎ𝑥≠𝑐∗(𝑥) over future 
+instances drawn at random from D 
+• But, can only measure:
+How often ℎ𝑥≠𝑐∗(𝑥) over training 
+instances
+Sample complexity: bound 𝑒𝑟𝑟𝐷ℎ
+in terms of 𝑒𝑟𝑟𝑆ℎ

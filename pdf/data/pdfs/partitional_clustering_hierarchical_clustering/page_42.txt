@@ -1,0 +1,13 @@
+soccer 
+sports 
+fashion 
+Gucci 
+tennis  
+Lacoste  
+All topics 
+Hierarchical Clustering [sports][fashion]
+•
+A hierarchy might be more natural. 
+•
+Different users might care about different levels of 
+granularity or even prunings. 

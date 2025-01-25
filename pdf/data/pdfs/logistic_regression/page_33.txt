@@ -1,0 +1,15 @@
+What you should know: 
+•  Logistic regression 
+–  Functional form follows from Naïve Bayes assumptions 
+•  For Gaussian Naïve Bayes assuming variance σi,k = σi 
+•  For discrete-valued Naïve Bayes too 
+–  But training procedure picks parameters without making 
+conditional independence assumption 
+–  MLE training: pick W to maximize P(Y | X, W) 
+–  MAP training: pick W to maximize P(W | X,Y) 
+•  ‘regularization’  
+•  helps reduce overfitting  
+•  Gradient ascent/descent 
+–  General approach when closed-form solutions unavailable 
+•  Generative vs. Discriminative classifiers 
+–  Bias vs. variance tradeoff 

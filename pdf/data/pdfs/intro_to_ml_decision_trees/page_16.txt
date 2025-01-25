@@ -1,0 +1,8 @@
+16 
+Decision Trees 
+Suppose X = <X1,… Xn>  
+where Xi are boolean-valued variables 
+ 
+ 
+How would you represent Y = X2 X5 ?     Y = X2 ∨ X5 
+How would you represent  X2 X5  ∨ X3X4(¬X1) 

@@ -1,0 +1,7 @@
+Modern applications: massive amounts of raw data. 
+Modern ML: New Learning Approaches Learning Algorithm
+Expert 
+• Semi-supervised Learning, (Inter)active Learning. 
+Techniques that best utilize data, minimizing need for 
+expert/human intervention. 
+Paradigms where there has been great progress. 

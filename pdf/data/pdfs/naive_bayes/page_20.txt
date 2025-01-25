@@ -1,0 +1,11 @@
+Example: Live in Sq Hill?  P(S|G,D,M) 
+• 
+S=1 iff live in Squirrel Hill 
+• 
+G=1 iff shop at SH Giant Eagle 
+• 
+D=1 iff Drive to CMU 
+• 
+M=1 iff Rachel Maddow fan 
+ 
+What probability parameters must we estimate? 

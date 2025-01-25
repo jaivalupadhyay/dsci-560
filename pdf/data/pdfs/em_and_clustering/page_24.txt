@@ -1,0 +1,7 @@
+Mixture of Gaussians applet 
+ 
+Go to: http://www.socr.ucla.edu/htmls/SOCR_Charts.html 
+then go to Go to “Line Charts”  à SOCR EM Mixture Chart 
+•  try it with 2 Gaussian mixture components (“kernels”) 
+•  try it with 4  
+  

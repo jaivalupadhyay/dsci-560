@@ -1,0 +1,4 @@
+17 
+node = Root 
+[ID3, C4.5, Quinlan] 
+Sample Entropy 

@@ -1,0 +1,12 @@
+Perceptron Discussion 
+•
+Simple online algorithm for learning linear separators with 
+a nice guarantee that depends only on the geometric 
+(aka 𝐿2, 𝐿2) margin. 
+•
+Simple, but very useful in applications like Branch 
+prediction; it also has interesting extensions to 
+structured prediction. 
+•
+It can be kernelized to handle non-linear decision 
+boundaries --- see next class! 

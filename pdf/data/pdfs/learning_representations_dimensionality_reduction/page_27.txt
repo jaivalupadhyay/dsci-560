@@ -1,0 +1,14 @@
+Kernel PCA Example 
+27 
+•
+Gaussian RBF kernel exp −
+𝑥−𝑥′ 2
+2𝜎2
+ over 2 dimensional space 
+•
+Eigenvector evaluated at a test point 𝑥 is a function 
+𝑤⊤𝜙𝑥=  𝛼𝑖< 𝜙𝑥𝑖, 𝜙𝑥> =
+𝑖
+ 𝛼𝑖𝑘(𝑥𝑖, 𝑥)
+𝑖
+ 

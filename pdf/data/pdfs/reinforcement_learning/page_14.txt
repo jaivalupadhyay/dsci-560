@@ -1,0 +1,3 @@
+Tom Mitchell, April 2011 
+Immediate rewards r(s,a) 
+State values V*(s) 

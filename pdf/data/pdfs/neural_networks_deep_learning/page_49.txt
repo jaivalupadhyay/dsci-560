@@ -1,0 +1,40 @@
+Product	  of	  Experts	  
+Marginalizing	  over	  hidden	  variables:	  
+Product	  of	  Experts	  
+The	  joint	  distribu4on	  is	  given	  by:	  
+Pu4n	  
+government	  
+auhority	  
+power	  
+empire	  
+pu4n	  
+clinton	  
+house	  
+president	  
+bill	  
+congress	  
+bribery	  
+corrup4on	  
+dishonesty	  
+pu4n	  
+fraud	  
+oil	  
+barrel	  
+exxon	  
+pu4n	  
+drill	  
+stock	  
+wall	  
+street	  
+point	  
+dow	  
+…	  
+	  
+	  
+	  
+	  
+Topics	  “government”,	  ”corrup4on”	  
+and	  ”oil”	  can	  combine	  to	  give	  very	  high	  
+probability	  to	  a	  word	  “Pu4n”.	  
+(Srivastava & Salakhutdinov, NIPS 2012)
+[Courtesy,	  R.	  Salakhutdinov]	  

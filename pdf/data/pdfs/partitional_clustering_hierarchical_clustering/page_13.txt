@@ -1,0 +1,11 @@
+Input: A set of n datapoints 𝐱𝟏, 𝐱𝟐, … , 𝐱𝐧 in Rd 
+Common Heuristic in Practice: 
+The Lloyd’s method 
+Repeat until there is no further change in the cost. 
+•
+For each j:  Cj ←{𝑥∈𝑆 whose closest center is 𝐜𝐣} 
+•
+For each j: 𝐜𝐣←mean of Cj 
+Initialize centers 𝒄𝟏, 𝐜𝟐, … , 𝒄𝒌∈Rd and 
+               clusters C1, C2, … , Ck in any way. 
+[Least squares quantization in PCM, Lloyd, IEEE Transactions on Information Theory, 1982] 

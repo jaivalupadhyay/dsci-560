@@ -1,0 +1,13 @@
+Bias and Variance 
+given some estimator Y for some parameter θ, we 
+define 
+ 
+the bias of estimator Y =  
+the variance of estimator Y = 
+ 
+e.g., define Y as the MLE estimator for probability of 
+heads, based on n independent coin flips 
+ 
+biased or unbiased? 
+ 
+variance decreases as sqrt(1/n) 

@@ -1,0 +1,11 @@
+Tom Mitchell, April 2011 
+Recursive definition for V*(S) 
+assuming actions are 
+chosen according to the 
+optimal policy, * 
+Value 𝑉∗(𝑠1) of performing optimal policy from 𝑠1, is expected reward of the first action 𝑎1 
+taken plus 𝛾 times the expected value, over states 𝑠2 reached by performing action 𝑎1 
+from 𝑠1, of the value 𝑉∗(𝑠2) of performing the optimal policy from then on.  
+optimal value of any state s is the expected reward of performing 𝜋∗(𝑠) from s plus 
+𝛾 times the expected value, over states s’ reached by performing that action from state s, 
+of the optimal value of s’. 

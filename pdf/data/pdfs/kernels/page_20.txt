@@ -1,0 +1,16 @@
+Avoid explicitly expanding the features 
+Feature space can grow really large and really quickly…. 
+Crucial to think of ϕ as implicit, not explicit!!!! 
+– 𝑥1
+𝑑, 𝑥1𝑥2 … 𝑥𝑑, 𝑥1
+2𝑥2 … 𝑥𝑑−1 
+– Total number of such feature is 
+𝑑+ 𝑛−1
+𝑑
+= 𝑑+ 𝑛−1 !
+𝑑! 𝑛−1 !  
+– 𝑑= 6, 𝑛= 100, there are 1.6 billion terms 
+•
+Polynomial kernel degreee 𝑑, 𝑘𝑥, 𝑧= 𝑥⊤𝑧𝑑= 𝜙𝑥⋅𝜙𝑧 
+𝑘𝑥, 𝑧= 𝑥⊤𝑧𝑑= 𝜙𝑥⋅𝜙𝑧 
+𝑂𝑛  𝑐𝑜𝑚𝑝𝑢𝑡𝑎𝑡𝑖𝑜𝑛! 

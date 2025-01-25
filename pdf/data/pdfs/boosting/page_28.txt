@@ -1,0 +1,22 @@
+Generalization Guarantees 
+G={all fns of the form sign( 
+𝛼𝑡ℎ𝑡(𝑥)) 
+𝑇
+𝑡=1
+} 
+ 𝐻𝑓𝑖𝑛𝑎𝑙 is a weighted vote, so the hypothesis class is:  
+Theorem [Freund&Schapire’97]  
+∀ 𝑔∈𝐺, 𝑒𝑟𝑟𝑔≤𝑒𝑟𝑟𝑆𝑔+ 𝑂 
+𝑇𝑑
+𝑚   T= # of rounds 
+Key reason: VCd𝑖𝑚𝐺= 𝑂 𝑑𝑇 plus typical VC bounds. 
+•
+H space of weak hypotheses; d=VCdim(H) 
+Theorem 
+where 𝜖𝑡= 1/2 −𝛾𝑡 
+𝑒𝑟𝑟𝑆𝐻𝑓𝑖𝑛𝑎𝑙≤exp  −2  𝛾𝑡
+2
+𝑡
+ 
+How about generalization guarantees? 
+  Original analysis [Freund&Schapire’97]  

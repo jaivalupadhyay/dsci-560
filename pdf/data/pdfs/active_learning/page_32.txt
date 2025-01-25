@@ -1,0 +1,13 @@
+General guarantees for A2 Agnostic Active Learner  
+“Disagreement based”:  Pick a few points at random from the current region of 
+uncertainty, query their labels, throw out hypothesis if you are statistically 
+confident they are suboptimal.  
+Guarantees for A2 [Hanneke’07]: 
+Disagreement coefficient 
+[BBL’06] 
+Realizable case:  
+c* 
+Linear Separators, uniform distr.: 
+How quickly the region of disagreement 
+collapses as we get closer and closer to 
+optimal classifier 

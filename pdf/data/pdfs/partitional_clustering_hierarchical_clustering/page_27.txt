@@ -1,0 +1,3 @@
+Lloyd’s method: Performance 
+Local optimum: every point is assigned to its nearest center 
+and every center is the mean value of its points. 

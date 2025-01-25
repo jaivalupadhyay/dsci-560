@@ -1,0 +1,10 @@
+Another Initialization Idea: Furthest 
+Point Heuristic 
+Choose 𝐜𝟏 arbitrarily (or at random). 
+•
+Pick 𝐜𝐣 among datapoints 𝐱𝟏, 𝐱𝟐, … , 𝐱𝐝 that is 
+farthest from previously chosen 𝐜𝟏, 𝐜𝟐, … , 𝐜𝒋−𝟏 
+•
+For j = 2, … , k 
+Fixes the Gaussian problem. But it can be thrown 
+off by outliers…. 

@@ -1,0 +1,6 @@
+Naïve Bayes: Subtlety #2 
+If unlucky, our MLE estimate for P(Xi | Y) might be 
+zero.  (e.g., Xi = Birthday_Is_January_30_1992) 
+ 
+•  Why worry about just one parameter out of many? 
+•  What can be done to address this? 

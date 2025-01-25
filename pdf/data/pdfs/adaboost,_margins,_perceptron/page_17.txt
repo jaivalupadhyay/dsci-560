@@ -1,0 +1,5 @@
+Interestingly, the usefulness of margin 
+recognized in Machine Learning since late 50’s. 
+Perceptron [Rosenblatt’57] analyzed via geometric  
+(aka 𝐿2, 𝐿2) margin. 
+Original guarantee in the online learning scenario. 

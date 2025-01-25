@@ -1,0 +1,7 @@
+Active learning with label propagation 
+45 
+(using soft-cuts) 
+One natural idea: query the most uncertain point. 
+But this has only one edge.  Query won’t have 
+much impact! 
+(even worse: a completely isolated node)  

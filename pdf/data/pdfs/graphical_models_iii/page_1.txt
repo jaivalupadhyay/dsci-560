@@ -1,0 +1,24 @@
+Machine Learning 10-601 
+ 
+Tom M. Mitchell 
+Machine Learning Department 
+Carnegie Mellon University 
+ 
+February 25, 2015 
+Today: 
+• 
+Graphical models 
+• 
+Bayes Nets:   
+• 
+Inference 
+• 
+Learning 
+• 
+EM 
+Readings: 
+• 
+Bishop chapter 8 
+• 
+Mitchell chapter 6 
+ 

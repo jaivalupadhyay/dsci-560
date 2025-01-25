@@ -1,0 +1,13 @@
+ Sample Complexity for Supervised Learning 
+Consistent Learner 
+•  Output: Find h in H consistent with S (if one exits).  
+•
+Input: S: (x1,c*(x1)),…, (xm,c*(xm)) 
+Prob. over different 
+samples of m 
+training examples 
+Linear in 1/𝜖 
+Realizable Case 
+ 
+ 
+ 

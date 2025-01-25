@@ -1,0 +1,7 @@
+Classic Fully Supervised Learning 
+Paradigm Insufficient Nowadays 
+Modern applications: massive amounts of raw data. 
+Only a tiny fraction can be annotated by human experts. 
+Billions of webpages 
+Images 
+Protein sequences 

@@ -1,0 +1,10 @@
+Tenet 2:  
+Natural language understanding requires 
+a belief system 
+ 
+A natural language understanding system 
+should react to text by saying either: 
+•  I understand, and already knew that 
+•  I understand, and didn’t know, but accept it 
+•  I understand, and disagree because … 
+ 

@@ -1,0 +1,14 @@
+How many parameters must we estimate? 
+Suppose X =<X1,… Xn>  
+where Xi and Y are boolean RV’s 
+ 
+To estimate P(Y| X1, X2, … Xn) 
+ 
+ 
+ 
+ 
+If we have 30 boolean Xi’s:  P(Y | X1, X2, … X30) 
+  
+ 
+ 
+ 

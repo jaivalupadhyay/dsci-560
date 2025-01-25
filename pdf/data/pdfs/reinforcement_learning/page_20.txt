@@ -1,0 +1,5 @@
+Tom Mitchell, April 2011 
+So far: learning optimal policy when we 
+know P(st | st-1, at-1) 
+ 
+What if we don’t? 

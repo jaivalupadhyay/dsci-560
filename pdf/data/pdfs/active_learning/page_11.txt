@@ -1,0 +1,9 @@
+• Need to choose the label requests carefully, to get 
+informative labels. 
+What Makes a Good Active Learning 
+Algorithm? 
+• Guaranteed to output a relatively good classifier 
+for most learning problems. 
+• Doesn’t make too many label requests. 
+ 
+    Hopefully  a lot less than passive learning and SSL. 

@@ -1,0 +1,3 @@
+True error (red), estimated error (blue) 
+NELL classifiers: 
+[Platanios, Blum, Mitchell, UAI 2014] 

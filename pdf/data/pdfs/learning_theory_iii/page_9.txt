@@ -1,0 +1,17 @@
+Hoeffding bounds 
+Tail inequality: bound probability mass in tail of distribution (how 
+concentrated is a random variable around its expectation). 
+Exponentially decreasing tails 
+ Consider coin of bias p flipped m times.   
+Let N be the observed # heads.  Clearly E
+N
+m = p. 
+𝑃
+ 𝑁
+𝑚− 𝑝≥𝛾≤𝑒−2𝑚𝛾2 
+Hoeffding Inequality 
+ Let 𝛾∈[0,1]. 
+[N = X1 + X2 + … + Xm, Xi = 1 with prob. p, 0 with prob 1-p.] 
+𝑝 
+𝑝+ 𝛾 
+𝑝−𝛾 

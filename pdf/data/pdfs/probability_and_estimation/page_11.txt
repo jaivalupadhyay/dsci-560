@@ -1,0 +1,24 @@
+Using the 
+Joint 
+Distribution 
+One you have the JD 
+you can ask for the 
+probability of any logical 
+expression involving 
+these variables 
+∑
+=
+E
+P
+E
+P
+ 
+matching
+ 
+rows
+)
+row
+(
+)
+(
+[A. Moore]  

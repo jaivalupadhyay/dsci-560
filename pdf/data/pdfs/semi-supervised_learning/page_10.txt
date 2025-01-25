@@ -1,0 +1,14 @@
+Semi-supervised Learning 
+Test of time 
+awards at ICML! 
+• Major topic of research in ML. 
+• Several methods have been developed to try to use 
+unlabeled data to improve performance, e.g.: 
+– Transductive SVM [Joachims ’99] 
+ 
+– Co-training [Blum & Mitchell ’98] 
+ 
+– Graph-based methods [B&C01], [ZGL03] 
+Today: discuss these methods. 
+Very interesting, they all exploit unlabeled data in 
+different, very interesting and creative ways. 

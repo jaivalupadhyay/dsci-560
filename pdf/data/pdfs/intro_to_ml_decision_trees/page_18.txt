@@ -1,0 +1,26 @@
+18 
+Entropy 
+Entropy H(X) of a random variable X 
+ 
+ 
+ 
+H(X) is the expected number of bits needed to encode a 
+randomly drawn value of X  (under most efficient code)  
+ 
+Why?  Information theory: 
+•  Most efficient possible code assigns  -log2 P(X=i)  bits 
+to encode the message X=i 
+•  So, expected number of bits to code one random X is:  
+ 
+# of possible 
+values for X
+Entropy 
+Entropy H(X) of a random variable X 
+ 
+ 
+ 
+ 
+ 
+Specific conditional entropy H(X|Y=v) of X given Y=v : 
+Mutual information (aka Information Gain) of X and Y : 
+Conditional entropy H(X|Y) of X given Y : 

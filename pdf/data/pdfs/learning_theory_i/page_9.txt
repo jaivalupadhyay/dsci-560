@@ -1,0 +1,25 @@
+•
+X – feature or instance space; distribution D over X
+e.g., X = Rd or X = {0,1}d
+• Algo does optimization over S, find hypothesis ℎ.
+•
+Algo sees training sample S: (x1,c*(x1)),…, (xm,c*(xm)), xi i.i.d. from D
+– labeled examples - assumed to be drawn i.i.d. from some distr. 
+D over X and labeled by some target concept c*
+–
+labels 2 {-1,1} - binary classification
+h
+c*
+Instance space X
++ + 
++ 
++ 
+-
+-
+-
+-
+Need a bias: no free lunch.
+PAC/SLT models for Supervised Learning
+• Goal:  h has small error over D.
+𝑒𝑟𝑟𝐷ℎ= Pr
+𝑥~ 𝐷(ℎ𝑥≠𝑐∗(𝑥))

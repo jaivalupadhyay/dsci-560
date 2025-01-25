@@ -1,0 +1,17 @@
+Rademacher Complexity 
+So,  taking the expectation over 𝜎 this measures the ability of 
+class F to fit random noise. 
+ sup measures for any given set S and Rademacher vector 𝜎, 
+the max correlation between f zi  and 𝜎𝑖 for all f ∈F 
+The empirical Rademacher complexity of F is:  
+R m(F) = Eσ1,…,σm sup
+f∈F
+ 1
+m  σif zi
+i
+   
+where 𝜎𝑖 are i.i.d. Rademacher variables chosen uniformly from {−1,1}.  
+Rm F = ES[R m(F)] 
+The Rademacher complexity of F is:  
+Space Z and a distr. D|Z; F be a class of functions from Z to [0,1] 
+Let S = {z1, … , zm} be i.i.d from  D|Z.  

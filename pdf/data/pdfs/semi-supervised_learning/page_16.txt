@@ -1,0 +1,24 @@
+Transductive Support Vector Machines 
+Optimize for the separator with large margin wrt labeled and 
+unlabeled data. 
+argminw w
+2 + 𝐶 𝜉𝑖
+𝑖
+ + 𝐶  𝜉𝑢
+ 
+𝑢
+ 
+•
+yi w ⋅xi ≥1-𝜉𝑖, for all i ∈{1, … , ml}  
+ Su={x1, …,xmu} 
+•
+ yu
+ w ⋅xu ≥1 − 𝜉𝑢
+ , for all u ∈{1, … , mu}  
+•
+ yu
+ ∈{−1, 1} for all u ∈{1, … , mu}   
+0 
+ Input: Sl={(x1, y1), …,(xml, yml)}  
+NP-hard….. Convex only after you guessed the labels… too many 
+possible guesses… 

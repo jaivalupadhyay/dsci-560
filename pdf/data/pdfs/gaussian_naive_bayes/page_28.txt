@@ -1,0 +1,9 @@
+Where is information encoded in the brain? 
+Accuracies of  
+cubical 
+27-voxel  
+classifiers 
+centered at 
+each significant 
+voxel 
+[0.7-0.8] 

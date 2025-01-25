@@ -1,0 +1,6 @@
+The core problem: 
+•  Agents can measure internal consistency,  
+but not correctness 
+ 
+Challenge: 
+•  Under what conditions does consistency à correctness? 

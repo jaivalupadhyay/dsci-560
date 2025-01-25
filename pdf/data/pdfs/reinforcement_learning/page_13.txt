@@ -1,0 +1,2 @@
+Tom Mitchell, April 2011 
+Value Function – what are the V*(s) values? 

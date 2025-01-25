@@ -1,0 +1,3 @@
+How many parameters must we estimate for Gaussian 
+Naïve Bayes if Y has k possible values, X=<X1, … Xn>? 
+ 

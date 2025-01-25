@@ -1,0 +1,18 @@
+3-­‐D	  object	  Recogni4on	  
+Learning	  Algorithm	  
+Error	  
+Logis4c	  regression	  
+22.5%	  
+K-­‐NN	  (LeCun	  2004)	  
+18.92%	  
+SVM	  (Bengio	  &	  LeCun	  	  2007)	  
+11.6%	  
+Deep	  Belief	  Net	  (Nair	  &	  Hinton	  	  
+2009)	  	  
+9.0%	  
+DBM	  
+7.2%	  
+Palern	  
+Comple4on	  
+NORB	  Dataset:	  24,000	  examples	  
+[Courtesy,	  R.	  Salakhutdinov]	  

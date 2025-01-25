@@ -1,0 +1,15 @@
+Key Idea 4:  Cumulative, Staged Learning 
+1.  Classify noun phrases (NP’s) by category 
+2.  Classify NP pairs by relation 
+3.  Discover rules to predict new relation instances 
+4.  Learn which NP’s (co)refer to which latent concepts 
+5.  Discover new relations to extend ontology 
+6.  Learn to infer relation instances via targeted random walks 
+7.  Vision: connect NELL and NEIL  
+8.  Learn to microread single sentences 
+9.  Learn to assign temporal scope to beliefs 
+10.  Goal-driven reading: predict, then read to corroborate/correct 
+11.  Make NELL a conversational agent on Twitter 
+12.  Add a robot body to NELL 
+Learning X improves ability to learn Y 
+NELL is here  

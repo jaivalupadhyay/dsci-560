@@ -1,0 +1,14 @@
+Learning to classify document: P(Y|X) 
+the “Bag of Words” model 
+•  Y discrete valued.  e.g., Spam or not 
+•  X = <X1, X2, … Xn> = document 
+ 
+•  Xi is a random variable describing the word at position i in 
+the document 
+•  possible values for Xi : any word wk in English 
+ 
+•  Document = bag of words: the vector of counts for all 
+wk’s 
+–  like #heads, #tails, but we have many more than 2 values 
+–  assume word probabilities are position independent  
+(i.i.d. rolls of a 50,000-sided die) 

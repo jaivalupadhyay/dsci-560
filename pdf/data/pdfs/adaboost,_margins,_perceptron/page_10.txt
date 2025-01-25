@@ -1,0 +1,7 @@
+How can we explain the experiments? 
+Key Idea: 
+R. Schapire, Y. Freund, P. Bartlett, W. S. Lee. present in 
+“Boosting the margin: A new explanation for the effectiveness 
+of voting methods” a nice theoretical explanation. 
+Training error does not tell the whole story.  
+We need also to consider the classification confidence!! 

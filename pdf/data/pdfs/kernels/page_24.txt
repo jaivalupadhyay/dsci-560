@@ -1,0 +1,28 @@
+Generalize Well if Good Margin 
+•
+If data is linearly separable by margin in the 𝜙-space, 
+then small mistake bound. 
+•
+If margin 𝛾 in 𝜙-space, then Perceptron makes 𝑅
+𝛾
+2
+  mistakes. 
++ 
+w* 
++ 
++ + 
++ + 
++ 
+- 
+- - 
+- 
+- 
+ 
+ 
+- 
+- 
+- 
+- 
++ 
+R 
+Φ-space 

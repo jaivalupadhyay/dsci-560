@@ -1,0 +1,1 @@
+Extreme case: what if we add two copies: Xi  = Xk  

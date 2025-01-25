@@ -1,0 +1,9 @@
+NP: 
+person 
+ 
+Type 1 Coupling: Co-Training, Multi-View Learning 
+[Blum & Mitchell; 98] 
+[Dasgupta et al; 01 ] 
+[Ganchev et al., 08] 
+[Sridharan & Kakade, 08] 
+[Wang & Zhou, ICML10] 

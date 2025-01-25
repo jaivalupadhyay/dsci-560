@@ -1,0 +1,2 @@
+ 
+Can represent a face image using just 15 numbers!  

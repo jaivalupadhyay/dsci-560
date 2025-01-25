@@ -1,0 +1,5 @@
+xd = input 
+td = target output 
+od = observed unit 
+output 
+wi = weight i 

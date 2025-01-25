@@ -1,0 +1,36 @@
+Using Unlabeled Data to Help Train  
+Naïve Bayes Classifier 
+Y
+X1 
+X4 
+X3 
+X2 
+Y 
+X1 X2 
+X3 X4 
+1 
+0 
+0 
+1 
+1 
+0 
+0 
+1 
+0 
+0 
+0 
+0 
+0 
+1 
+0 
+? 
+0 
+1 
+1 
+0 
+? 
+0 
+1 
+0 
+1 
+Learn P(Y|X) 

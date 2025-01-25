@@ -1,0 +1,17 @@
+Surprisingly…. 
+Weak Learning =Strong (PAC) Learning 
+Original Construction [Schapire ’89]: 
+•
+poly-time boosting algo, exploits that we can 
+learn a little on every distribution. 
+•
+A modest booster obtained via calling the weak learning 
+algorithm on 3 distributions. 
+•
+Cool conceptually and technically, not very practical. 
+•
+Then amplifies the modest boost of accuracy by 
+running this somehow recursively. 
+Error = 𝛽<
+1
+2 −𝛾→ error 3𝛽2 −2𝛽3 

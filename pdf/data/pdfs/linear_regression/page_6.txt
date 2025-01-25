@@ -1,0 +1,9 @@
+Use Naïve Bayes or Logisitic Regression? 
+Consider 
+•  Restrictiveness of modeling assumptions (how 
+well can we learn with infinite data?) 
+ 
+ 
+•  Rate of convergence (in amount of training data) 
+toward asymptotic (infinite data) hypothesis  
+–  i.e., the learning curve 

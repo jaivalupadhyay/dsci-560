@@ -1,0 +1,39 @@
+Complexity of Large Margin Linear Sep. 
+•
+Know that in Rn we can shatter n+1 points with linear 
+separators, but not n+2 points (VC-dim of linear sep is n+1). 
+What if we require that the points be 
+linearly separated by margin 𝛾?  
+Can have at most 𝑅
+𝛾
+2
+ points inside ball of radius R 
+that can be shattered at margin 𝛾 (meaning that every 
+labeling is achievable by a separator of margin 𝛾). 
+•
+So, large margin classifiers have smaller complexity! 
+•
+Less prone to overfitting!!!! 
+•
+Less classifiers to worry about that will look good over 
+the sample, but bad over all…. 
+X 
+X 
+X 
+X 
+X 
+X 
+X X 
+X 
+X 
+O 
+O 
+O 
+O 
+O 
+O 
+O 
+O 
+w 
+•
+Nice implications for usual distributional learning setting. 

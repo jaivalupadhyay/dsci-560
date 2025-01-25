@@ -1,0 +1,8 @@
+Many Other Applications 
+E.g., [Levin-Viola-Freund03] identifying objects in images.  
+Two different kinds of preprocessing. 
+E.g., [Collins&Singer99] named-entity extraction. 
+– “I arrived in London yesterday” 
+… 
+Central to NELL!!! 
+… 

@@ -1,0 +1,13 @@
+Diﬀerent	  Data	  Modali4es	  
+• 	  It	  is	  easy	  to	  infer	  the	  states	  of	  the	  hidden	  variables:	  	  
+• 	  Binary/Gaussian/Soemax	  RBMs:	  All	  have	  binary	  hidden	  
+variables	  but	  use	  them	  to	  model	  diﬀerent	  kinds	  of	  data.	  
+Binary	  
+Real-­‐valued	  
+1-­‐of-­‐K	  
+0	  
+0	  
+1	  
+0	  
+0	  
+[Courtesy,	  R.	  Salakhutdinov]	  

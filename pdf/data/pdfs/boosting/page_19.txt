@@ -1,0 +1,12 @@
+Nice Features of Adaboost 
+• Very general: a meta-procedure, it can use any weak learning 
+algorithm!!!  
+• Very fast (single pass through data each round) & simple to 
+code, no parameters to tune. 
+• Grounded in rich theory. 
+• Shift in mindset: goal is now just to find classifiers a 
+bit better than random guessing. 
+• Relevant for big data age: quickly focuses on “core 
+difficulties”, well-suited to distributed settings, where data 
+must be communicated efficiently [Balcan-Blum-Fine-Mansour COLT’12]. 
+(e.g., Naïve Bayes, decision stumps) 

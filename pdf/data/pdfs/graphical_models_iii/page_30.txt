@@ -1,0 +1,9 @@
+Experimental Evaluation 
+•  Newsgroup postings  
+–  20 newsgroups, 1000/group 
+•  Web page classification  
+–  student, faculty, course, project 
+–  4199 web pages 
+•  Reuters newswire articles  
+–  12,902 articles 
+–  90 topics categories 

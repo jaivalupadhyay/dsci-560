@@ -1,0 +1,10 @@
+RBMs	  for	  Real-­‐valued	  Data	  
+Pair-­‐wise	  
+Unary	  
+Image	  	  	  	  	  	  visible	  variables	  
+	  	  hidden	  variables	  
+=  0.9 *            +  0.8 *            + 0.6 *            … 
+New	  Image	  
+Learned	  features	  (out	  of	  10,000)	  
+4	  million	  unlabelled	  images	  
+[Courtesy,	  R.	  Salakhutdinov]	  

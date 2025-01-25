@@ -1,0 +1,38 @@
+The Joint Distribution 
+Recipe for making a joint 
+distribution of M variables: 
+ 
+1.  Make a truth table listing all 
+combinations of values of 
+your variables (if there are 
+M Boolean variables then 
+the table will have 2M rows). 
+Example: Boolean 
+variables A, B, C 
+A 
+B 
+C 
+0 
+0 
+0 
+0 
+0 
+1 
+0 
+1 
+0 
+0 
+1 
+1 
+1 
+0 
+0 
+1 
+0 
+1 
+1 
+1 
+0 
+1 
+1 
+1 

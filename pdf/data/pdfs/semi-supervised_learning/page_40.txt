@@ -1,0 +1,18 @@
+Several methods: 
+– Minimum/Multiway cut [Blum&Chawla01] 
+– Minimum “soft-cut” [ZhuGhahramaniLafferty’03] 
+– Spectral partitioning 
+– … 
+Main Idea: 
+•
+Might have also glued together in G 
+examples of different classes. 
+Often, transductive approach.  (Given L + U, output predictions on 
+U). Are alllowed to output any labeling of 𝐿∪𝑈. 
+•
+Construct graph G with edges 
+between very similar examples. 
+•
+Run a graph partitioning algorithm to 
+separate the graph into pieces. 
+Graph-based Methods 

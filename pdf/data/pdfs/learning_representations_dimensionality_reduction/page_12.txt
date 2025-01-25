@@ -1,0 +1,16 @@
+Principal Component Analysis (PCA) 
+X XT v = λv , so v (the first PC) is the eigenvector 
+of sample correlation/covariance matrix 𝑋 𝑋𝑇 
+Sample variance of projection v𝑇𝑋 𝑋𝑇v = 𝜆v𝑇v = 𝜆 
+Thus, the eigenvalue 𝜆 denotes the amount of variability 
+captured along that dimension (aka amount of energy along that 
+dimension). 
+Eigenvalues 𝜆1 ≥𝜆2 ≥𝜆3 ≥⋯ 
+•
+The 1st PC 𝑣1 is the the eigenvector of the sample covariance matrix 
+𝑋 𝑋𝑇 associated with the largest eigenvalue  
+•
+The 2nd PC 𝑣2 is the the eigenvector of the sample covariance 
+matrix 𝑋 𝑋𝑇 associated with the second largest eigenvalue  
+•
+And so on … 

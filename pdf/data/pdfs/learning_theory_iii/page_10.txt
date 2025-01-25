@@ -1,0 +1,33 @@
+Proof: 
+Sample Complexity:  Finite Hypothesis Spaces 
+Agnostic Case 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+•
+Fix h; by Hoeffding, prob. that errS h −errD h
+≥ϵ is at most 2e−2mϵ2 
+Hoeffding & union bound. 
+•
+By union bound over all ℎ∈𝐻, the prob. that ∃h s.t. errS h −errD h
+≥ϵ is 
+at most 2|H|e−2mϵ2. Set to . Solve. 
+Fact:  
+W.h.p. ≥1 −𝛿,errD ℎ ≤errD h∗+ 2ϵ, 
+h  is ERM output, h∗ is hyp. of smallest 
+true error rate.  
+errD h∗ 
+≤𝝐 
+errS h∗ 
+errS ℎ  
+errD ℎ  
+≤𝝐 

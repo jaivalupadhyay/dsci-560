@@ -1,0 +1,9 @@
+Tom Mitchell, April 2011 
+[simplicity assume the transitions and rewards are deterministic. ] 
+Optimal value of a state s is the 
+maximum, over actions a’ of Q(s,a’).  
+Given current approx  𝑄  to Q, if we are 
+in state s and perform action a and get 
+to state s’, update our estimate 𝑄 (𝑠, 𝑎) 
+to the reward r we got plus gamma 
+times the maximum over a’ of 𝑄 (𝑠′, 𝑎′)  

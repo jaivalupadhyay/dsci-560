@@ -1,0 +1,1 @@
+Lloyd’s method: Random Initialization 

@@ -1,0 +1,27 @@
+Boosting and Margins 
+•
+If all training examples have large margins, then we can 
+approximate the final classifier by a much smaller classifier. 
+•
+Can use this to prove that better margin  smaller test error, 
+regardless of the number of weak classifiers. 
+•
+Can also prove that boosting tends to increase the margin of 
+training examples by concentrating on those of smallest margin. 
+•
+Although final classifier is getting larger, 
+margins are likely to be increasing, so the 
+final classifier is actually getting closer to a 
+simpler classifier, driving down test error. 
+Theorem:VCdim(𝐻) = 𝑑, then with prob. ≥1 −𝛿, ∀𝑓∈𝑐𝑜(𝐻), ∀𝜃> 0, 
+Pr
+𝐷𝑦𝑓𝑥≤0 ≤Pr
+𝑆𝑦𝑓𝑥≤𝜃+ 𝑂
+1
+𝑚 
+d ln2𝑚
+𝑑
+𝜃2
++ ln
+1
+𝛿  

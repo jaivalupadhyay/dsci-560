@@ -1,0 +1,15 @@
+•  For learning from partly unobserved data 
+•  MLE of θ =  
+•  EM estimate: θ = 
+Where X is observed part of data, Z is unobserved 
+•  Nice case is Bayes net of boolean vars: 
+–  M step is like MLE, with with unobserved values replaced by 
+their expected values, given the other observed values 
+•  EM for training Bayes networks 
+•  Can also develop MAP version of EM 
+•  Can also derive your own EM algorithm for your own 
+problem 
+–  write out expression for 
+–  E step: for each training example Xk, calculate P(Zk | Xk, θ) 
+–  M step: chose new θ to maximize                             
+What you should know about EM 

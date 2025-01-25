@@ -1,0 +1,34 @@
+Perceptron Algorithm: Example 
+Example: −1,2 − 
+- 
++ 
++ 
+𝑤1 = (0,0) 
+𝑤2 = 𝑤1 −−1,2 = (1, −2) 
+𝑤3 = 𝑤2 + 1,1 = (2, −1) 
+𝑤4 = 𝑤3 −−1, −2 = (3,1) 
++ 
+- 
+- 
+Algorithm: 
+
+Set t=1, start with all-zeroes weight vector 𝑤1. 
+
+Given example 𝑥, predict positive iff 𝑤𝑡⋅𝑥≥0. 
+
+On a mistake, update as follows:  
+•
+Mistake on positive, update 𝑤𝑡+1 ←𝑤𝑡+ 𝑥 
+•
+Mistake on negative, update 𝑤𝑡+1 ←𝑤𝑡−𝑥 
+1,0 + 
+1,1 + 
+−1,0 − 
+−1, −2 − 
+1, −1 + 
+X 
+ 
+X 
+ 
+X 
+ 

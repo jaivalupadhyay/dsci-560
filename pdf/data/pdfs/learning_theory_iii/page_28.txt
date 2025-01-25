@@ -1,0 +1,28 @@
+Techniques to Handle Overfitting 
+•
+Cross Validation:  
+•
+Structural Risk Minimization (SRM). 
+•
+Regularization: 
+Minimize gener. bound: 
+•
+minimizes expressions of the form: errS h + λ h
+2 
+•
+E.g., SVM, regularized logistic regression, etc. 
+•
+Hold out part of the training data and use it as a proxy for the 
+generalization error 
+ ℎ = argmink≥1{errS h k + complexity(Hk)} 
+𝐻1 ⊆𝐻2 ⊆⋯⊆𝐻𝑖⊆…  
+Some norm when H 
+is a vector space; 
+e.g., L2 norm 
+Picked through cross validation 
+general family closely related to SRM 
+•
+Often computationally hard…. 
+•
+Nice case where it is possible: M. Kearns, Y. Mansour, ICML’98, “A Fast, Bottom-Up 
+Decision Tree Pruning Algorithm with Near-Optimal Generalization”  

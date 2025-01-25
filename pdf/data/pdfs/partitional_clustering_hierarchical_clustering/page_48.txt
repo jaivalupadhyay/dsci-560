@@ -1,0 +1,27 @@
+Complete Linkage 
+Bottom-up (agglomerative) 
+•
+Start with every point in its own cluster. 
+•
+Repeatedly merge the “closest” two clusters. 
+One way to think of it: keep max diameter as small as possible. 
+0 
+6 
+2.1 
+3.2 
+-2 
+-3 
+A 
+B 
+C 
+D 
+E 
+F 
+1 
+2 
+3 
+4 
+5 
+Complete linkage: dist A, B =
+max
+x∈A,x′∈B dist(x, x′) 

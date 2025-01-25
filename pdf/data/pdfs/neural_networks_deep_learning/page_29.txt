@@ -1,0 +1,8 @@
+Deep Belief Networks 
+•  Problem: training networks with many hidden layers 
+doesn’t work very well 
+–  local minima, very slow training if initialize with zero weights 
+•  Deep belief networks 
+–  autoencoder networks to learn low dimensional encodings  
+–  but more layers, to learn better encodings 
+[Hinton & Salakhutdinov, 2006] 

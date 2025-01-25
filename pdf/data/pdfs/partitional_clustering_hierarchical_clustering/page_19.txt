@@ -1,0 +1,2 @@
+Select initial centers at random 
+Lloyd’s method: Random Initialization 

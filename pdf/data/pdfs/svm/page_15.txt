@@ -1,0 +1,48 @@
+Support Vector Machines (SVMs) 
+Question: what if data isn’t perfectly linearly separable? 
+Input: S={(x1, 𝑦1), …,(xm, 𝑦m)};  
+argminw,𝜉1,…,𝜉𝑚 𝑤
+2 + 𝐶 𝜉𝑖
+𝑖
+ s.t.: 
+  •
+For all i, 𝑦𝑖𝑤⋅𝑥𝑖≥1 −𝜉𝑖 
+Find 
+𝜉𝑖≥0 
+𝜉𝑖 are “slack variables” 
+Replace “# mistakes” with upper bound called “hinge loss” 
++ + 
++ 
++ 
+- 
+- - 
+- 
+- 
++ 
+- 
+- 
+- 
+- 
+w 
+𝑤⋅𝑥= −1 
+𝑤⋅𝑥= 1 
+Input: S={(x1, 𝑦1), …,(xm, 𝑦m)};  
+Minimize 𝑤′
+2 under the constraint: 
+  
+•
+For all i, 𝑦𝑖𝑤′ ⋅𝑥𝑖≥1 
++ + 
++ + 
+- 
+- - 
+- 
+- 
++ 
+- 
+- 
+- 
+- 
+w’ 
+𝑤’ ⋅𝑥= −1 
+𝑤’ ⋅𝑥= 1 

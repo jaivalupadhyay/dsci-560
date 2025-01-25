@@ -1,0 +1,27 @@
+Dimensionality Reduction using PCA 
+xi 
+v 
+vTxi 
+The eigenvalue 𝜆 denotes the amount of variability captured along 
+that dimension (aka amount of energy along that dimension). 
+Zero eigenvalues indicate no variability along those directions => 
+data lies exactly on a linear subspace 
+ 
+Only keep data projections onto principal components with 
+non-zero eigenvalues, say v1, … , vk, where k=rank(𝑋 𝑋𝑇) 
+ 
+Original representation 
+ 
+Transformed representation 
+ 
+Data point 
+𝑥𝑖= (𝑥𝑖
+1, … , 𝑥𝑖
+𝐷) 
+ 
+projection 
+(𝑣1 ⋅𝑥𝑖, … , 𝑣𝑑⋅𝑥𝑖) 
+ 
+D-dimensional vector 
+ 
+d-dimensional vector 

@@ -1,0 +1,5 @@
+Semantic Memory Model Based on ANN’s 
+[McClelland & Rogers, Nature 2003] 
+No hierarchy given.  
+Train with assertions, 
+e.g., Can(Canary,Fly) 

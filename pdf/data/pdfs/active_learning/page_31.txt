@@ -1,0 +1,15 @@
+When Active Learning Helps. Agnostic case  
+“Region of disagreement” style:  Pick a few points at random from the 
+current region of disagreement, query their labels, throw out 
+hypothesis if you are statistically confident they are suboptimal.  
+•  C - homogeneous linear separators in Rd, 
+         D - uniform,  low  noise, only d2 log (1/) labels. 
+[Balcan, Beygelzimer, Langford, ICML’06]  
+A2 the first algorithm which is robust to noise. 
+•  C – thresholds, low noise, exponential improvement. 
+[Balcan, Beygelzimer, Langford, JCSS’08]  
+•  It is safe (never worse than passive learning) & exponential improvements. 
+Guarantees for A2 [BBL’06,’08]: 
+c* 
+A lot of subsequent work. 
+ [Hanneke’07, DHM’07, Wang’09 , Fridman’09, Kolt10, BHW’08, BHLZ’10, H’10, Ailon’12, …] 

@@ -1,0 +1,8 @@
+Graph-based Methods 
+E.g., handwritten digits [Zhu07]: 
+• Assume we are given a pairwise similarity fnc and that 
+very similar examples probably have the same label. 
+• If we have a lot of labeled data, this suggests a 
+Nearest-Neighbor type of algorithm. 
+• If you have a lot of unlabeled data, perhaps can use 
+them as “stepping stones”. 

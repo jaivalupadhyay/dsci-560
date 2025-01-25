@@ -1,0 +1,13 @@
+Common Technique in Practice 
+Uncertainty sampling in SVMs common and quite useful 
+in practice. 
+•
+At any time during the alg., we have a “current guess” 
+wt of the separator: the max-margin separator of all 
+labeled points so far. 
+•
+Request the label of the example closest to the current 
+separator. 
+E.g., [Tong & Koller, ICML 2000; Jain, Vijayanarasimhan & Grauman, NIPS 2010; 
+Schohon Cohn, ICML 2000] 
+Active SVM Algorithm 

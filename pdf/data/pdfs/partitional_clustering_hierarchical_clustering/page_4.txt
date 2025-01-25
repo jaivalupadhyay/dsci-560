@@ -1,0 +1,13 @@
+•
+Cluster news articles or web pages or search results by topic. 
+ Applications (Clustering comes up everywhere…) 
+Applications (Clustering comes up everywhere…) 
+ 
+•
+Cluster protein sequences by function or genes according to expression 
+profile. 
+ 
+•
+Cluster users of social networks by interest (community detection). 
+Facebook network 
+Twitter Network 

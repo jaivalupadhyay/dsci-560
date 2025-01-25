@@ -1,0 +1,22 @@
+VCdimension Generalization Bounds 
+errD h ≤errS h + O
+1
+2m VCdim H ln
+em
+VCdim H
++ ln
+1
+δ
+. 
+E.g., 
+VC bounds: distribution independent bounds  
+•
+Generic: hold for any concept class and any distribution. 
+•
+Might be very loose specific distr. that are more 
+benign than the worst case…. 
+•
+Hold only for binary classification;  we want bounds for 
+fns approximation  in general (e.g., multiclass classification and 
+regression). 
+[nearly tight in the WC over choice of D] 

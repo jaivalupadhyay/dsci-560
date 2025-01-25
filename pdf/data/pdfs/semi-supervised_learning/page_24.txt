@@ -1,0 +1,20 @@
+Iterative Co-Training 
+•
+Have learning algos A1, A2 on each of the two views. 
+• Use labeled data to learn two initial hyp. h1, h2. 
+ 
+ 
+• Look through unlabeled data to find examples 
+where one of hi is  confident but other is not. 
+• Have the confident hi label it for algorithm A3-i. 
+Repeat 
++ 
++ 
++ 
+X1 
+X2 
+Works by using unlabeled data to  
+propagate learned information. 
+ 
+h 
+h1 

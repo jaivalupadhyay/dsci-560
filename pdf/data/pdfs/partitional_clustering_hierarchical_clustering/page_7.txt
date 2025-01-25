@@ -1,0 +1,18 @@
+Objective Based Clustering 
+Goal: output a partition of the data. [sports][fashion]
+Input: A set  S of n points, also a distance/dissimilarity 
+measure specifying the distance d(x,y) between pairs (x,y). 
+E.g., # keywords in common, edit distance, wavelets coef., etc. 
+– k-median: find center pts 𝐜𝟏, 𝐜𝟐, … , 𝐜𝐤 to  
+                minimize  ∑i=1 
+n minj∈1,…,k d(𝐱𝐢, 𝐜𝐣) 
+– k-means: find center pts 𝒄𝟏, 𝒄𝟐, … , 𝒄𝒌 to  
+                minimize  ∑i=1 
+n minj∈1,…,k d2(𝐱𝐢, 𝐜𝐣) 
+– K-center: find partition to minimize the maxim radius 
+z 
+  x 
+y 
+c1 
+c2 
+s c3 

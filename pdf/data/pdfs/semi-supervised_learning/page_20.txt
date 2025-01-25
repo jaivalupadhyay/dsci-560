@@ -1,0 +1,4 @@
+Different type of underlying regularity assumption:  
+Consistency or Agreement Between Parts 
+[Blum & Mitchell ’98] 
+Co-training 

@@ -1,0 +1,4 @@
+Problem setting:  
+•  have N different estimates               of target function 
+•  agreement between fi, fj  : 
+[Platanios, Blum, Mitchell, UAI 2014] 

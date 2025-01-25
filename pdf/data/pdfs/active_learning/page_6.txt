@@ -1,0 +1,30 @@
+Unlabeled data useful if we have a bias/belief not only about 
+the form of the target, but also about its relationship with 
+the underlying data distribution. 
+Key Insight/Underlying Fundamental Principle 
+E.g., “large margin separator” 
+[Joachims ’99] 
+ 
+Similarity based 
+(“small cut”) 
+[B&C01], [ZGL03] 
+ 
+“self-consistent rules” [Blum & Mitchell ’98] 
+ 
++ 
++ 
+_ 
+_ 
++ 
+h1(x1)=h2(x2) 
+•
+Unlabeled data can help reduce search space or re-order the fns 
+in the search space according to our belief, biasing the search 
+towards fns satisfying the belief (which becomes concrete once 
+we see unlabeled data). 
+My Advisor 
+Prof. Avrim 
+x1- Text info 
+x2- Link info 
+x = h x1, x2 i 
+Semi-supervised Learning 

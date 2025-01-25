@@ -1,0 +1,3 @@
+Maximal Diversity Sampling 
+Maximally distant from labeled x’s 
+[Jaime G. Carbonell] 

@@ -1,0 +1,8 @@
+Definition of Conditional Probability 
+                     P(A ^ B)  
+P(A|B)  =  ----------- 
+                    P(B)  
+A 
+ 
+B 
+ 

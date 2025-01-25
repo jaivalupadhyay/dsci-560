@@ -1,0 +1,6 @@
+That’s all for M(C)LE.  How about MAP? 
+•  One common approach is to define priors on W 
+–  Normal distribution, zero mean, identity covariance 
+•  Helps avoid very large weights and overfitting 
+•  MAP estimate 
+•  let’s assume Gaussian prior: W ~ N(0, σ) 

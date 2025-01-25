@@ -1,0 +1,7 @@
+Computer	  Vision	  Features	  
+SIFT	  
+HoG	  
+RIFT	  
+Textons	  
+GIST	  
+[Courtesy,	  R.	  Salakhutdinov]	  

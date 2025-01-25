@@ -1,0 +1,19 @@
+Tom Mitchell, April 2011 
+•
+Learning to choose optimal actions A 
+•
+From delayed reward 
+•
+By learning evaluation functions like V(S), Q(S,A) 
+ 
+Key ideas: 
+•
+If next state function St x At  St+1 is known 
+– can use dynamic programming to learn V(S) 
+– once learned, choose action At that maximizes V(St+1) 
+•
+If next state function St x At  St+1 unknown 
+– learn Q(St,At) = E[V(St+1)] 
+– to learn, sample St x At  St+1 in actual world 
+– once learned, choose action At that maximizes Q(St,At) 
+MDP’s and RL: What You Should Know 

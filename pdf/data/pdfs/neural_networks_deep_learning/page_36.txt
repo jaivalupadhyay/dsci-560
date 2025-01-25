@@ -1,0 +1,18 @@
+Feature	  Representa4ons:	  Tradi4onally	  
+Image	  
+vision	  features	  
+Recogni4on	  
+Object	  
+detec4on	  
+Audio	  
+classiﬁca4on	  
+Audio	  
+audio	  features	  
+Speaker	  
+iden4ﬁca4on	  
+Data 
+Feature 
+extraction 
+Learning 
+algorithm 
+[Courtesy	  of	  R.	  Salakhutdinov]	  

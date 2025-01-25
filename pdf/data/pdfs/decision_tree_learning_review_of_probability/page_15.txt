@@ -1,0 +1,2 @@
+Split data into training and validation set
+Create tree that classiﬁes training set correctly

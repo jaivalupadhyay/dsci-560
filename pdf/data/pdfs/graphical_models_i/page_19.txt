@@ -1,0 +1,2 @@
+What is the Bayes Network for X1,…X4 with NO 
+assumed conditional independencies? 

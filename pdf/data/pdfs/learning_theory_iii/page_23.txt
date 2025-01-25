@@ -1,0 +1,9 @@
+True Error, Training Error, Overfitting 
+error 
+complexity 
+train error 
+generalization 
+error 
+errD h ≤errS h + Rm H +… 
+Model selection: trade-off between decreasing training error and 
+keeping H simple. 

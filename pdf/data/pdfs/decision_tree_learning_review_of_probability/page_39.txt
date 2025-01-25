@@ -1,0 +1,12 @@
+Probability Overview 
+•  Events  
+–  discrete random variables, continuous random variables, 
+compound events 
+•  Axioms of probability 
+–  What defines a reasonable theory of uncertainty 
+•  Independent events 
+•  Conditional probabilities 
+•  Bayes rule and beliefs 
+•  Joint probability distribution 
+•  Expectations 
+•  Independence, Conditional independence 

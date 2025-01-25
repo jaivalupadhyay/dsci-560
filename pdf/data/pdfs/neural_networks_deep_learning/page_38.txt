@@ -1,0 +1,7 @@
+ZCR	  
+Spectrogram	  
+MFCC	  
+Rolloﬀ	  
+Flux	  
+Audio	  Features	  
+[Courtesy,	  R.	  Salakhutdinov]	  

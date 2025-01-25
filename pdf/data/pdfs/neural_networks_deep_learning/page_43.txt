@@ -1,0 +1,11 @@
+Gaussian-­‐Bernoulli	  RBM:	  
+• 	  Stochas4c	  real-­‐valued	  visible	  variables	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  
+• 	  Stochas4c	  binary	  hidden	  variables	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  
+• 	  Bipar4te	  connec4ons.	  
+Pair-­‐wise	  
+Unary	  
+Image	  	  	  	  	  	  visible	  variables	  
+	  	  hidden	  variables	  
+RBMs	  for	  Real-­‐valued	  Data	  
+(Salakhutdinov & Hinton, NIPS 2007; Salakhutdinov & Murray, ICML 2008)
+[Courtesy,	  R.	  Salakhutdinov]	  

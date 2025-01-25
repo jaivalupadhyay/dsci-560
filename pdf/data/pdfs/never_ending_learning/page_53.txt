@@ -1,0 +1,57 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+NELL Architecture 
+Knowledge Base 
+(latent variables) 
+ 
+ 
+ 
+ 
+ 
+ 
+Text 
+Context 
+patterns 
+(CPL) 
+Orthographic
+classifier 
+ 
+(CML) 
+ Beliefs 
+Candidate 
+Beliefs 
+Evidence 
+Integrator 
+ 
+Human 
+advice 
+ 
+ 
+Actively 
+search for 
+web text 
+(OpenEval) 
+Infer new 
+beliefs from 
+old 
+(PRA) 
+Image 
+classifier 
+ 
+(NEIL) 
+Ontology 
+extender 
+ 
+(OntExt) 
+URL specific 
+HTML 
+patterns 
+(SEAL) 

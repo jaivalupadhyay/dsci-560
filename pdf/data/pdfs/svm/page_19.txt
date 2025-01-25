@@ -1,0 +1,9 @@
+What if the data is far from being 
+linearly separable? 
+Example: 
+vs 
+No good linear 
+separator in pixel 
+representation. 
+ 
+SVM philosophy: “Use a Kernel”  

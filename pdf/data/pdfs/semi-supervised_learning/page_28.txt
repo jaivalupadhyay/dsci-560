@@ -1,0 +1,23 @@
+Co-training: Theoretical Guarantees 
+What properties do we need for co-training to work well? 
+We need assumptions about: 
+1.
+the underlying data distribution 
+2.
+the learning algos on the two sides 
+ [Blum & Mitchell, COLT ‘98] 
+1.  Independence given the label 
+2.  Alg. for learning from random noise. 
+[Balcan, Blum, Yang, NIPS 2004] 
+1. Distributional expansion. 
+2.  Alg. for learning from positve data only. 
+𝐷1
++ 
+𝐷2
++ 
+𝐷1
+− 
+𝐷2
+− 
+View 1 
+View 2 

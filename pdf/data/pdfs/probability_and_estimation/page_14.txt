@@ -1,0 +1,54 @@
+Inference 
+with the 
+Joint 
+∑
+∑
+=
+∧
+=
+2
+ 2
+ 1
+ 
+matching
+ 
+rows
+ 
+and
+ 
+matching
+ 
+rows
+2
+2
+1
+2
+1
+)
+row
+(
+)
+row
+(
+)
+(
+)
+(
+)
+|
+(
+E
+E
+E
+P
+P
+E
+P
+E
+E
+P
+E
+E
+P
+P(Male | Poor) = 0.4654 / 0.7604 = 0.612   
+[A. Moore]  

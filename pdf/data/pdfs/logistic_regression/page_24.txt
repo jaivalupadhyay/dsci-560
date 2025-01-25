@@ -1,0 +1,7 @@
+Use Naïve Bayes or Logisitic Regression? 
+Consider 
+•  Restrictiveness of modeling assumptions 
+ 
+•  Rate of convergence (in amount of 
+training data) toward asymptotic 
+hypothesis 

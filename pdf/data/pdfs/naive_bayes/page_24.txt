@@ -1,0 +1,10 @@
+Naïve Bayes: Subtlety #1 
+Often the Xi are not really conditionally independent 
+ 
+•  We use Naïve Bayes in many cases anyway, and 
+it often works pretty well 
+–  often the right classification, even when not the right 
+probability (see [Domingos&Pazzani, 1996]) 
+ 
+•  What is effect on estimated P(Y|X)? 
+–  Extreme case: what if we add two copies: Xi  = Xk   

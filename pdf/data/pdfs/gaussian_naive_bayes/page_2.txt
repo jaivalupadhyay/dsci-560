@@ -1,0 +1,13 @@
+Recently: 
+•  Bayes classifiers to learn P(Y|X) 
+•  MLE and MAP estimates for parameters of P 
+•  Conditional independence 
+•  Naïve Bayes à make Bayesian learning practical 
+Next: 
+•  Text classification 
+•  Naïve Bayes and continuous variables Xi: 
+•  Gaussian Naïve Bayes classifier 
+•  Learn P(Y|X) directly 
+•  Logistic regression, Regularization, Gradient ascent 
+•  Naïve Bayes or Logistic Regression? 
+•  Generative vs. Discriminative classifiers 

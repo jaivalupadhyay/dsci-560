@@ -1,0 +1,4 @@
+True error (red), estimated error (blue) 
+NELL classifiers: 
+Brain image fMRI classifiers: 
+[Platanios, Blum, Mitchell, UAI 2014] 

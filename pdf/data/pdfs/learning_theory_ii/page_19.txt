@@ -1,0 +1,20 @@
+Sample Complexity: Infinite Hypothesis Spaces  
+Realizable Case 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+• Not too easy to interpret sometimes hard to calculate 
+exactly, but can get a good bound using “VC-dimension 
+• VC-dimension is roughly the point at which H stops looking 
+like it contains all functions, so hope for solving for m. 
+If H m = 2m, then m ≥m
+ϵ (… . )   
+H[m] - max number of ways to split m points using concepts in H 

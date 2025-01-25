@@ -1,0 +1,7 @@
+Tom Mitchell, April 2011 
+Immediate rewards r(s,a) 
+State values V*(s) 
+State-action values Q*(s,a) 
+Bellman equation.   
+Consider first the case where 
+P(s’| s,a) is deterministic 

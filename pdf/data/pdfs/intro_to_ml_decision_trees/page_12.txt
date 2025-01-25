@@ -1,0 +1,37 @@
+12 
+Abu Saparov 
+•  How can knowledge about the 
+world help computers understand 
+natural language? 
+•  What kinds of machine learning 
+tools are needed to understand 
+sentences?​ 
+“Carolyn ate the cake with a fork.” 
+“Carolyn ate the cake with vanilla.” 
+person_eats_food 
+consumer 
+Carolyn 
+food 
+cake 
+instrument 
+fork 
+person_eats_food 
+consumer 
+Carolyn 
+food 
+cake 
+topping 
+vanilla 
+Tom Mitchell 
+How can we build never-ending learners? 
+Case study: never-ending language learner 
+(NELL) runs 24x7 to learn to read the web 
+see  http://rtw.ml.cmu.edu 
+reading accuracy  
+vs.  
+time (5 years) 
+mean avg. precision top 
+1000 
+# of beliefs 
+vs.  
+time (5 years) 

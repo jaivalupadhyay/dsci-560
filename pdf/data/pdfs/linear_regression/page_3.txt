@@ -1,0 +1,3 @@
+MLE vs MAP  
+•  Maximum conditional likelihood estimate 
+•  Maximum a posteriori estimate with prior W~N(0,σI) 

@@ -1,0 +1,11 @@
+Learning and 
+the Joint 
+Distribution 
+Suppose we want to learn the function f: <G, H> à W 
+ 
+Equivalently, P(W | G, H) 
+ 
+Solution: learn joint distribution from data, calculate P(W | G, H) 
+ 
+e.g., P(W=rich | G = female, H = 40.5- ) = 
+[A. Moore]  

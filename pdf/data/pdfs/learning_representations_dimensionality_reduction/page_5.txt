@@ -1,0 +1,11 @@
+PCA, Kernel PCA, ICA: Powerful unsupervised learning 
+techniques for extracting hidden (potentially lower 
+dimensional) structure from high dimensional datasets. 
+Learning Representations 
+Useful for: 
+• Visualization  
+• Further processing by machine learning algorithms 
+• More efficient use of resources  
+   (e.g., time, memory, communication) 
+• Statistical: fewer dimensions  better generalization 
+• Noise removal (improving data quality) 

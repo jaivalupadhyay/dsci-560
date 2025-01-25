@@ -1,0 +1,9 @@
+•  Consider regression problem f:XàY , for scalar Y 
+y = f(x) + ε
+  
+noise N(0,σε) 
+deterministic 
+MAP Training for Neural Networks 
+ Gaussian P(W) = N(0,σΙ) 
+ln P(W)  ↔ c ∑i wi
+2 

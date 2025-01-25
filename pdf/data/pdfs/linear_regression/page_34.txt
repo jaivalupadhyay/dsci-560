@@ -1,0 +1,10 @@
+•  Consider simple regression problem f:XàY  
+y = f(x) + ε
+What are sources of prediction error? 
+  
+noise N(0,σ) 
+deterministic 
+Bias – Variance decomposition of error  
+Reading: Bishop chapter 9.1, 9.2 
+learned 
+estimate of f(x)  

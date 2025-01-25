@@ -1,0 +1,12 @@
+Artificial Neural Networks: Summary 
+•  Highly non-linear regression/classification 
+•  Hidden layers learn intermediate representations 
+•  Potentially millions of parameters to estimate 
+•  Stochastic gradient descent, local minima problems 
+•  Deep networks have produced real progress in many fields 
+–  computer vision 
+–  speech recognition 
+–  mapping images to text 
+–  recommender systems 
+–  … 
+•  They learn very useful non-linear representations 

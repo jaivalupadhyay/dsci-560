@@ -1,0 +1,4 @@
+Encoding of digit images in two dimensions 
+784-2 linear encoding (PCA) 
+784-1000-500-250-2 DBNet 
+[Hinton & Salakhutdinov, 2006] 

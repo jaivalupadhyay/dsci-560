@@ -1,0 +1,19 @@
+ Margins based regularity 
++ 
++ 
+_ 
+_ 
+Labeled data only 
++ 
++ 
+_ 
+_ 
++ 
++ 
+_ 
+_ 
+Transductive SVM 
+SVM 
+Target goes through low density regions (large margin). 
+• assume we are looking for linear separator 
+• belief: should exist one with large separation 

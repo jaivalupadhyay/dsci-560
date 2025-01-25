@@ -1,0 +1,63 @@
+RBMs	  for	  Word	  Counts	  
+Replicated	  Soemax	  Model:	  undirected	  topic	  model:	  
+• 	  Stochas4c	  1-­‐of-­‐K	  visible	  variables.	  
+• 	  Stochas4c	  binary	  hidden	  variables	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  
+• 	  Bipar4te	  connec4ons.	  
+Pair-­‐wise	  
+Unary	  
+P✓(v, h) =
+1
+Z(✓) exp
+0
+@
+D
+X
+i=1
+K
+X
+k=1
+F
+X
+j=1
+W k
+ijvk
+i hj +
+D
+X
+i=1
+K
+X
+k=1
+vk
+i bk
+i +
+F
+X
+j=1
+hjaj
+1
+A
+P✓(vk
+i = 1|h) =
+exp
+⇣
+bk
+i + PF
+j=1 hjW k
+ij
+⌘
+PK
+q=1 exp
+⇣
+bq
+i + PF
+j=1 hjW q
+ij
+⌘
+0	  
+0	  
+1	  
+0	  
+0	  
+(Salakhutdinov & Hinton, NIPS 2010, Srivastava & Salakhutdinov, NIPS 2012)
+[Courtesy,	  R.	  Salakhutdinov]	  

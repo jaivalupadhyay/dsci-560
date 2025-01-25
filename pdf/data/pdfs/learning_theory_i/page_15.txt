@@ -1,0 +1,16 @@
+Sample Complexity for Supervised Learning
+Consistent Learner
+Example:
+H is the class of conjunctions over X = 0,1 n.
+E.g., h = x1 x3x5 or h = x1 x2x4𝑥9
+|H| = 3n
+Then 𝑚≥
+1
+𝜖𝑛ln 3 + ln
+1
+𝛿
+suffice
+𝑛= 10, 𝜖= 0.1, 𝛿= 0.01 then 𝑚≥156 suffice
+• Output: Find h in H consistent with the sample (if one exits). 
+•
+Input: S: (x1,c*(x1)),…, (xm,c*(xm))

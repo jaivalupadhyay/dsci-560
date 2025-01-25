@@ -1,0 +1,15 @@
+Version Spaces. Region of Disagreement 
+current version space 
+Version space: part of H consistent with labels so far. 
++ 
++ 
+E.g.,: data lies on 
+circle in R2, H = 
+homogeneous 
+linear seps. 
+x ∈X, x ∈DIS(VS H ) iff ∃h1, h2 ∈VS(H), h1 x ≠h2(x) 
+Region of disagreement = part of data space about which there 
+is still some uncertainty (i.e. disagreement within version space) 
+Definition (CAL’92) 
+region of disagreement 
+in data space 

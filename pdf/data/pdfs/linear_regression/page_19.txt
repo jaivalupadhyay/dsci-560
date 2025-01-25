@@ -1,0 +1,13 @@
+Regression 
+So far, we’ve been interested in learning P(Y|X) where Y has 
+discrete values (called ‘classification’) 
+ 
+What if Y is continuous? (called ‘regression’) 
+• 
+predict weight from gender, height, age, … 
+• 
+predict Google stock price today from Google, Yahoo, 
+MSFT prices yesterday 
+• 
+predict each pixel intensity in robot’s current camera 
+image, from previous image and previous action 

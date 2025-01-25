@@ -1,0 +1,18 @@
+27 
+You should know: 
+•  Well posed function approximation problems: 
+–  Instance space, X 
+–  Sample of labeled training data { <x(i), y(i)>} 
+–  Hypothesis space, H = { f: XàY } 
+•  Learning is a search/optimization problem over H 
+–  Various objective functions 
+•  minimize training error (0-1 loss)  
+•  among hypotheses that minimize training error, select smallest (?) 
+•  Decision tree learning 
+–  Greedy top-down learning of decision trees (ID3, C4.5, ...) 
+–  Overfitting and tree/rule post-pruning 
+–  Extensions… 
+Questions to think about (1) 
+•  ID3 and C4.5 are heuristic algorithms that 
+search through the space of decision trees.  
+Why not just do an exhaustive search? 

@@ -1,0 +1,20 @@
+Labeled Examples  
+Learning 
+Algorithm
+Expert/Oracle
+Data 
+Source
+Alg.outputs
+c* : X ! Y
+h : X ! Y
+(x1,c*(x1)),…, (xm,c*(xm))
+•
+Algo sees training sample S: (x1,c*(x1)),…, (xm,c*(xm)), xi independently 
+and identically distributed (i.i.d.) from D; labeled by 𝑐∗
+Distribution D on X(x1,…,xm)
+•
+Does optimization over S, finds hypothesis h (e.g., a decision tree).
+•
+Goal: h has small error over D.
+PAC/SLT models for Supervised Learning
+Today: Y={-1,1}

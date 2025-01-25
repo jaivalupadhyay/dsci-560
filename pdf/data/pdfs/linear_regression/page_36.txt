@@ -1,0 +1,6 @@
+Sources of error 
+•  What if we have only n training examples? 
+•  What is our expected error 
+– Taken over random training sets of size n, 
+drawn from distribution D=p(x,y)
+ 

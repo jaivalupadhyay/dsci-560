@@ -1,0 +1,37 @@
+Adaboost (Adaptive Boosting) 
+•
+For t=1,2, … ,T 
+ 
+•
+Construct 𝐃𝐭 on {𝐱𝟏, …, 𝒙𝐦} 
+•
+Run A on Dt producing ht 
+Dt+1 puts half of weight on examples 
+xi where ht is incorrect & half on 
+examples where ht is correct  
+•
+Weak learning algorithm A. 
+𝐷𝑡+1 𝑖= 𝐷𝑡𝑖
+𝑍𝑡 e −𝛼𝑡   if 𝑦𝑖= ℎ𝑡𝑥𝑖  
+ 𝐷𝑡+1 𝑖= 𝐷𝑡𝑖
+𝑍𝑡 e 𝛼𝑡   if 𝑦𝑖≠ℎ𝑡𝑥𝑖  
+ 
+Constructing 𝐷𝑡 
+[i.e., D1 𝑖=
+1
+𝑚] 
+•
+Given Dt and ht set 
+𝛼𝑡= 1
+2 ln 1 −𝜖𝑡
+𝜖𝑡
+> 0 
+Final hyp: Hfinal 𝑥= sign  𝛼𝑡ℎ𝑡𝑥
+𝑡
+ 
+•
+ D1 uniform on {x1, …, xm} 
+𝐷𝑡+1 𝑖= 𝐷𝑡𝑖
+𝑍𝑡
+ e −𝛼𝑡𝑦𝑖 ℎ𝑡𝑥𝑖
+   

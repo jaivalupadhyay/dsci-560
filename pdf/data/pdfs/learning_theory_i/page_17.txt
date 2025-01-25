@@ -1,0 +1,11 @@
+Sample Complexity for Supervised Learning
+Assume k bad hypotheses h1, h2, … , hk with errD hi ≥ϵ
+Proof
+1)  Fix hi. Prob. hi consistent with first training example is
+Prob. hi consistent with first m training examples is ≤1 −ϵ m. 
+2) Prob. that at least one ℎ𝑖consistent with first m training 
+examples is
+3) Calculate value of m so that H 1 −ϵ m ≤δ
+3) Use the fact that 1 −x ≤e−x, sufficient to set H e−ϵm ≤δ
+≤k 1 −ϵ m ≤H 1 −ϵ m.
+≤1 −ϵ. 

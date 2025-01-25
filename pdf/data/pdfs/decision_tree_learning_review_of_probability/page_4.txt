@@ -1,0 +1,5 @@
+Function approximation as Search 
+for the best hypothesis 
+•  ID3 performs heuristic 
+search through space of 
+decision trees 

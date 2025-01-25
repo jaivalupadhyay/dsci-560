@@ -1,0 +1,14 @@
+Semi-Supervised Learning 
+Prominent paradigm in past 15 years in Machine Learning. 
+ 
+Unlabeled data useful if we have beliefs not only about 
+the form of the target, but also about its relationship 
+with the underlying distribution. 
+Key Insight 
+– Transductive SVM [Joachims ’99] 
+ 
+– Co-training [Blum & Mitchell ’98] 
+ 
+– Graph-based methods [B&C01], [ZGL03] 
+Prominent techniques 
+ 

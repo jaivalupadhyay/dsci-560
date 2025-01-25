@@ -1,0 +1,14 @@
+Co-training: Self-consistency 
+My Advisor 
+Prof. Avrim Blum 
+My Advisor 
+Prof. Avrim Blum 
+x1- Text info 
+x2- Link info 
+x - Link info & Text info 
+x = h x1, x2 i 
+Agreement between two parts : co-training [Blum-Mitchell98]. 
+-  examples contain two sufficient sets of features, x = h x1, x2 i  
+For example, if we want to classify web pages: 
+-  belief: the parts are consistent, i.e. 9 c1, c2 s.t. c1(x1)=c2(x2)=c*(x) 
+as faculty member homepage or not 

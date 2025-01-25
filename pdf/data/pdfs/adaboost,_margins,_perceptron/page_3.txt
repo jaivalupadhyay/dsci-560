@@ -1,0 +1,55 @@
+Adaboost (Adaptive Boosting) 
+•
+For t=1,2, … ,T 
+ 
+•
+Construct Dt on {x1, …, xm} 
+•
+Run A on Dt producing ht: 𝑋→{−1,1} 
+xi ∈𝑋, 𝑦𝑖∈𝑌= {−1,1} 
++ 
++ 
++ 
++ 
++ 
++ 
++ 
++ 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+ht 
+Output Hfinal 𝑥= sign  
+𝛼𝑡ℎ𝑡𝑥
+𝑡=1
+ 
+Input: S={(x1, 𝑦1), …,(xm, 𝑦m)};  
+weak learning algo A (e.g., Naïve Bayes, decision stumps) 
+Dt+1 puts half of weight on examples 
+xi where ht is incorrect & half on 
+examples where ht is correct  
+𝐷𝑡+1 𝑖= 𝐷𝑡𝑖
+𝑍𝑡 e −𝛼𝑡   if 𝑦𝑖= ℎ𝑡𝑥𝑖  
+ 𝐷𝑡+1 𝑖= 𝐷𝑡𝑖
+𝑍𝑡 e 𝛼𝑡   if 𝑦𝑖≠ℎ𝑡𝑥𝑖  
+ 
+[i.e., D1 𝑖=
+1
+𝑚] 
+•
+Given Dt and ht set 
+𝛼𝑡= 1
+2 ln 1 −𝜖𝑡
+𝜖𝑡
+> 0 
+•
+ D1 uniform on {x1, …, xm} 
+𝐷𝑡+1 𝑖= 𝐷𝑡𝑖
+𝑍𝑡
+ e −𝛼𝑡𝑦𝑖 ℎ𝑡𝑥𝑖
+   

@@ -1,0 +1,10 @@
+Pick a few points at random from the current 
+region of uncertainty and query their labels. 
+current version space 
+region of 
+uncertainy 
+Algorithm:  
+Disagreement Based Active Learning [CAL92] 
+Note: it is active since we do not waste labels by querying 
+in regions of space we are certain about the labels. 
+Stop when region of uncertainty is small. 

@@ -1,0 +1,17 @@
+Model	  Learning	  
+Diﬃcult	  to	  compute:	  exponen4ally	  many	  	  
+conﬁgura4ons	  
+Image	  	  	  	  	  	  visible	  units	  
+	  	  Hidden	  units	  
+Given	  a	  set	  of	  i.i.d.	  training	  examples	  	  
+	  
+	  
+	  
+	  	  	  	  	  	  	  	  	  	  	  	  	  	  ,	  we	  want	  to	  learn	  	  
+model	  parameters
+	  
+	  
+	  	  	  	  	  	  .	  	  	  	  
+Maximize	  log-­‐likelihood	  objec4ve:	  
+Deriva4ve	  of	  the	  log-­‐likelihood:	  
+[Courtesy,	  R.	  Salakhutdinov]	  

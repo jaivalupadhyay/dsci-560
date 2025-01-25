@@ -1,0 +1,4 @@
+The Perceptron Algorithm 
+• Online Learning Model 
+• Margin Analysis 
+• Kernels 

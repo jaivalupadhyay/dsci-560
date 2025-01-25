@@ -1,0 +1,4 @@
+Theorem: If data linearly separable by margin 𝛾 and points inside 
+a ball of radius 𝑅, then Perceptron makes ≤𝑅/𝛾2 mistakes. 
+Implies that large margin classifiers have 
+smaller complexity! 

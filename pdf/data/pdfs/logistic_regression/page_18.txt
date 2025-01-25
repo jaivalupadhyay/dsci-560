@@ -1,0 +1,6 @@
+Maximize Conditional Log Likelihood:          
+Gradient Ascent 
+Gradient ascent algorithm: iterate until change < ε
+   For all i, repeat 
+ 
+    

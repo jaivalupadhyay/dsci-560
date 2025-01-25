@@ -1,0 +1,6 @@
+What You Should Know 
+• Principal Component Analysis  (PCA) 
+• Kernel PCA 
+• What PCA is, what is useful for. 
+• Both the maximum variance subspace and the 
+minimum reconstruction error viewpoint. 

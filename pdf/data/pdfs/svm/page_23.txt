@@ -1,0 +1,5 @@
+One of the most theoretically well motivated 
+and practically most eﬀective classiﬁcation 
+algorithms in machine learning. 
+Support Vector Machines (SVMs).  
+Directly  motivated by Margins and Kernels! 

@@ -1,0 +1,11 @@
+Bayesian Networks Definition 
+A Bayes network represents the joint probability distribution 
+over a collection of random variables 
+ 
+A Bayes network is a directed acyclic graph and a set of 
+conditional probability distributions (CPD’s) 
+•  Each node denotes a random variable 
+•  Edges denote dependencies 
+•  For each node Xi its CPD defines P(Xi | Pa(Xi))
+•  The joint distribution over all variables is defined to be 
+Pa(X) = immediate parents of X in the graph 

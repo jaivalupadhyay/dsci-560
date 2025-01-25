@@ -1,0 +1,7 @@
+Definition of Conditional 
+Probability 
+                     P(A ^ B)  
+P(A|B)  =  ----------- 
+                    P(B)  
+Corollary: The Chain Rule 
+P(A ^ B) = P(A|B) P(B)  

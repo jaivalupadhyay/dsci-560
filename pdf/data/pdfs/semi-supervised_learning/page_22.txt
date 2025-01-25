@@ -1,0 +1,12 @@
+my advisor 
+Idea: Use unlabeled data to  propagate learned information. 
+ 
+Idea: Use small labeled sample to learn initial rules. 
+•
+E.g., “my advisor” pointing to a page is a good indicator it is a 
+faculty home page. 
+ 
+•
+E.g., “I am teaching” on a page is a good indicator it is a faculty 
+home page. 
+Iterative Co-Training 

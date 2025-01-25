@@ -1,0 +1,13 @@
+Naïve Bayes uses assumption that the Xi are conditionally 
+independent, given Y.   E.g., 
+ 
+Given this assumption, then: 
+ 
+ 
+ 
+ 
+in general: 
+ 
+How many parameters to describe P(X1…Xn|Y)?  P(Y)? 
+•  Without conditional indep assumption? 
+•  With conditional indep assumption? 

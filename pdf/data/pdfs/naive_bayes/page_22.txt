@@ -1,0 +1,11 @@
+Example: Live in Sq Hill?  P(S|G,D,B) 
+• 
+S=1 iff live in Squirrel Hill 
+• 
+G=1 iff shop at SH Giant Eagle 
+• 
+D=1 iff Drive or carpool to CMU 
+• 
+B=1 iff Birthday is before July 1 
+ 
+What probability parameters must we estimate? 

@@ -1,0 +1,7 @@
+Gaussian 
+Distribution 
+(also called “Normal”) 
+ 
+p(x) is a probability 
+density function, whose 
+integral (not sum) is 1 

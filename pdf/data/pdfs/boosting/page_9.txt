@@ -1,0 +1,23 @@
+Weak Learning vs Strong/PAC Learning 
+Strong (PAC) Learning 
+• ∃ algo A 
+• ∀ 𝑐∈𝐻 
+• ∀𝐷 
+• ∀ 𝜖> 0 
+• ∀ 𝛿> 0 
+• A produces h s.t.: 
+Weak Learning 
+• ∃ algo A 
+• ∃𝛾> 0 
+• ∀ 𝑐∈𝐻 
+• ∀𝐷 
+• ∀ 𝜖>
+1
+2 −𝛾 
+• ∀ 𝛿> 0 
+• A produces h s.t. 
+Pr 𝑒𝑟𝑟ℎ≥𝜖≤𝛿  
+Pr 𝑒𝑟𝑟ℎ≥𝜖≤𝛿  
+•
+[Kearns & Valiant ’88]:  defined weak learning & 
+posed an open pb of finding a boosting algo. 

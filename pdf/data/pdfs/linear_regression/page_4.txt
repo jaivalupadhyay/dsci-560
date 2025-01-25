@@ -1,0 +1,8 @@
+MAP estimates and Regularization 
+•  Maximum a posteriori estimate with prior W~N(0,σI) 
+called a “regularization” term 
+•  helps reduce overfitting, especially when training 
+data is sparse 
+•  keep weights nearer to zero (if P(W) is zero mean 
+Gaussian prior), or whatever the prior suggests 
+•  used very frequently in Logistic Regression 

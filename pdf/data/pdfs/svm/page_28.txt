@@ -1,0 +1,10 @@
+Active Learning 
+face   
+O 
+O 
+O 
+Expert  
+Labeler 
+raw data Learning AlgorithmUnlabeled data
+Classifier 
+not face   

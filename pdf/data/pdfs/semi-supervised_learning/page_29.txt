@@ -1,0 +1,9 @@
+Co-training [BM’98] 
+Say that ℎ1 is a weakly-useful predictor if 
+Pr ℎ1 𝑥= 1 𝑐1 𝑥= 1 > Pr ℎ1 𝑥= 1 𝑐1 𝑥= 0 + 𝛾. 
+Theorem: if 𝐶 is learnable from random classification noise, we can 
+use a weakly-useful ℎ1 plus unlabeled data to create a strong 
+learner under independence given the label. 
+Say we have enough labeled data to produce such a starting point.  
+Has higher probability of saying positive on a true positive than it 
+does on a true negative, by at least some gap 𝛾 

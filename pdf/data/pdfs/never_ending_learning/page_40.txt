@@ -1,0 +1,34 @@
+ 
+     Feature = Typed Path 
+     CityInState, CityInstate-1, CityLocatedInCountry               0.8                          0.32 
+     AtLocation-1, AtLocation, CityLocatedInCountry                0.6                          0.20 
+      …                                                                                       …                             … 
+Pittsburgh  
+Pennsylvania 
+Philadelphia 
+Harisburg 
+…(14) 
+U.S. 
+Feature Value 
+Logistic  
+Regresssion 
+Weight 
+CityLocatedInCountry(Pittsburgh) = U.S.    p=0.58 
+Delta 
+PPG 
+AtLocation 
+Atlanta 
+Dallas 
+Tokyo 
+Japan 
+CityLocatedInCountry(Pittsburgh) = ?  
+CityLocatedInCountry 
+1.  Tractable   
+(bounded length) 
+2.  Anytime 
+3.  Accuracy increases as 
+KB grows 
+4.  combines probabilities 
+from different horn 
+clauses 
+[Lao, Mitchell, Cohen, EMNLP 2011] 

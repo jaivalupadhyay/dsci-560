@@ -1,0 +1,20 @@
+K-means++ Initialization: D2 sampling [AV07] 
+•
+Choose 𝐜𝟏 at random. 
+•
+Pick 𝐜𝐣 among 𝐱𝟏, 𝐱𝟐, … , 𝐱𝐝 according to the distribution 
+•
+For j = 2, … , k 
+•
+Interpolate between random and furthest point initialization 
+𝐏𝐫(𝐜𝐣= 𝐱𝐢) ∝𝐦𝐢𝐧𝐣′<𝐣 
+𝐱𝐢−𝐜𝐣′
+𝟐
+ 
+•
+Let D(x) be the distance between a point 𝑥 and its nearest 
+center. Chose the next center proportional to D2(𝐱). 
+D2(𝐱𝐢) 
+Theorem: K-means++ always attains an O(log k) approximation to 
+optimal k-means solution in expectation. 
+Running Lloyd’s can only further improve the cost. 

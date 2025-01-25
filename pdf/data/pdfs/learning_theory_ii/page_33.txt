@@ -1,0 +1,11 @@
+Uniform Convergence 
+•
+ This basic result only bounds the chance that a bad hypothesis looks 
+perfect on the data. What if there is no perfect h∈H (agnostic case)? 
+•
+What can we say if c∗∉H? 
+•
+ Can we say that whp all h∈H satisfy |errD(h) – errS(h)| ≤ ? 
+– Called “uniform convergence”. 
+– Motivates optimizing over S, even if we can’t find a 
+perfect function. 

@@ -1,0 +1,9 @@
+3 
+Learning to detect objects in images 
+Example training images 
+for each orientation 
+(Prof. H. Schneiderman) 
+Learn to classify the 
+word a person is 
+thinking about, based 
+on fMRI brain activity 

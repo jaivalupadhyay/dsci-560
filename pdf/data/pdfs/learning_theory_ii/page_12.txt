@@ -1,0 +1,21 @@
+What if H is infinite? 
+E.g., linear separators in Rd 
++ 
+- 
++ 
++ 
++ 
+- 
+- 
+- 
+- 
+- 
+E.g., intervals on the real line 
+a b 
++ 
+- 
+- 
+E.g., thresholds on the real line 
+w 
++ 
+- 

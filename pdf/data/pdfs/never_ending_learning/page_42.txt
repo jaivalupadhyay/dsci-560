@@ -1,0 +1,8 @@
+Opportunity:  
+   Can infer more if we start with more  
+   densely connected knowledge graph 
+à  as NELL learns, it will become more dense 
+à  augment knowledge graph with a second 
+graph of corpus statistics:  
+    <subject, verb, object> triples 
+[Gardner et al, 2014] 

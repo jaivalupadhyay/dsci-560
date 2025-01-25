@@ -1,0 +1,110 @@
+Transductive Support Vector Machines 
+argminw w
+2 + 𝐶 𝜉𝑖
+𝑖
+ + 𝐶  𝜉𝑢
+ 
+𝑢
+ 
+•
+yi w ⋅xi ≥1-𝜉𝑖, for all i ∈{1, … , ml}  
+ Su={x1, …,xmu} 
+•
+ yi w ⋅xu ≥1 − 𝜉𝑢
+ , for all u ∈{1, … , mu}  
+•
+ yu
+ ∈{−1, 1} for all u ∈{1, … , mu}   
+0 
++ 
++ 
++ + 
+- 
+- 
+- 
+0 
++ 
+- 
+- 
+- 
+- 
+w’ 
+𝑤’ ⋅𝑥= −1 
+𝑤’ ⋅𝑥= 1 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+ Input: Sl={(x1, y1), …,(xml, yml)}  
+Find a labeling of the unlabeled sample and 𝑤 s.t. 𝑤 separates both 
+labeled and unlabeled data with maximum margin. 
+Optimize for the separator with large margin wrt labeled and 
+unlabeled data. [Joachims ’99] 

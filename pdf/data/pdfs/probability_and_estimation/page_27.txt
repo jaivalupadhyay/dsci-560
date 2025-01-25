@@ -1,0 +1,8 @@
+Summary:  
+Maximum Likelihood Estimate 
+X=1 
+X=0 
+P(X=1) = θ 
+P(X=0) = 1-θ 
+(Bernoulli) 
+ 

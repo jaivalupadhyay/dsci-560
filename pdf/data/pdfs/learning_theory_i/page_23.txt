@@ -1,0 +1,11 @@
+Hoeffding bounds
+Consider coin of bias p flipped m times.  
+Let N be the observed # heads.  Let ∈[0,1].
+Hoeffding bounds:
+• Pr[N/m > p + ] ≤e-2m2, and
+• Pr[N/m < p - ] ≤e-2m2.
+•
+Tail inequality: bound probability mass in tail of 
+distribution (how concentrated is a random variable 
+around its expectation).
+Exponentially decreasing tails

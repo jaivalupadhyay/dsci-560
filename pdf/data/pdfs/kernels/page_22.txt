@@ -1,0 +1,36 @@
+•
+Set t=1, start with the all zero vector 𝑤1. 
+Kernelizing  the Perceptron Algorithm 
+•
+Given example 𝑥, predict + iff 𝑤𝑡⋅𝑥≥0 
+•
+On a mistake, update as follows: 
+•
+Mistake on positive, 𝑤𝑡+1 ←𝑤𝑡+ 𝑥 
+•
+Mistake on negative, 𝑤𝑡+1 ←𝑤𝑡−𝑥 
+Easy to kernelize since 𝑤𝑡 is weighted sum of incorrectly 
+classified examples 𝑤𝑡= 𝑎𝑖1𝑥𝑖1 + ⋯+ 𝑎𝑖𝑘𝑥𝑖𝑘 
+𝑤𝑡⋅𝑥= 𝑎𝑖1𝑥𝑖1 ⋅𝑥+ ⋯+ 𝑎𝑖𝑘𝑥𝑖𝑘⋅𝑥 
+X 
+X 
+X 
+X 
+X 
+X 
+X X 
+X 
+X 
+O 
+O 
+O 
+O 
+O 
+O 
+O 
+O 
+w 
+Replace 
+Note: need to store all the mistakes so far. 
+with 
+𝑎𝑖1 𝐾(𝑥𝑖1, 𝑥) + ⋯+ 𝑎𝑖𝑘𝐾(𝑥𝑖𝑘, 𝑥) 

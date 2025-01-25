@@ -1,0 +1,10 @@
+Maria-Florina Balcan 
+03/30/2015 
+Semi-Supervised Learning  
+Readings:  
+•
+Semi-Supervised Learning. Encyclopedia of Machine 
+Learning. Jerry Zhu, 2010 
+•
+Combining Labeled and Unlabeled Data with Co-
+Training. Avrim Blum, Tom Mitchell. COLT  1998. 

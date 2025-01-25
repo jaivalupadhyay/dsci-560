@@ -1,0 +1,2 @@
+Maximize Conditional Log Likelihood:          
+Gradient Ascent 

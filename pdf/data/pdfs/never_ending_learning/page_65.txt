@@ -1,0 +1,12 @@
+Summary 
+1.  Use coupled training for semi-supervised learning 
+2.  Datamine the KB to learn probabilistic inference rules 
+3.  Automatically extend ontology 
+4.  Use staged learning curriculum  
+New directions: 
+•  Self-reflection, self-estimates of accuracy (A. Platanios) 
+•  Incorporate vision with NEIL (Abhinav Gupta) 
+•  Microreading (Jayant Krishnamurthy, Ndapa Nakashole) 
+•  Aggressive ontology expansion (Derry Wijaya) 
+•  Portuguese NELL (Estevam Hrushka) 
+•  never-ending learning phones?  robots?  traffic lights? 

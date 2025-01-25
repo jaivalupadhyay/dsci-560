@@ -1,0 +1,9 @@
+EM Algorithm - Precisely 
+EM is a general procedure for learning from partly observed data 
+Given  observed variables X, unobserved Z  (X={F,A,H,N}, Z={S}) 
+Define 
+Iterate until convergence: 
+•  E Step: Use X and current θ to calculate P(Z|X,θ) 
+•  M Step: Replace current θ by  
+Guaranteed to find local maximum. 
+Each iteration increases   

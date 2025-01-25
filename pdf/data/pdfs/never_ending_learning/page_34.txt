@@ -1,0 +1,19 @@
+ 
+     Feature = Typed Path 
+     CityInState, CityInstate-1, CityLocatedInCountry               0.8                          0.32 
+     
+Pittsburgh  
+Pennsylvania 
+Philadelphia 
+Harisburg 
+…(14) 
+U.S. 
+Feature Value 
+Logistic  
+Regresssion 
+Weight 
+CityLocatedInCountry(Pittsburgh) = ?  
+ 
+Pr(U.S. | Pittsburgh, TypedPath) 
+ 
+[Lao, Mitchell, Cohen, EMNLP 2011] 

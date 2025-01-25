@@ -1,0 +1,13 @@
+Mistake bound model 
+• Example arrive sequentially. 
+The Online Learning Model 
+• We need to make a prediction. 
+Afterwards observe the outcome. 
+• Analysis wise, make no distributional assumptions. 
+• Goal: Minimize the number of mistakes. 
+Online Algorithm 
+Example 𝑥𝑖 
+Prediction ℎ(𝑥𝑖) 
+Phase i: 
+Observe c∗(𝑥𝑖) 
+For i=1, 2, …, : 

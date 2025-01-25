@@ -1,0 +1,21 @@
+• 
+Natural greedy approaches where we grow the tree from the root to the 
+leaves by repeatedly replacing an existing leaf with an internal node. 
+• 
+Key point: splitting criterion. 
+• 
+ID3: split the leaf that decreases the entropy the most. 
+• 
+Why not split according to error rate --- this is what we care 
+about after all? 
+• 
+There are examples where you can get stuck!!! 
+Top Down Decision Trees Algorithms 
+• 
+[Kearns-Mansour’96]: if measure of progress is entropy, we can 
+always guarantees success under some formal relationships 
+between the class of splits and the target (the class of splits can 
+weakly approximate the target function).   
+• 
+Provides a way to think about the effectiveness of 
+various top down algos. 

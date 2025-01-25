@@ -1,0 +1,3 @@
+Some experiments 
+from UCI data sets 
+[Ng & Jordan, 2002]  

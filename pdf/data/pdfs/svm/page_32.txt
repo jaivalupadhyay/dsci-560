@@ -1,0 +1,19 @@
+Combining Labeled and Unlabeled Data 
+• Several methods have been developed to try to use 
+unlabeled data to improve performance, e.g.: 
+– Transductive SVM [Joachims ’99] 
+ 
+– Co-training [Blum & Mitchell ’98] 
+ 
+– Graph-based methods [B&C01], [ZGL03] 
+Test of 
+time awards 
+at ICML! 
+Workshops  [ICML ’03, ICML’ 05, …] 
+•
+Semi-Supervised Learning, MIT 2006 
+O. Chapelle, B. Scholkopf and A. Zien (eds)  
+Books: 
+•
+Introduction to Semi-Supervised Learning, 
+Morgan & Claypool, 2009 Zhu  & Goldberg 

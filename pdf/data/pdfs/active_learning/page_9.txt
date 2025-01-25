@@ -1,0 +1,22 @@
+Batch Active Learning 
+          A Label for that Example 
+Request for the Label of an Example 
+          A Label for that Example 
+Request for the Label of an Example 
+Data Source 
+Unlabeled 
+examples 
+. . .  
+Algorithm outputs a classifier w.r.t D 
+Learning 
+Algorithm 
+Expert  
+•
+Learner can choose specific examples to be labeled.  
+ 
+•
+Goal:  use fewer labeled examples 
+ 
+[pick informative examples to be labeled]. 
+Underlying data 
+distr. D. 

@@ -1,0 +1,9 @@
+PCA Discussion 
+Strengths 
+21 
+Eigenvector method 
+No tuning of the parameters 
+No local optima 
+Weaknesses 
+Limited to second order statistics 
+Limited to linear projections 

@@ -1,0 +1,7 @@
+Estimating Error from Unlabeled Data 
+1.  IF f1 , f2 ,  f3 make indep. errors, accuracies > 0.5 
+     THEN  
+        à  
+ 
+2. but if errors not independent 
+     

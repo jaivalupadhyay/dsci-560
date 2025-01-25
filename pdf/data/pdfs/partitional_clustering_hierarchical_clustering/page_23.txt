@@ -1,0 +1,2 @@
+Recompute optimal centers given a fixed clustering 
+Lloyd’s method: Random Initialization 

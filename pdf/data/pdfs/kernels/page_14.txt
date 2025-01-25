@@ -1,0 +1,16 @@
+Overview of Kernel Methods 
+What is a Kernel? 
+A kernel K is a legal def of dot-product: i.e. there exists an 
+implicit mapping Φ s.t. K(    ,     ) =Φ(    )⋅Φ(    )  
+Why Kernels matter? 
+•
+ Many algorithms interact with data only via dot-products. 
+•
+So, if replace x ⋅z with K x, z  they act implicitly as if data  
+was in the higher-dimensional Φ-space. 
+•
+If data is linearly separable by large margin in the Φ-space, 
+then good sample complexity.  
+E.g., K(x,y) = (x ¢ y + 1)d 
+: (n-dimensional space) ! nd-dimensional space 
+[Or other regularity properties for controlling the capacity.] 

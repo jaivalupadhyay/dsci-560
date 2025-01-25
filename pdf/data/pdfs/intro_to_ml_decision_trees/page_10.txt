@@ -1,0 +1,20 @@
+10 
+Kirstin Early 
+•  Analyzing and predicting  
+energy consumption 
+•  Reduce costs/usage and help  
+people make informed decisions 
+Energy disaggregation: 
+decomposing total electric signal  
+into individual appliances 
+Predicting energy costs 
+from features of home  
+and occupant behavior 
+Ahmed Hefny 
+•  How can we learn to track and predict the state of a 
+dynamical system only from noisy observations ?  
+•   Can we exploit supervised learning  methods to devise a 
+flexible, local minima-free approach ? 
+observations (oscillating pendulum) 
+Extracted 2D state 
+trajectory 

@@ -1,0 +1,17 @@
+0	  
+0	  
+1	  
+0	  
+0	  
+Dense,	  real-­‐valued	  
+image	  features	  
+Word	  
+counts	  
+Gaussian	  model	  
+Replicated	  Soemax	  
+Mul4modal	  DBM	  
+Bolom-­‐up	  
++	  
+Top-­‐down	  
+(Srivastava & Salakhutdinov, NIPS 2012, JMLR 2014)	  
+[Courtesy,	  R.	  Salakhutdinov]	  

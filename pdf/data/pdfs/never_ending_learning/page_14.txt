@@ -1,0 +1,9 @@
+NP: 
+person 
+ 
+Type 1 Coupling: Co-Training, Multi-View Learning 
+ 
+Coupled training of 2 functions: 
+ 
+Minimize:  
+ 

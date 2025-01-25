@@ -1,0 +1,16 @@
+Tom Mitchell, April 2011 
+Overview 
+•
+Different from ML pbs so far: decisions we make will be 
+about actions to take, such as a robot deciding which way 
+to move next, which will influence what we see next.   
+ 
+•
+Our decisions influence the next example we see.  
+ 
+•
+Goal will be not just to predict (say, whether there is a 
+door in front of us or not) but to decide what to do.  
+ 
+•
+Model: Markov Decision Processes.  

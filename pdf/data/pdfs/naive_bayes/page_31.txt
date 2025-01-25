@@ -1,0 +1,5 @@
+Learning to classify text documents 
+•  Classify which emails are spam? 
+•  Classify which emails promise an attachment? 
+•  Classify which web pages are student home pages? 
+How shall we represent text documents for Naïve Bayes? 

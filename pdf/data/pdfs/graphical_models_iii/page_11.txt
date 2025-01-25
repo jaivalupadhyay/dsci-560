@@ -1,0 +1,13 @@
+Generating a sample from  
+joint distribution: easy  
+ 
+Note we can estimate marginals 
+like P(N=n) by generating many samples 
+from joint distribution, then count the fraction of samples 
+for which N=n 
+ 
+Similarly, for anything else we care about  
+ P(F=1|H=1, N=0) 
+ 
+à weak but general method for estimating any 
+probability term… 

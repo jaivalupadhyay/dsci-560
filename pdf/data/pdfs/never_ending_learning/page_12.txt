@@ -1,0 +1,10 @@
+ hard 
+(underconstrained) 
+semi-supervised 
+learning problem 
+Key Idea 1: Coupled semi-supervised training 
+of many functions 
+much easier (more constrained) 
+semi-supervised learning problem 
+person 
+noun phrase 

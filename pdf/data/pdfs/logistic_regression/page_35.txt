@@ -1,0 +1,4 @@
+What is the minimum possible error? 
+Best case: 
+•  conditional independence assumption is satistied 
+•  we know P(Y), P(X|Y) perfectly (e.g., infinite training data) 

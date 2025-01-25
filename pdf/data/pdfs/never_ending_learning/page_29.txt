@@ -1,0 +1,18 @@
+Inference by KB Random Walks 
+[Lao, Mitchell, Cohen, EMNLP 2011] 
+KB:  
+Random walk 
+path type:  
+logistic function for R(x,y) 
+ 
+where ith feature = probability of arriving at 
+node y starting at node x, and taking a random 
+walk along path of type i 
+Pr( R(x,y) ): 
+x 
+competes 
+with 
+? 
+economic 
+sector 
+y 

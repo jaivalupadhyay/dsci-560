@@ -1,0 +1,10 @@
+A useful theorem 
+•  0 <= P(A) <= 1, P(True) = 1, P(False) = 0, 
+    P(A or B) = P(A) + P(B) - P(A and B) 
+ 
+è P(A) = P(A ^ B) + P(A ^ ~B) 
+ 
+A =  [A and (B or ~B)]  =  [(A and B) or (A and ~B)] 
+P(A) = P(A and B) + P(A and ~B) – P((A and B) and (A and ~B)) 
+P(A) = P(A and B) + P(A and ~B) – P(A and B and A and ~B) 
+ 

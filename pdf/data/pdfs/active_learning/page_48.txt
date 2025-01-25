@@ -1,0 +1,12 @@
+What You Should Know 
+• Active learning could be really helpful, could provide 
+exponential improvements in label complexity (both 
+theoretically and practically)! 
+•
+Common heuristics (e.g., those based on uncertainty 
+sampling). Need to be very careful due to  sampling bias. 
+•
+Safe Disagreement Based Active Learning Schemes. 
+•
+Understand how they operate precisely in noise 
+free scenarios. 

@@ -1,0 +1,3 @@
+What happens if we increase m? 
+Black curve will stay close to the red curve for 
+longer, everything shifts to the right… 

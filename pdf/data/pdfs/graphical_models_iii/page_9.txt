@@ -1,0 +1,11 @@
+Generating a sample from  
+joint distribution: easy  
+How can we generate random samples 
+drawn according to P(F,A,S,H,N)? 
+ 
+Hint: random sample of F according to P(F=1) = θF=1 : 
+•  draw a value of r uniformly from [0,1] 
+•  if r<θ  then output F=1, else F=0 
+ 
+ 
+let’s use p(a,b) as shorthand for p(A=a, B=b) 

@@ -1,0 +1,13 @@
+Images	  Generated	  from	  Text	  
+water,	  red,	  
+sunset	  
+nature,	  ﬂower,	  
+red,	  green	  
+blue,	  green,	  
+yellow,	  colors	  
+chocolate,	  cake	  
+Given
+	  
+	  	  
+Retrieved	  
+[Courtesy,	  R.	  Salakhutdinov]	  

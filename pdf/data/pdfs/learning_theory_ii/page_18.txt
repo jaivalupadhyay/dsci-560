@@ -1,0 +1,15 @@
+Sample Complexity: Infinite Hypothesis Spaces  
+B: ∃ h ∈H with errS h = 0 but errD h ≥ϵ. 
+Very Very 
+Rough Idea: 
+B’: ∃ h ∈H with errS h = 0 but errS′ h ≥ϵ. 
+S= {x1, x2, … , xm} i.i.d. from D 
+S’ ={x1
+′ , … , x𝑚
+′ } another i.i.d. “ghost sample” from D 
+Claim: To bound P(B), sufficient to bound P(B’) 
+. Over S ∪S′ only H[2m] effective hypotheses left… but, no randomness left. 
+•
+H[m] - max number of ways to split m points using concepts in H 
+Need randomness to bound the probability of a bad event, another 
+symmetrization trick….  

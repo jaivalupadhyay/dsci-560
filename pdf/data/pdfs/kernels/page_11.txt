@@ -1,0 +1,30 @@
+Both sample complexity and algorithmic implications. 
+Margin Important Theme in ML. 
+Sample/Mistake Bound complexity: 
+•
+If large margin, # mistakes Peceptron makes 
+is small (independent on the dim of the space)! 
+•
+If large margin 𝛾 and if alg. produces a large 
+margin classifier, then amount of data needed 
+depends only on R/𝛾 [Bartlett & Shawe-Taylor ’99].  
+Algorithmic Implications: 
+•
+Perceptron, Kernels, SVMs… 
++ + 
++ + 
+- 
+- - 
+- 
+- 
+𝛾 
+𝛾 
++ 
+- 
+- 
+- 
+- 
+w 
+•
+Suggests searching for a 
+large margin classifier… 

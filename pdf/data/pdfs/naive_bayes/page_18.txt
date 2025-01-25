@@ -1,0 +1,14 @@
+Naïve Bayes Algorithm – discrete Xi  
+•  Train Naïve Bayes (examples)   
+ for each* value yk
+ 
+ estimate 
+ 
+ for each* value xij of each attribute Xi
+ 
+ 
+ estimate 
+ 
+•  Classify (Xnew)   
+ 
+ * probabilities must sum to 1, so need estimate only n-1 of these... 

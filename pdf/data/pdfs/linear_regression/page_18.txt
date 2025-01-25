@@ -1,0 +1,23 @@
+Machine Learning 10-701 
+ 
+Tom M. Mitchell 
+Machine Learning Department 
+Carnegie Mellon University 
+ 
+February 4, 2015 
+Today: 
+• 
+Linear regression 
+• 
+Decomposition of error into 
+bias, variance, unavoidable 
+Readings: 
+• 
+Mitchell: “Naïve Bayes and 
+Logistic Regression” 
+     (see class website) 
+• 
+Ng and Jordan paper (class 
+website) 
+• 
+Bishop, Ch 9.1, 9.2 

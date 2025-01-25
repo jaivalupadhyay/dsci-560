@@ -1,0 +1,3 @@
+For code and data, see 
+www.cs.cmu.edu/~tom/mlbook.html  
+click on “Software and Data” 

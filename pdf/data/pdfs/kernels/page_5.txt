@@ -1,0 +1,11 @@
+Geometric Margin 
+Definition: The margin of example 𝑥 w.r.t. a linear sep. 𝑤 is the 
+distance from 𝑥 to the plane 𝑤⋅𝑥= 0. 
+𝑥1 
+w 
+Margin of example 𝑥1 
+𝑥2 
+Margin of example 𝑥2 
+If 𝑤
+= 1,  margin of x 
+w.r.t. w is |𝑥⋅𝑤|. 

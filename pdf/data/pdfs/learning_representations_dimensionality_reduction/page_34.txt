@@ -1,0 +1,13 @@
+Independent Component Analysis (ICA) 
+𝑝𝑠1, 𝑠2, … , 𝑠𝐷= 𝑝1 𝑠1 𝑝2 𝑠2 … 𝑝𝑛𝑠𝐷 
+𝒙= 𝑉∙𝒔 
+Find a linear transformation 
+for which coefficients 𝒔= 𝑠1, 𝑠2, … , 𝑠𝐷𝑇 are 
+statistically independent 
+Algorithmically, we need to identify matrix V and coefficients s, 
+s.t. under the condition 𝒙= 𝑉𝑇∙𝒔 the mutual information 
+between 𝑠1, 𝑠2, … , 𝑠𝐷 is minimized: 
+𝐼𝑠1, 𝑠2, … , 𝑠𝐷=  𝐻𝑠𝑖 −𝐻𝑠1, 𝑠2, … , 𝑠𝐷
+𝐷
+𝑖=1
+ 

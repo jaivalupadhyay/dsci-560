@@ -1,0 +1,8 @@
+Learning to classify documents: P(Y|X) 
+ 
+•  Y discrete valued.   
+–  e.g., Spam or not 
+•  X = <X1, X2, … Xn> = document 
+ 
+ 
+•  Xi is a random variable describing… 

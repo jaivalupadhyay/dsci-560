@@ -1,0 +1,25 @@
+Tom Mitchell, April 2011 
+Reinforcement Learning 
+...]
+r
+γ
+r γ
+E[r
+(s)
+V
+2
+t
+2
+1
+t
+t
+*
+
+
+
+
+
+
+[Sutton and Barto 1981; Samuel 1957; ...] 
+Main impact of our actions will not come right away but instead that will 
+only come later.   

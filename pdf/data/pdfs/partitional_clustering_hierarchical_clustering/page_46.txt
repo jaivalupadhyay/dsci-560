@@ -1,0 +1,30 @@
+Single Linkage 
+Bottom-up (agglomerative) 
+•
+Start with every point in its own cluster. 
+•
+Repeatedly merge the “closest” two clusters. 
+1 
+2 
+3 
+4 
+5 
+One way to think of it: at any moment, we see connected components 
+of the graph where connect any two pts of distance < r.  
+0 
+6 
+2.1 
+3.2 
+-2 
+-3 
+A 
+B 
+C 
+D 
+E 
+F 
+Watch as r grows (only n-1 relevant values because we only we merge 
+at value of r corresponding to values of r in different clusters).  
+Single linkage: dist A, 𝐵=
+min
+x∈A,x′∈𝐵dist(x, x′) 

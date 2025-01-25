@@ -1,0 +1,41 @@
+  
+ 
+ 
+  
+ 
+ 
+  
+  
+ 
+ 
+  
+ 
+ 
+  
+can refer to 
+hometown 
+team:penguins 
+city:pittsburgh 
+river flows 
+ 
+ through 
+river:monongahela 
+ “sits astride” 
+ “overlooks” 
+ “enters” 
+ “runs through” 
+ “Pgh” 
+ “Pittsburgh” 
+ “Monongahela” 
+ “Mon river” 
+ “Penguins” 
+ “Pens” 
+ “remain in” 
+ “began in” 
+ “supports” 
+ “reminded” 
+can refer to 
+can refer to 
+NELL:  concepts  and “noun phrases” 
+SVO triples from 500 M dependency parsed web pages (thank you Chris Re!) 
+[Gardner et al, 2014] 

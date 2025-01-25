@@ -1,0 +1,9 @@
+Principal Component Analysis (PCA) 
+Let v1, v2, …, vd denote the d principal components. 
+Wrap constraints into the  
+objective function 
+vi ⋅ vj  = 0, i ≠ j 
+Find vector that maximizes sample variance of projected data 
+and vi ⋅ vi  = 1,  i =  j 
+Let X = [x1, x2, … , xn] (columns are the datapoints) 
+Assume data is centered (we extracted the sample mean). 

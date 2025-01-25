@@ -1,0 +1,9 @@
+What you should know 
+• Shattering, VC dimension as measure of complexity, 
+Sauer’s lemma, form of the VC bounds (upper and lower 
+bounds). 
+• Notion of sample complexity. 
+• Understand reasoning behind the simple sample 
+complexity bound for finite H [exam question!]. 
+• Model Selection, Structural Risk Minimization. 
+• Rademacher Complexity. 

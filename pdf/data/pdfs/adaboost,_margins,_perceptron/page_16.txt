@@ -1,0 +1,13 @@
+• Shift in mindset: goal is now just to find classifiers a 
+bit better than random guessing. 
+• Relevant for big data age: quickly focuses on “core difficulties”, so 
+well-suited to distributed settings, where data must be 
+communicated efficiently [Balcan-Blum-Fine-Mansour COLT’12]. 
+•
+Backed up by solid foundations. 
+•
+Adaboost work and its variations well in practice with 
+many kinds of data (one of the top 10 ML algos). 
+•
+More about classic applications in Recitation. 
+Boosting, Adaboost Summary 

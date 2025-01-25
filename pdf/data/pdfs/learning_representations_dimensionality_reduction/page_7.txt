@@ -1,0 +1,9 @@
+Principal Component Analysis (PCA) 
+Both features are relevant  
+Only one relevant feature 
+Question: Can we transform the features so that we only need to 
+preserve one latent feature?  
+Intrinsically lower dimensional than the 
+dimension of the ambient space. 
+If we rotate data, again only one 
+coordinate is more important. 

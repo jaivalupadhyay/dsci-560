@@ -1,0 +1,32 @@
+Support Vector Machines (SVMs) 
+Question: what if data isn’t perfectly linearly separable? 
+Input: S={(x1, 𝑦1), …,(xm, 𝑦m)};  
+argminw,𝜉1,…,𝜉𝑚 𝑤
+2 + 𝐶 𝜉𝑖
+𝑖
+ s.t.: 
+  •
+For all i, 𝑦𝑖𝑤⋅𝑥𝑖≥1 −𝜉𝑖 
+Find 
+𝜉𝑖≥0 
+Replace “# mistakes” with upper bound called “hinge loss” 
+𝑙𝑤, 𝑥, 𝑦= max (0,1 −𝑦 𝑤⋅𝑥) 
++ + 
++ 
++ 
+- 
+- - 
+- 
+- 
++ 
+- 
+- 
+- 
+- 
+w 
+𝑤⋅𝑥= −1 
+𝑤⋅𝑥= 1 
+𝑤
+2 + 𝐶(# misclassifications)  
+Replace the number of mistakes with 
+the hinge loss 

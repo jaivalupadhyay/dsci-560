@@ -1,0 +1,38 @@
+ 
+ 
+ 
+ 
+ 
+ 
+                     Continually Learning Reading Components 
+Initial NELL Architecture 
+Knowledge Base 
+(latent variables) 
+ 
+ 
+ 
+ 
+ 
+ 
+Text 
+Context 
+patterns 
+(CPL) 
+HTML-URL 
+context 
+patterns 
+(SEAL) 
+Morphology 
+classifier 
+ 
+(CML) 
+ Beliefs 
+Candidate 
+Beliefs 
+Knowledge 
+Integrator 
+ 
+Human 
+advice 
+ 
+ 

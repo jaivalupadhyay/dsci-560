@@ -1,0 +1,18 @@
+Smoothed analysis model 
+•
+Imagine a worst-case input. 
+•
+But then add small Gaussian perturbation to each data point. 
+•
+Theorem [Arthur-Manthey-Roglin 2009]:  
+ 
+•
+Might still find local opt that is far from global opt. 
+-
+E[number of rounds until Lloyd’s converges] if add Gaussian 
+perturbation with variance 𝜎2 is polynomial in 𝑛, 1/𝜎. 
+-
+The actual bound is : 𝑂
+𝑛34𝑘34𝑑8
+𝜎6
+ 

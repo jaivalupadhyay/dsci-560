@@ -1,0 +1,5 @@
+w0 
+left 
+strt 
+right 
+up 

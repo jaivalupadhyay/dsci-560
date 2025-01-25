@@ -1,0 +1,11 @@
+EM Algorithm - Informally 
+EM is a general procedure for learning from partly observed data 
+Given  observed variables X, unobserved Z  (X={F,A,H,N}, Z={S}) 
+ 
+Begin with arbitrary choice for parameters θ 
+Iterate until convergence: 
+•  E Step: estimate the values of unobserved Z, using θ   
+•  M Step: use observed values plus E-step estimates to  
+                derive a better θ
+Guaranteed to find local maximum. 
+Each iteration increases   

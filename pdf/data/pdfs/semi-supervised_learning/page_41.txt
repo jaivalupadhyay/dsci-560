@@ -1,0 +1,13 @@
+What You Should Know 
+•
+Unlabeled data useful if we have beliefs not only about 
+the form of the target, but also about its relationship 
+with the underlying distribution. 
+•
+Different types of algorithms (based on different 
+beliefs). 
+– Transductive SVM [Joachims ’99] 
+ 
+– Co-training [Blum & Mitchell ’98] 
+ 
+– Graph-based methods [B&C01], [ZGL03] 

@@ -1,0 +1,23 @@
+Lower Bound (simpler form) 
+•
+Theorem: For any 𝐻 there exists 𝐷 such that any algorithm 
+needs Ω
+𝑉𝐶𝑑𝑖𝑚𝐻
+𝜖
+ examples to reach error 𝜖 with prob ≥3
+4. 
+•
+Proof: consider 𝑑= 𝑉𝐶𝑑𝑖𝑚(𝐻) shattered points: 
+Prob 1 −4𝜖 
+Prob 4𝜖
+𝑑−1 each 
+•
+Consider target 𝑐∗ that labels these points randomly. 
+•
+Unless I see roughly ½ of the rare points, have error  ≥𝜖 
+•
+Each example has only prob 4𝜖 of being one of the rare points, 
+and need to see 𝑑−1
+2  rare points, so need to see Ω
+𝑑
+𝜖 total. 

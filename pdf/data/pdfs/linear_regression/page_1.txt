@@ -1,0 +1,26 @@
+Machine Learning 10-601 
+ 
+Tom M. Mitchell 
+Machine Learning Department 
+Carnegie Mellon University 
+ 
+February 4, 2015 
+Today: 
+• 
+Generative – discriminative 
+classifiers 
+• 
+Linear regression 
+• 
+Decomposition of error into 
+bias, variance, unavoidable 
+Readings: 
+ 
+• 
+Mitchell: “Naïve Bayes and 
+Logistic Regression” 
+     (required) 
+• 
+Ng and Jordan paper (optional) 
+• 
+Bishop, Ch 9.1, 9.2 (optional) 

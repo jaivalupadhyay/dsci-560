@@ -1,0 +1,14 @@
+Pure EM Approach to Coupled Training 
+E: estimate labels for each 
+function of each unlabeled 
+example 
+ 
+M: retrain all functions, using 
+these probabilistic labels 
+ 
+Scaling problem: 
+•  E step: 25M NP’s,  1014 NP pairs to label 
+•  M step: 50M text contexts to consider for each function à 
+1010 parameters to retrain 
+•  even more URL-HTML contexts… 
+ 

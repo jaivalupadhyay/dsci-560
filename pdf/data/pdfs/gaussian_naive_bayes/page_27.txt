@@ -1,0 +1,18 @@
+Classification task: is person viewing a “tool” or “building”? 
+p4 p8 p6 p11 p5 p7 p10 p9 p2 p12 p3 p1
+0
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+1
+Participants
+statistically 
+significant 
+p<0.05 
+Classification accuracy 

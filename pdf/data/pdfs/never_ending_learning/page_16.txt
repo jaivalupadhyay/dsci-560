@@ -1,0 +1,21 @@
+NELL: Learned reading strategies 
+Mountain:  
+      "volcanic crater of _"  "volcanic eruptions like _"  "volcanic peak of _"  "volcanic 
+region of _"  "volcano , called _"  "volcano called _"  "volcano is called _"  
+"volcano known as _"  "volcano Mt _"  "volcano named _"  "volcanoes , 
+including _"  "volcanoes , like _"  "volcanoes , such as _"  "volcanoes include 
+_"  "volcanoes including _"  "volcanoes such as _"  "We 've climbed _"  
+"weather atop _"  "weather station atop _"  "week hiking in _"  "weekend trip 
+through _"  "West face of _"  "West ridge of _"  "west to beyond _"  "white 
+ledge in _"  "white summit of _"  "whole earth , is _"  "wilderness area 
+surrounding _"  "wilderness areas around _"  "wind rent _"  "winter ascent of _" 
+"winter ascents in _"  "winter ascents of _"  "winter expedition to _"  "wooded 
+foothills of _"  "world famous view of _"  "world famous views of _"  "you 're 
+popping by _"  "you 've just climbed _"  "you just climbed _"  "you’ve climbed _" 
+"_ ' crater"  "_ ' eruption"  "_ ' foothills"  "_ ' glaciers"  "_ ' new dome"  "_ 's Base 
+Camp"  "_ 's drug guide"  "_ 's east rift zone"  "_ 's main summit"  "_ 's North 
+Face"  "_ 's North Peak"  "_ 's North Ridge"  "_ 's northern slopes"  "_ 's 
+southeast ridge"  "_ 's summit caldera"  "_ 's West Face"  "_ 's West Ridge"  "_ 
+'s west ridge"  "_ (D,DDD ft"  ” "_ climbing permits"  "_ climbing safari"  "_ 
+consult el diablo"  "_ cooking planks"  "_ dominates the sky line"  "_ dominates 
+the western skyline"  "_ dominating the scenery” 

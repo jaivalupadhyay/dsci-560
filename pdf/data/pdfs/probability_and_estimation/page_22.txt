@@ -1,0 +1,6 @@
+Case C: (online learning) 
+•  keep flipping, want single learning algorithm 
+that gives reasonable estimate after each flip 
+X=1 
+X=0 
+Estimating θ = P(X=1) 

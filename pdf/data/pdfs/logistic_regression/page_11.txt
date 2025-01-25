@@ -1,0 +1,5 @@
+Training Logistic Regression: MCLE 
+•  we have L training examples: 
+•  maximum likelihood estimate for parameters W 
+•  maximum conditional likelihood estimate 
+ 

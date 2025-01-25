@@ -1,0 +1,88 @@
+RBMs	  for	  Word	  Counts	  
+Pair-­‐wise	  
+Unary	  
+P✓(v, h) =
+1
+Z(✓) exp
+0
+@
+D
+X
+i=1
+K
+X
+k=1
+F
+X
+j=1
+W k
+ijvk
+i hj +
+D
+X
+i=1
+K
+X
+k=1
+vk
+i bk
+i +
+F
+X
+j=1
+hjaj
+1
+A
+P✓(vk
+i = 1|h) =
+exp
+⇣
+bk
+i + PF
+j=1 hjW k
+ij
+⌘
+PK
+q=1 exp
+⇣
+bq
+i + PF
+j=1 hjW q
+ij
+⌘
+0	  
+0	  
+1	  
+0	  
+0	  
+Learned	  features:	  ``topics’’	  
+russian	  
+russia	  
+moscow	  
+yeltsin	  
+soviet	  
+clinton	  
+house	  
+president	  
+bill	  
+congress	  
+computer	  
+system	  
+product	  
+soeware	  
+develop	  
+trade	  
+country	  
+import	  
+world	  
+economy	  
+stock	  
+wall	  
+street	  
+point	  
+dow	  
+Reuters	  dataset:	  
+804,414	  unlabeled	  
+newswire	  stories	  
+Bag-­‐of-­‐Words	  	  
+[Courtesy,	  R.	  Salakhutdinov]	  

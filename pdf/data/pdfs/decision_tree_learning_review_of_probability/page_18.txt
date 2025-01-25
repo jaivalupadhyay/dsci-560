@@ -1,0 +1,17 @@
+   Labeled Examples   
+Supervised Learning or Function Approximation 
+Learning 
+Algorithm 
+Expert / Oracle 
+Data 
+Source 
+Alg.outputs 
+Distribution D on X 
+c* : X ! Y 
+(x1,c*(x1)),…, (xm,c*(xm)) 
+h : X ! Y 
+x1 > 5 
+x6 > 2 
++1 
+-1 
++1 

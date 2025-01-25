@@ -1,0 +1,22 @@
+Tom Mitchell, April 2011 
+•
+Set of states S 
+•
+Set of actions A 
+•
+At each time, agent observes state st  S, then chooses action at  A 
+•
+Then receives reward rt , and state changes to st+1 
+•
+Markov assumption: P(st+1 | st, at, st-1, at-1, ...) = P(st+1 | st, at) 
+•
+Also assume reward Markov:   P(rt | st, at, st-1, at-1,...) = P(rt | st, at) 
+ 
+ 
+•
+The task: learn a policy : S  A for choosing actions that maximizes 
+Markov Decision Process = Reinforcement Learning Setting 
+for every possible starting state s0 
+E.g., if tell robot to move forward one meter, maybe it ends up moving forward 1.5 meters by 
+mistake, so where the robot is at time t+1 can be a probabilistic function of where it was at 
+time t and the action taken, but shouldn’t depend on how we got to that state. 

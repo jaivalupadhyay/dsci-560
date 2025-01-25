@@ -1,0 +1,19 @@
+Co-training/Multi-view SSL: Direct 
+Optimization of Agreement 
+argminh1,h2    l(hl xi , yi)
+ml
+i=1
+2
+l=1
++ C  agreement(h1 xi , h2 xi )
+mu
+i=1
+ 
+ Su={x1, …,xmu} 
+ Input: Sl={(x1, y1), …,(xml, yml)}  
+Each of them has small 
+labeled error 
+Regularizer to encourage 
+agreement over unlabeled dat 
+P. Bartlett, D. Rosenberg, AISTATS 2007;  K. Sridharan, S. Kakade, COLT 2008 
+E.g., 

@@ -1,0 +1,28 @@
+Kernelizing the Dual SVMs  
+•
+Final classifier is: w =  αiyixi
+i
+  
+•
+The points xi for which αi ≠0 are called the “support vectors” 
+•
+With a kernel, classify x using  αiyiK(x, xi)
+i
+ 
+Input: S={(x1, y1), …,(xm, ym)};  
+argminα
+1
+2   yiyj αiαjxi ⋅xj − αi
+i
+j
+i
+ s.t.: 
+  •
+For all i,  
+Find 
+0 ≤αi ≤Ci 
+ yiαi = 0
+i
+ 
+Replace xi ⋅xj 
+with  K xi, xj . 

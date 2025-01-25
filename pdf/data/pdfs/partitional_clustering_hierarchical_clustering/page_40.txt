@@ -1,0 +1,12 @@
+K-means++/ Lloyd’s Summary 
+•
+Exponential # of rounds in the worst case [AV07]. 
+•
+Expected polynomial time in the smoothed analysis model! 
+•
+K-means++ always attains an O(log k) approximation to optimal 
+k-means solution in expectation. 
+•
+Running Lloyd’s can only further improve the cost. 
+•
+Does well in practice. 

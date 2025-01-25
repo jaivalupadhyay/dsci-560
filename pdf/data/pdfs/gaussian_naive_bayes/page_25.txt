@@ -1,0 +1,5 @@
+GNB Example: Classify a person’s 
+cognitive state, based on brain image 
+•  reading a sentence or viewing a picture? 
+•  reading the word describing a “Tool” or “Building”?   
+•  answering the question, or getting confused? 

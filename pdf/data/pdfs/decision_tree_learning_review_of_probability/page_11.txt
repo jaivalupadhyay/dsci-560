@@ -1,0 +1,4 @@
+Overfitting 
+Consider a hypothesis h and its 
+•  Error rate over training data: 
+•  True error rate over all data:  

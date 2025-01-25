@@ -1,0 +1,14 @@
+Training Linear Regression 
+ 
+ 
+ 
+How can we learn W from the training data? 
+ 
+Learn Maximum Conditional Likelihood Estimate! 
+ 
+ 
+ 
+ 
+where 
+ 
+ 

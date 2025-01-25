@@ -1,0 +1,14 @@
+Recap from last time: Boosting 
+•
+Works by creating a series of challenge datasets s.t. even 
+modest performance on these can be used to produce an 
+overall high-accuracy predictor. 
+•
+Works amazingly well in practice. 
+•
+Adaboost one of the top 10 ML algorithms. 
+•
+General method for improving the accuracy of any given 
+learning algorithm. 
+•
+Backed up by solid foundations.  

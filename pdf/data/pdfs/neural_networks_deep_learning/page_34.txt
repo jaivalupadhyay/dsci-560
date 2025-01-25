@@ -1,0 +1,12 @@
+Restricted Boltzman Machine 
+•  Bipartite graph, logistic activation 
+•  Inference: fill in any nodes, estimate other 
+nodes 
+•  consider vi, hj are boolean variables 
+ 
+v1 v2 
+vn 
+… 
+h1 
+h2 
+h3 

@@ -1,0 +1,8 @@
+Expert  
+Labeler 
+Semi-Supervised Learning 
+raw data Learning Algorithm
+face   
+not face 
+Labeled data Unlabeled data
+Classifier 

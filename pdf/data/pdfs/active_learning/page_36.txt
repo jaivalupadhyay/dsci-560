@@ -1,0 +1,3 @@
+Uncertainty Sampling 
+Closest to decision boundary (Active SVM) 
+[Jaime G. Carbonell] 

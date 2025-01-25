@@ -1,0 +1,8 @@
+The Online Learning Model. Motivation 
+- Email classification (distribution of both spam and regular 
+mail changes over time, but the target function stays fixed - 
+last year's spam still looks like spam). 
+- Add placement in a new market. 
+- Recommendation systems. Recommending movies, etc. 
+- Predicting whether a user will be interested in a new news 
+article or not. 

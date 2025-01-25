@@ -1,0 +1,11 @@
+Questions: 
+ 
+•  How can we extend Naïve Bayes if just 2 of the Xi‘s 
+are dependent? 
+•  What does the decision surface of a Naïve Bayes 
+classifier look like? 
+•  What error will the classifier achieve if Naïve Bayes 
+assumption is satisfied and we have infinite training 
+data? 
+•  Can you use Naïve Bayes for a combination of 
+discrete and real-valued Xi?  

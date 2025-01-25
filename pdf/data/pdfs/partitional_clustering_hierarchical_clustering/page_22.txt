@@ -1,0 +1,2 @@
+Assign each point to its nearest center 
+Lloyd’s method: Random Initialization 

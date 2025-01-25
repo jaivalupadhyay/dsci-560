@@ -1,0 +1,11 @@
+Algorithm for Constructing Bayes Network 
+•  Choose an ordering over variables, e.g., X1, X2, ... Xn  
+•  For i=1 to n 
+–  Add Xi to the network 
+–  Select parents Pa(Xi) as minimal subset of X1 ... Xi-1 such that  
+ 
+Notice this choice of parents assures 
+ 
+(by chain rule) 
+(by 
+construction) 

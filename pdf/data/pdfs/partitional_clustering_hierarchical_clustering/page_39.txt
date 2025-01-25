@@ -1,0 +1,16 @@
+K-means++/ Lloyd’s Running Time 
+Repeat until there is no change in the cost. 
+•
+For each j:  Cj ←{𝑥∈𝑆 whose closest center is 𝐜𝐣} 
+•
+For each j: 𝐜𝐣←mean of Cj 
+Each round takes 
+time O(nkd). 
+•
+K-means ++ initialization: O(nd) and one pass over data to 
+select next center. So O(nkd) time in total. 
+• Lloyd’s method 
+•
+Exponential # of rounds in the worst case [AV07]. 
+•
+Expected polynomial time in the smoothed analysis model! 

@@ -1,0 +1,12 @@
+Graphical Models 
+•  Key Idea:  
+–  Conditional independence assumptions useful   
+–  but Naïve Bayes is extreme! 
+–  Graphical models express sets of conditional 
+independence assumptions via graph structure 
+–  Graph structure plus associated parameters define 
+joint probability distribution over set of variables 
+•  Two types of graphical models: 
+–  Directed graphs (aka Bayesian Networks) 
+–  Undirected graphs (aka Markov Random Fields) 
+10-601 

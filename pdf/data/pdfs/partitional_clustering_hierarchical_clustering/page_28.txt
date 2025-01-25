@@ -1,0 +1,2 @@
+Lloyd’s method: Performance 
+.It is arbitrarily worse than optimum solution…. 

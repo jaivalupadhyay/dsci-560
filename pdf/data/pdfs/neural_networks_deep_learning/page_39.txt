@@ -1,0 +1,10 @@
+ZCR	  
+Spectrogram	  
+MFCC	  
+Rolloﬀ	  
+Flux	  
+Representa4on	  Learning:	  
+Can	  we	  automa4cally	  learn	  
+these	  representa4ons?	  
+Audio	  Features	  
+[Courtesy,	  R.	  Salakhutdinov]	  

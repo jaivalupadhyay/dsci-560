@@ -1,0 +1,7 @@
+Nice Features of Adaboost 
+• Very general: a meta-procedure, it can use any weak 
+learning algorithm!!!  
+• Very fast (single pass through data each round) & simple 
+to code, no parameters to tune. 
+• Grounded in rich theory. 
+(e.g., Naïve Bayes, decision stumps) 

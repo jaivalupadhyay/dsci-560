@@ -1,0 +1,10 @@
+How can we learn Bayes Net graph structure? 
+In general case, open problem 
+•  can require lots of data (else high risk of overfitting) 
+•  can use Bayesian methods to constrain search 
+One key result: 
+•  Chow-Liu algorithm: finds “best” tree-structured network   
+•  What’s best? 
+–  suppose P(X) is true distribution, T(X) is our tree-structured 
+network, where X = <X1, … Xn>  
+–  Chow-Liu minimizes Kullback-Leibler divergence: 

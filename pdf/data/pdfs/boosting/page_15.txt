@@ -1,0 +1,2 @@
+Adaboost: A toy example 
+Weak classifiers:  vertical or horizontal half-planes (a.k.a. decision stumps) 

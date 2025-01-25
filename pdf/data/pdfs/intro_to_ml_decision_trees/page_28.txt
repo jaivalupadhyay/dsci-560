@@ -1,0 +1,12 @@
+28 
+Questions to think about (2) 
+•  Consider target function f: <x1,x2> à y, 
+where x1 and x2 are real-valued, y is 
+boolean.  What is the set of decision surfaces 
+describable with decision trees that use each 
+attribute at most once? 
+Questions to think about (3) 
+•  Why use Information Gain to select attributes 
+in decision trees?  What other criteria seem 
+reasonable, and what are the tradeoffs in 
+making this choice?   

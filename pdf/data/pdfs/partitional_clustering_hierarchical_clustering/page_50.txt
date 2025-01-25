@@ -1,0 +1,13 @@
+Running time 
+In fact, can run all these algorithms in time 𝑂(𝑁2 log 𝑁). 
+•
+Each algorithm starts with N clusters, and performs N-1 merges.  
+•
+For each algorithm, computing 𝑑𝑖𝑠𝑡(𝐶, 𝐶′) can be done in time 
+𝑂( 𝐶⋅𝐶′ ).  (e.g., examining 𝑑𝑖𝑠𝑡(𝑥, 𝑥′) for all 𝑥∈𝐶, 𝑥′ ∈𝐶′) 
+•
+Time to compute all pairwise distances and take smallest is 𝑂(𝑁2). 
+See: Christopher D. Manning, Prabhakar Raghavan and Hinrich Schütze, Introduction to 
+Information Retrieval, Cambridge University Press. 2008. http://www-nlp.stanford.edu/IR-book/ 
+•
+Overall time is 𝑂(𝑁3). 

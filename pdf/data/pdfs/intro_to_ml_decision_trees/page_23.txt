@@ -1,0 +1,10 @@
+23 
+Overfitting 
+Consider a hypothesis h and its 
+•  Error rate over training data: 
+•  True error rate over all data:  
+ 
+We say h overfits the training data if 
+ 
+ 
+Amount of overfitting =  

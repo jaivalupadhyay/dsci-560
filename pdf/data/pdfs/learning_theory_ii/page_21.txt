@@ -1,0 +1,12 @@
+Shattering, VC-dimension 
+A set of points S is shattered by H is there are hypotheses in H 
+that split S in all of the 2|𝑆| possible ways, all possible ways of 
+classifying points in S are achievable using concepts in H. 
+Definition: 
+The VC-dimension of a hypothesis space H is the cardinality of 
+the largest set S that can be shattered by H. 
+Definition: 
+If arbitrarily large finite sets can be shattered by H, then 
+VCdim(H) = ∞ 
+VC-dimension (Vapnik-Chervonenkis dimension) 
+H shatters S if |H S | = 2|𝑆|. 

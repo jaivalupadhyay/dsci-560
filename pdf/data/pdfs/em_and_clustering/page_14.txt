@@ -1,0 +1,4 @@
+Usupervised clustering 
+ 
+Just extreme case for EM with 
+zero labeled examples… 

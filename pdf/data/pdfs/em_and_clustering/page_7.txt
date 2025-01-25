@@ -1,0 +1,15 @@
+EM and estimating   
+Flu 
+Allergy 
+Sinus 
+Headache 
+Nose 
+More generally,  
+Given observed set X, unobserved set Z of boolean values 
+E step:  Calculate for each training example, k  
+ the expected value of each unobserved variable in  
+ each training example 
+   
+M step: 
+Calculate     similar to MLE estimates, but 
+replacing each count by its expected count 

@@ -1,0 +1,18 @@
+4 
+Learning prosthetic control from 
+neural implant 
+[R. Kass 
+L. Castellanos 
+A. Schwartz] 
+Machine Learning - Practice 
+Object recognition 
+Mining Databases 
+Speech Recognition 
+Control learning 
+•  Support Vector Machines 
+•  Bayesian networks 
+•  Hidden Markov models 
+•  Deep neural networks 
+•  Reinforcement learning 
+•  .... 
+Text analysis 

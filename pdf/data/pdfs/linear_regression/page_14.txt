@@ -1,0 +1,14 @@
+Naïve Bayes vs. Logistic Regression 
+The bottom line: 
+ 
+GNB2 and LR both use linear decision surfaces, GNB need not 
+ 
+Given infinite data, LR is better than GNB2 because training 
+procedure does not make assumptions 1 or 2 (though our 
+derivation of the form of P(Y|X) did). 
+ 
+But GNB2 converges more quickly to its perhaps-less-accurate 
+asymptotic error 
+ 
+And GNB is both more biased (assumption1) and less (no 
+assumption 2) than LR, so either might beat the other 

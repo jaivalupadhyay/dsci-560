@@ -1,0 +1,31 @@
+Unlabeled 
+example 𝑥3 
+Unlabeled 
+example 𝑥1 
+Unlabeled 
+example 𝑥2 
+Selective Sampling Active Learning 
+Request for 
+label or let it 
+go? 
+Data Source 
+Learning 
+Algorithm 
+Expert  
+Request label 
+A label 𝑦1for example 𝑥1 
+Let it 
+go 
+Algorithm outputs a classifier w.r.t D 
+Request label 
+A label 𝑦3for example 𝑥3 
+•
+Selective sampling AL (Online AL): stream of unlabeled examples, 
+when each arrives make a decision to ask for label or not. 
+ 
+•
+Goal:  use fewer labeled examples 
+ 
+[pick informative examples to be labeled]. 
+Underlying data 
+distr. D. 

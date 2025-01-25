@@ -1,0 +1,13 @@
+Learned	  W:	  	  “edges”	  
+Subset	  of	  1000	  features	  
+Learning	  Features	  
+=	  
+….	  
+New	  Image:	  
+Logis4c	  Func4on:	  Suitable	  for	  
+modeling	  binary	  images	  
+Sparse	  
+representa8ons	  
+Observed	  	  Data	  	  
+Subset	  of	  25,000	  characters	  
+[Courtesy,	  R.	  Salakhutdinov]	  

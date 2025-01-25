@@ -1,0 +1,24 @@
+Bottom-Up (agglomerative) 
+•  Single linkage: 
+dist A, 𝐵=
+min
+x∈A,x′∈B′ dist(x, x′) 
+dist A, B =
+avg
+x∈A,x′∈B′ dist(x, x′) 
+soccer 
+sports 
+fashion 
+Gucci 
+tennis  
+Lacoste  
+All topics 
+Have a distance measure on pairs of objects. 
+d(x,y) – distance between x and y 
+•  Average linkage: 
+•  Complete linkage: 
+•  Wards’ method 
+E.g., # keywords in common, edit distance, etc 
+dist A, B =
+max
+x∈A,x′∈B′ dist(x, x′) 

@@ -1,0 +1,17 @@
+SSL using soft cuts 
+[ZhuGhahramaniLafferty’03] 
+ 
+Similar nodes get 
+similar labels 
+(weighted similarity) 
+Agreement with labels  
+(agreement not strictly enforces) 
+Solve for label function 𝑓𝑥∈0,1  to minimize: 
+𝐽𝑓=
+ 
+𝑤𝑖𝑗𝑓𝑥𝑖−𝑓(𝑥𝑗)
+2 +
+𝑒𝑑𝑔𝑒𝑠 (𝑖,𝑗)
+ 𝜆𝑓𝑥𝑖−𝑦𝑖2
+𝑥𝑖∈𝐿
+ 

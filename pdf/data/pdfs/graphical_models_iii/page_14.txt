@@ -1,0 +1,15 @@
+Learning CPTs from Fully Observed Data 
+Flu 
+Allergy 
+Sinus 
+Headache 
+Nose 
+kth training 
+example 
+δ(x) = 1 if x=true,  
+       =  0 if x=false 
+•  Example: Consider learning 
+the parameter 
+•  Max Likelihood Estimate is 
+•  Remember why? 
+let’s use p(a,b) as shorthand for p(A=a, B=b) 

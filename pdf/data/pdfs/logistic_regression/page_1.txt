@@ -1,0 +1,23 @@
+Machine Learning 10-601 
+ 
+Tom M. Mitchell 
+Machine Learning Department 
+Carnegie Mellon University 
+ 
+February 2, 2015 
+Today: 
+• 
+Logistic regression 
+• 
+Generative/Discriminative 
+classifiers 
+Readings: (see class website) 
+ 
+Required: 
+• 
+Mitchell: “Naïve Bayes and 
+Logistic Regression”  
+ 
+Optional 
+• 
+Ng & Jordan 

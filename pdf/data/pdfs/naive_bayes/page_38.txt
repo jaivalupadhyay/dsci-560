@@ -1,0 +1,10 @@
+What you should know: 
+•  Training and using classifiers based on Bayes rule 
+•  Conditional independence 
+–  What it is 
+–  Why it’s important 
+•  Naïve Bayes 
+–  What it is 
+–  Why we use it so much 
+–  Training using MLE, MAP estimates 
+–  Discrete variables and continuous (Gaussian) 

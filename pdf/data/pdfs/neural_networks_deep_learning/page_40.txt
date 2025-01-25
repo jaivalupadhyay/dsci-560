@@ -1,0 +1,16 @@
+Restricted	  Boltzmann	  Machines	  
+RBM	  is	  a	  Markov	  Random	  Field	  with:	  
+• 	  Stochas4c	  binary	  hidden	  variables	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  
+• 	  Bipar4te	  connec4ons.	  
+Pair-­‐wise	  
+Unary	  
+• 	  Stochas4c	  binary	  visible	  variables	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  
+Markov	  random	  ﬁelds,	  Boltzmann	  machines,	  log-­‐linear	  models.	  	  
+Image	  	  	  	  	  	  visible	  variables	  
+	  	  hidden	  variables	  
+Graphical	  Models:	  Powerful	  
+framework	  for	  represen4ng	  
+dependency	  structure	  between	  
+random	  variables.	  
+Feature	  Detectors	  
+[Courtesy,	  R.	  Salakhutdinov]	  

@@ -1,0 +1,10 @@
+Covariance 
+Given two discrete r.v.’s X and Y, we define the 
+covariance of X and Y as 
+ 
+ 
+e.g., X=gender, Y=playsFootball 
+or     X=gender, Y=leftHanded 
+ 
+ 
+Remember: 

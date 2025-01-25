@@ -1,0 +1,15 @@
+Kernel PCA  
+•
+Key Idea: Replace inner product matrix by kernel matrix 
+PCA: 1
+𝑛𝑋⊤𝑋𝑋⊤𝑋𝛼= 𝜆𝑋⊤𝑋𝛼 
+Let 𝐾= 𝐾𝑥𝑖, 𝑥𝑗
+𝑖𝑗 be the matrix of all dot-products 
+in the 𝜙-space. 
+Kernel PCA: replace “𝑋𝑇𝑋” with 𝐾. 
+•
+Key computation: form an 𝑛 by 𝑛  kernel matrix 𝐾, and 
+then perform eigen-decomposition on 𝐾.  
+1
+𝑛𝐾𝐾𝛼= 𝜆𝐾𝛼, or equivalently,  1
+𝑛𝐾𝛼= 𝜆 𝛼 

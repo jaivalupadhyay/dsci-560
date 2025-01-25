@@ -1,0 +1,8 @@
+Image	  
+Low-­‐level	  features:	  
+Edges	  
+Input:	  Pixels	  
+Built	  from	  unlabeled	  inputs.	  	  
+Deep	  Boltzmann	  Machines	  
+(Salakhutdinov & Hinton, Neural Computation 2012)
+[Courtesy,	  R.	  Salakhutdinov]	  

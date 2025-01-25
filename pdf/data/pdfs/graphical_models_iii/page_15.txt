@@ -1,0 +1,8 @@
+MLE estimate of         from fully observed data 
+•  Maximum likelihood estimate 
+•  Our case: 
+Flu 
+Allergy 
+Sinus 
+Headache 
+Nose 

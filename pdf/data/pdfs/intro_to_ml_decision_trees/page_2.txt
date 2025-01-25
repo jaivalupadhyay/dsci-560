@@ -1,0 +1,9 @@
+2 
+Learning to Predict Emergency C-Sections 
+9714 patient records, 
+each with 215 features 
+[Sims et al., 2000] 
+Learning to classify text documents 
+spam 
+ vs 
+not spam 

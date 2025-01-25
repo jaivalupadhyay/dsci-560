@@ -1,0 +1,11 @@
+Maria-Florina Balcan 
+04/06/2015 
+Clustering.  
+Unsupervised Learning 
+Additional resources: 
+•
+Center Based Clustering: A Foundational Perspective.  
+     Awasthi, Balcan. Handbook of Clustering Analysis. 2015.  
+Reading: 
+•
+Chapter 14.3: Hastie, Tibshirani, Friedman. 

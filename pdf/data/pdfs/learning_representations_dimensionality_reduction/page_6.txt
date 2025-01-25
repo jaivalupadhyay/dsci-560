@@ -1,0 +1,7 @@
+Principal Component Analysis (PCA) 
+What is PCA: Unsupervised technique for extracting 
+variance structure from high dimensional datasets. 
+•
+PCA  is an orthogonal projection or transformation  of the data 
+into a (possibly lower dimensional) subspace so that the variance 
+of the projected data is maximized. 

@@ -1,0 +1,13 @@
+•  Train Naïve Bayes (examples)   
+ for each value yk
+ 
+ estimate* 
+ 
+ for each attribute Xi estimate  
+•  class conditional mean        , variance        
+ 
+•  Classify (Xnew)   
+ 
+Gaussian Naïve Bayes Algorithm – continuous Xi   
+(but still discrete Y) 
+ * probabilities must sum to 1, so need estimate only n-1 parameters... 

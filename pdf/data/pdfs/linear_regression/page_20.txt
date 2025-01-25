@@ -1,0 +1,9 @@
+Regression 
+Wish to learn f:XàY, where Y is real, given {<x1,y1>…<xn,yn>} 
+ 
+Approach: 
+ 
+1.  choose some parameterized form for P(Y|X; θ) 
+( θ is the vector of parameters) 
+ 
+2.  derive learning algorithm as MCLE or MAP estimate for θ 

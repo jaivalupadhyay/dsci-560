@@ -1,0 +1,10 @@
+Input: A set of n datapoints 𝐱𝟏, 𝐱𝟐, … , 𝐱𝒏 in Rd 
+Euclidean k-means Clustering 
+target #clusters k 
+Output: k representatives 𝒄𝟏, 𝐜𝟐, … , 𝒄𝒌∈Rd 
+Objective: choose 𝒄𝟏, 𝐜𝟐, … , 𝒄𝒌∈Rd to minimize 
+∑i=1 
+n minj∈1,…,k
+𝐱𝐢−𝐜𝐣
+2
+ 

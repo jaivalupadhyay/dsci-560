@@ -1,0 +1,13 @@
+Lloyd’s method: Performance 
+•
+For k equal-sized Gaussians, Pr[each initial center is in a 
+different Gaussian] ≈𝑘!
+𝑘𝑘≈1
+𝑒𝑘 
+•
+Becomes unlikely as k gets large.  
+•
+If we do random initialization, as k increases, it becomes 
+more likely we won’t have perfectly picked one center per 
+Gaussian in our initialization (so Lloyd’s method will output 
+a bad solution). 

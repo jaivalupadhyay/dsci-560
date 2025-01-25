@@ -1,0 +1,19 @@
+Analyzing Training Error 
+Theorem 𝜖𝑡= 1/2 −𝛾𝑡 (error of ℎ𝑡 over 𝐷𝑡) 
+𝑒𝑟𝑟𝑆𝐻𝑓𝑖𝑛𝑎𝑙≤exp  −2  𝛾𝑡
+2
+𝑡
+ 
+So, if  ∀𝑡, 𝛾𝑡≥𝛾> 0, then 𝑒𝑟𝑟𝑆𝐻𝑓𝑖𝑛𝑎𝑙≤exp  −2 𝛾2𝑇 
+Adaboost is adaptive 
+•
+Does not need to know 𝛾 or T a priori 
+•
+Can exploit  𝛾𝑡≫ 𝛾 
+The training error drops exponentially in T!!! 
+To get 𝑒𝑟𝑟𝑆𝐻𝑓𝑖𝑛𝑎𝑙≤𝜖, need only 𝑇= 𝑂
+1
+𝛾2 log
+1
+𝜖
+ rounds  

@@ -1,0 +1,42 @@
+NELL: subcategories discovered by reading 
+Animal: 
+• 
+Pets 
+–  Hamsters, Ferrets, Birds, Dog, Cats, 
+Rabbits, Snakes, Parrots, Kittens, … 
+• 
+Predators 
+–  Bears, Foxes, Wolves, Coyotes, 
+Snakes, Racoons, Eagles, Lions, 
+Leopards, Hawks, Humans, … 
+Chemical: 
+• 
+Fossil fuels 
+–  Carbon, Natural gas, Coal, Diesel, 
+Monoxide, Gases, … 
+• 
+Gases 
+–  Helium, Carbon dioxide, Methane, 
+Oxygen, Propane, Ozone, Radon…  
+Learned reading patterns: 
+"arg1 and other medium sized arg2"  
+"arg1 and other jungle arg2”  "arg1 and 
+other magnificent arg2" "arg1 and other 
+pesky arg2" "arg1 and other mammals 
+and arg2"  "arg1 and other Ice Age 
+arg2" "arg1 or other biting arg2" "arg1 
+and other marsh arg2"  "arg1 and other 
+migrant arg2”  "arg1 and other 
+monogastric arg2"  "arg1 and other 
+mythical arg2"  "arg1 and other nesting 
+Learned reading patterns: 
+"arg1 and other hydrocarbon arg2”  "arg1 
+and other aqueous arg2”  "arg1 and other 
+hazardous air arg2"  "arg1 and oxygen 
+are arg2”   "arg1 and such synthetic arg2” 
+"arg1 as a lifting arg2"  "arg1 as a tracer 
+arg2"  "arg1 as the carrier arg2”  "arg1 as 
+the inert arg2"  "arg1 as the primary 
+cleaning arg2”  "arg1 and other noxious 
+arg2"  "arg1 and other trace arg2"   "arg1 
+as the reagent arg2"  "arg1 as the tracer 

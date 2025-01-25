@@ -1,0 +1,31 @@
+5 
+Machine Learning - Theory 
+PAC Learning Theory 
+# examples (m) 
+representational 
+complexity (H) 
+error rate (ε) 
+failure 
+probability (δ) 
+Other theories for 
+•  Reinforcement skill learning 
+•  Semi-supervised learning 
+•  Active student querying 
+•  … 
+… also relating: 
+•  # of mistakes during learning 
+•  learner’s query strategy 
+•  convergence rate 
+•  asymptotic performance 
+•  bias, variance 
+(supervised concept learning) 
+Machine Learning in Computer Science 
+•  Machine learning already the preferred approach to 
+–  Speech recognition, Natural language processing 
+–  Computer vision 
+–  Medical outcomes analysis 
+–  Robot control 
+–  … 
+•  This ML niche is growing (why?) 
+All software apps. 
+ML apps. 

@@ -1,0 +1,18 @@
+Structural Risk Minimization (SRM) 
+As k increases, errS h k  goes down but complex. term goes up. 
+•
+𝐻1 ⊆𝐻2 ⊆𝐻3 ⊆⋯⊆𝐻𝑖⊆…  
+•
+ h k = argminh∈Hk{errS h } 
+•
+ 𝑘 = argmink≥1{errS h k + complexity(Hk)} 
+Output ℎ = ℎ 𝑘  
+Claim: W.h.p., errD h ≤mink∗minh∗∈Hk∗errD h∗+ 2complexity Hk∗
+ 
+Proof: 
+•
+We chose h  s.t. errs h + complexity Hk ≤errS h∗+ complexity(Hk∗). 
+•
+Whp, errD h ≤errs h + complexity Hk . 
+•
+Whp, errS h∗≤errD h∗+ complexity Hk∗. 

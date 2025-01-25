@@ -1,0 +1,10 @@
+Estimating Error from Unlabeled Data 
+1.  IF f1 , f2 ,  f3 make indep. errors, and accuracies > 0.5 
+     THEN  
+        à  
+ 
+Measure errors from unlabeled data: 
+ - use unlabeled data to estimate a12, a13, a23 
+ - solve three equations for three unknowns e1, e2, e3 
+ 
+   

@@ -1,0 +1,10 @@
+Chow-Liu Algorithm 
+1.  for each pair of vars A,B, use data to estimate P(A,B),  
+P(A), P(B) 
+ 
+2.  for each pair of vars A,B calculate mutual information 
+3.  calculate the maximum spanning tree over the set of 
+variables, using edge weights I(A,B) 
+ (given N vars, this costs only O(N2) time) 
+4.  add arrows to edges to form a directed-acyclic graph 
+5.  learn the CPD’s for this graph 

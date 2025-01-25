@@ -1,0 +1,41 @@
+11 
+Micol Marchetti-Bowick 
+How can we use machine learning for 
+biological and medical research? 
+•  Using genotype data to build personalized 
+models that can predict clinical outcomes 
+•  Integrating data from multiple sources to 
+perform cancer subtype analysis 
+•  Structured sparse regression models for 
+genome-wide association studies 
+x
+y
+x
+y
+x
+y
+x
+y
+x
+y
+x
+y
+x
+y
+y
+x
+x
+y
+sample weight
+genetic relatedness
+Gene expression data 
+w/ dendrogram (or have 
+one picture per task) 
+Willie Neiswanger 
+•  If we want to apply machine learning 
+    algorithms to BIG datasets… 
+•  How can we develop parallel, low-communication machine 
+learning algorithms? 
+ 
+•  Such as embarrassingly parallel algorithms, where machines 
+work independently, without communication. 

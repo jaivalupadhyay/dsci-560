@@ -1,0 +1,7 @@
+Bayes rule: 
+Assuming conditional independence among Xi’s: 
+ 
+ 
+So, to pick most probable Y for Xnew = < X1, …, Xn >  
+ 
+Naïve Bayes in a Nutshell 

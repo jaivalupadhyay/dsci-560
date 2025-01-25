@@ -1,0 +1,16 @@
+Very Large Scale Use of DBN’s 
+Data: 10 million 200x200 unlabeled images, sampled from YouTube 
+Training: use 1000 machines (16000 cores) for 1 week 
+Learned network: 3 multi-stage layers, 1.15 billion parameters 
+Achieves 15.8% (was 9.5%) accuracy classifying 1 of 20k ImageNet items 
+[Quoc Le, et al., ICML, 2012] 
+Real 
+images 
+that most 
+excite the 
+feature: 
+Image 
+synthesized 
+to most 
+excite the 
+feature: 

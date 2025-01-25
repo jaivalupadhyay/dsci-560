@@ -1,0 +1,16 @@
+P(B|A) * P(A) 
+P(B) 
+P(A|B) = 
+Bayes, Thomas (1763) An essay 
+towards solving a problem in the doctrine 
+of chances. Philosophical Transactions of 
+the Royal Society of London, 53:370-418 
+…by no means merely a curious speculation in the doctrine of chances, 
+but necessary to be solved in order to a sure foundation for all our 
+reasonings concerning past facts, and what is likely to be hereafter…. 
+necessary to be considered by any that would give a clear account of the 
+strength of analogical or inductive reasoning… 
+Bayes’ rule 
+we call P(A) the “prior” 
+ 
+and P(A|B) the “posterior” 

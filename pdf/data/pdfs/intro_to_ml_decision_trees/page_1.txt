@@ -1,0 +1,22 @@
+1 
+Machine Learning 10-601 
+ 
+Tom M. Mitchell 
+Machine Learning Department 
+Carnegie Mellon University 
+ 
+January 12, 2015 
+Today: 
+•  What is machine learning? 
+•  Decision tree learning 
+•  Course logistics 
+Readings: 
+•  “The Discipline of ML” 
+•  Mitchell, Chapter 3 
+•  Bishop, Chapter 14.4 
+Machine Learning: 
+Study of algorithms that 
+•  improve their performance P 
+•  at some task T 
+•  with experience E 
+well-defined learning task: <P,T,E> 

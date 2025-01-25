@@ -1,0 +1,16 @@
+Tom Mitchell, April 2011 
+Value Iteration for learning V* : assumes P(St+1|St, A) known 
+Initialize V(s) to 0 
+For t=1, 2, … [Loop until policy good enough] 
+   Loop for s in S 
+Loop for a in A 
+•    
+  
+   End loop 
+End loop 
+V(s) converges to V*(s) 
+Dynamic programming 
+[optimal value can get in zero steps] 
+each round we are computing the value of performing the optimal t-step policy starting 
+from t=0, then t=1, t=2, etc, and since 𝛾𝑡 goes to 0, once t is large enough this will be 
+close to the optimal value 𝑉∗ for the infinite-horizon case. 

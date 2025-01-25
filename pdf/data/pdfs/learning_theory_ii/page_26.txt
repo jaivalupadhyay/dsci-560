@@ -1,0 +1,10 @@
+Shattering, VC-dimension 
+VCdim H < 4 
+Case 1: one point inside the triangle formed by 
+the others. Cannot label inside point as positive 
+and outside points as negative. 
+Case 2: all points on the boundary (convex hull).  
+Cannot label two diagonally as positive and other 
+two as negative. 
+Fact: VCdim of linear separators in Rd is d+1 
+E.g., H= linear separators in R2 

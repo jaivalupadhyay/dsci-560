@@ -1,0 +1,2 @@
+Rate of covergence: naïve Bayes parameters 
+[Ng & Jordan, 2002] 

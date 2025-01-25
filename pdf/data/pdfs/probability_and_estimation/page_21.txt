@@ -1,0 +1,9 @@
+Estimating θ = P(X=1) 
+Test A:  
+  100 flips: 51 Heads (X=1), 49 Tails (X=0) 
+ 
+ 
+Test B:  
+  3 flips:  2 Heads (X=1), 1 Tails (X=0) 
+X=1 
+X=0 

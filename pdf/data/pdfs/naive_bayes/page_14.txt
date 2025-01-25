@@ -1,0 +1,11 @@
+Naïve Bayes uses assumption that the Xi are conditionally 
+independent, given Y.   E.g., 
+ 
+Given this assumption, then: 
+ 
+ 
+ 
+ 
+in general: 
+ 
+ 

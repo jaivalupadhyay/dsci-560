@@ -1,0 +1,8 @@
+Logistic regression more generally
+•  Logistic regression when Y not boolean (but 
+still discrete-valued).  
+•  Now y ∈ {y1 ... yR} : learn R-1 sets of weights 
+ for k<R 
+ 
+ 
+ for k=R 

@@ -1,0 +1,38 @@
+•
+Set t=1, start with the all zero vector 𝑤1. 
+Perceptron Algorithm in Online Model 
+•
+Given example 𝑥, predict + iff 𝑤𝑡⋅𝑥≥0 
+•
+On a mistake, update as follows: 
+•
+Mistake on positive, 𝑤𝑡+1 ←𝑤𝑡+ 𝑥 
+•
+Mistake on negative, 𝑤𝑡+1 ←𝑤𝑡−𝑥 
+Note 1:  wt is weighted sum of incorrectly classified examples 
+𝑤𝑡= 𝑎𝑖1𝑥𝑖1 + ⋯+ 𝑎𝑖𝑘𝑥𝑖𝑘 
+So, 𝑤𝑡⋅𝑥= 𝑎𝑖1𝑥𝑖1 ⋅𝑥+ ⋯+ 𝑎𝑖𝑘𝑥𝑖𝑘⋅𝑥 
+X 
+X 
+X 
+X 
+X 
+X 
+X X 
+X 
+X 
+O 
+O 
+O 
+O 
+O 
+O 
+O 
+O 
+w 
+Note 2:  Number of mistakes ever made depends only on the 
+geometric margin of examples seen. 
+WLOG  homogeneous linear separators [w0 = 0]. 
+•
+No matter how long the sequence is or how high dimension n is! 
+X = Rn 

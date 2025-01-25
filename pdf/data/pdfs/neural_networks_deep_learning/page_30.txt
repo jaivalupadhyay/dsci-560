@@ -1,0 +1,8 @@
+original image 
+reconstructed from 
+2000-1000-500-30 DBN 
+ reconstructed from  
+2000-300, linear PCA 
+[Hinton & Salakhutdinov, 2006] 
+Deep Belief Networks 
+versus 

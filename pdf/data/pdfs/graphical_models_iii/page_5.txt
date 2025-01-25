@@ -1,0 +1,12 @@
+Inference in Bayes Nets 
+•  In general, intractable (NP-complete) 
+•  For certain cases, tractable 
+–  Assigning probability to fully observed set of variables 
+–  Or if just one variable unobserved 
+–  Or for singly connected graphs (ie., no undirected loops) 
+•  Belief propagation 
+•  Sometimes use Monte Carlo methods 
+–  Generate many samples according to the Bayes Net 
+distribution, then count up the results 
+•  Variational methods for tractable approximate 
+solutions 

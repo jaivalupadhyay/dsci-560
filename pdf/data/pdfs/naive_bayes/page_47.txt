@@ -1,0 +1,9 @@
+fMRI voxel means for “bottle”: means defining P(Xi | Y=“bottle) 
+Mean fMRI activation over all stimuli: 
+“bottle” minus mean activation: 
+fMRI 
+activation  
+high 
+below 
+average 
+average 

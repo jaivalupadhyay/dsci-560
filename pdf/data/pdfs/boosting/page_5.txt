@@ -1,0 +1,20 @@
+•
+Boosting: meta-procedure that takes in an algo for finding rules 
+of thumb (weak learner). Produces a highly accurate rule, by calling 
+the weak learner repeatedly on cleverly chosen datasets. 
+ 
+An Example: Spam Detection 
+•
+apply weak learner to a subset of emails,  obtain rule of thumb 
+•
+apply to 2nd subset of emails, obtain 2nd rule of thumb 
+•
+apply to 3rd subset of emails, obtain 3rd rule of thumb 
+•
+repeat T times; combine weak rules into a single highly accurate rule. 
+𝒉𝟏 
+𝒉𝟐 
+𝒉𝟑 
+𝒉𝑻 
+… 
+Emails 

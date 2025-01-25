@@ -1,0 +1,16 @@
+Sample Complexity for Supervised Learning
+Consistent Learner
+•
+𝜖is called error parameter
+•
+𝛿is called confidence parameter
+•
+there is a small chance the examples we get are not representative of 
+the distribution
+•
+D might place low weight on certain parts of the space
+• Output: Find h in H consistent with the sample (if one exits). 
+•
+Input: S: (x1,c*(x1)),…, (xm,c*(xm))
+Bound inversely linear in 𝜖
+Bound only logarithmic in |H|

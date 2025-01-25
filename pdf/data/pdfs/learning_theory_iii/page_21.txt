@@ -1,0 +1,26 @@
+Rademacher Complex: Binary classification 
+Theorem: For any H, any distr. D, w.h.p. ≥1 −𝛿 all h ∈H satisfy: 
+Fact: 
+So, by Sauer’s lemma, RS F ≤
+2dln em
+d
+m
+ 
+RS F ≤
+ln 2|H[S]|
+m
+ 
+errD h ≤errS h +
+2dln em
+d
+m
++  3 ln 2/δ
+2m
+ 
+Many more uses!!! Margin bounds for SVM, boosting, 
+regression bounds, etc. 
+errD h ≤errS h + Rm H + 3 ln 2/δ
+2m
+. 
+generalization bound 
+ H = {h:  X →Y} hyp. space (e.g., lin. sep) F= L(H), d=VCdim(H): 

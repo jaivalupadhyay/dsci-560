@@ -1,0 +1,13 @@
+Transductive Support Vector Machines 
+Optimize for the separator with large margin wrt labeled and 
+unlabeled data. 
+ Heuristic (Joachims) high level idea: 
+Keep going until no more improvements. Finds a locally-optimal solution. 
+•
+First maximize margin over the labeled points 
+•
+Use this to give initial labels to unlabeled points 
+based on this separator. 
+•
+Try flipping labels of unlabeled points to see if doing 
+so can increase margin 

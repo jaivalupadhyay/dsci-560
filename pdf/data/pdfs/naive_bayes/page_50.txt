@@ -1,0 +1,9 @@
+Expected values 
+Given discrete random variable X, the expected value of 
+X, written E[X] is 
+ 
+ 
+ 
+ 
+We also can talk about the expected value of functions 
+of X 

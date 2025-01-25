@@ -1,0 +1,14 @@
+Gaussian	  model	  
+Replicated	  Soemax	  
+0	  
+0	  
+1	  
+0	  
+0	  
+Mul4modal	  DBM	  
+Word	  
+counts	  
+Dense,	  real-­‐valued	  
+image	  features	  
+(Srivastava & Salakhutdinov, NIPS 2012, JMLR 2014)	  
+[Courtesy,	  R.	  Salakhutdinov]	  

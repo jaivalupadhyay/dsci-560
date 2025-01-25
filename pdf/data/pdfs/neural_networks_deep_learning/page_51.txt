@@ -1,0 +1,12 @@
+Image	  
+Higher-­‐level	  features:	  
+Combina4on	  of	  edges	  
+Low-­‐level	  features:	  
+Edges	  
+Input:	  Pixels	  
+Built	  from	  unlabeled	  inputs.	  	  
+Deep	  Boltzmann	  Machines	  
+Learn	  simpler	  representa4ons,	  
+then	  compose	  more	  complex	  ones	  
+(Salakhutdinov 2008, Salakhutdinov & Hinton 2012)
+[Courtesy,	  R.	  Salakhutdinov]	  

@@ -1,0 +1,26 @@
+Rademacher Complexity 
+Problem Setup 
+•
+ F be a class of functions from Z to [0,1] 
+•
+ S = {z1, … , zm} be i.i.d. from  D|Z 
+•
+A space Z and a distr. D|Z 
+ Want a high prob. uniform convergence bound, all f ∈F satisfy: 
+ED f z
+≤ES f z
++ term(complexity of F, niceness of D/S) 
+E.g.,  Z = X × Y, Y = {−1,1}, 
+ H = {h:  X →Y} hyp. space (e.g., lin. sep) 
+ Then E𝑧~𝐷lh z
+= errD(h) and ES lh z
+= errS(h).  
+F = L(H) = {lh:  X →Y}, where lh 𝑧= x, y
+= 1 h x ≠𝑦  
+What measure of complexity? 
+[Loss fnc induced by h 
+and 0/1 loss] 
+  
+errD h ≤errS h + term(complexity of H, niceness of D/S) 
+General discrete Y 
+  

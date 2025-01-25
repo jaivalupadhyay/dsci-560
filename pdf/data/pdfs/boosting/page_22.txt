@@ -1,0 +1,25 @@
+• If 𝐻𝑓𝑖𝑛𝑎𝑙 incorrectly classifies 𝑥𝑖, 
+Analyzing Training Error: Proof Intuition 
+- Then 𝑥𝑖 incorrectly classified by (wtd) majority of ℎ𝑡’s. 
+• On round 𝑡, we increase weight of 𝑥𝑖 for which ℎ𝑡 is wrong.   
+- Which implies final prob. weight of 𝑥𝑖 is large. 
+Can show probability ≥
+1
+𝑚
+1
+ 𝑍𝑡
+𝑡
+ 
+•
+Since sum of prob. = 1, can’t have too many of high weight.   
+And ( 𝑍𝑡) →0
+𝑡
+. 
+Can show # incorrectly classified ≤𝑚  𝑍𝑡
+𝑡
+.  
+Theorem 𝜖𝑡= 1/2 −𝛾𝑡 (error of ℎ𝑡 over 𝐷𝑡) 
+𝑒𝑟𝑟𝑆𝐻𝑓𝑖𝑛𝑎𝑙≤exp  −2  𝛾𝑡
+2
+𝑡
+ 

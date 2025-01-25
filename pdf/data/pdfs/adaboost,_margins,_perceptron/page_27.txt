@@ -1,0 +1,24 @@
+Perceptron: Mistake Bound 
+Theorem: If data has margin 𝛾 and all points inside a ball of 
+radius 𝑅, then Perceptron makes ≤𝑅/𝛾2 mistakes. 
+(Normalized margin: multiplying all points by 100, or dividing all points by 100, 
+doesn’t change the number of mistakes; algo is invariant to scaling.) 
++ 
+w* 
++ 
++ + 
++ + 
++ 
+- 
+- - 
+- 
+- 
+ 
+ 
+- 
+- 
+- 
+- 
++ 
+w* 
+R 

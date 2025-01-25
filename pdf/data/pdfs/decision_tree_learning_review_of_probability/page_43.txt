@@ -1,0 +1,14 @@
+The Axioms of Probability 
+•  0 <= P(A) <= 1 
+•  P(True) = 1 
+•  P(False) = 0 
+•  P(A or B) = P(A) + P(B) - P(A and B) 
+ 
+[di Finetti 1931]: 
+ 
+when gambling based on “uncertainty formalism A” you can 
+be exploited by an opponent 
+ 
+iff 
+ 
+your uncertainty formalism A violates these axioms 

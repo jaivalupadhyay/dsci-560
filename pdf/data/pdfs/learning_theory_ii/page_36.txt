@@ -1,0 +1,27 @@
+•
+Proof: Just apply Hoeffding. 
+–
+Chance of failure at most 2|H|e-2|S|2. 
+–
+Set to . Solve. 
+•
+So, whp, best on sample is -best over D. 
+–
+Note: this is worse than previous bound (1/ has become 1/2), 
+because we are asking for something stronger. 
+–
+Can also get bounds “between” these two. 
+Sample Complexity:  Finite Hypothesis Spaces 
+Agnostic Case 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 

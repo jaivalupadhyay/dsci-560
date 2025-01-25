@@ -1,0 +1,4 @@
+Naïve Bayes 
+Naïve Bayes assumes 
+   i.e., that Xi and Xj are conditionally 
+independent given Y, for all i≠j 

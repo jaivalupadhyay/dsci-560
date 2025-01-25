@@ -1,0 +1,13 @@
+Boosting 
+•
+Works by creating a series of challenge datasets s.t. even 
+modest performance on these can be used to produce an 
+overall high-accuracy predictor. 
+•
+Backed up by solid foundations. 
+•
+Works amazingly well in practice --- Adaboost and its 
+variations one of the top 10 algorithms. 
+•
+General method for improving the accuracy of any given 
+learning algorithm. 

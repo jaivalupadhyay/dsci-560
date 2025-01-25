@@ -1,0 +1,26 @@
+Singular Value Decomposition (SVD) 
+So, 𝜆𝑖= 𝜎𝑖
+2 and can read off the solution from the SVD. 
+Given a matrix 𝑋∈𝑅𝐷×𝑛, the SVD is a decomposition: 𝑋𝑇= 𝑈𝑆𝑉𝑇 
+Eigendecomp of 𝑋𝑋𝑇 is closely related to SVD of 𝑋. 
+𝑋𝑇 
+(𝑛× 𝐷) 
+= 
+𝑈 
+(𝑛× 𝑑) 
+𝑆 
+(𝑑× 𝑑) 
+𝜎1 
+𝜎2 
+… 
+0 
+0 
+𝑉𝑇 
+(𝑑× 𝐷) 
+=  𝜎𝑖𝑢𝑖𝑣𝑖
+𝑇
+𝑖
+  
+•
+In fact, can view the rows of 𝑈𝑆 as the coordinates of 
+each example along the axes given by the 𝑑 eigenvectors. 

@@ -1,0 +1,22 @@
+Properties of PCA 
+•
+Given a set of 𝑛 centered observations 
+𝑥𝑖∈𝑅𝐷,  1st PC is the direction that 
+maximizes the variance 
+– 𝐶𝑣1 = 𝜆𝑣1(of maximum 𝜆) 
+– 𝑋= 𝑥1, 𝑥2, … , 𝑥𝑛 
+– 𝑣1 = 𝑎𝑟𝑔𝑚𝑎𝑥𝑣=1
+1
+𝑛 𝑣⊤𝑥𝑖2
+𝑖
+ 
+= 𝑎𝑟𝑔𝑚𝑎𝑥𝑣=1
+1
+𝑛𝑣⊤𝑋𝑋⊤𝑣 
+•
+Covariance matrix 𝐶=
+1
+𝑛𝑋𝑋⊤ 
+•
+𝑣1 can be found by solving the 
+eigenvalue problem: 

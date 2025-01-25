@@ -1,0 +1,15 @@
+ Gradient Descent:  
+Batch gradient: use error           over entire training set D 
+Do until satisfied: 
+    1. Compute the gradient  
+    2. Update the vector of parameters:  
+ 
+Stochastic gradient: use error          over single examples 
+Do until satisfied: 
+    1. Choose (with replacement) a random training example  
+    2. Compute the gradient just for    : 
+    3. Update the vector of parameters:  
+ 
+Stochastic approximates Batch arbitrarily closely as 
+Stochastic can be much faster when D is very large 
+Intermediate approach: use error over subsets of D  

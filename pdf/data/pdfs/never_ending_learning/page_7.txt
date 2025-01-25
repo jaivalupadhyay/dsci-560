@@ -1,0 +1,13 @@
+NELL Is Improving Over Time (Jan 2010 to Nov 2014) 
+number of NELL beliefs vs. time 
+all beliefs 
+high conf. beliefs 
+10’s of millions 
+millions 
+reading accuracy vs. time 
+(average over 31 predicates)  
+precision@10 
+mean avg. precision 
+top 1000 
+human feedback vs. time 
+(average 2.4 feedbacks per predicate per month) 

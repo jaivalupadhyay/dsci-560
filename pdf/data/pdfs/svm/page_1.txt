@@ -1,0 +1,8 @@
+Maria-Florina Balcan 
+03/25/2015 
+•
+Support Vector Machines (SVMs).  
+•
+Semi-Supervised SVMs.  
+•
+Semi-Supervised Learning.  

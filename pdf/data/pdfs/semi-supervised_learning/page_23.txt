@@ -1,0 +1,21 @@
+Idea: Use unlabeled data to  propagate learned information. 
+ 
+Idea: Use small labeled sample to learn initial rules. 
+•
+E.g., “my advisor” pointing to a page is a good indicator it is a 
+faculty home page. 
+ 
+•
+E.g., “I am teaching” on a page is a good indicator it is a faculty 
+home page. 
+Iterative Co-Training 
+Look for unlabeled examples where one rule is confident and 
+the other is not. Have it label the example for the other.  
+hx1,x2i 
+hx1,x2i 
+hx1,x2i 
+hx1,x2i 
+hx1,x2i 
+hx1,x2i 
+Training 2 classifiers, one on each type of info.  Using 
+each to help train the other. 

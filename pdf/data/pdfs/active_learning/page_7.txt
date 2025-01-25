@@ -1,0 +1,16 @@
+As in PAC/SLT, discuss algorithmic and sample complexity issues. 
+•
+How much unlabeled data is needed. 
+• depends both on complexity of H and of compatibility notion. 
+•
+Ability of unlabeled data to reduce #of labeled examples. 
+• compatibility of the target, helpfulness of the distrib. 
+Analyze fundamental sample complexity aspects: 
+A General Discriminative Model for SSL 
+[BalcanBlum, COLT 2005; JACM 2010] 
+•
+ Note: the mixture method that Tom talked about on Feb 25th can 
+be explained from this point of view too. See the Zhu survey. 
+•
+Survey on “Semi-Supervised Learning” (Jerry Zhu, 2010) 
+explains the SSL techniques from this point of view. 

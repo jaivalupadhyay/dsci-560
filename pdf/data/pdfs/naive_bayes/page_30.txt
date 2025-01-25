@@ -1,0 +1,6 @@
+Maximum likelihood estimates: 
+Estimating Parameters: Y, Xi discrete-valued  
+MAP estimates (Beta, Dirichlet priors): 
+ 
+Only difference: 
+“imaginary” examples 

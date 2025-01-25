@@ -1,0 +1,7 @@
+Effective number of hypotheses 
+•
+H[S] – the set of splittings of dataset S using concepts from H. 
+•
+H[m] - max number of ways to split m points using concepts in H 
+H m = max
+S =m |H[S]| 

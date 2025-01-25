@@ -1,0 +1,13 @@
+A	  Simple	  Mul4modal	  Model	  
+• 	  Use	  a	  joint	  binary	  hidden	  layer.	  
+• 	  Problem:	  	  Inputs	  have	  very	  diﬀerent	  sta4s4cal	  
+proper4es.	  
+• 	  Diﬃcult	  to	  learn	  cross-­‐modal	  features.	  
+0	  
+0	  
+1	  
+0	  
+0	  
+Real-­‐valued	  
+1-­‐of-­‐K	  
+[Courtesy,	  R.	  Salakhutdinov]	  

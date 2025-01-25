@@ -1,0 +1,25 @@
+Example: Live in Sq Hill?  P(S|G,D,M) 
+• 
+S=1 iff live in Squirrel Hill 
+• 
+G=1 iff shop at SH Giant Eagle 
+• 
+D=1 iff Drive to CMU 
+• 
+M=1 iff Rachel Maddow fan 
+ 
+ 
+P(S=1) : 
+P(D=1 | S=1) : 
+P(D=1 | S=0) : 
+P(G=1 | S=1) : 
+P(G=1 | S=0) : 
+P(M=1 | S=1) : 
+P(M=1 | S=0) : 
+P(S=0) : 
+P(D=0 | S=1) : 
+P(D=0 | S=0) : 
+P(G=0 | S=1) : 
+P(G=0 | S=0) : 
+P(M=0 | S=1) : 
+P(M=0 | S=0) : 

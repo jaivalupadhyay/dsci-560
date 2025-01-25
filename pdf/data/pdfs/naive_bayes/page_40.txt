@@ -1,0 +1,3 @@
+What if we have continuous Xi ? 
+Eg., image classification: Xi is ith pixel 
+ 

@@ -1,0 +1,15 @@
+Training Linear Regression 
+ 
+Learn Maximum Conditional Likelihood Estimate 
+ 
+ 
+Can we derive gradient descent rule for training? 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

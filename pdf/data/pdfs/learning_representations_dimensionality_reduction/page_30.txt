@@ -1,0 +1,15 @@
+Power method for computing PCs 
+Given matrix 𝑋∈𝑅𝐷×𝑛, compute the top eigenvector of 𝑋 𝑋𝑇  
+Initialize with random   𝑣 ∈ 𝑅𝐷 
+Repeat 
+v ←X XTv  
+v ←v /||v || 
+Claim 
+Then can subtract the 𝑣  component off of each example and 
+repeat to get the next. 
+For any 𝜖> 0, whp over choice of initial vector, after 𝑂
+1
+𝜖log
+𝑑
+𝜖 
+iterations, we have 𝑣 𝑇𝑋𝑋𝑇𝑣 ≥1 −𝜖𝜆1. 

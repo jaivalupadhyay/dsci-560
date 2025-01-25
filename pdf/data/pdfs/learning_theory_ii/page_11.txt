@@ -1,0 +1,10 @@
+ Supervised Learning: PAC model (Valiant) 
+• X - instance space, e.g., X = 0,1 n or X = Rn 
+• Sl={(xi, yi)} - labeled examples drawn i.i.d. from some 
+distr. D over X and labeled by some target concept c* 
+–  labels 2 {-1,1}  - binary classification 
+•  Algorithm A PAC-learns concept class H if for any  
+target c* in H, any distrib. D over X, any ,  > 0: 
+ - A uses at most poly(n,1/,1/,size(c*)) examples and running 
+time. 
+ - With prob. ≥1 −𝛿, A produces h in H of error at · . 

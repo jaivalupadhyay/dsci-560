@@ -1,0 +1,15 @@
+Weak Learning vs Strong/PAC Learning 
+•
+[Kearns & Valiant ’88]:  defined weak learning: 
+being able to predict better than random guessing 
+(error ≤1
+2 −𝛾) , consistently. 
+•
+Posed an open pb: “Does there exist a boosting algo that 
+turns a weak learner into a strong PAC learner (that can 
+produce arbitrarily accurate hypotheses)?” 
+•
+Informally, given “weak” learning algo that can consistently 
+find classifiers of error ≤1
+2 −𝛾, a boosting algo would 
+provably construct a single classifier with error ≤𝜖. 

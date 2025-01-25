@@ -1,0 +1,6 @@
+Recurrent Networks: Time Series 
+•  Suppose we want to predict next state of world 
+–  and it depends on history of unknown length 
+–  e.g., robot with forward-facing sensors trying to predict next 
+sensor reading as it moves and turns 
+•  Idea: use hidden layer in network to capture state history 

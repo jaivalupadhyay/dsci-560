@@ -1,0 +1,2 @@
+Deep Belief Networks: Training 
+[Hinton & Salakhutdinov, 2006] 

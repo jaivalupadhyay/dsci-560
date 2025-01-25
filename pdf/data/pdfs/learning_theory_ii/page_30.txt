@@ -1,0 +1,10 @@
+Nearly Matching Bounds 
+Theorem (lower bound):  
+For any 𝐻, any algo 𝐴, any 0 < 𝜖< 1/8, any 𝛿< .01, ∃  distr.  𝐷 and 
+target 𝑐∗∈𝐻 s.t. if 𝐴 sees fewer than max 1
+𝜖log
+1
+𝛿, 𝑉𝐶𝑑𝑖𝑚𝐻−1
+32𝜖
+ 
+examples, then with prob. ≥𝛿, 𝐴 produces ℎ with 𝑒𝑟𝑟𝐷ℎ> 𝜖. 

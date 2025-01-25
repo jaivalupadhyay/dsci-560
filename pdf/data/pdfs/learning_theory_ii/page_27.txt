@@ -1,0 +1,9 @@
+Sauer’s Lemma  
+Sauer’s Lemma: 
+•
+m ≤d, then H m = 2m 
+Proof: induction on m and d. Cool combinatorial argument! 
+Hint: try proving it for intervals… 
+•
+m>d, then H m = O m𝑑 
+Let d = VCdim(H) 

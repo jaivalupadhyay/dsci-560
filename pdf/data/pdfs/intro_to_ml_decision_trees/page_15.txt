@@ -1,0 +1,24 @@
+15 
+Problem Setting: 
+•  Set of possible instances X 
+–  each instance x in X is a feature vector 
+–  e.g., <Humidity=low, Wind=weak, Outlook=rain, Temp=hot> 
+•  Unknown target function f : XàY
+–  Y=1 if we play tennis on this day, else 0 
+•  Set of function hypotheses H={ h | h : XàY }
+–  each hypothesis h is a decision tree 
+–  trees sorts x to leaf, which assigns y 
+Decision Tree Learning 
+Decision Tree Learning 
+Problem Setting: 
+•  Set of possible instances X 
+–  each instance x in X is a feature vector  
+x = < x1, x2 … xn> 
+•  Unknown target function f : XàY
+–  Y is discrete-valued 
+•  Set of function hypotheses H={ h | h : XàY }
+–  each hypothesis h is a decision tree 
+Input: 
+•  Training examples {<x(i),y(i)>} of unknown target function f
+Output: 
+•  Hypothesis h ∈ H that best approximates target function f

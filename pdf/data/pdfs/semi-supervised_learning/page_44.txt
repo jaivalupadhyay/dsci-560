@@ -1,0 +1,22 @@
+Minimum “soft cut” 
+[ZhuGhahramaniLafferty’03] 
+•
+Can be done efficiently by solving 
+a set of linear equations. 
+Objective Solve for probability vector over labels 𝑓𝑖 on each 
+unlabeled point 𝑖. 
+•
+Minimize  
+𝑤𝑒𝑓𝑖−𝑓𝑗
+2
+𝑒=(𝑖,𝑗)
+  
+where ‖𝑓𝑖−𝑓𝑗‖ is Euclidean distance. 
+(0100000000) 
+(1000000000) 
+(0001000000) 
+(0000000001) 
+(0000000010) 
+(0000000100) 
+(labeled points get coordinate vectors 
+in direction of their known label) 

@@ -1,0 +1,13 @@
+Estimate     from partly observed data 
+•  What if FAHN observed, but not S? 
+•  Can’t calculate MLE 
+•  Let X be all observed variable values (over all examples) 
+•  Let Z be all unobserved variable values   
+•  Can’t calculate MLE: 
+ 
+Flu 
+Allergy 
+Sinus 
+Headache 
+Nose 
+•   WHAT TO DO? 

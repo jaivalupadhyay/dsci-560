@@ -1,0 +1,7 @@
+Training Logistic Regression: MCLE 
+•  Choose parameters W=<w0, ... wn> to 
+maximize conditional likelihood of training data 
+•  Training data D =  
+•  Data likelihood =  
+•  Data conditional likelihood =  
+where 

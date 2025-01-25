@@ -1,0 +1,10 @@
+Tools vs Buildings: where does brain encode 
+their word meanings? 
+Accuracies of  
+cubical 
+27-voxel  
+Naïve Bayes 
+classifiers 
+centered at 
+each voxel  
+[0.7-0.8] 

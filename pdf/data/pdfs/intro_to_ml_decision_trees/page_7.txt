@@ -1,0 +1,12 @@
+7 
+What You’ll Learn in This Course 
+•  The primary Machine Learning algorithms 
+–  Logistic regression, Bayesian methods, HMM’s, SVM’s, 
+reinforcement learning, decision tree learning, boosting, 
+unsupervised clustering, … 
+•  How to use them on real data 
+–  text, image, structured data 
+–  your own project 
+•  Underlying statistical and computational theory 
+•  Enough to read and understand ML research papers 
+Course logistics 

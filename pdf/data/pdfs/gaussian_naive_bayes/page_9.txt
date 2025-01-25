@@ -1,0 +1,12 @@
+Learning to classify documents: P(Y|X) 
+ 
+•  Y discrete valued.   
+–  e.g., Spam or not 
+•  X = <X1, X2, … Xn> = document 
+ 
+ 
+•  Xi is a random variable describing… 
+Answer 2:  
+•  Xi represents the ith word position in document 
+•  X1 = “I”,  X2 = “am”, X3 = “pleased” 
+•  and, let’s assume the Xi are iid (indep, identically distributed) 

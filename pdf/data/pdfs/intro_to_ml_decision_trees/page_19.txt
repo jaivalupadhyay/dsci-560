@@ -1,0 +1,10 @@
+19 
+Information Gain is the mutual information between 
+input attribute A and target variable Y 
+ 
+Information Gain is the expected reduction in entropy 
+of target variable Y for data sample S, due to sorting 
+on variable A  
+ 
+Day   Outlook    Temperature   Humidity    Wind   PlayTennis? 
+Simple Training Data Set 

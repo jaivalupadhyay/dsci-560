@@ -1,0 +1,6 @@
+GNB Example: Classify a person’s 
+cognitive activity, based on brain image 
+•  are they reading a sentence or viewing a picture? 
+•  reading the word “Hammer” or “Apartment” 
+•  viewing a vertical or horizontal line? 
+•  answering the question, or getting confused? 

@@ -1,0 +1,7 @@
+Bayesian Networks 
+•  CPD for each node Xi 
+describes P(Xi | Pa(Xi)) 
+ 
+Chain rule of probability says that in general: 
+ 
+But in a Bayes net: 

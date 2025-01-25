@@ -1,0 +1,12 @@
+How to Create the Graph 
+•
+Empirically, the following works well: 
+1.
+Compute distance between i, j 
+2.
+For each i, connect to its kNN.  k very small but 
+still connects the graph 
+3.
+Optionally put weights on (only) those edges 
+ 
+4.  Tune  

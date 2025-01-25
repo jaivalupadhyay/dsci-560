@@ -1,0 +1,24 @@
+Can adaptive querying help? [CAL92, Dasgupta04] 
+•
+Threshold fns on the real line: 
+w 
++ 
+- 
+Exponential improvement. 
+ 
+hw(x) = 1(x ¸ w),  C = {hw: w 2 R} 
+•
+How can we recover the correct labels with ≪N queries? 
+- 
+•   Do binary search!  
+Active: only O(log 1/ϵ) labels. 
+Passive supervised: Ω(1/ϵ) labels to find an -accurate threshold. 
++ 
+- 
+Active Algorithm 
+Just need O(log N) labels! 
+• N = O(1/ϵ)  we are guaranteed to get a classifier of error ≤ϵ.  
+•
+ Get N unlabeled examples 
+•
+ Output a classifier consistent with the N inferred labels. 

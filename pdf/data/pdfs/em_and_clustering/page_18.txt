@@ -1,0 +1,19 @@
+EM for Mixture of Gaussian Clustering 
+Let’s simplify to make this easier:    
+1. 
+assume X=<X1 ... Xn>, and the Xi are conditionally independent 
+given Z.   
+ 
+ 
+2. 
+assume only 2 clusters (values of Z), and 
+3. 
+Assume σ known, π1 … πK, µ1i …µKi unknown 
+Observed: X=<X1 ... Xn> 
+Unobserved: Z 
+ 
+Z
+X1 
+X4 
+X3 
+X2 

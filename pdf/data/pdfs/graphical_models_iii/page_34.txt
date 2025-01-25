@@ -1,0 +1,13 @@
+Bayes Nets – What You Should Know 
+•  Representation 
+–  Bayes nets represent joint distribution as a DAG + Conditional 
+Distributions 
+–  D-separation lets us decode conditional independence 
+assumptions 
+•  Inference 
+–  NP-hard in general 
+–  For some graphs, some queries, exact inference is tractable 
+–  Approximate methods too, e.g., Monte Carlo methods, … 
+•  Learning 
+–  Easy for known graph, fully observed data (MLE’s, MAP est.) 
+–  EM for partly observed data, known graph 

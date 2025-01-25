@@ -1,0 +1,12 @@
+You should know 
+•  Probability basics 
+–  random variables, conditional probs, … 
+–  Bayes rule 
+–  Joint probability distributions 
+–  calculating probabilities from the joint distribution 
+•  Estimating parameters from data 
+–  maximum likelihood estimates 
+–  maximum a posteriori estimates 
+–  distributions – binomial, Beta, Dirichlet, … 
+–  conjugate priors 
+ 

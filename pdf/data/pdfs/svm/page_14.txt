@@ -1,0 +1,29 @@
+Support Vector Machines (SVMs) 
+Question: what if data isn’t perfectly linearly separable? 
+𝑤
+2 + 𝐶(# misclassifications)  
+Issue 1: now have two objectives  
+•
+maximize margin 
+•
+minimize # of misclassifications. 
+Ans 1: Let’s optimize their sum: minimize 
+NP-hard [Guruswami-Raghavendra’06]   
+where 𝐶 is some tradeoff constant.  
+Issue 2: This is computationally hard (NP-hard). 
+[even if didn’t care about margin and minimized # mistakes] 
++ + 
++ 
++ 
+- 
+- - 
+- 
+- 
++ 
+- 
+- 
+- 
+- 
+w 
+𝑤⋅𝑥= −1 
+𝑤⋅𝑥= 1 

@@ -1,0 +1,6 @@
+Naïve Bayes: classifying text documents 
+•  Classify which emails are spam? 
+•  Classify which emails promise an attachment? 
+ 
+How shall we represent text documents for Naïve 
+Bayes? 

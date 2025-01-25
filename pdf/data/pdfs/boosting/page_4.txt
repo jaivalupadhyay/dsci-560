@@ -1,0 +1,17 @@
+An Example: Spam Detection 
+Key observation/motivation: 
+•
+Easy to find rules of thumb that are often correct. 
+ 
+•
+Harder to find single rule that is very highly accurate. 
+•
+E.g., “If buy now in the message, then predict spam.” 
+ 
+Not spam 
+spam 
+•
+E.g., “If say good-bye to debt in the message, then predict spam.” 
+ 
+•
+E.g., classify which emails are spam and which are important. 

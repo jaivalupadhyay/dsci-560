@@ -1,0 +1,2 @@
+Beta prior distribution – P(θ) 
+[C. Guestrin]  

@@ -1,0 +1,3 @@
+Hierarchical Clustering Experiments 
+[BLG, JMLR’15] 
+Ward’s method does the best among classic techniques. 

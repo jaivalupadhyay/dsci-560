@@ -1,0 +1,8 @@
+Active Learning  
+Additional resources: 
+•
+Two faces of active learning. Sanjoy Dasgupta. 2011.  
+•
+Active Learning. Bur Settles. 2012. 
+•
+Active Learning. Balcan-Urner. Encyclopedia of Algorithms. 2015 

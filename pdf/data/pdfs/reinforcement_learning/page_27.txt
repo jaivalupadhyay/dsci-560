@@ -1,0 +1,4 @@
+Tom Mitchell, April 2011 
+Rather than replacing the old estimate with the new estimate, you want to compute a weighted average of 
+them: (1 −α𝑛) times your old estimate plus α𝑛 times your new estimate.   This way you average out the 
+probabilistic fluctuations, and one can show that this still converges. 

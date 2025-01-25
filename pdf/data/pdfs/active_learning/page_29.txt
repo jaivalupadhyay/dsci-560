@@ -1,0 +1,3 @@
+How about the agnostic case 
+where the target might not 
+belong the H? 

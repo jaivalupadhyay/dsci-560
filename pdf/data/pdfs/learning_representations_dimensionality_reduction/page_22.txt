@@ -1,0 +1,5 @@
+Kernel PCA (Kernel Principal 
+Component Analysis) 
+Useful when data  lies on or near a low d-
+dimensional linear subspace of the 𝜙-
+space associated with a kernel 

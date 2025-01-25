@@ -1,0 +1,14 @@
+NELL: Never-Ending Language Learner 
+Inputs: 
+•  initial ontology (categories and relations) 
+•  dozen examples of each ontology predicate 
+•  the web 
+•  occasional interaction with human trainers 
+ 
+The task: 
+•  run 24x7, forever 
+•  each day: 
+1. 
+extract more facts from the web to populate the ontology 
+2. 
+learn to read (perform #1) better than yesterday 

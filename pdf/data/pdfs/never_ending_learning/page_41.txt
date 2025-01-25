@@ -1,0 +1,14 @@
+Random walk inference: learned rules 
+CityLocatedInCountry(city, country): 
+ 
+8.04 cityliesonriver, cityliesonriver-1, citylocatedincountry  
+5.42 hasofficeincity-1, hasofficeincity, citylocatedincountry 
+4.98 cityalsoknownas, cityalsoknownas, citylocatedincountry 
+2.85 citycapitalofcountry,citylocatedincountry-1,citylocatedincountry 
+2.29 agentactsinlocation-1, agentactsinlocation, citylocatedincountry
+1.22 statehascapital-1, statelocatedincountry  
+0.66 citycapitalofcountry 
+ . 
+ . 
+ .  
+7 of the 2985 learned rules for CityLocatedInCountry 

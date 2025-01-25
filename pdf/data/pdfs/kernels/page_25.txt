@@ -1,0 +1,16 @@
+Kernels: More Examples 
+•
+Polynomial: K x, 𝑧= x ⋅𝑧d or K x, 𝑧= 1 + x ⋅𝑧d 
+•
+Gaussian: K x, 𝑧= exp −
+𝑥−𝑧
+2
+2 𝜎2   
+•
+Linear: K x, z = x ⋅𝑧 
+•
+Laplace Kernel: K x, 𝑧= exp −||𝑥−𝑧||
+2 𝜎2   
+•
+Kernel for non-vectorial data, e.g., measuring similarity 
+between sequences. 

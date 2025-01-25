@@ -1,0 +1,5 @@
+The Joint Distribution 
+Recipe for making a joint 
+distribution of M variables: 
+Example: Boolean 
+variables A, B, C 

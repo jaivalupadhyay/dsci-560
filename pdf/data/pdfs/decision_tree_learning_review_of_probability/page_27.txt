@@ -1,0 +1,14 @@
+What you should know: 
+•  Well posed function approximation problems: 
+–  Instance space, X 
+–  Sample of labeled training data { <x(i), y(i)>} 
+–  Hypothesis space, H = { f: XàY } 
+•  Learning is a search/optimization problem over H 
+–  Various objective functions 
+•  minimize training error (0-1 loss)  
+•  among hypotheses that minimize training error, select smallest (?) 
+–  But inductive learning without some bias is futile ! 
+•  Decision tree learning 
+–  Greedy top-down learning of decision trees (ID3, C4.5, ...) 
+–  Overfitting and tree post-pruning 
+–  Extensions… 

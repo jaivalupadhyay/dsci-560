@@ -1,0 +1,2 @@
+E step:  Calculate for each training example, k  
+ the expected value of each unobserved variable   

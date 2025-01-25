@@ -1,0 +1,11 @@
+Y is the mental state (reading “house” or “bottle”) 
+Xi are the voxel activities,  
+ 
+this is a plot of the µ’s defining P(Xi | Y=“bottle”) 
+fMRI 
+activation  
+high 
+below 
+average 
+average 
+Mean activations over all training examples for Y=“bottle” 

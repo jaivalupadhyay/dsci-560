@@ -1,0 +1,29 @@
+Machine Learning 10-601 
+ 
+Tom M. Mitchell 
+Machine Learning Department 
+Carnegie Mellon University 
+ 
+April 15, 2015 
+Today: 
+• 
+Artificial neural networks 
+• 
+Backpropagation  
+• 
+Recurrent networks 
+• 
+Convolutional networks 
+• 
+Deep belief networks 
+• 
+Deep Boltzman machines  
+Reading: 
+• 
+Mitchell: Chapter 4 
+• 
+Bishop: Chapter 5 
+• 
+Quoc Le tutorial: 
+• 
+Ruslan Salakhutdinov tutorial: 

@@ -1,0 +1,49 @@
+Classification Margin 
+•
+H space of weak hypotheses. The convex hull of H: 
+•
+Let 𝑓∈𝑐𝑜𝐻, 𝑓=  
+𝛼𝑡ℎ𝑡,
+𝑇
+𝑡=1
+𝛼𝑡≥0,   
+𝛼𝑡= 1
+𝑇
+𝑡=1
+.  
+The majority vote rule 𝐻𝑓 given by 𝑓 (given by 𝐻𝑓= 𝑠𝑖𝑔𝑛(𝑓𝑥))  
+predicts wrongly on example (𝑥, 𝑦) iff 𝑦𝑓𝑥≤0. 
+ 𝑐𝑜𝐻= 𝑓=  
+𝛼𝑡ℎ𝑡
+𝑇
+𝑡=1
+, 𝛼𝑡≥0,  
+𝛼𝑡= 1, ℎ𝑡∈𝐻
+𝑇
+𝑡=1
+ 
+Definition: margin of 𝐻𝑓 (or of 𝑓) on example (𝑥, 𝑦) to be 𝑦𝑓(𝑥).  
+𝑦𝑓𝑥= 𝑦 𝛼𝑡ℎ𝑡𝑥
+=  𝑦𝛼𝑡ℎ𝑡𝑥
+=
+ 
+𝛼𝑡−
+ 
+𝛼𝑡
+𝑡:𝑦≠ℎ𝑡𝑥
+𝑡:𝑦=ℎ𝑡𝑥
+𝑇
+𝑡=1
+𝑇
+𝑡=1
+ 
+The margin is positive iff 𝑦= 𝐻𝑓𝑥.  
+See  𝑦𝑓𝑥
+= |𝑓𝑥| as the strength or the confidence of the vote. 
+1 
+High confidence, 
+correct 
+-1 
+High confidence, 
+incorrect 
+Low confidence 

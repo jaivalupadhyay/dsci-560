@@ -1,0 +1,15 @@
+Problem setting:  
+•  have N different estimates               of target function 
+•  agreement between fi, fj  : 
+ 
+Key insight: errors and agreement rates are related 
+[Platanios, Blum, Mitchell, UAI 2014] 
+Pr[neither makes error] + Pr[both make error] 
+prob. fi and fi 
+ agree 
+prob. fi 
+ error 
+prob. fj 
+error 
+prob.  fi and fj 
+both make error 

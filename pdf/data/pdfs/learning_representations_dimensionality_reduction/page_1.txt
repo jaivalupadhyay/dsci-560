@@ -1,0 +1,5 @@
+Maria-Florina Balcan 
+04/08/2015 
+PCA, Kernel PCA, ICA 
+Learning Representations. 
+Dimensionality Reduction.  

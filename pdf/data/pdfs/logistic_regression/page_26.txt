@@ -1,0 +1,10 @@
+Naïve Bayes vs Logistic Regression 
+Consider Y boolean, Xi continuous, X=<X1 ... Xn> 
+ 
+Number of parameters: 
+•  NB: 4n +1 
+•  LR: n+1 
+Estimation method: 
+•  NB parameter estimates are uncoupled 
+•  LR parameter estimates are coupled 
+ 

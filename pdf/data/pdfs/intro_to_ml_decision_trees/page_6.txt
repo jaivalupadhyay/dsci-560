@@ -1,0 +1,29 @@
+6 
+•  Machine learning already the preferred approach to 
+–  Speech recognition, Natural language processing 
+–  Computer vision 
+–  Medical outcomes analysis 
+–  Robot control 
+–  … 
+•  This ML niche is growing 
+–  Improved machine learning algorithms  
+–  Increased volume of online data  
+–  Increased demand for self-customizing software 
+All software apps. 
+Machine Learning in Computer Science 
+ML apps. 
+Tom’s prediction: ML will be fastest-growing part of CS this century 
+Animal learning 
+(Cognitive science, 
+Psychology, 
+Neuroscience) 
+Machine learning 
+Statistics  
+Computer science 
+Adaptive Control 
+Theory 
+Evolution 
+Economics 
+and 
+Organizational 
+Behavior 

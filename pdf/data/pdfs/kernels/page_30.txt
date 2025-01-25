@@ -1,0 +1,13 @@
+Kernels, Discussion 
+•  Lots of Machine Learning algorithms are kernalizable: 
+•  classification: Perceptron, SVM. 
+•  regression: linear regression. 
+•  clustering: k-means. 
+•
+If  all computations involving instances are in terms 
+of inner products then: 
+Conceptually, work in a very high diml space and the alg’s 
+performance depends only on linear separability in that 
+extended space. 
+ Computationally, only need to modify the algo by replacing 
+each x ⋅z with a K x, z . 

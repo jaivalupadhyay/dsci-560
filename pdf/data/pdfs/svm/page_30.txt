@@ -1,0 +1,17 @@
+                 Labeled Examples   
+Semi-Supervised Learning 
+Learning 
+Algorithm 
+Expert / Oracle 
+Data Source 
+Unlabeled 
+examples 
+Algorithm outputs a classifier  
+Unlabeled 
+examples 
+ Sl={(x1, y1), …,(xml, yml)}  
+ Su={x1, …,xmu} drawn i.i.d from D 
+xi drawn i.i.d from D, yi = c∗(xi) 
+ Goal:  h has small error over D. 
+ errD h = Pr
+x~ D(h x ≠c∗(x)) 

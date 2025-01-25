@@ -1,0 +1,22 @@
+Visualizing A 
+Sample space 
+of all possible 
+worlds 
+Its area is 1 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Worlds in which A is False 
+Worlds in which 
+A is true 
+P(A) = Area of 
+reddish oval 

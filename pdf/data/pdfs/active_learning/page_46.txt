@@ -1,0 +1,21 @@
+Active learning with label propagation 
+46 
+(using soft-cuts) 
+Instead, use a 1-step-lookahead heuristic: 
+•
+For a node with label 𝑝, assume that querying will have prob 
+𝑝 of returning answer 1, 1 −𝑝 of returning answer 0. 
+•
+Compute “average confidence” after running soft-cut in each case: 
+𝑝1
+𝑛 
+max 𝑓1 𝑥𝑖, 1 −𝑓1 𝑥𝑖
++ (1 −𝑝) 1
+𝑛 
+max 𝑓0 𝑥𝑖, 1 −𝑓0 𝑥𝑖
+𝑥𝑖
+𝑥𝑖
+  
+•
+Query node s.t. this quantity is highest (you want to be more 
+confident on average). 

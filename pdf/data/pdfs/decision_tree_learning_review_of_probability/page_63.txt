@@ -1,0 +1,11 @@
+You should know 
+•  Events  
+–  discrete random variables, continuous random variables, 
+compound events 
+•  Axioms of probability 
+–  What defines a reasonable theory of uncertainty 
+•  Conditional probabilities 
+•  Chain rule 
+•  Bayes rule 
+•  Joint distribution over multiple random variables 
+–  how to calculate other quantities from the joint distribution 

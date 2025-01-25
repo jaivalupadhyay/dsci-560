@@ -1,0 +1,10 @@
+Boosting: Important Aspects 
+How to choose examples on each round? 
+ 
+How to combine rules of thumb into single 
+prediction rule? 
+•
+take (weighted) majority vote of rules of thumb 
+•
+Typically, concentrate on “hardest” examples (those most 
+often misclassified by previous rules of thumb) 

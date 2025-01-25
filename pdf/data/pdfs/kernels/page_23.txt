@@ -1,0 +1,37 @@
+Kernelizing  the Perceptron Algorithm 
+•
+Given 𝑥, predict + iff 
+•
+On the 𝑡 th  mistake, update as follows: 
+•
+Mistake on positive, set 𝑎𝑖𝑡←1; store 𝑥𝑖𝑡 
+•
+Mistake on negative, 𝑎𝑖𝑡←−1; store 𝑥𝑖𝑡 
+Perceptron 𝑤𝑡= 𝑎𝑖1𝑥𝑖1 + ⋯+ 𝑎𝑖𝑘𝑥𝑖𝑘 
+𝑤𝑡⋅𝑥= 𝑎𝑖1𝑥𝑖1 ⋅𝑥+ ⋯+ 𝑎𝑖𝑘𝑥𝑖𝑘⋅𝑥 
+X 
+X 
+X 
+X 
+X 
+X 
+X X 
+X 
+X 
+O 
+O 
+O 
+O 
+O 
+O 
+O 
+O 
+w 
+Exact same behavior/prediction rule as if mapped data in the 
+𝜙-space and ran Perceptron there! 
+→ 
+𝑎𝑖1 𝐾(𝑥𝑖1, 𝑥) + ⋯+ 𝑎𝑖𝑘𝐾(𝑥𝑖𝑘, 𝑥) 
+Φ-space 
+𝑎𝑖1 𝐾(𝑥𝑖1, 𝑥) + ⋯+ 𝑎𝑖𝑡−1𝐾(𝑥𝑖𝑡−1, 𝑥) ≥0 
+Do this implicitly, so computational savings!!!!! 
+𝜙(𝑥𝑖𝑡−1) ⋅𝜙(𝑥) 

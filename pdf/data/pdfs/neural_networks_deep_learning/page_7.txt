@@ -1,0 +1,9 @@
+•  Consider regression problem f:XàY , for scalar Y 
+y = f(x) + ε
+  
+assume noise N(0,σε), iid 
+deterministic 
+M(C)LE Training for Neural Networks 
+Learned 
+neural network 
+•  Let’s maximize the conditional data likelihood 

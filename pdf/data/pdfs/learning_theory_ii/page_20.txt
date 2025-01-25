@@ -1,0 +1,3 @@
+Sample Complexity: Infinite Hypothesis Spaces  
+Sauer’s Lemma: H m = O mVCdim H  
+H[m] - max number of ways to split m points using concepts in H 

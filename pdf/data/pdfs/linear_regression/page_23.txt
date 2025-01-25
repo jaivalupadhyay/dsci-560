@@ -1,0 +1,15 @@
+Consider Linear Regression 
+ 
+ 
+ 
+E.g., assume f(x) is linear function of x 
+ 
+ 
+ 
+ 
+ 
+Notation: to make our parameters explicit, let’s write 
+ 
+ 
+ 
+ 

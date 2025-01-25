@@ -1,0 +1,15 @@
+Co-training: Benefits in Principle 
+[BB’05]: Under independence given the label, any pair 〈ℎ1, ℎ2〉 with high 
+agreement over unlabeled data must be close to:  
+
+𝑐1, 𝑐2 , 〈¬𝑐1, ¬𝑐2〉, 〈𝑡𝑟𝑢𝑒, 𝑡𝑟𝑢𝑒〉, or 〈𝑓𝑎𝑙𝑠𝑒, 𝑓𝑎𝑙𝑠𝑒〉  
+𝐷1
++ 
+𝐷2
++ 
+𝐷1
+− 
+𝐷2
+− 
+View 1 
+View 2 

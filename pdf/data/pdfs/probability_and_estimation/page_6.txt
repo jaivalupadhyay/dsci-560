@@ -1,0 +1,4 @@
+what does all this have to do with 
+function approximation? 
+instead of  F: X àY, 
+learn          P(Y | X) 

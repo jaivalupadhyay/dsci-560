@@ -1,0 +1,10 @@
+Rate of covergence: logistic regression 
+Let hDis,m be logistic regression trained on m examples in n 
+dimensions.  Then with high probability: 
+Implication: if we want 
+ for some constant      , it suffices to pick order n examples  
+ 
+à Convergences to its asymptotic classifier, in order n examples 
+(result follows from Vapnik’s structural risk bound, plus fact that 
+VCDim of n dimensional linear separators is n ) 
+[Ng & Jordan, 2002] 

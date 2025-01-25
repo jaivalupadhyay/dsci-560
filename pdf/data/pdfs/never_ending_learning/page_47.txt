@@ -1,0 +1,10 @@
+Ontology Extension (1) 
+Goal: 
+•  Add new relations to ontology 
+ 
+Approach: 
+•  For each pair of categories C1, C2,  
+•  cluster pairs of known instances, in terms of 
+text contexts that connect them   
+ 
+[Mohamed et al., EMNLP 2011] 

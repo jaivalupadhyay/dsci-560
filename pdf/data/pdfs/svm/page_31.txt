@@ -1,0 +1,8 @@
+Unlabeled data useful if we have beliefs not only about 
+the form of the target, but also about its relationship 
+with the underlying distribution. 
+Key Insight 
+Semi-supervised learning: no querying. Just have lots of 
+additional unlabeled data. 
+A bit puzzling since unclear what unlabeled data can 
+do for you…. 

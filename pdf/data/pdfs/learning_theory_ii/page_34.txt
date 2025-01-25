@@ -1,0 +1,29 @@
+Sample Complexity:  Finite Hypothesis Spaces 
+Realizable Case 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+What if there is no perfect h?  
+Agnostic Case 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+To prove bounds like this, need some good tail inequalities. 
+ 

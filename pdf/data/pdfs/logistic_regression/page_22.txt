@@ -1,0 +1,10 @@
+•  Consider learning f: X à Y, where 
+•  X is a vector of real-valued features, < X1 … Xn > 
+•  Y is boolean 
+•  assume all Xi are conditionally independent given Y 
+•  model P(Xi | Y = yk) as Gaussian N(µik,σi) 
+•  model P(Y) as Bernoulli (π) 
+•  Then P(Y|X) is of this form, and we can directly estimate W 
+•  Furthermore, same holds if the Xi are boolean 
+•  trying proving that to yourself 
+The Bottom Line 

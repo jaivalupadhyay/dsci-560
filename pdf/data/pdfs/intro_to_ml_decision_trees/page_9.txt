@@ -1,0 +1,26 @@
+9 
+Maria-Florina Balcan: Nina 
+•  Foundations for Modern Machine Learning 
+• 
+Theoretical Computer Science, especially connections 
+between learning theory & other fields 
+Game Theory 
+Approx. 
+Algorithms 
+Matroid  
+Theory 
+Machine 
+Learning  
+Theory 
+Discrete 
+Optimization 
+Mechanism Design 
+Control 
+Theory 
+•  E.g., interactive, distributed, life-long learning 
+Travis Dick 
+•  When can we learn many concepts 
+from mostly unlabeled data by 
+exploiting relationships between 
+between concepts. 
+•  Currently: Geometric relationships 

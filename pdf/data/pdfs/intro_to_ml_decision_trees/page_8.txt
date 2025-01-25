@@ -1,0 +1,64 @@
+8 
+Machine Learning 10-601 
+Faculty 
+•  Maria Balcan 
+•  Tom Mitchell 
+ 
+TA’s 
+•  Travis Dick 
+•  Kirsten Early 
+•  Ahmed Hefny 
+•  Micol Marchetti-Bowick 
+•  Willie Neiswanger 
+•  Abu Saparov 
+ 
+Course assistant 
+•  Sharon Cavlovich 
+website: www.cs.cmu.edu/~ninamf/courses/601sp15      
+See webpage for  
+•  Office hours 
+•  Syllabus details 
+•  Recitation sessions 
+•  Grading policy 
+•  Honesty policy 
+•  Late homework policy 
+•  Piazza pointers 
+•  ... 
+Highlights of Course Logistics 
+On the wait list? 
+• 
+Hang in there for first few weeks 
+Homework 1 
+• 
+Available now, due friday 
+Grading: 
+• 
+30% homeworks (~5-6) 
+• 
+20% course project 
+• 
+25% first midterm (March 2) 
+• 
+25% final midterm (April 29) 
+ 
+Academic integrity: 
+• 
+Cheating à Fail class, be expelled 
+from CMU 
+Late homework: 
+• 
+full credit when due 
+• 
+half credit next 48 hrs 
+• 
+zero credit after that 
+• 
+we’ll  delete your lowest HW score 
+• 
+must turn in at least n-1 of the n 
+homeworks, even if late 
+Being present at exams: 
+• 
+You must be there – plan now. 
+• 
+Two in-class exams, no other final  

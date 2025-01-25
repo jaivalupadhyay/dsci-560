@@ -1,0 +1,20 @@
+22 
+Why Prefer Short Hypotheses? (Occam’s Razor) 
+Arguments in favor: 
+ 
+ 
+ 
+ 
+Arguments opposed:  
+Why Prefer Short Hypotheses? (Occam’s Razor) 
+Argument in favor: 
+•  Fewer short hypotheses than long ones 
+à a short hypothesis that fits the data is less likely to be 
+a statistical coincidence 
+à highly probable that a sufficiently complex hypothesis 
+will fit the data 
+ 
+Argument opposed: 
+•  Also fewer hypotheses with prime number of nodes 
+and attributes beginning with “Z” 
+•  What’s so special about “short” hypotheses? 

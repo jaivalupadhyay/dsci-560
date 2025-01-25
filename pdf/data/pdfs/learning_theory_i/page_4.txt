@@ -1,0 +1,8 @@
+4
+Supervised Classification
+Goal: use emails seen so far to produce good prediction 
+rule for future data.
+Not spam
+spam
+Decide which emails are spam and which are important.
+Supervised classification

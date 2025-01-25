@@ -1,0 +1,7 @@
+Convolutional Neural Nets for Image Recognition 
+•  specialized architecture: mix different types of units, not 
+completely connected, motivated by primate visual cortex 
+•  many shared parameters, stochastic gradient training 
+•  very successful!  now many specialized architectures for 
+vision, speech, translation, … 
+[Le Cun, 1992] 

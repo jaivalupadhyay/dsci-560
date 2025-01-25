@@ -1,0 +1,8 @@
+EM – E Step 
+Calculate P(Z(n)|X(n),θ) for each observed example X(n) 
+X(n)=<x1(n), x2(n), … xT(n)>.   
+Z
+X1 
+X4 
+X3 
+X2 

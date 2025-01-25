@@ -1,0 +1,23 @@
+Alternative expression for PCA 
+ 
+•
+The principal component lies in the span of the data 
+𝑣1 =  𝛼𝑘𝑥𝑖
+𝑖
+= 𝑋𝛼 
+Why? 1st PC is direction of largest variance, and for any direction outside of 
+the span of the data, only get more variance if we project that direction into 
+the span.  
+Only depends on 
+the inner product   
+matrix  
+•
+Plug this in we have 
+𝐶𝑣1 = 1
+𝑛𝑋𝑋⊤𝑋𝛼= 𝜆 𝑋𝛼  
+•
+Now, left-multiply the LHS and RHS by 𝑋𝑇. 
+1
+𝑛𝑋⊤𝑋𝑋⊤𝑋𝛼= 𝜆𝑋⊤𝑋𝛼 
+ 
+ 

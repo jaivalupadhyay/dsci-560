@@ -1,0 +1,26 @@
+Properties of PCA 
+•
+Covariance matrix 𝐶=
+1
+𝑛𝑋𝑋⊤is a DxD matrix 
+the (i,j) entry of 𝑋𝑋⊤ is the correlation of the i-th coordinate 
+ofexamples with jth coordinate of examples 
+•
+To use kernels, need to use the inner-product matrix 𝑋𝑇𝑋. 
+•
+Covariance matrix 𝐶=
+1
+𝑛𝑋𝑋⊤ 
+•
+Given a set of 𝑛 centered observations 
+𝑥𝑖∈𝑅𝐷,  1st PC is the direction that 
+maximizes the variance 
+– 𝑋= 𝑥1, 𝑥2, … , 𝑥𝑛 
+– 𝑣1 = 𝑎𝑟𝑔𝑚𝑎𝑥𝑣=1
+1
+𝑛 𝑣⊤𝑥𝑖2
+𝑖
+ 
+= 𝑎𝑟𝑔𝑚𝑎𝑥𝑣=1
+1
+𝑛𝑣⊤𝑋𝑋⊤𝑣 

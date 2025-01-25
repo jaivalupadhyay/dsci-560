@@ -1,0 +1,21 @@
+•
+Partition data into 2-groups (e.g., 2-means) 
+Top-down (divisive) 
+Hierarchical Clustering 
+•
+Recursively cluster each group. 
+Bottom-Up (agglomerative) 
+soccer 
+sports 
+fashion 
+Gucci 
+tennis  
+Lacoste  
+All topics 
+•
+Start with every point in its own cluster. 
+•
+Repeatedly merge the “closest” two clusters. 
+•
+Different defs of “closest” give different 
+algorithms. 

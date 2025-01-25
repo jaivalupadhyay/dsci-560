@@ -1,0 +1,16 @@
+Expansion, Examples: Learning Intervals 
+c1 
+c2 
+D+ 
+c1 
+c2 
+Consistency: zero probability 
+mass in the regions 
+Non-expanding (non-helpful) 
+distribution 
+Expanding distribution 
+c1 
+c2 
+D+ 
+S1 
+S2 

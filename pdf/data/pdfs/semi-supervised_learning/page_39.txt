@@ -1,0 +1,9 @@
+Graph-based Methods 
+Idea: construct a graph with edges between very similar 
+examples. Unlabeled data can help “glue” the objects of 
+the same class together. 
+ 
+ 
+Person Identification in Webcam Images: An Application of Semi-Supervised 
+Learning. [Balcan,Blum,Choi, Lafferty, Pantano, Rwebangira, Xiaojin Zhu], ICML 2005 Workshop 
+on Learning with Partially Classified Training Data.  

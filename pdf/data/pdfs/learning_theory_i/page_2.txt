@@ -1,0 +1,22 @@
+•
+what kinds of tasks we can hope to learn, and from what kind of data; 
+what are key resources involved (e.g., data, running time) 
+Goals of Machine Learning Theory
+Develop & analyze models to understand: 
+•
+prove guarantees for practically successful algs (when will they 
+succeed, how long will they take?)
+•
+Algorithms, Probability & Statistics, Optimization, Complexity Theory, 
+Information Theory, Game Theory.
+Interesting tools & connections to other areas:
+•
+develop new algs that provably meet desired criteria (within new 
+learning paradigms)
+Very vibrant field:d(1/)Err(h)d log(1/)
+A2VC-dimension
+Â
+•
+Conference on Learning Theory
+•
+NIPS, ICML

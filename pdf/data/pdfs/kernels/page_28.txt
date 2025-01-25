@@ -1,0 +1,11 @@
+Kernel, Closure Properties 
+Easily create new kernels using basic ones! 
+then K x, z = c1K1 x, z + c2K2 x, z  is a kernel. 
+If  K1 ⋅,⋅ and  K2 ⋅,⋅ are kernels  c1 ≥0, 𝑐2 ≥0, 
+Fact: 
+Key idea: concatenate the 𝜙 spaces. 
+ϕ x = ( c1 ϕ1 x ,
+c2 ϕ2(x))  
+ϕ x ⋅ϕ(z) = c1 ϕ1 x ⋅ϕ1 z + c2 ϕ2 x ⋅ϕ2 z  
+𝐾1(𝑥, 𝑧) 
+𝐾2(𝑥, 𝑧) 

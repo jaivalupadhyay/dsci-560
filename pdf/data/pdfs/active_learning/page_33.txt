@@ -1,0 +1,14 @@
+Disagreement Based Active Learning 
+“Disagreement based ” algos:  query points from current 
+region of disagreement, throw out hypotheses when 
+statistically confident they are suboptimal.  
+Lots of subsequent work trying to make is more efficient computationally 
+and more aggressive too: [Hanneke07, DasguptaHsuMontleoni’07, Wang’09 , 
+Fridman’09,  Koltchinskii10, BHW’08, BeygelzimerHsuLangfordZhang’10, Hsu’10, Ailon’12, …] 
+•
+Generic (any class), adversarial label noise. 
+Still, could be suboptimal in label complex & computationally 
+inefficient in general. 
+ 
+•
+Computationally efficient for classes of small VC-dimension 

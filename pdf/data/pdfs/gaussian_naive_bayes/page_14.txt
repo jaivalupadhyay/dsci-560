@@ -1,0 +1,17 @@
+Naïve Bayes Algorithm – discrete Xi  
+•  Train Naïve Bayes (examples)   
+ for each value yk
+ 
+ estimate 
+ 
+ for each value xij of each attribute Xi
+ 
+ 
+ estimate 
+ 
+ 
+•  Classify (Xnew)   
+ 
+prob that word xij appears 
+in position i, given Y=yk 
+ * Additional assumption:  word probabilities are position independent 

@@ -1,0 +1,20 @@
+Example of “typical” assumption: Margins 
+• The separator goes through low density regions of 
+the space/large margin. 
+– assume we are looking for linear separator 
+– belief: should exist one with large separation 
++ 
++ 
+_ 
+_ 
+Labeled data only 
++ 
++ 
+_ 
+_ 
++ 
++ 
+_ 
+_ 
+Transductive SVM 
+SVM 

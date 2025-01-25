@@ -1,0 +1,22 @@
+Tom Mitchell, April 2011 
+Reinforcement Learning 
+Maria-Florina Balcan 
+Carnegie Mellon University 
+ 
+April 20, 2015 
+Today: 
+ 
+•
+Learning of control policies 
+•
+Markov Decision Processes 
+•
+Temporal difference learning 
+•
+Q learning 
+Readings: 
+• Mitchell, chapter 13 
+• Kaelbling, et al., Reinforcement 
+Learning: A Survey 
+ 
+Slides courtesy: Tom Mitchell 

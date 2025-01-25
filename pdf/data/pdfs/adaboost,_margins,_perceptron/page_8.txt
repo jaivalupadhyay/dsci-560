@@ -1,0 +1,9 @@
+Generalization Guarantees 
+•
+Experiments showed that the test error of the generated 
+classifier usually does not increase as its size becomes 
+very large. 
+•
+Experiments showed that continuing to add new weak 
+learners after correct classification of the training set had 
+been achieved could further improve test set performance!!! 

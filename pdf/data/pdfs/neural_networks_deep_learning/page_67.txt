@@ -1,0 +1,34 @@
+Results	  
+• 	  Logis4c	  regression	  on	  top-­‐level	  representa4on.	  
+• 	  Mul4modal	  Inputs	  
+Learning	  Algorithm	  
+MAP	  
+Precision@50	  
+Random	  
+0.124	  
+0.124	  
+LDA	  [Huiskes	  et.	  al.]	  
+0.492	  
+0.754	  
+SVM	  [Huiskes	  et.	  al.]	  
+0.475	  
+0.758	  
+DBM-­‐Labelled	  
+0.526	  
+0.791	  
+Deep	  Belief	  Net	  
+0.638	  
+0.867	  
+Autoencoder	  
+0.638	  
+0.875	  
+DBM	  
+0.641	  
+0.873	  
+Mean	  Average	  Precision	  
+Labeled	  
+25K	  
+examples	  
++	  1	  Million	  
+unlabelled	  
+[Courtesy,	  R.	  Salakhutdinov]	  

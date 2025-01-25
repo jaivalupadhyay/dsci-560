@@ -1,0 +1,9 @@
+Questions to think about: 
+•  Can you use Naïve Bayes for a combination of 
+discrete and real-valued Xi?  
+•  How can we easily model the assumption that 
+just 2 of the n attributes as dependent? 
+•  What does the decision surface of a Naïve Bayes 
+classifier look like? 
+•  How would you select a subset of Xi’s? 
+ 

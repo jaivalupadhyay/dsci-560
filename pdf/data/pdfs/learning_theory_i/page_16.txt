@@ -1,0 +1,10 @@
+Sample Complexity for Supervised Learning
+Consistent Learner
+Example:
+H is the class of conjunctions over X = 0,1 n.
+• Output: Find h in H consistent with the sample (if one exits). 
+•
+Input: S: (x1,c*(x1)),…, (xm,c*(xm))
+Side HWK question: show that any conjunction can be 
+represented by a small decision tree; also by a linear 
+separator.

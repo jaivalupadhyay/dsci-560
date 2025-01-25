@@ -1,0 +1,5 @@
+NELL Today 
+• 
+eg. “diabetes”, “Avandia”, “tea”, “IBM”, “love” “baseball”  “San Juan” 
+“BacteriaCausesCondition” “kitchenItem” “ClothingGoesWithClothing”      … 
+ 

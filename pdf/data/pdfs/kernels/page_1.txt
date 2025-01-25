@@ -1,0 +1,7 @@
+Maria-Florina Balcan 
+03/23/2015 
+Kernels Methods in Machine Learning 
+•
+Perceptron. Geometric Margins. 
+•
+Support Vector Machines (SVMs).  

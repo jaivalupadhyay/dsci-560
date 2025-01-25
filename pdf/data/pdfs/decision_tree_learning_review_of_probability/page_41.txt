@@ -1,0 +1,13 @@
+A little formalism 
+More formally, we have 
+•  a sample space S (e.g., set of students in our class) 
+–  aka the set of possible worlds 
+•  a random variable is a function defined over the sample 
+space 
+–  Gender: S à { m, f } 
+–  Height: S à Reals 
+•  an event is a subset of S 
+–  e.g., the subset of S for which Gender=f 
+–  e.g., the subset of S for which (Gender=m) AND (eyeColor=blue) 
+•  we’re often interested in probabilities of specific events 
+•  and of specific events conditioned on other specific events  

@@ -1,0 +1,2 @@
+Example: Given a set of datapoints 
+Lloyd’s method: Random Initialization 

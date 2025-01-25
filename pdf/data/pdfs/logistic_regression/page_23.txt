@@ -1,0 +1,16 @@
+Generative vs. Discriminative Classifiers 
+Training classifiers involves estimating f: X à Y, or P(Y|X) 
+ 
+Generative classifiers (e.g., Naïve Bayes) 
+• 
+Assume some functional form for P(X|Y), P(X) 
+• 
+Estimate parameters of P(X|Y), P(X) directly from training data 
+• 
+Use Bayes rule to calculate P(Y|X= xi) 
+Discriminative classifiers (e.g., Logistic regression) 
+ 
+• 
+Assume some functional form for P(Y|X) 
+• 
+Estimate parameters of P(Y|X) directly from training data 

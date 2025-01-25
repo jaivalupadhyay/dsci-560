@@ -1,0 +1,8 @@
+What if we have continuous Xi ? 
+image classification: Xi is ith pixel, Y = mental state 
+ 
+Still have: 
+ 
+ 
+Just need to decide how to represent P(Xi | Y) 
+ 

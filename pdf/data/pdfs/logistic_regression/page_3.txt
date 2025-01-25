@@ -1,0 +1,3 @@
+Gaussian Naïve Bayes – Big Picture 
+Example:  Y= PlayBasketball (boolean), X1=Height,  X2=MLgrade 
+assume P(Y=1) = 0.5 

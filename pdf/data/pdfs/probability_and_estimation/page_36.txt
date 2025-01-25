@@ -1,0 +1,5 @@
+Independent Events 
+•  Definition: two events A and B are 
+independent if   P(A ^ B)=P(A)*P(B) 
+•  Intuition: knowing A tells us nothing 
+about the value of B (and vice versa) 

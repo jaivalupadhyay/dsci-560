@@ -1,0 +1,13 @@
+Properties of Kernels 
+Theorem (Mercer) 
+K is a kernel if and only if: 
+• K is symmetric 
+•
+For any set of training points 𝑥1, 𝑥2, … , 𝑥𝑚 and for 
+any 𝑎1, 𝑎2, … , 𝑎𝑚∈𝑅, we have: 
+  
+𝑎𝑖𝑎𝑗𝐾𝑥𝑖, 𝑥𝑗≥0
+𝑖,𝑗
+ 
+𝑎𝑇𝐾𝑎≥0 
+I.e., 𝐾= (𝐾𝑥𝑖, 𝑥𝑗)𝑖,𝑗=1,…,𝑛  is positive semi-definite. 

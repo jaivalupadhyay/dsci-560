@@ -1,0 +1,15 @@
+G.Naïve Bayes vs. Logistic Regression 
+Recall two assumptions deriving form of LR from GNBayes: 
+1.   Xi conditionally independent of Xk given Y 
+2.   P(Xi | Y = yk)  =  N(µik,σi),   ß not N(µik,σik) 
+Consider three learning methods: 
+• GNB (assumption 1 only) 
+• GNB2 (assumption 1 and 2) 
+• LR  
+ 
+Which method works better if we have infinite training data, and... 
+ 
+• Both (1) and (2) are satisfied 
+• Neither (1) nor (2) is satisfied 
+• (1) is satisfied, but not (2)  
+[Ng & Jordan, 2002] 

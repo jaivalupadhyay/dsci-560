@@ -1,0 +1,11 @@
+Principles for Estimating Probabilities 
+Principle 1 (maximum likelihood): 
+•  choose parameters θ that maximize P(data | θ) 
+•  e.g.,  
+ 
+ 
+Principle 2 (maximum a posteriori prob.): 
+•  choose parameters θ that maximize P(θ | data) 
+•  e.g. 
+ 
+ 

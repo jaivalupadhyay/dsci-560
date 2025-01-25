@@ -1,0 +1,11 @@
+NELL’s Approximation to EM 
+E’ step: 
+•  Re-estimate the knowledge base:   
+–  but consider only a growing subset of the latent variable 
+assignments  
+–  category variables: up to 250 new NP’s per category per iteration 
+–  relation variables: add only if confident and args of correct type 
+–  this set of explicit latent assignments *IS* the knowledge base 
+M’ step: 
+•  Each view-based learner retrains itself from the updated KB 
+•  “context” methods create growing subsets of contexts 

@@ -1,0 +1,13 @@
+Generalization Guarantees 
+•
+Experiments with boosting showed that the test error of 
+the generated classifier usually does not increase as its 
+size becomes very large. 
+•
+Experiments showed that continuing to add new weak 
+learners after correct classification of the training set had 
+been achieved could further improve test set performance!!! 
+•
+These results seem to contradict FS’87 bound and Occam’s 
+razor (in order achieve good test error the classifier should be as 
+simple as possible)! 

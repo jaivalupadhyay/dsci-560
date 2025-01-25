@@ -1,0 +1,15 @@
+Perceptron Extensions 
+•
+Can use it to find a consistent separator with a given set 
+S linearly separable by margin 𝛾 (by cycling through the data). 
+•
+Can convert the mistake bound guarantee into a distributional 
+guarantee too (for the case where the 𝑥𝑖s come from a fixed 
+distribution). 
+•
+Can be adapted to the case where there is no perfect 
+separator as long as the so called hinge loss (i.e., the total 
+distance needed to move the points to classify them correctly large 
+margin) is small.  
+•
+Can be kernelized to handle non-linear decision boundaries! 

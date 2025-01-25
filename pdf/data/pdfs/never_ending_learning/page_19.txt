@@ -1,0 +1,7 @@
+coachesTeam(c,t) 
+playsForTeam(a,t) 
+teamPlaysSport(t,s) 
+playsSport(a,s) 
+NP1 
+NP2 
+Type 3 Coupling: Relation Argument Types 

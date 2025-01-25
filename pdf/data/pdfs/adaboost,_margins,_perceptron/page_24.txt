@@ -1,0 +1,8 @@
+Geometric Margin 
+Definition: The margin of example 𝑥 w.r.t. a linear sep. 𝑤 is 
+the distance from 𝑥 to the plane 𝑤⋅𝑥= 0  (or the negative if on wrong side) 
+𝑥1 
+w 
+Margin of positive example 𝑥1 
+𝑥2 
+Margin of negative example 𝑥2 

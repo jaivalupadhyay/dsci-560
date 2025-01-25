@@ -1,0 +1,9 @@
+Which Tree Should We Output? 
+•  ID3 performs heuristic 
+search through space of 
+decision trees 
+•  It stops at smallest 
+acceptable tree. Why? 
+Occam’s razor: prefer the 
+simplest hypothesis that 
+fits the data 

@@ -1,0 +1,10 @@
+Artificial Neural Networks to learn f: X à Y 
+•  f might be non-linear function 
+•  X (vector of) continuous and/or discrete vars 
+•  Y (vector of) continuous and/or discrete vars 
+•  Represent f by network of logistic units 
+•  Each unit is a logistic function 
+•  MLE: train weights of all units to minimize sum of squared 
+errors of predicted network outputs 
+•  MAP: train to minimize sum of squared errors plus weight 
+magnitudes 

@@ -1,0 +1,13 @@
+What if we have continuous Xi ? 
+Eg., image classification: Xi is real-valued ith pixel 
+ 
+Naïve Bayes requires P(Xi | Y=yk), but Xi is real (continuous) 
+ 
+ 
+ 
+ 
+Common approach: assume P(Xi | Y=yk) follows a Normal 
+(Gaussian) distribution 
+ 
+ 
+ 

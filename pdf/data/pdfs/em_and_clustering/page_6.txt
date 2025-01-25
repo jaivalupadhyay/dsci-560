@@ -1,0 +1,10 @@
+EM and estimating  
+Flu 
+Allergy 
+Sinus 
+Headache 
+Nose 
+observed X = {F,A,H,N}, unobserved Z={S} 
+E step:  Calculate P(Zk|Xk; θ) for each training example, k  
+M step: update all relevant parameters.  For example: 
+Recall MLE was: 

@@ -1,0 +1,23 @@
+StormClouds 
+Lightning 
+Rain 
+Thunder 
+WindSurf 
+Parents 
+P(W|Pa) 
+P(¬W|Pa) 
+L, R  
+0 
+1.0 
+L, ¬R 
+0 
+1.0 
+¬L, R 
+0.2 
+0.8 
+¬L, ¬R 
+0.9 
+0.1 
+WindSurf 
+Inference in Bayes Nets 
+P(S=1, L=0, R=1, T=0, W=1)  = 

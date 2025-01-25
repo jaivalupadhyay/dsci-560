@@ -1,0 +1,22 @@
+Tom Mitchell, April 2011 
+Reinforcement Learning: Backgammon 
+[Tessauro, 1995] 
+Learning task:  
+•
+chose move at arbitrary board states 
+ 
+Training signal:  
+•
+final win or loss at the end of the game 
+ 
+Training: 
+•
+played 300,000 games against itself 
+ 
+Algorithm: 
+•
+reinforcement learning + neural network 
+ 
+Result: 
+•
+World-class Backgammon player 

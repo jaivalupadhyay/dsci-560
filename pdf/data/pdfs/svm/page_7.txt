@@ -1,0 +1,26 @@
+Input: S={(x1, 𝑦1), …,(xm, 𝑦m)};  
+Output: maximum margin separator over S 
+Support Vector Machines (SVMs) 
+Directly optimize for the maximum margin separator: SVMs 
+Find: some w and maximum 𝛾 where: 
+  
+•
+w
+2 = 1  
+ •
+For all i, 𝑦𝑖𝑤⋅𝑥𝑖≥𝛾 
+E.g., search for the best possible 𝛾  
++ + 
++ + 
+- 
+- - 
+- 
+- 
+𝛾 
+𝛾 
++ 
+- 
+- 
+- 
+- 
+w 

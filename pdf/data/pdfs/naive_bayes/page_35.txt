@@ -1,0 +1,8 @@
+MAP estimates for bag of words 
+ 
+Map estimate for multinomial 
+ 
+ 
+ 
+ 
+What β’s should we choose?  

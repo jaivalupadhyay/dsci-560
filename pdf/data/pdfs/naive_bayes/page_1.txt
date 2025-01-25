@@ -1,0 +1,16 @@
+Machine Learning 10-601 
+ 
+Tom M. Mitchell 
+Machine Learning Department 
+Carnegie Mellon University 
+ 
+January 26, 2015 
+Today: 
+•  Bayes Classifiers 
+•  Conditional Independence 
+•  Naïve Bayes 
+Readings: 
+Mitchell:  
+   “Naïve Bayes and Logistic 
+Regression” 
+     (available on class website) 

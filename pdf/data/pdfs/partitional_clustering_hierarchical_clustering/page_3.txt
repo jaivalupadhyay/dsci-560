@@ -1,0 +1,10 @@
+Clustering, Informal Goals 
+Goal: Automatically partition unlabeled data into groups of 
+similar datapoints. 
+ Question: When and why would we want to do this? 
+• Automatically organizing data. 
+ Useful for: 
+• Representing high-dimensional data in a low-dimensional space 
+(e.g., for visualization purposes). 
+• Understanding hidden structure in data. 
+• Preprocessing for further analysis. 

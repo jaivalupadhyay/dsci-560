@@ -1,0 +1,8 @@
+Sample Complexity for Supervised Learning
+Consistent Learner
+• Output: Find h in H consistent with the sample (if one exits). 
+•
+Input: S: (x1,c*(x1)),…, (xm,c*(xm))
+Contrapositive: if the target is in H, and we have an algo that 
+can find consistent fns, then we only need this many 
+examples to get generalization error ≤𝜖with prob. ≥1 −𝛿

@@ -1,0 +1,11 @@
+Disagreement Based Active Learning [CAL92] 
+Pick a few points at random from the current region of 
+disagreement DIS(Ht) and query their labels.  
+current version space 
+region of 
+uncertainy 
+Algorithm:  
+Query for the labels of a few random 𝑥𝑖s. 
+Let  H1  be the current version space. 
+For 𝒕= 𝟏, …., 
+Let Ht+1 be the new version space. 

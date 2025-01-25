@@ -1,0 +1,19 @@
+Tom Mitchell, April 2011 
+• Given a policy  : S  A, define  
+ 
+ 
+ 
+• Goal: find the optimal policy * where 
+ 
+ 
+• For any MDP, such a policy exists! 
+• We’ll abbreviate V *(s) as V*(s) 
+• Note if we have V*(s) and P(st+1|st,a), we can compute 
+*(s)     
+Value Function for each Policy 
+assuming action sequence chosen 
+according to , starting at state s 
+expected discounted reward we will get starting from state s if we follow policy π.  
+policy whose value function is 
+the maximum out of all policies 
+simultaneously for all states 

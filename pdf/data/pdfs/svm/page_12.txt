@@ -1,0 +1,19 @@
+Support Vector Machines (SVMs) 
+Directly optimize for the maximum margin separator: SVMs 
+Input: S={(x1, 𝑦1), …,(xm, 𝑦m)};  
+argminw 𝑤
+2 s.t.: 
+  
+•
+For all i, 𝑦𝑖𝑤⋅𝑥𝑖≥1 
+This is a 
+constrained 
+optimization 
+problem. 
+•
+The objective is convex (quadratic) 
+•
+All constraints are linear 
+•
+Can solve efficiently (in poly time) using standard quadratic 
+programing (QP) software 

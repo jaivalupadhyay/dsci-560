@@ -1,0 +1,12 @@
+•
+The importance of margins in machine learning. 
+•
+The primal form of the SVM optimization problem 
+What you should know 
+•
+The dual form of the SVM optimization problem.  
+•
+Kernelizing SVM. 
+•
+Think about how it’s related to Regularized Logistic 
+Regression. 

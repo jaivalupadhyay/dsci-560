@@ -1,0 +1,2 @@
+Recurrent Networks on Time Series 
+How can we train recurrent net?? 

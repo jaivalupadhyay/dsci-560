@@ -1,0 +1,10 @@
+What if we have continuous Xi ? 
+Gaussian Naïve Bayes (GNB): assume 
+ 
+ 
+ 
+ 
+Sometimes assume variance 
+•  is independent of Y (i.e., σi),  
+•  or independent of Xi (i.e., σk) 
+•  or both (i.e., σ) 

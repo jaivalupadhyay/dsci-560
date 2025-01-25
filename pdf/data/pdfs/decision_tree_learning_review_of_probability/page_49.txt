@@ -1,0 +1,7 @@
+Bayes Rule 
+•  let’s write 2 expressions for P(A ^ B)  
+ 
+B 
+ 
+A 
+A ^ B 

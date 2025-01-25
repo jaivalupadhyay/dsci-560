@@ -1,0 +1,3 @@
+Maximizing Conditional Log Likelihood 
+Good news: l(W) is concave function of W
+Bad news: no closed-form solution to maximize l(W)

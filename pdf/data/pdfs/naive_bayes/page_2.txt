@@ -1,0 +1,5 @@
+Two Principles for Estimating Parameters 
+•  Maximum Likelihood Estimate (MLE): choose θ that 
+maximizes probability of observed data 
+•  Maximum a Posteriori (MAP) estimate: choose θ that 
+is most probable given prior probability and the data 

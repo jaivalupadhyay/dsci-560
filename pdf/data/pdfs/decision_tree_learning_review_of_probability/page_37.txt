@@ -1,0 +1,3 @@
+Questions to think about (4) 
+•  What is the relationship between learning 
+decision trees, and learning IF-THEN rules 

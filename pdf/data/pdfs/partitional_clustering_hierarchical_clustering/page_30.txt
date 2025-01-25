@@ -1,0 +1,6 @@
+Lloyd’s method: Performance 
+This bad performance, can 
+happen even with well 
+separated Gaussian clusters. 
+Some Gaussian are 
+combined….. 

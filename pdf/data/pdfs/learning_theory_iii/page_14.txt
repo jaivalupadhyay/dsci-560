@@ -1,0 +1,11 @@
+Rademacher Complexity Bounds 
+•
+Distribution/data dependent. Tighter for nice distributions. 
+•
+Apply to general classes of real valued functions & can be used to 
+recover the VCbounds for supervised classification. 
+[Koltchinskii&Panchenko 2002] 
+See “Introduction to Statistical Learning Theory” 
+ O. Bousquet, S. Boucheron, and G. Lugosi. 
+•
+Prominent technique for generalization bounds in last decade. 

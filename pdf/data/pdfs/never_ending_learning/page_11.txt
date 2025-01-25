@@ -1,0 +1,21 @@
+Semi-Supervised Bootstrap Learning 
+Paris 
+Pittsburgh 
+Seattle 
+Montpelier 
+mayor of  arg1 
+live in  arg1 
+San Francisco 
+Berlin 
+denial 
+arg1 is home of 
+traits such as arg1 
+ 
+it’s underconstrained!! 
+ 
+anxiety 
+selfishness 
+London 
+Learn which 
+noun phrases 
+are cities: 

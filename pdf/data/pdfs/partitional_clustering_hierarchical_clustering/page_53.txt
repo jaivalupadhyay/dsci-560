@@ -1,0 +1,7 @@
+What You Should Know 
+• Partitional Clustering. k-means and k-means ++ 
+• Hierarchical Clustering. 
+• Lloyd’s method 
+•  Single linkage, Complete Linkge, Ward’s method 
+• Initialization techniques (random, furthest 
+traversal, k-means++) 

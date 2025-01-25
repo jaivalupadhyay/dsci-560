@@ -1,0 +1,26 @@
+Analyzing Training Error: Proof Math 
+Step 1: unwrapping recurrence: 𝐷𝑇+1 𝑖= 
+1
+𝑚 
+exp −𝑦𝑖𝑓𝑥𝑖
+ 𝑍𝑡
+𝑡
+ 
+where 𝑓𝑥𝑖=  𝛼𝑡ℎ𝑡𝑥𝑖
+𝑡
+. 
+Step 2: errS 𝐻𝑓𝑖𝑛𝑎𝑙≤ 𝑍𝑡.
+𝑡
+ 
+Step 3:  𝑍𝑡=  2 𝜖𝑡1 −𝜖𝑡
+𝑡
+=  
+1 −4𝛾𝑡
+2
+𝑡
+≤𝑒−2  𝛾𝑡
+2
+𝑡
+𝑡
+ 
+[Unthresholded weighted vote of ℎ𝑖 on 𝑥𝑖 ] 

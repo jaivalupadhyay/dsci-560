@@ -1,0 +1,14 @@
+What You Should Know 
+•  Bayes nets are convenient representation for encoding 
+dependencies / conditional independence 
+•  BN = Graph plus parameters of CPD’s 
+–  Defines joint distribution over variables 
+–  Can calculate everything else from that 
+–  Though inference may be intractable 
+•  Reading conditional independence relations from the 
+graph 
+–  Each node is cond indep of non-descendents, given only its 
+parents 
+–  ‘Explaining away’ 
+See Bayes Net applet: http://www.cs.cmu.edu/~javabayes/Home/applet.html 
+ 

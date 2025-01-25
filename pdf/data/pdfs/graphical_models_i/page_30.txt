@@ -1,0 +1,10 @@
+Prob. of marginals: not so easy  
+But sometimes the structure of the network allows us to be 
+clever à avoid exponential work 
+ 
+eg., chain     
+A 
+D 
+B 
+C 
+E 

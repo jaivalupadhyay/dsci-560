@@ -1,0 +1,34 @@
+Effective number of hypotheses 
+•
+H[S] – the set of splittings of dataset S using concepts from H. 
+•
+H[m] - max number of ways to split m points using concepts in H 
+H m = max
+S =m |H[S]| 
+E.g., H= Thresholds on the real line 
+- 
+- 
+- 
++ 
+In general, if |S|=m (all distinct), |H S | = m + 1 ≪2m 
+|H S | = 5 
+- 
+- 
+- 
+- 
+w 
++ 
+- 
+- 
+- 
++ 
++ 
+- 
++ 
++ 
++ 
++ 
++ 
++ 
++ 
+H[m] ≤2m 

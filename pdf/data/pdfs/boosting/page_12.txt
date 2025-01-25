@@ -1,0 +1,5 @@
+Adaboost (Adaptive Boosting) 
+[Freund-Schapire, JCSS’97] 
+Godel Prize winner 2003  
+“A Decision-Theoretic Generalization of On-Line 
+Learning and an Application to Boosting” 

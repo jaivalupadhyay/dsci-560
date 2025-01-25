@@ -1,0 +1,14 @@
+Sample Complexity: Infinite Hypothesis Spaces  
+Realizable Case 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+Sauer’s Lemma: H m = O mVCdim H  

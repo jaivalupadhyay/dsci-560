@@ -1,0 +1,33 @@
+Bayesian Network 
+StormClouds 
+Lightning 
+Rain 
+Thunder 
+WindSurf 
+Nodes = random variables 
+A conditional probability distribution (CPD) 
+is associated with each node N, defining   
+P(N | Parents(N)) 
+ 
+ 
+ 
+ 
+ 
+ 
+The joint distribution over all variables: 
+Parents 
+P(W|Pa) 
+P(¬W|Pa) 
+L, R  
+0 
+1.0 
+L, ¬R 
+0 
+1.0 
+¬L, R 
+0.2 
+0.8 
+¬L, ¬R 
+0.9 
+0.1 
+WindSurf 

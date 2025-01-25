@@ -1,0 +1,11 @@
+sounds like the solution to 
+learning F: X àY, 
+or P(Y | X). 
+ 
+ 
+Main problem: learning P(Y|X)  
+can require more data than we have 
+consider learning Joint Dist. with 100 attributes 
+# of rows in this table?  
+# of people on earth? 
+fraction of rows with 0 training examples? 

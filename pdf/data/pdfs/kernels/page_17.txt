@@ -1,0 +1,72 @@
+Example 
+ϕ: R2 →R3, x1, x2 →Φ x = (x1
+2, x2
+2,
+2x1x2) 
+x2 
+x1 
+O 
+O 
+O 
+O 
+O 
+O 
+O 
+O 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+z1 
+z3 
+O 
+O 
+O 
+O 
+O 
+O 
+O 
+O 
+O 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+Φ-space 
+Original space 
+ϕ x ⋅ϕ 𝑧= x1
+2, x2
+2,
+2x1x2 ⋅(𝑧1
+2, 𝑧2
+2,
+2𝑧1𝑧2) 
+= x1𝑧1 + x2𝑧2 2 = x ⋅𝑧2 = K(x, z) 

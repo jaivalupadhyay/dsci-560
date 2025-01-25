@@ -1,0 +1,7 @@
+Flu 
+Allergy 
+Sinus 
+Headache 
+Nose 
+•   EM seeks estimate: 
+•   here, observed X={F,A,H,N}, unobserved Z={S} 

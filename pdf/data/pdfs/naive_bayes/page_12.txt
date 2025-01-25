@@ -1,0 +1,13 @@
+Conditional Independence   
+Definition: X is conditionally independent of Y  given Z, if 
+the probability distribution governing X is independent 
+of the value of Y, given the value of Z 
+ 
+ 
+ 
+Which we often write  
+ 
+ 
+E.g., 
+ 
+ 

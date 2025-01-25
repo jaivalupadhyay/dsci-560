@@ -1,0 +1,8 @@
+Impact	  of	  Deep	  Learning	  
+• 	  Speech	  Recogni4on	  
+• 	  Computer	  Vision	  
+• 	  Language	  Understanding	  	  
+• 	  Recommender	  Systems	  	  
+• 	  Drug	  Discovery	  and	  Medical	  
+Image	  Analysis	  	  
+[Courtesy	  of	  R.	  Salakhutdinov]	  

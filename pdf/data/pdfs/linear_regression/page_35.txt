@@ -1,0 +1,7 @@
+Sources of error 
+•  What if we have perfect learner, infinite 
+data? 
+– Our learned h(x) satisfies h(x)=f(x) 
+– Still have remaining, unavoidable error 
+                                
+                                  σ2 

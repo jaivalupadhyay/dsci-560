@@ -1,0 +1,6 @@
+Safe Active Learning Schemes 
+Disagreement Based Active Learning 
+Hypothesis Space Search 
+[CAL92] 
+[BBL06]  
+ [Hanneke’07, DHM’07, Wang’09 , Fridman’09, Kolt10, BHW’08, BHLZ’10, H’10, Ailon’12, …] 

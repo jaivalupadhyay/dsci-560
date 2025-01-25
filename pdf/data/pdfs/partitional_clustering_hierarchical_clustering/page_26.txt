@@ -1,0 +1,4 @@
+Lloyd’s method: Performance 
+It always converges, but it may converge at a local optimum 
+that is different from the global optimum, and in fact could 
+be arbitrarily worse in terms of its score. 

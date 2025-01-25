@@ -1,0 +1,3 @@
+Another way to view Naïve Bayes (Boolean Y): 
+Decision rule: is this quantity greater or less than 1? 
+ 

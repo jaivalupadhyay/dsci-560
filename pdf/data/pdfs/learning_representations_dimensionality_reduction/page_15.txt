@@ -1,0 +1,10 @@
+Two Interpretations 
+Maximum Variance Direction:  1st PC a vector v such that projection 
+on to this vector capture maximum variance in the data (out of all 
+possible one dimensional projections) 
+Minimum Reconstruction Error: 1st PC a vector v such that 
+projection on to this vector yields minimum MSE reconstruction  
+xi 
+v 
+v ⋅  xi 
+E.g., for the first component. 

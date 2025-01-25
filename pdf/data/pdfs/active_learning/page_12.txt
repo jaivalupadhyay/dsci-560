@@ -1,0 +1,8 @@
+Can adaptive querying really do better than 
+passive/random sampling? 
+• YES! (sometimes) 
+ 
+• We often need far fewer labels for active 
+learning than for passive. 
+• This is predicted by theory and has been 
+observed in practice. 

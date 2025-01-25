@@ -1,0 +1,15 @@
+Principal Component Analysis (PCA) 1stPC2ndPC
+Principal Components (PC) are orthogonal directions 
+that capture most of the variance in the data. 
+xi −v ⋅  xi 
+xi 
+v ⋅  xi 
+•
+1st PC – direction of greatest variability in data. 
+•
+2nd PC – Next orthogonal (uncorrelated) direction 
+of greatest variability 
+(remove all variability in first direction, then find next direction of 
+greatest variability) 
+•
+And so on … 

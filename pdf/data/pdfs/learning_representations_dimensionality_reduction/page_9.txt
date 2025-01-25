@@ -1,0 +1,18 @@
+1stPC
+Principal Component Analysis (PCA) 
+Principal Components (PC) are orthogonal directions 
+that capture most of the variance in the data. 
+ 
+xi 
+v 
+v ⋅  xi 
+• Projection of data points along first PC 
+discriminates data most along any one direction 
+(pts are the most spread out when we project the data on 
+that direction compared to any other directions). 
+||v||=1, Point xi (D-dimensional vector) 
+Projection of xi onto v is  v ⋅  xi 
+ 
+•
+First PC – direction of greatest variability in data. 
+Quick reminder: 

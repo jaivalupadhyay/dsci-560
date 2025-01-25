@@ -1,0 +1,15 @@
+21 
+Each internal node: test one discrete-valued attribute Xi 
+Each branch from a node: selects one value for Xi 
+Each leaf node: predict Y 
+Final Decision Tree for 
+f: <Outlook, Temperature, Humidity, Wind> à PlayTennis? 
+Which Tree Should We Output? 
+•  ID3 performs heuristic 
+search through space of 
+decision trees 
+•  It stops at smallest 
+acceptable tree. Why? 
+Occam’s razor: prefer the 
+simplest hypothesis that 
+fits the data 

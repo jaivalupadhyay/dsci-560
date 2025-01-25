@@ -1,0 +1,9 @@
+Supervised Learning 
+•
+E.g., which emails are spam and which are important. 
+Not spam 
+spam 
+•
+E.g., classify images as man versus women. 
+Man 
+Women 

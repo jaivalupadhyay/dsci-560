@@ -1,0 +1,19 @@
+Rademacher Complexity 
+The empirical Rademacher complexity of F is:  
+where 𝜎𝑖 are i.i.d. Rademacher variables chosen uniformly from {−1,1}.  
+Rm F = ES[R m(F)] 
+The Rademacher complexity of F is:  
+Space Z and a distr. D|Z; F be a class of functions from Z to [0,1] 
+Let S = {z1, … , zm} be i.i.d from  D|Z.  
+E.g.,: 
+2) F={all 0/1 fnc}, then   R m(F) = 1/2 
+1) F={f}, then  R m(F) = 0 
+[To maximize set f(zi) = 1 when σi = 1 and f(zi) = 0 when σi = −1. Then quantity 
+inside expectation is #1′𝑠∈𝜎, which is m/2 by linearity of expectation.] 
+[Linearity of expectation: each σif(zi) individually has expectation 0.] 
+R m(F) = Eσ1,…,σm sup
+f∈F
+ 1
+m  σif zi
+i
+   

@@ -1,0 +1,12 @@
+L2 vs. L1 Regularization 
+constant P(W) 
+constant 
+P(Data|W) 
+Gaussian P(W) 
+ L2 regularization 
+Laplace P(W) 
+ L1 regularization 
+w1 
+w1 
+w2 
+w2 

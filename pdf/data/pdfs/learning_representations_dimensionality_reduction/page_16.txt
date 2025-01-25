@@ -1,0 +1,14 @@
+Why? Pythagorean Theorem 
+xi 
+v 
+v ⋅  xi 
+blue2 + green2 = black2 
+black2 is fixed (it’s just the data) 
+So, maximizing blue2 is 
+equivalent to minimizing green2  
+Maximum Variance Direction:  1st PC a vector v such that projection 
+on to this vector capture maximum variance in the data (out of all 
+possible one dimensional projections) 
+Minimum Reconstruction Error: 1st PC a vector v such that 
+projection on to this vector yields minimum MSE reconstruction  
+E.g., for the first component. 

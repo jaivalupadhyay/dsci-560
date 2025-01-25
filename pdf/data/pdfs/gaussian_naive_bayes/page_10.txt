@@ -1,0 +1,12 @@
+Learning to classify document: P(Y|X) 
+the “Bag of Words” model 
+•  Y discrete valued.  e.g., Spam or not 
+•  X = <X1, X2, … Xn> = document 
+ 
+•  Xi are iid random variables.  Each represents the word at its 
+position i in the document 
+•  Generating a document according to this distribution = 
+rolling a 50,000 sided die, once for each word position in the 
+document 
+•  The observed counts for each word follow a ??? distribution 
+ 

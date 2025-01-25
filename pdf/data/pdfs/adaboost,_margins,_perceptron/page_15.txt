@@ -1,0 +1,15 @@
+Boosting and Margins 
+Theorem:VCdim(𝐻) = 𝑑, then with prob. ≥1 −𝛿, ∀𝑓∈𝑐𝑜(𝐻), ∀𝜃> 0, 
+Pr
+𝐷𝑦𝑓𝑥≤0 ≤Pr
+𝑆𝑦𝑓𝑥≤𝜃+ 𝑂
+1
+𝑚 
+d ln2𝑚
+𝑑
+𝜃2
++ ln
+1
+𝛿  
+Note:  bound does not depend on  T (the # of rounds of boosting), 
+depends only on the complex. of the weak hyp space and the margin! 

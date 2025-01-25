@@ -1,0 +1,12 @@
+What if we have continuous Xi ? 
+Eg., image classification: Xi is ith pixel 
+ 
+Gaussian Naïve Bayes (GNB): assume 
+ 
+ 
+ 
+ 
+Sometimes assume σik 
+•  is independent of Y (i.e., σi),  
+•  or independent of Xi (i.e., σk) 
+•  or both (i.e., σ) 

@@ -1,0 +1,7 @@
+Active learning with label propagation 
+ 
+44 
+(using soft-cuts) 
+How to choose 
+which node to 
+query? 

@@ -1,0 +1,5 @@
+Questions to think about (3) 
+•  Why use Information Gain to select attributes 
+in decision trees?  What other criteria seem 
+reasonable, and what are the tradeoffs in 
+making this choice?   

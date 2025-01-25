@@ -1,0 +1,7 @@
+Kernel Methods 
+• Offer great modularity. 
+• No need to change the underlying learning 
+algorithm to accommodate a particular choice 
+of kernel function. 
+• Also, we can substitute a different algorithm 
+while maintaining the same kernel. 

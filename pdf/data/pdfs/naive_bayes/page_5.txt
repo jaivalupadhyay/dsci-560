@@ -1,0 +1,31 @@
+Let’s learn classifiers by learning P(Y|X) 
+Consider Y=Wealth,  X=<Gender, HoursWorked> 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Gender 
+HrsWorked 
+P(rich | G,HW) 
+P(poor | G,HW) 
+F 
+<40.5 
+.09 
+.91 
+F 
+>40.5 
+.21 
+.79 
+M 
+<40.5 
+.23 
+.77 
+M 
+>40.5 
+.38 
+.62 

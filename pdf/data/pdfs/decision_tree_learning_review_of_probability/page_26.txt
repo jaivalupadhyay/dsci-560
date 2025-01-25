@@ -1,0 +1,7 @@
+Two Core Aspects of Machine Learning 
+Algorithm Design. How to optimize? 
+Automatically generate rules that do well on observed data. 
+Confidence Bounds, Generalization 
+Confidence for rule effectiveness on future data. 
+Computation 
+(Labeled) Data 

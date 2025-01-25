@@ -1,0 +1,16 @@
+Generalization Guarantees 
+•
+Experiments showed that continuing to add new weak 
+learners after correct classification of the training set had 
+been achieved could further improve test set performance!!! 
+•
+These results seem to contradict FS’97 bound and Occam’s 
+razor (in order achieve good test error the classifier should be as 
+simple as possible)! 
+•
+Experiments showed that the test error of the generated 
+classifier usually does not increase as its size becomes 
+very large. 
+∀ 𝑔∈𝐺, 𝑒𝑟𝑟𝑔≤𝑒𝑟𝑟𝑆𝑔+ 𝑂 
+𝑇𝑑
+𝑚   

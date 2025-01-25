@@ -1,0 +1,12 @@
+Boosting didn’t seem 
+to overfit…(!) 
+test 
+error 
+train 
+error 
+test error of base classifier 
+(weak learner) 
+Error Curve, Margin Distr. Graph - Plots from [SFBL98] 
+…because it turned out to be 
+increasing the margin of the 
+classifier 

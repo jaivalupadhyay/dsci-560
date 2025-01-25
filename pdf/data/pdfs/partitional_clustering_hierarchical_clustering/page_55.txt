@@ -1,0 +1,5 @@
+Smoothed analysis model 
+•
+Imagine a worst-case input. 
+•
+But then add small Gaussian perturbation to each data point. 

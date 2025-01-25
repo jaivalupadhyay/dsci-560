@@ -1,0 +1,8 @@
+14 
+Day   Outlook  Temperature  Humidity   Wind   PlayTennis? 
+Simple Training Data Set 
+Each internal node: test one discrete-valued attribute Xi 
+Each branch from a node: selects one value for Xi 
+Each leaf node: predict Y  (or P(Y|X ∈ leaf)) 
+A Decision tree for  
+f: <Outlook, Temperature, Humidity, Wind> à PlayTennis? 

@@ -1,0 +1,21 @@
+Kernels, Discussion 
+•
+If  all computations involving instances are in terms 
+of inner products then: 
+Conceptually, work in a very high diml space and the alg’s 
+performance depends only on linear separability in that 
+extended space. 
+ Computationally, only need to modify the algo by replacing 
+each x ⋅z with a K x, z . 
+How to choose a kernel: 
+•
+Use Cross-Validation to choose the parameters, e.g., 𝜎  for 
+Gaussian Kernel  K x, 𝑧= exp −
+𝑥−𝑧
+2
+2 𝜎2   
+•
+Learn a good kernel; e.g.,  [Lanckriet-Cristianini-Bartlett-El Ghaoui-
+Jordan’04] 
+•
+Kernels often encode domain knowledge (e.g., string kernels) 

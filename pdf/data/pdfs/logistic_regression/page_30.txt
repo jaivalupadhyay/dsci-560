@@ -1,0 +1,20 @@
+G.Naïve Bayes vs. Logistic Regression 
+What if we have only finite training data? 
+ 
+They converge at different rates to their asymptotic (∞ data) error 
+ 
+Let          refer to expected error of learning algorithm A after n training 
+examples 
+ 
+Let d be the number of features: <X1 … Xd> 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+So, GNB requires n = O(log d) to converge, but LR requires n = O(d) 
+[Ng & Jordan, 2002] 

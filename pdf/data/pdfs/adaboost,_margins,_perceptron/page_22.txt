@@ -1,0 +1,10 @@
+• Set t=1, start with the all zero vector 𝑤1. 
+Linear Separators: Perceptron Algorithm 
+• Given example 𝑥, predict positive iff 𝑤𝑡⋅𝑥≥0 
+• On a mistake, update as follows: 
+• Mistake on positive, then update 𝑤𝑡+1 ←𝑤𝑡+ 𝑥 
+• Mistake on negative, then update 𝑤𝑡+1 ←𝑤𝑡−𝑥 
+Note:  𝑤𝑡 is weighted sum of incorrectly classified examples 
+𝑤𝑡= 𝑎𝑖1𝑥𝑖1 + ⋯+ 𝑎𝑖𝑘𝑥𝑖𝑘 
+𝑤𝑡⋅𝑥= 𝑎𝑖1𝑥𝑖1 ⋅𝑥+ ⋯+ 𝑎𝑖𝑘𝑥𝑖𝑘⋅𝑥 
+Important when we talk about kernels. 

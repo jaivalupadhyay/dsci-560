@@ -1,0 +1,24 @@
+MIR-­‐Flickr	  Dataset	  
+Huiskes	  et.	  al.	  
+• 	  1	  million	  images	  along	  with	  user-­‐assigned	  tags.	  
+sculpture,	  beauty,	  
+stone	  
+nikon,	  green,	  light,	  
+photoshop,	  apple,	  d70	  
+white,	  yellow,	  
+abstract,	  lines,	  bus,	  
+graphic	  
+sky,	  geotagged,	  
+reﬂec4on,	  cielo,	  
+bilbao,	  reﬂejo	  
+food,	  cupcake,	  
+vegan	  
+d80	  
+anawesomeshot,	  
+theperfectphotographer,	  
+ﬂash,	  damniwishidtakenthat,	  
+spiritofphotography	  
+nikon,	  abigfave,	  
+goldstaraward,	  d80,	  
+nikond80	  
+[Courtesy,	  R.	  Salakhutdinov]	  

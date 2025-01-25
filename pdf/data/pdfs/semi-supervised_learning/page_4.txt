@@ -1,0 +1,11 @@
+Two Core Aspects of Supervised Learning 
+Algorithm Design. How to optimize? 
+Automatically generate rules that do well on observed data. 
+Confidence Bounds, Generalization 
+Confidence for rule effectiveness on future data. 
+Computation 
+(Labeled) Data 
+•
+E.g.: Naïve Bayes, logistic regression, SVM, Adaboost, etc. 
+•
+VC-dimension, Rademacher complexity, margin based bounds, etc. 

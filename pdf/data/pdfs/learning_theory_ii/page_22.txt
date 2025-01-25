@@ -1,0 +1,11 @@
+Shattering, VC-dimension 
+The VC-dimension of a hypothesis space H is the cardinality of 
+the largest set S that can be shattered by H. 
+Definition: 
+If arbitrarily large finite sets can be shattered by H, then 
+VCdim(H) = ∞ 
+VC-dimension (Vapnik-Chervonenkis dimension) 
+To show that VC-dimension is d: 
+– there is no set of d+1 points that can be shattered. 
+– there exists a set of d points that can be shattered 
+Fact: If H is finite, then VCdim (H) ≤log (|H|). 

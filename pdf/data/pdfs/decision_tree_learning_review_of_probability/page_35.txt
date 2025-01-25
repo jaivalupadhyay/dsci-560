@@ -1,0 +1,6 @@
+Questions to think about (2) 
+•  Consider target function f: <x1,x2> à y, 
+where x1 and x2 are real-valued, y is 
+boolean.  What is the set of decision surfaces 
+describable with decision trees that use each 
+attribute at most once? 

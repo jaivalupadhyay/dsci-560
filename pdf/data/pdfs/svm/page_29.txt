@@ -1,0 +1,9 @@
+Semi-Supervised Learning 
+Prominent paradigm in past 15 years in Machine Learning. 
+ 
+• Most applications have lots of unlabeled data, but 
+labeled data is rare or expensive: 
+• Web page, document classification 
+• Computer Vision 
+• Computational Biology,  
+• …. 

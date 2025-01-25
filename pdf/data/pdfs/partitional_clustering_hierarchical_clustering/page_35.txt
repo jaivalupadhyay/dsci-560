@@ -1,0 +1,7 @@
+(0,1) 
+(0,-1) 
+(-2,0) 
+(3,0) 
+Furthest point initialization heuristic 
+sensitive to outliers 
+Assume k=3 

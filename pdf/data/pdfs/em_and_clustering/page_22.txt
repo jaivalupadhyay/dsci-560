@@ -1,0 +1,14 @@
+EM – M Step  
+  
+    
+Z
+X1 
+X4 
+X3 
+X2 
+Now consider update for µji 
+µji’ has no influence 
+… … … 
+Compare above to 
+MLE if Z were 
+observable: 

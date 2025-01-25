@@ -1,0 +1,13 @@
+Function Approximation: Decision Tree Learning 
+Problem Setting: 
+•  Set of possible instances X 
+–  each instance x in X is a feature vector  
+x = < x1, x2 … xn> 
+•  Unknown target function f : XàY
+–  Y is discrete valued 
+•  Set of function hypotheses H={ h | h : XàY }
+–  each hypothesis h is a decision tree 
+Input: 
+•  Training examples {<x(i),y(i)>} of unknown target function f
+Output: 
+•  Hypothesis h ∈ H that best approximates target function f

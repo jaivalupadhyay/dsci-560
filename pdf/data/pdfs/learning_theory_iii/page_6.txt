@@ -1,0 +1,27 @@
+Sample Complexity: Infinite Hypothesis Spaces  
+Realizable Case 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+E.g., H= linear separators in Rd 
+Sample complexity linear in d 
+So, if double the number of features, then I only need 
+roughly twice the number of samples to do well. 
++ 
+- 
++ 
++ 
++ 
+- 
+- 
+- 
+- 
+- 
+VCdim(H)= d+1 

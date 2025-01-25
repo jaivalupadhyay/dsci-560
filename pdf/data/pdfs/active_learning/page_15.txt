@@ -1,0 +1,16 @@
+Common Technique in Practice 
+Active SVM seems to be quite useful in practice. 
+•
+Find 𝑤𝑡 the max-margin 
+separator of all labeled 
+points so far. 
+•
+Request the label of the 
+example closest to the current 
+separator: minimizing 𝑥𝑖⋅𝑤𝑡. 
+[Tong & Koller, ICML 2000; Jain, Vijayanarasimhan & Grauman, NIPS 2010] 
+Algorithm (batch version) 
+Input Su={x1, …,xmu} drawn i.i.d from the underlying source D 
+Start: query for the labels of a few random 𝑥𝑖s. 
+For 𝒕= 𝟏, …., 
+(highest uncertainty) 

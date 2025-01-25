@@ -1,0 +1,10 @@
+Region of uncertainty [CAL92] 
+•  Current version space: part of C consistent with labels so far. 
+•  “Region of uncertainty” = part of data space about which 
+there is still some uncertainty (i.e. disagreement within version 
+space) 
+current version space 
+ region of uncertainty 
+in data space 
++ 
++ 

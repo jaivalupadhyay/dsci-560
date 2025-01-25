@@ -1,0 +1,21 @@
+Co-training/Multi-view SSL: Direct 
+Optimization of Agreement 
+ Su={x1, …,xmu} 
+ Input: Sl={(x1, y1), …,(xml, yml)}  
+• l(h xi , yi) loss function 
+•
+E.g., square loss l h xi , yi = yi −ℎxl
+2 
+•
+E.g., 0/1 loss l h xi , yi = 1𝑦𝑖≠ℎ(𝑥𝑖) 
+P. Bartlett, D. Rosenberg, AISTATS 2007;  K. Sridharan, S. Kakade, COLT 2008 
+E.g., 
+argminh1,h2    l(hl xi , yi)
+ml
+i=1
+2
+l=1
++ C  agreement(h1 xi , h2 xi )
+mu
+i=1
+ 

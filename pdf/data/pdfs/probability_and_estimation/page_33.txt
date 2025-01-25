@@ -1,0 +1,8 @@
+Some terminology 
+•  Likelihood function:  P(data | θ) 
+•  Prior: P(θ) 
+•  Posterior: P(θ | data) 
+•  Conjugate prior: P(θ) is the conjugate 
+prior for likelihood function P(data | θ) if 
+the forms of P(θ) and P(θ | data) are the 
+same. 

@@ -1,0 +1,18 @@
+team 
+coachesTeam(c,t) 
+playsForTeam(a,t) 
+teamPlaysSport(t,s) 
+playsSport(a,s) 
+person 
+NP1 
+athlete 
+coach 
+sport 
+team 
+person 
+NP2 
+athlete 
+coach 
+sport 
+Learned Probabilistic Horn Clause Rules 
+ 0.93  playsSport(?x,?y) ß playsForTeam(?x,?z), teamPlaysSport(?z,?y) 

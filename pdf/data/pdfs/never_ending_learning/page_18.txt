@@ -1,0 +1,24 @@
+team 
+person 
+NP: 
+athlete 
+coach 
+sport 
+NP text 
+context 
+distribution 
+NP 
+morphology 
+NP HTML 
+contexts 
+Multi-view, Multi-Task Coupling 
+[Blum & Mitchell; 98] 
+[Dasgupta et al; 01 ] 
+[Ganchev et al., 08] 
+[Sridharan & Kakade, 08] 
+[Wang & Zhou, ICML10] 
+athlete(NP) à person(NP) 
+athlete(NP) à NOT sport(NP) 
+NOT athlete(NP) ß sport(NP) 
+[Taskar et al., 2009] 
+[Carlson et al., 2009] 

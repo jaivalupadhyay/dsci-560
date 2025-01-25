@@ -1,0 +1,52 @@
+  
+ 
+ 
+  
+ 
+ 
+  
+  
+ 
+ 
+  
+ 
+ 
+  
+can refer to 
+hometown 
+c:penguins 
+c:pittsburgh 
+river flows 
+ 
+ through 
+c:monongahela 
+ “sits astride” 
+ “overlooks” 
+ “enters” 
+ “runs through” 
+ “Pgh” 
+ “Pittsburgh” 
+ “Monongahela” 
+ “Mon river” 
+ “Penguins” 
+ “Pens” 
+ “remain in” 
+ “began in” 
+ “supports” 
+ “reminded” 
+can refer to 
+can refer to 
+NELL:  concepts  and “noun phrases” 
+SVO triples from 500 M dependency parsed web pages (thank you Chris Re!) 
+-  Circumvents NELL’s fixed vocabulary of relations! 
+-  Sadly, adding these does not help: too sparse 
+-  But clustering verb phrases based on latent 
+embedding (NNMF), produces significant 
+improvement 
+-  {“lies on”, “runs through”, “flows through”, …} 
+-  Precision/recall over 15 NELL relations: 
+ KB only:            0.80 / 0.33 
+ KB + SVOlatent:  0.87 / 0.42 
+ 
+[Gardner et al., 2014] 
+[Gardner et al, 2014] 

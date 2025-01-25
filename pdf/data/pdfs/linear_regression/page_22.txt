@@ -1,0 +1,13 @@
+1. Choose parameterized form for P(Y|X; θ) 
+ 
+Assume Y is some deterministic f(X), plus random noise 
+ 
+ 
+Therefore Y is a random variable that follows the distribution 
+ 
+ 
+and the expected value of y for any given x is f(x) 
+ 
+Y 
+X 
+where 

@@ -1,0 +1,6 @@
+xd = input 
+td = target output 
+od = observed unit 
+output 
+wij = wt from i to j 
+(MLE) 

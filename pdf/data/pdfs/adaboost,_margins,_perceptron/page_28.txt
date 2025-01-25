@@ -1,0 +1,30 @@
+Perceptron Algorithm: Analysis 
+Theorem: If data has margin 𝛾 and all 
+points inside a ball of radius 𝑅, then 
+Perceptron makes ≤𝑅/𝛾2 mistakes. 
+Update rule:  
+•
+Mistake on positive: 𝑤𝑡+1 ←𝑤𝑡+ 𝑥 
+•
+Mistake on negative: 𝑤𝑡+1 ←𝑤𝑡−𝑥 
+Proof: 
+Idea: analyze 𝑤𝑡⋅𝑤∗ and ‖𝑤𝑡‖, where 𝑤∗ is the max-margin sep, ‖𝑤∗‖ = 1.  
+Claim 1: 𝑤𝑡+1 ⋅𝑤∗≥𝑤𝑡⋅𝑤∗+ 𝛾. 
+Claim 2: 𝑤𝑡+1 2 ≤
+𝑤𝑡
+2 + 𝑅2. 
+(because 𝑙𝑥𝑥⋅𝑤∗≥𝛾) 
+(by Pythagorean Theorem) 
+𝑤𝑡 
+𝑤𝑡+1 
+𝑥 
+After 𝑀 mistakes: 
+𝑤𝑀+1 ⋅𝑤∗≥𝛾𝑀 (by Claim 1) 
+𝑤𝑀+1
+≤𝑅𝑀 (by Claim 2) 
+𝑤𝑀+1 ⋅𝑤∗≤‖𝑤𝑀+1‖  (since 𝑤∗ is unit length) 
+So, 𝛾𝑀≤𝑅𝑀, so 𝑀≤
+𝑅
+𝛾
+2
+. 𝑤∗𝑤𝑀+1

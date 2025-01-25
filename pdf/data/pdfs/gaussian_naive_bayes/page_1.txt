@@ -1,0 +1,35 @@
+Machine Learning 10-601 
+ 
+Tom M. Mitchell 
+Machine Learning Department 
+Carnegie Mellon University 
+ 
+January 28, 2015 
+Today: 
+• 
+Naïve Bayes 
+• 
+discrete-valued Xi’s 
+• 
+Document classification 
+• 
+Gaussian Naïve Bayes 
+• 
+real-valued Xi’s 
+• 
+Brain image classification 
+ 
+ 
+Readings: 
+ 
+Required: 
+• 
+Mitchell: “Naïve Bayes and 
+Logistic Regression” 
+     (available on class website) 
+ 
+Optional 
+• 
+Bishop 1.2.4 
+• 
+Bishop 4.2  

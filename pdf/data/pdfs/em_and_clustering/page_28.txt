@@ -1,0 +1,12 @@
+Chow-Liu Algorithm 
+Key result:  To minimize KL(P || T), it suffices to find the tree 
+network T that maximizes the sum of mutual informations 
+over its edges 
+ 
+Mutual information for an edge between variable A and B:  
+ 
+ 
+ 
+This works because for tree networks with nodes 
+ 
+ 

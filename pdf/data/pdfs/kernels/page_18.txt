@@ -1,0 +1,11 @@
+Kernels 
+Definition 
+K(⋅,⋅) is a  kernel if it can be viewed as a legal definition of 
+inner product: 
+• ∃ ϕ: X →RN  s.t. K x, z = ϕ x ⋅ϕ(z) 
+•
+Range of ϕ is called the Φ-space. 
+•
+N can be very large.  
+•
+But think of ϕ as implicit, not explicit!!!! 

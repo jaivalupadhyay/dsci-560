@@ -1,0 +1,2 @@
+What do we do if variables are mix of discrete 
+and real valued? 

@@ -1,0 +1,23 @@
+Shattering, VC-dimension 
+If the VC-dimension is d, that means there exists a set of 
+d points that can be shattered, but there is no set of d+1 
+points that can be shattered. 
+E.g., H= Union of k intervals on the real line 
++ 
+- 
+- 
+VCdim H = 2k 
++ 
+- 
++ 
++ 
+- 
++ 
+- 
+… 
+VCdim H < 2k + 1 
+VCdim H ≥2k 
+            A sample of size 2k shatters 
+(treat each pair of points as a 
+separate case of intervals)  
++ 

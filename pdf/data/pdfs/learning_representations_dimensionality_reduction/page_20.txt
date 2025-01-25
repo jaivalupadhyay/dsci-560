@@ -1,0 +1,3 @@
+•
+PCA provably useful before doing k-means clustering and also 
+empirically useful. E.g., 

@@ -1,0 +1,34 @@
+Linear Separators 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+O 
+O 
+O 
+O 
+O 
+O 
+O 
+O 
+w 
+• Instance space X = Rd 
+• Hypothesis class of linear decision 
+surfaces in Rd. 
+•  h x = w ⋅ x + w0, if ℎ𝑥≥ 0, then 
+label x as +, otherwise label it as - 
+Claim: WLOG w0 = 0. 
+Proof: Can simulate a non-zero threshold with a dummy input 
+feature 𝑥0 that is always set up to 1. 
+•
+𝑥= 𝑥1, … , 𝑥𝑑→𝑥 = 𝑥1, … , 𝑥𝑑, 1  
+•
+w ⋅ x + w0 ≥0 iff 𝑤1, … , 𝑤𝑑, w0
+⋅𝑥 ≥0 
+where w = 𝑤1, … , 𝑤𝑑 

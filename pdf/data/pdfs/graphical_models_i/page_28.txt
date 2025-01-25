@@ -1,0 +1,6 @@
+Generating a sample from  
+joint distribution: easy  
+How can we generate random samples 
+drawn according to P(F,A,S,H,N)? 
+ 
+let’s use p(a,b) as shorthand for p(A=a, B=b) 

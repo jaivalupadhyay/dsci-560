@@ -1,0 +1,5 @@
+•
+Useful to learn lower dimensional 
+representations of the data. 
+•
+Big & High-Dimensional Data. 

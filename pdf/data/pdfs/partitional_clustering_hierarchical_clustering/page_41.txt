@@ -1,0 +1,6 @@
+What value of k??? 
+• Hold-out validation/cross-validation on auxiliary 
+task (e.g., supervised learning task). 
+• Heuristic: Find large gap between k -1-means cost 
+and k-means cost. 
+• Try hierarchical clustering. 

@@ -1,0 +1,20 @@
+team 
+coachesTeam(c,t) 
+playsForTeam(a,t) 
+teamPlaysSport(t,s) 
+playsSport(a,s) 
+person 
+NP1 
+athlete 
+coach 
+sport 
+team 
+person 
+NP2 
+athlete 
+coach 
+sport 
+playsSport(NP1,NP2) à athlete(NP1), sport(NP2) 
+Type 3 Coupling: Relation Argument Types 
+over 2500 coupled 
+functions in NELL 

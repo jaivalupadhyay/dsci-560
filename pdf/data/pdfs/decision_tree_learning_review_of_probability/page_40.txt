@@ -1,0 +1,18 @@
+Random Variables 
+• 
+Informally, A is a random variable if 
+–  A denotes something about which we are uncertain 
+–  perhaps the outcome of a randomized experiment  
+• 
+Examples 
+A = True if a randomly drawn person from our class is female 
+A = The hometown of a randomly drawn person from our class 
+A = True if two randomly drawn persons from our class have same birthday 
+ 
+• 
+Define P(A) as “the fraction of possible worlds in which A is true” or       
+“the fraction of times A holds, in repeated runs of the random experiment” 
+–  the set of possible worlds is called the sample space, S 
+–  A random variable A is a function defined over S 
+                        A: S à {0,1} 
+ 

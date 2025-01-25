@@ -1,0 +1,7 @@
+Elementary Probability in 
+Pictures 
+•  P(~A) + P(A) = 1 
+ 
+A 
+ 
+~A 

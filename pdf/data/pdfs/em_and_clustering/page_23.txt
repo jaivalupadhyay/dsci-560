@@ -1,0 +1,13 @@
+EM – putting it together 
+Given  observed variables X, unobserved Z   
+Define 
+where  
+Iterate until convergence: 
+•  E Step: For each observed example X(n), calculate P(Z(n)|X(n),θ)   
+ 
+•   M Step: Update 
+Z
+X1 
+X4 
+X3 
+X2 

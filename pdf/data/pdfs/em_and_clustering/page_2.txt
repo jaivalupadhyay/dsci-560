@@ -1,0 +1,10 @@
+Learning of Bayes Nets 
+•  Four categories of learning problems 
+–  Graph structure may be known/unknown 
+–  Variable values may be fully observed / partly unobserved 
+•  Easy case: learn parameters for graph structure is 
+known, and data is fully observed 
+ 
+•  Interesting case: graph known, data partly known 
+•  Gruesome case: graph structure unknown, data partly 
+unobserved 

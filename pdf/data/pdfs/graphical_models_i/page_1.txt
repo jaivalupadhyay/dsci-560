@@ -1,0 +1,27 @@
+Machine Learning 10-601 
+ 
+Tom M. Mitchell 
+Machine Learning Department 
+Carnegie Mellon University 
+ 
+February 18, 2015 
+Today: 
+• 
+Graphical models 
+• 
+Bayes Nets: 
+• 
+Representing 
+distributions 
+• 
+Conditional 
+independencies   
+• 
+Simple inference 
+• 
+Simple learning 
+Readings: 
+ 
+• 
+Bishop chapter 8, through 8.2 
+ 

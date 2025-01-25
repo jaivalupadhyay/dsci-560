@@ -1,0 +1,2 @@
+Furthest point heuristic does well on 
+previous example 

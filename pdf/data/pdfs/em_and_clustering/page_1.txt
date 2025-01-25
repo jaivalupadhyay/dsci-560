@@ -1,0 +1,26 @@
+Machine Learning 10-601 
+ 
+Tom M. Mitchell 
+Machine Learning Department 
+Carnegie Mellon University 
+ 
+March 4, 2015 
+Today: 
+• 
+Graphical models 
+• 
+Bayes Nets:   
+• 
+EM 
+• 
+Mixture of Gaussian 
+clustering 
+• 
+Learning Bayes Net 
+structure (Chow-Liu) 
+Readings: 
+• 
+Bishop chapter 8 
+• 
+Mitchell chapter 6 
+ 

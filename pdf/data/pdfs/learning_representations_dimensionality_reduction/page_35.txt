@@ -1,0 +1,2 @@
+PCA finds directions of maximum variation,  
+ICA would find directions most “aligned” with data. 

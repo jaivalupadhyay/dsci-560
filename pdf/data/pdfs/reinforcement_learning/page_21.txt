@@ -1,0 +1,11 @@
+Tom Mitchell, April 2011 
+Q learning 
+Define new function, closely related to V* 
+If agent knows Q(s,a), it can choose optimal action 
+without knowing P(st+1|st,a)  ! 
+And, it can learn Q without knowing P(st+1|st,a) 
+V*(s) is the expected discounted reward of following the optimal policy from time 0 onward.  
+Q(s,a) is the expected discounted reward of first doing action a and then following the optimal 
+policy from the next step onward.  
+Just chose the action that maximizes the Q value 
+using something very much like the dynamic programming algorithm we used to compute V*. 

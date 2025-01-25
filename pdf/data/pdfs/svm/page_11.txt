@@ -1,0 +1,46 @@
+Input: S={(x1, 𝑦1), …,(xm, 𝑦m)};  
+Support Vector Machines (SVMs) 
+Directly optimize for the maximum margin separator: SVMs 
+Maximize 𝛾 under the constraint: 
+  
+•
+w
+2 = 1  
+ •
+For all i, 𝑦𝑖𝑤⋅𝑥𝑖≥𝛾 
+Input: S={(x1, 𝑦1), …,(xm, 𝑦m)};  
+Minimize 𝑤′
+2 under the constraint: 
+  
+•
+For all i, 𝑦𝑖𝑤′ ⋅𝑥𝑖≥1 
+𝑤’ =  𝑤/𝛾, then max 𝛾 is equiv. to  minimizing ||𝑤’||2 (since ||𝑤’||2 = 1/𝛾2).  
+So, dividing both sides by 𝛾 and writing in terms of w’ we get: 
++ + 
++ + 
+- 
+- - 
+- 
+- 
+𝛾 
+𝛾 
++ 
+- 
+- 
+- 
+- 
+w 
++ + 
++ + 
+- 
+- - 
+- 
+- 
++ 
+- 
+- 
+- 
+- 
+w’ 
+𝑤’ ⋅𝑥= −1 
+𝑤’ ⋅𝑥= 1 

@@ -1,0 +1,21 @@
+Baseline: Bag of Words Approach 
+aardvark  0 
+about
+ 2 
+all
+ 2 
+Africa
+ 1 
+apple
+ 0 
+anxious
+ 0 
+... 
+gas
+ 1 
+... 
+oil
+ 1 
+… 
+Zaire
+ 0 

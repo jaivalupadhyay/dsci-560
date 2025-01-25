@@ -1,0 +1,27 @@
+•
+High-Dimensions = Lot of Features 
+ 
+ 
+ 
+Document classification 
+ 
+  Features per document =  
+ 
+ 
+  thousands of words/unigrams 
+ 
+ 
+  millions of bigrams,  contextual  
+ 
+ 
+  information 
+ 
+ 
+Surveys - Netflix 
+ 
+ 
+ 480189 users x 17770 movies 
+ 
+ 
+ 
+Big & High-Dimensional Data 

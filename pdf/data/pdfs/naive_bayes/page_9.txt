@@ -1,0 +1,10 @@
+Can we reduce params using Bayes Rule? 
+Suppose X =<X1,… Xn>  
+where Xi and Y are boolean RV’s 
+ 
+How many parameters to define P(X1,… Xn | Y)? 
+ 
+ 
+ 
+ 
+How many parameters to define P(Y)? 

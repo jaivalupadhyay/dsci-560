@@ -1,0 +1,19 @@
+Tom Mitchell, April 2011 
+Value Iteration for learning V* : assumes P(St+1|St, A) known 
+Initialize V(s) to 0 
+For t=1, 2, … [Loop until policy good enough] 
+   Loop for s in S 
+Loop for a in A 
+•    
+  
+   End loop 
+End loop 
+[optimal value can get in zero steps] 
+• Round t=0 we have V(s)=0 for all s.  
+• After round t=1, a top-row of 0, 100, 0 and a 
+bottom-row of 0, 0, 100.  
+•  After the next round (t=2), a top row of 90, 100, 
+0 and a bottom row of 0, 90, 100.  
+•  After the next round (t=3) we will have a top-row 
+of 90, 100, 0 and a bottom row of 81, 90, 100, 
+and it will then stay there forever 

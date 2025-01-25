@@ -1,0 +1,6 @@
+Logistic Regression 
+Idea: 
+•  Naïve Bayes allows computing P(Y|X) by 
+learning P(Y) and P(X|Y) 
+ 
+•  Why not learn P(Y|X) directly? 

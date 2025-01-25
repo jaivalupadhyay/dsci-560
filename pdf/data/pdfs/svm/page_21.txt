@@ -1,0 +1,39 @@
+SVMs (Lagrangian Dual) 
+•
+Final classifier is: w =  αiyixi
+i
+  
+•
+The points xi for which αi ≠0 
+are called the “support vectors” 
+Input: S={(x1, y1), …,(xm, ym)};  
+argminα
+1
+2   yiyj αiαjxi ⋅xj − αi
+i
+j
+i
+ s.t.: 
+  •
+For all i,  
+Find 
+0 ≤αi ≤Ci 
+ yiαi = 0
+i
+ 
++ 
++ 
++ 
++ 
+- 
+- - 
+- 
+- 
++ 
+- 
+- 
+- 
+- 
+w 
+𝑤⋅𝑥= −1 
+𝑤⋅𝑥= 1 

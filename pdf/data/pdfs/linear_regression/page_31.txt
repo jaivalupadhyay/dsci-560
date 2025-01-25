@@ -1,0 +1,22 @@
+Regression – What you should know 
+Under general assumption 
+ 
+1. 
+MLE corresponds to minimizing sum of squared prediction errors 
+2. 
+MAP estimate minimizes SSE plus sum of squared weights 
+3. 
+Again, learning is an optimization problem once we choose our 
+objective function 
+• 
+maximize data likelihood 
+• 
+maximize posterior prob of W 
+4. 
+Again, we can use gradient descent as a general learning algorithm 
+• 
+as long as our objective fn is differentiable wrt W 
+• 
+though we might learn local optima ins  
+5. 
+Almost nothing we said here required that f(x) be linear in x    

@@ -1,0 +1,16 @@
+Tom Mitchell, April 2011 
+Execute actions in environment, observe results, and 
+• Learn control policy : SA that maximizes                
+from every state s  S 
+ 
+Example: Robot grid world, deterministic reward r(s,a) 
+ 
+Reinforcement Learning Task for Autonomous Agent 
+•
+Actions: move up, down, left, and right  
+[except when you are in the top-right you stay there, and say any action that 
+bumps you into a wall leaves you were you were]]  
+ 
+•
+reward fns r(s,a) is deterministic with reward 100 
+for entering the top-right and 0 everywhere else. 

@@ -1,0 +1,11 @@
+Generalization Guarantees 
+Theorem [Freund&Schapire’97]  
+∀ 𝑔∈𝑐𝑜(𝐻), 𝑒𝑟𝑟𝑔≤𝑒𝑟𝑟𝑆𝑔+ 𝑂 
+𝑇𝑑
+𝑚   where d=VCdim(H) 
+error 
+complexity 
+train error 
+generalization 
+error 
+T= # of rounds 

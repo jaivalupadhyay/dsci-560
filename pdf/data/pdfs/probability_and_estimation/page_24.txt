@@ -1,0 +1,14 @@
+Maximum Likelihood Estimation 
+P(X=1) = θ        P(X=0) = (1-θ) 
+ 
+Data D:  
+ 
+ 
+ 
+ 
+Flips produce data D with        heads,        tails 
+•  flips are independent, identically distributed 1’s and 0’s 
+(Bernoulli) 
+•        and        are counts that sum these outcomes (Binomial) 
+X=1 
+X=0 

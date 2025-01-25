@@ -1,0 +1,11 @@
+Key Idea 2:  
+ 
+Discover New Coupling Constraints 
+•  learn horn clause rules/constraints: 
+–  learned by data mining the knowledge base 
+–  connect previously uncoupled relation predicates 
+–  infer new unread beliefs 
+–  modified version of FOIL [Quinlan] 
+ 
+ 0.93  athletePlaysSport(?x,?y) ß athletePlaysForTeam(?x,?z) 
+                                                       teamPlaysSport(?z,?y) 

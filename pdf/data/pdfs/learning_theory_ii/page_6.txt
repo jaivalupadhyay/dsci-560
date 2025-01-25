@@ -1,0 +1,36 @@
+•  Algo does optimization over S, find hypothesis ℎ. 
+•  Goal:  h has small error over D. 
+•
+Algo sees training sample S: (x1,c*(x1)),…, (xm,c*(xm)), xi i.i.d. from D 
+– labeled examples - drawn i.i.d. from D and labeled by target c* 
+–  labels 2 {-1,1}  - binary classification 
+h 
+c* 
+Instance space X 
++
+  
++
+  
++
+  
++
+  
+-
+  
+-
+  
+-
+  
+-
+  
+•
+Realizable: 𝑐∗∈𝐻.  
+ 𝑒𝑟𝑟𝐷ℎ= Pr
+𝑥~ 𝐷(ℎ𝑥≠𝑐∗(𝑥)) 
+PAC/SLT models for Supervised Learning 
+•
+X – feature/instance space; distribution D over X 
+           e.g., X = Rd or X = {0,1}d 
+Bias: fix hypothesis space H [whose complexity is not too large] 
+•
+Agnostic: 𝑐∗ “close to” H.  

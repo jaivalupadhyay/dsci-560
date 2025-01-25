@@ -1,0 +1,21 @@
+What if Not Linearly Separable 
+Problem: data not linearly separable in the most natural 
+feature representation. 
+Solutions: 
+•
+ “Learn a more complex class of functions”  
+•
+(e.g., decision trees, neural networks, boosting). 
+•
+ “Use a Kernel”  
+•
+ “Use a Deep Network” 
+Example: 
+vs 
+No good linear 
+separator in pixel 
+representation. 
+ 
+•
+ “Combine  Kernels  and Deep Networks” 
+(a neat solution that attracted a lot of attention) 

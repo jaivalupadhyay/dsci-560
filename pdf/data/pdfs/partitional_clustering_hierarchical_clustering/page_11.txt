@@ -1,0 +1,29 @@
+An Easy Case for k-means: k=1 
+Output: 𝒄∈Rd to minimize ∑i=1 
+n 
+𝐱𝐢−𝐜
+2
+ 
+Solution: 
+1
+n ∑i=1 
+n 
+𝐱𝐢−𝐜
+2
+=
+𝛍−𝐜
+2 + 1
+n ∑i=1 
+n 
+𝐱𝐢−𝛍
+2
+ 
+So, the optimal choice for 𝐜 is 𝛍. 
+The optimal choice is 𝛍=
+1
+n ∑i=1 
+n 𝐱𝐢 
+Input: A set of n datapoints 𝐱𝟏, 𝐱𝟐, … , 𝐱𝒏 in Rd 
+Avg k-means cost wrt c 
+Avg k-means cost wrt μ 
+Idea: bias/variance like decomposition 

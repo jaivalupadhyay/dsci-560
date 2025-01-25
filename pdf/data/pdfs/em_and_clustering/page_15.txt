@@ -1,0 +1,5 @@
+Clustering 
+•  Given set of data points, group them 
+•  Unsupervised learning 
+•  Which patients are similar? (or which earthquakes, 
+customers, faces, web pages, …) 

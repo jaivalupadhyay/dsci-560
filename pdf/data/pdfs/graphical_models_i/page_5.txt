@@ -1,0 +1,17 @@
+Marginal Independence  
+Definition: X is marginally independent of Y if 
+ 
+ 
+ 
+ 
+ 
+Equivalently, if  
+ 
+ 
+ 
+ 
+ Equivalently, if  
+ 
+ 
+ 
+ 

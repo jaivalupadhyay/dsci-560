@@ -1,0 +1,9 @@
+The core problem: 
+•  Agents can measure internal consistency,  
+but not correctness 
+ 
+Challenge: 
+•  Under what conditions does consistency à correctness? 
+•  Can an autonomous agent determine its accuracy from 
+observed consistency? 
+ 

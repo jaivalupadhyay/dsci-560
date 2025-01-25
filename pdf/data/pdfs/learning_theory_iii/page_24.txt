@@ -1,0 +1,7 @@
+Structural Risk Minimization (SRM) 
+error 
+rate 
+Hypothesis complexity 
+empirical error True error
+overfitting Upper bound on true errorerrDh≤errSh+RmH+…
+𝐻1 ⊆𝐻2 ⊆𝐻3 ⊆⋯⊆𝐻𝑖⊆…  

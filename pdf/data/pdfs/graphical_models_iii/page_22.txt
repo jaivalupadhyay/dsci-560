@@ -1,0 +1,10 @@
+E Step: Use X, θ, to Calculate P(Z|X,θ) 
+•  How?  Bayes net inference problem. 
+Flu 
+Allergy 
+Sinus 
+Headache 
+Nose 
+observed X={F,A,H,N}, 
+unobserved Z={S} 
+let’s use p(a,b) as shorthand for p(A=a, B=b) 

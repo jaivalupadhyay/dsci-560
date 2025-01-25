@@ -1,0 +1,10 @@
+Clustering 
+[March 4th: EM-style algorithm for clustering for mixture of Gaussians (specific 
+probabilistic model).] 
+Today: 
+•
+Objective based clustering 
+•
+Hierarchical clustering 
+•
+Mention overlapping clusters 

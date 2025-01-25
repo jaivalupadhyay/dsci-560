@@ -1,0 +1,15 @@
+A2 Agnostic Active Learner [BBL’06] 
+•
+Pick a few points at random from the current region 
+of disagreement DIS(Ht) and query their labels.  
+current version space 
+region of 
+disagreement 
+Algorithm:  
+For 𝒕= 𝟏, …., 
+•
+Throw out hypothesis if you are statistically 
+confident they are suboptimal.  
+Careful use of generalization bounds; 
+Avoid the sampling bias!!!! 
+Let  H1 = H. 

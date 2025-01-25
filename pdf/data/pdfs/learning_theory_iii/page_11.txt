@@ -1,0 +1,29 @@
+Sample Complexity:  Finite Hypothesis Spaces 
+Agnostic Case 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+1) How many examples suffice to get UC whp (so success for ERM).  
+2) Statistical Learning Theory style: 
+errD h ≤errS h +
+1
+2m ln (2 H ) + ln
+1
+𝛿
+. 
+With prob. at least 1 −𝛿, for all h ∈H: 
+1/𝜖2 dependence [as opposed to 1/𝜖 
+for realizable], but get for 
+something stronger. 
+1
+𝑚  as opposed to 
+1
+𝑚  for 
+realizable 

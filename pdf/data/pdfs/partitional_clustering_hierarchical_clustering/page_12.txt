@@ -1,0 +1,9 @@
+Another Easy Case for k-means: d=1 
+Output: 𝒄∈Rd to minimize ∑i=1 
+n 
+𝐱𝐢−𝐜
+2
+ 
+Extra-credit homework question 
+Hint: dynamic programming in time O(n2k). 
+Input: A set of n datapoints 𝐱𝟏, 𝐱𝟐, … , 𝐱𝒏 in Rd 

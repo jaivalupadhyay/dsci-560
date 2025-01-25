@@ -1,0 +1,1 @@
+How about MAP instead of MLE estimate? 

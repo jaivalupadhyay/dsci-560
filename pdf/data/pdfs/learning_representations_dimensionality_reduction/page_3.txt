@@ -1,0 +1,16 @@
+•
+High-Dimensions = Lot of Features 
+ 
+ 
+MEG Brain Imaging 
+ 
+ 
+ 120 locations x 500 time points  
+ 
+ 
+  x 20 objects 
+ 
+Big & High-Dimensional Data 
+ 
+Or any high-dimensional image data 
+ 

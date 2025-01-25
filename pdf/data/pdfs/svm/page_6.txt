@@ -1,0 +1,27 @@
+Input: 𝛾, S={(x1, 𝑦1), …,(xm, 𝑦m)};  
+Output: w, a separator of margin 𝛾 over S 
+Support Vector Machines (SVMs) 
+Directly optimize for the maximum margin separator: SVMs 
+Find: some w where: 
+  
+•
+w
+2 = 1  
+ •
+For all i, 𝑦𝑖𝑤⋅𝑥𝑖≥𝛾 
+First, assume we know a lower bound on the margin 𝛾 
++ + 
++ + 
+- 
+- - 
+- 
+- 
+𝛾 
+𝛾 
++ 
+- 
+- 
+- 
+- 
+w 
+Realizable case, where the data is linearly separable by margin 𝛾 

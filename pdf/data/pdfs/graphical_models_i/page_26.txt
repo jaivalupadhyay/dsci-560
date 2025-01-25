@@ -1,0 +1,6 @@
+Prob. of joint assignment: easy  
+•  Suppose we are interested in joint 
+ assignment <F=f,A=a,S=s,H=h,N=n> 
+ 
+What is P(f,a,s,h,n)? 
+let’s use p(a,b) as shorthand for p(A=a, B=b) 

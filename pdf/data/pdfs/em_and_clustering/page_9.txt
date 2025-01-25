@@ -1,0 +1,7 @@
+EM and estimating   
+Given observed set X, unobserved set Y of boolean values 
+E step:  Calculate for each training example, k  
+ the expected value of each unobserved variable Y 
+M step: Calculate estimates similar to MLE, but 
+replacing each count by its expected count 
+MLE would be: 

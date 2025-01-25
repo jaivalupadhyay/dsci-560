@@ -1,0 +1,14 @@
+Ontology Extension (2) 
+Goal: 
+•  Add new subcategories 
+ 
+Approach: 
+•  For each category C,  
+•  train NELL to read the relation  
+   SubsetOfC: C à C 
+ 
+  
+[Burr Settles] 
+*no new software here, 
+ just add this relation to 
+ ontology 

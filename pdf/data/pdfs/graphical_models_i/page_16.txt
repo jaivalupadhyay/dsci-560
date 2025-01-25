@@ -1,0 +1,24 @@
+StormClouds 
+Lightning 
+Rain 
+Thunder 
+WindSurf 
+Parents 
+P(W|Pa) 
+P(¬W|Pa) 
+L, R  
+0 
+1.0 
+L, ¬R 
+0 
+1.0 
+¬L, R 
+0.2 
+0.8 
+¬L, ¬R 
+0.9 
+0.1 
+WindSurf 
+Learning a Bayes Net 
+Consider learning when graph structure is given, and data = { <s,l,r,t,w> } 
+What is the MLE solution?  MAP? 

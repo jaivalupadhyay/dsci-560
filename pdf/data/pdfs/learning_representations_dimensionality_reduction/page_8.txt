@@ -1,0 +1,7 @@
+Principal Component Analysis (PCA) 
+In case where data  lies on or near a low d-dimensional linear 
+subspace, axes of this subspace are an effective representation 
+of the data. 
+Identifying the axes is known as Principal Components Analysis, and 
+can be obtained by using classic matrix computation tools (Eigen or 
+Singular Value Decomposition). 

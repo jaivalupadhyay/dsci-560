@@ -1,0 +1,12 @@
+Naïve Bayes: What you should know 
+•  Designing classifiers based on Bayes rule 
+•  Conditional independence 
+–  What it is 
+–  Why it’s important 
+•  Naïve Bayes assumption and its consequences 
+–  Which (and how many) parameters must be estimated under 
+different generative models (different forms for P(X|Y) ) 
+•  and why this matters 
+•  How to train Naïve Bayes classifiers 
+–  MLE and MAP estimates  
+–  with discrete and/or continuous inputs Xi 

@@ -1,0 +1,25 @@
+Iterative Co-Training   
+A Simple Example: Learning Intervals 
+c2 
+c1 
+Use labeled data to learn h1
+1 and h2
+1 
+Use unlabeled data to bootstrap 
+h1
+1 
+h2
+1 
+  Labeled examples 
+  Unlabeled examples 
+h1
+2 
+h2
+1 
+h1
+2 
+h2
+2 
++ 
+- 
+- 

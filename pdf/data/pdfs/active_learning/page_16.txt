@@ -1,0 +1,4 @@
+Common Technique in Practice 
+Active SVM seems to be quite useful in practice. 
+E.g., Jain, Vijayanarasimhan & Grauman, NIPS 2010 
+Newsgroups dataset (20.000  documents from 20 categories) 

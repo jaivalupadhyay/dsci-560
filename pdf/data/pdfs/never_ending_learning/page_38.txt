@@ -1,0 +1,25 @@
+ 
+     Feature = Typed Path 
+     CityInState, CityInstate-1, CityLocatedInCountry               0.8                          0.32 
+     AtLocation-1, AtLocation, CityLocatedInCountry                0.6                          0.20 
+       
+Pittsburgh  
+Pennsylvania 
+Philadelphia 
+Harisburg 
+…(14) 
+U.S. 
+Feature Value 
+Logistic  
+Regresssion 
+Weight 
+Delta 
+PPG 
+AtLocation 
+Atlanta 
+Dallas 
+Tokyo 
+Japan 
+CityLocatedInCountry(Pittsburgh) = ?  
+CityLocatedInCountry 
+[Lao, Mitchell, Cohen, EMNLP 2011] 

@@ -1,0 +1,22 @@
+Sample Complexity:  Finite Hypothesis Spaces 
+Realizable Case 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+1) PAC: How many examples suffice to guarantee small error whp.  
+2) Statistical Learning Way: 
+errD(h) ≤
+1
+m ln H + ln
+1
+𝛿
+. 
+With probability at least 1 −𝛿, for all h ∈H s.t. errS h = 0 we have 

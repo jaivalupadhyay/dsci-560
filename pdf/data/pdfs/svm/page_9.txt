@@ -1,0 +1,20 @@
+Support Vector Machines (SVMs) 
+Directly optimize for the maximum margin separator: SVMs 
+Input: S={(x1, 𝑦1), …,(xm, 𝑦m)};  
+Maximize 𝛾 under the constraint: 
+  
+•
+w
+2 = 1  
+ •
+For all i, 𝑦𝑖𝑤⋅𝑥𝑖≥𝛾 
+This is a 
+constrained 
+optimization 
+problem. 
+objective 
+function 
+constraints 
+•
+Famous example of constrained optimization: linear programming, 
+where objective fn is linear, constraints are linear (in)equalities 

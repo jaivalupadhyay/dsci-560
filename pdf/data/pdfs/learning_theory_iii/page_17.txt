@@ -1,0 +1,27 @@
+Rademacher Complexity 
+The empirical Rademacher complexity of F is:  
+where 𝜎𝑖 are i.i.d. Rademacher variables chosen uniformly from {−1,1}.  
+Rm F = ES[R m(F)] 
+The Rademacher complexity of F is:  
+Space Z and a distr. D|Z; F be a class of functions from Z to [0,1] 
+Let S = {z1, … , zm} be i.i.d from  D|Z.  
+ Whp all f ∈F satisfy: 
+ED f z
+≤ES f z
++ 2Rm F +
+ln 2/δ
+2m
+ 
+ED f z
+≤ES f z
++ 2 R m F + 3 ln 1/δ
+m
+ 
+ Theorem: 
+Useful if it decays with m. 
+R m(F) = Eσ1,…,σm sup
+f∈F
+ 1
+m  σif zi
+i
+   

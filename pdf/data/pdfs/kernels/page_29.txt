@@ -1,0 +1,19 @@
+Kernel, Closure Properties 
+then K x, z = K1 x, z K2 x, z  is a kernel. 
+If  K1 ⋅,⋅ and  K2 ⋅,⋅ are kernels, 
+Fact: 
+Key idea: ϕ x = ϕ1,i x  ϕ2,j x
+𝑖∈1,…,𝑛,𝑗∈{1,…,𝑚}  
+ϕ x ⋅ϕ(z) =  ϕ1,i x  ϕ2,j x ϕ1,i z  ϕ2,j z
+𝑖,𝑗
+ 
+=  ϕ1,i x  ϕ1,𝑖z
+ ϕ2,𝑗x  ϕ2,j z
+𝑗
+ 
+𝑖
+ 
+=  ϕ1,i x  ϕ1,𝑖z K2 x, z
+𝑖
+= K1 x, z  K2 x, z  
+Easily create new kernels using basic ones! 

@@ -1,0 +1,17 @@
+Readings:  
+•
+The Boosting Approach to Machine Learning: An 
+Overview.  Rob Schapire, 2001 
+ •
+Theory and Applications of Boosting.  NIPS tutorial.   
+ 
+http://www.cs.princeton.edu/~schapire/talks/nips-tutorial.pdf 
+Plan for today:  
+•
+Motivation. 
+ •
+A bit of history. 
+ •
+Adaboost: algo, guarantees, discussion. 
+•
+Focus on supervised classification. 

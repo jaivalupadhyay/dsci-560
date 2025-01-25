@@ -1,0 +1,7 @@
+Bayes Nets define Joint Probability Distribution 
+in terms of this graph, plus parameters 
+Benefits of Bayes Nets: 
+•  Represent the full joint distribution in fewer 
+parameters, using prior knowledge about 
+dependencies 
+•  Algorithms for inference and learning 

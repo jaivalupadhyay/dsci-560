@@ -1,0 +1,11 @@
+Today’s focus: Sample Complexity for Supervised 
+Classification (Function Approximation) 
+ 
+•  PAC (Valiant) 
+•  Statistical Learning Theory (Vapnik) 
+•
+Recommended reading: Mitchell: Ch. 7  
+•
+Suggested exercises: 7.1, 7.2, 7.7 
+•
+Additional resources: my learning theory course!  

@@ -1,0 +1,21 @@
++ + 
++ + 
+- 
+- - 
+- 
+- 
+𝛾 
+𝛾 
++ 
+- 
+- 
+- 
+- 
+w 
+Definition: The margin 𝛾 of a set of examples 𝑆 is the 
+maximum 𝛾𝑤 over all linear separators 𝑤. 
+Geometric Margin 
+Definition: The margin 𝛾𝑤 of a set of examples 𝑆 wrt a 
+linear separator 𝑤 is the smallest margin over points 𝑥∈𝑆. 
+Definition: The margin of example 𝑥 w.r.t. a linear sep. 𝑤 is 
+the distance from 𝑥 to the plane 𝑤⋅𝑥= 0 (or the negative if on wrong side) 

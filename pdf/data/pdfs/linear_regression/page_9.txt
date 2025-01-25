@@ -1,0 +1,2 @@
+Gaussian Naïve Bayes – Big Picture 
+assume P(Y=1) = 0.5 

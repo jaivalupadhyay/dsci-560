@@ -1,0 +1,4 @@
+Prob. of marginals: not so easy  
+•  How do we calculate P(N=n) ? 
+ 
+let’s use p(a,b) as shorthand for p(A=a, B=b) 

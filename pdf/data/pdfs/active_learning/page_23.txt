@@ -1,0 +1,18 @@
+Version Spaces 
+Version space of H: part of H consistent with labels so far. 
+ Given a set of labeled examples (x1, y1), …,(xml, yml),  yi = c∗(xi) 
+•
+X – feature/instance space; distr. D over X; 𝑐∗ target fnc 
+•
+Fix hypothesis space H. 
+Assume realizable case: c∗∈H.  
+Definition (Mitchell’82) 
+E.g.,: data lies on 
+circle in R2, H = 
+homogeneous 
+linear seps. 
+current version space 
+region of disagreement 
+in data space 
++ 
++ 

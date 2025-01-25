@@ -1,0 +1,12 @@
+Graphical Models – Why Care? 
+•  Among most important ML developments of the decade 
+  
+•  Graphical models allow combining: 
+–  Prior knowledge in form of dependencies/independencies 
+–  Prior knowledge in form of priors over parameters 
+–  Observed training data 
+•  Principled and ~general methods for 
+–  Probabilistic inference 
+–  Learning 
+•  Useful in practice 
+–  Diagnosis, help systems, text analysis, time series models, ... 

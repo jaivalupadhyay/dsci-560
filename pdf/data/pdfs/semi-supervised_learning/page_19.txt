@@ -1,0 +1,14 @@
+Highly compatible 
++ 
++ 
+_ 
+_ 
+Helpful distribution 
+Non-helpful distributions 
+Transductive Support Vector Machines 
+1/°2 clusters, 
+all partitions  
+separable by 
+large margin 
+Margin satisfied 
+Margin not satisfied 

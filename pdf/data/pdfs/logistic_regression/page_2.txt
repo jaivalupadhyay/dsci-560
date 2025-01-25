@@ -1,0 +1,9 @@
+Announcements 
+ 
+•  HW3 due Wednesday Feb 4 
+•  HW4 will be handed out next Monday Feb 9 
+•  new reading available:    
+–  Estimating Probabilities: MLE and MAP (Mitchell) 
+–  see Lecture tab of class website 
+•  required reading for today: 
+–  Naïve Bayes and Logistic Regression (Mitchell) 

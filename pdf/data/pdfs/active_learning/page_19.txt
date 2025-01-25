@@ -1,0 +1,5 @@
+Active SVM/Uncertainty Sampling 
+•
+Works sometimes…. 
+•
+However, we need to be very very careful!!! 

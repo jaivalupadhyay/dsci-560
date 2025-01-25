@@ -1,0 +1,5 @@
+Overlapping Clusters: Communities 
+• Social networks 
+• Professional networks 
+• Product Purchasing Networks, Citation Networks, 
+Biological Networks, etc 

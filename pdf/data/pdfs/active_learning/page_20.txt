@@ -1,0 +1,16 @@
+Active SVM/Uncertainty Sampling 
+•
+Works sometimes…. 
+•
+However, we need to be very very careful!!! 
+•
+Myopic, greedy technique can suffer from sampling bias. 
+•
+Bias created because of the querying strategy; as time goes on 
+the sample is less and less representative of the true source. 
+•
+Main tension: want to choose informative points, but also 
+want to guarantee that the classifier we output does  well on 
+true random examples from the underlying distribution. 
+•
+Observed in practice too!!!! 

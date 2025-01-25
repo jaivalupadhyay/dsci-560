@@ -1,0 +1,3 @@
+Active Learning with Label Propagation  in 
+Practice 
+• Does well for Video Segmentation (Fathi-Balcan-Ren-Regh, BMVC 11). 

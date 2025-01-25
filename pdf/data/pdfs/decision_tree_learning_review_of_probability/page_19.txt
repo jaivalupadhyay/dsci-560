@@ -1,0 +1,17 @@
+   Labeled Examples   
+Learning 
+Algorithm 
+Expert/Oracle 
+Data 
+Source 
+Alg.outputs 
+c* : X ! Y 
+h : X ! Y 
+(x1,c*(x1)),…, (xm,c*(xm)) 
+• 
+Algo sees training sample S: (x1,c*(x1)),…, (xm,c*(xm)), xi i.i.d. from D 
+Distribution D on X 
+  err(h)=Prx 2 D(h(x) ≠ c*(x)) 
+•    Does optimization over S, finds hypothesis h (e.g., a decision tree). 
+•    Goal:  h has small error over D. 
+Supervised Learning or Function Approximation 

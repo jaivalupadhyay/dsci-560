@@ -1,0 +1,17 @@
+Tom Mitchell, April 2011 
+Agent lives in some 
+environment; in some 
+state:  
+•
+Robot: where robot 
+is, what direction it is 
+pointing, etc.   
+•
+Backgammon, state 
+of the board (where 
+all pieces are). 
+Goal: Maximize long 
+term discounted reward. 
+I.e.: want a lot of reward, 
+prefer getting it earlier to 
+getting it later. 

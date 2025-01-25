@@ -1,0 +1,20 @@
+Model	  Formula4on	  
+model	  parameters	  
+•  Dependencies	  between	  hidden	  variables.	  
+•  All	  connec4ons	  are	  undirected.	  
+h3
+h2
+h1
+v
+W3
+W2
+W1
+•  Bolom-­‐up	  and	  Top-­‐down:	  
+Top-­‐down	  
+Bolom-­‐up	  
+Input	  
+Same	  as	  RBMs	  
+requires	  approximate	  inference	  to	  
+train,	  but	  it	  can	  be	  done…	  
+and	  scales	  to	  millions	  of	  examples	  
+[Courtesy,	  R.	  Salakhutdinov]	  

@@ -1,0 +1,21 @@
+𝑓(𝑥)=​𝑥↓1 ∧​𝑥↓2  
+0 0 0 −
+0 0 1 −
+0 1 0 −
+0 1 1 −
+1 0 0 −
+1 0 1 −
+1 1 0 +
+1 1 1 +
+​
+𝑥
+↓
+1  
+𝑞=1/4 
+𝑝=0 
+𝑟=1/2 
+Initial error rate is 1/4  (25% positive, 75% negative) 
+Error rate after split is 0.5∗0+0.5∗0.5=1/4  (left leaf is 
+100% negative; right leaf is 50/50) 
+Overall error doesn’t decrease! 
+Entropy as a better splitting measure 

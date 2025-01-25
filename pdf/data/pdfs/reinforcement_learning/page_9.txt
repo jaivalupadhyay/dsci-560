@@ -1,0 +1,11 @@
+Tom Mitchell, April 2011 
+Execute actions in environment, observe results, and 
+• Learn control policy : SA that maximizes                
+from every state s  S 
+ 
+Yikes!! 
+• Function to be learned is : SA  
+• But training examples are not of the form <s, a> 
+• They are instead of the form < <s,a>, r > 
+ 
+Reinforcement Learning Task for Autonomous Agent 

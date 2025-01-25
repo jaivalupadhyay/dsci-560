@@ -1,0 +1,20 @@
+Sample Complexity:  Uniform Convergence 
+Agnostic Case 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+Empirical Risk Minimization (ERM) 
+•  Output: Find h in H with smallest errS(h) 
+•
+Input: S: (x1,c*(x1)),…, (xm,c*(xm)) 
+1/𝜖2 dependence [as opposed 
+to1/𝜖 for realizable] 

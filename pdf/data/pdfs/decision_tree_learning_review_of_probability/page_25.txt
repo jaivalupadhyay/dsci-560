@@ -1,0 +1,25 @@
+Top Down Decision Trees Algorithms 
+•  Key: strong concavity of the splitting crieterion 
+h 
+Pr[c*=1]=q 
+Pr[c*=1| h=0]=p 
+Pr[c*=1| h=1]=r 
+0 
+1 
+Pr[h=0]=u 
+Pr[h=1]=1-u 
+v 
+v1 
+v2 
+• 
+q=up + (1-u) r. 
+p 
+q 
+r 
+Want to lower bound: G(q) – [uG(p) + (1-u)G(r)] 
+• 
+If: G(q) =min(q,1-q) (error rate), then G(q) = uG(p) + (1-u)G(r)  
+• 
+If: G(q) =H(q) (entropy), then G(q) – [uG(p) + (1-u)G(r)] >0 if r-p> 
+0 and u ≠1, u ≠0 (this happens under the weak learning 
+assumption)

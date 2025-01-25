@@ -1,0 +1,15 @@
+Tom Mitchell, April 2011 
+• Learning control strategies 
+– Credit assignment and delayed reward 
+– Discounted rewards 
+ 
+• Markov Decision Processes 
+– Solving a known MDP 
+ 
+• Online learning of control strategies 
+– When next-state function is known: value function V*(s) 
+– When next-state function unknown: learning Q*(s,a) 
+ 
+• Role in modeling reward learning in animals 
+ 
+Outline 

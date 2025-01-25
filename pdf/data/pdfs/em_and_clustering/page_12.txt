@@ -1,0 +1,5 @@
+Using one labeled 
+example per class 
+word w ranked by 
+P(w|Y=course) /
+P(w|Y ≠ course) 

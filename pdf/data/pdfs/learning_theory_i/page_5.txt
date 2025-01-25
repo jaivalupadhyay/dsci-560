@@ -1,0 +1,16 @@
+5
+example
+label
+Reasonable RULES:
+Predict SPAM if unknown AND (money OR pills)
+Predict SPAM if 2money + 3pills –5 known > 0
+Represent each message by features. (e.g., keywords, spelling, etc.)
+Example: Supervised Classification
++
+-
++++
+--
+-
+-
+-
+Linearly separable

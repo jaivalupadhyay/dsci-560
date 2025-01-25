@@ -1,0 +1,7 @@
+Naïve Bayes vs Logistic Regression 
+Consider Y boolean, Xi continuous, X=<X1 ... Xn> 
+ 
+Number of parameters to estimate: 
+•  NB:   
+•  LR:   
+ 

@@ -1,0 +1,13 @@
+K-means++ Idea: D2 sampling 
+•
+Interpolate between random and furthest point initialization 
+•
+Let D(x) be the distance between a point 𝑥 and its nearest 
+center. Chose the next center proportional to D𝛼(𝐱). 
+•
+𝛼= 0, random sampling 
+•
+𝛼= ∞, furthest point  (Side note: it actually works well for k-center) 
+•
+𝛼= 2, k-means++  
+Side note: 𝛼= 1, works well for k-median  

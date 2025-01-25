@@ -1,0 +1,7 @@
+Naïve Bayes in a Nutshell 
+Bayes rule: 
+Assuming conditional independence among Xi’s: 
+ 
+ 
+So, classification rule for Xnew = < X1, …, Xn > is: 
+ 

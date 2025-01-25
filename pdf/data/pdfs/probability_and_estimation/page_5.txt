@@ -1,0 +1,12 @@
+Applying Bayes Rule 
+P(A |B) =
+P(B | A)P(A)
+P(B | A)P(A) + P(B |~ A)P(~ A)
+A = you have the flu,   B = you just coughed 
+ 
+Assume: 
+P(A) = 0.05 
+P(B|A) = 0.80 
+P(B| ~A) = 0.20 
+ 
+what is P(flu | cough) = P(A|B)? 
