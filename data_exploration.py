@@ -1,15 +1,18 @@
-def Extract_Forum_data():
-    import requests
-    from bs4 import BeautifulSoup
-    import pandas as pd
-    from selenium import webdriver
-    from selenium.webdriver.edge.service import Service as EdgeService
-    from selenium.webdriver.firefox.service import Service
-    from selenium.webdriver.firefox.options import Options
-    import time
-    import csv
-    import numpy as np
+import requests
+from bs4 import BeautifulSoup
+import pandas as pd
+from selenium import webdriver
+from selenium.webdriver.edge.service import Service as EdgeService
+from selenium.webdriver.firefox.service import Service
+from selenium.webdriver.firefox.options import Options
+import time
+import csv
+import numpy as np
+import os
+import zipfile
 
+
+def Extract_Forum_data():
 
     # driver_path = '/Users/prathamsolanki/PycharmProjects/DSCi-560/msedgedriver'
     # output_file_path = "forum_page.html"
@@ -185,8 +188,6 @@ def Extract_Forum_data():
 
 
 
-    #Main
-
     #Get html
     fetch_html(url,driver_path,output_file_path,service,driver)
     print("HTML fetched successfully")
@@ -212,4 +213,67 @@ def Extract_Forum_data():
     return None
 
 
+def Extract_CSV_data():
+    # output_path = '/home/prathamuser/Desktop/prathamsolanki_3242692358/data/processed_data/extracted_csv.csv'
+    output_path = 'extracted_csv.csv'
+
+    kaggle_username = 'prathamsolanki1202'
+    kaggle_key = 'b8fb55cfc4e620e3fd0e33da4b374d10'
+
+
+    kaggle_json_path = 'kaggle.json'
+    with open(kaggle_json_path, 'w') as f:
+        f.write(f'{{"username":"{kaggle_username}","key":"{kaggle_key}"}}')
+
+
+    os.environ['KAGGLE_CONFIG_DIR'] = os.getcwd()
+
+
+    dataset_identifier = 'jaceprater/smokers-health-data'
+
+    download_dir = 'temp_download'
+
+    os.makedirs(download_dir, exist_ok=True)
+
+    os.system(f'kaggle datasets download -d {dataset_identifier} -p {download_dir}')
+
+    zip_file = [f for f in os.listdir(download_dir) if f.endswith('.zip')][0]
+    zip_file_path = os.path.join(download_dir, zip_file)
+
+    with zipfile.ZipFile(zip_file_path, 'r') as zip_ref:
+        zip_ref.extractall(download_dir)
+
+    csv_file = [f for f in os.listdir(download_dir) if f.endswith('.csv')][0]
+    csv_file_path = os.path.join(download_dir, csv_file)
+
+    os.rename(csv_file_path, output_path)
+
+    os.remove(zip_file_path)
+    os.rmdir(download_dir)
+    os.remove(kaggle_json_path)
+
+    print(f'Dataset downloaded and saved to: {output_path}')
+
+    def basic_operations(csv_output_path):
+        df = pd.read_csv(csv_output_path)
+        pd.set_option('display.max_columns', None)
+
+        print("Columns", df.columns)
+        print('Shape of dataset', df.shape)
+        print('Null values:', '\n', df.isnull().sum())
+        print(df.tail())
+
+    basic_operations(output_path)
+
+
+
+
+    return None
+
+
+
+#Main
+
 Extract_Forum_data()
+
+Extract_CSV_data()
