@@ -10,6 +10,16 @@ import csv
 import numpy as np
 import os
 import zipfile
+import logging
+import re
+import shutil
+from typing import List
+from urllib.parse import urljoin, urlsplit
+import fitz
+from pydantic import BaseModel
+from tqdm import tqdm
+
+logging.basicConfig(level=logging.INFO)
 
 
 def Extract_Forum_data():
