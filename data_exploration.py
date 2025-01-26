@@ -416,4 +416,8 @@ def extract_course_data():
 
 Extract_CSV_data()
 
+<<<<<<< Updated upstream
 # extract_course_data()
+=======
+extract_course_data()
+>>>>>>> Stashed changes
