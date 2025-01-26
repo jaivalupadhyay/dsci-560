@@ -412,8 +412,8 @@ def extract_course_data():
 
 #Main
 
-Extract_Forum_data()
+# Extract_Forum_data()
 
 Extract_CSV_data()
 
-extract_course_data()
+# extract_course_data()
