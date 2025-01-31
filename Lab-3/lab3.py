@@ -110,24 +110,45 @@ def write_stock_data_to_mysql(stock_data):
     
         
 
-# Main execution
 if __name__ == "__main__":
-    #create database and table
+    # Create database and table
     create_database_and_tables()
 
+    try:
+        # Get stock tickers from user input
+        print("Enter stock tickers separated by commas (e.g., AAPL, MSFT, GOOGL):")
+        stock_tickers = input().strip().split(",")
+        stock_tickers = [ticker.strip().upper() for ticker in stock_tickers]
+        if not stock_tickers or any(len(ticker) == 0 for ticker in stock_tickers):
+            raise ValueError("Invalid stock tickers. Please provide valid tickers separated by commas.")
 
-    # Define a list of stock tickers to fetch data for
-    stock_tickers = ['AAPL', 'MSFT', 'GOOGL', 'AMZN', 'TSLA']
+        # Get start date from user input
+        print("Enter the start date in YYYY-MM-DD format (e.g., 2025-01-01):")
+        start_date = input().strip()
+        datetime.strptime(start_date, "%Y-%m-%d")  # Validate date format
 
+        # Get end date from user input
+        print("Enter the end date in YYYY-MM-DD format (e.g., 2025-01-31):")
+        end_date = input().strip()
+        datetime.strptime(end_date, "%Y-%m-%d")  # Validate date format
 
-    # Fetch data from Yahoo Finance
-    start_date = '2025-01-01'  # YYYY-MM-DD
-    end_date = date.today().strftime("%Y-%m-%d")  # end is exlcusive
-    
-    stock_data = fetch_stock_data_date_range(stock_tickers, start_date, end_date)
-    
-    # Insert into table
-    write_stock_data_to_mysql(stock_data)
-    
+        # Ensure start_date is before end_date
+        if datetime.strptime(start_date, "%Y-%m-%d") >= datetime.strptime(end_date, "%Y-%m-%d"):
+            raise ValueError("End date must be after the start date.")
+
+        # Fetch data from Yahoo Finance
+        stock_data = fetch_stock_data_date_range(stock_tickers, start_date, end_date)
+
+        if not stock_data:
+            raise ValueError("No data fetched. Please check the tickers and date range.")
+
+        # Insert into table
+        write_stock_data_to_mysql(stock_data)
+
+    except ValueError as ve:
+        print(f"Input Error: {ve}")
+    except Exception as e:
+        print(f"An unexpected error occurred: {e}")
+
   
     
