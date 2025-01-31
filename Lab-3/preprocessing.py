@@ -43,10 +43,17 @@ def preprocess_data(df):
     # Calculate 5-day moving average
     df['moving_avg_5'] = df.groupby('ticker')['close_price'].rolling(window=5).mean().reset_index(0, drop=True)
 
+    # Fill missing moving average values with the first available close price
+    df['moving_avg_5'].fillna(df['close_price'], inplace=True)
+
     # Calculate volatility (rolling standard deviation of daily returns over 5 days)
     df['volatility'] = df.groupby('ticker')['daily_return'].rolling(window=5).std().reset_index(0, drop=True)
 
+    # Fill missing volatility values with 0 (indicating no variability at the start)
+    df['volatility'].fillna(0, inplace=True)
+
     return df
+
 
 # Function to save the processed data to a CSV file
 def save_to_csv(df, file_name='processed_stock_data.csv'):
