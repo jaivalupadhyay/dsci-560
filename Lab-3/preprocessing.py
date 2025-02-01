@@ -39,7 +39,7 @@ def preprocess_data(df):
     df['prev_close'] = df.groupby('ticker')['close_price'].shift(1)
     df['daily_return'] = (df['close_price'] - df['prev_close']) / df['prev_close']
     df.drop(columns=['prev_close'], inplace=True)
-
+    
     df['daily_return'].fillna(0, inplace=True)
 
     # Calculate 5-day moving average

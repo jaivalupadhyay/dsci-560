@@ -20,14 +20,15 @@ def create_portfolio_table():
         conn = mysql.connector.connect(**db_config)
         cursor = conn.cursor()
         
-        cursor.execute("DROP TABLE IF EXISTS portfolio")
+        cursor.execute("DROP TABLE IF EXISTS user_portfolio")
         cursor.execute("""
-            CREATE TABLE IF NOT EXISTS portfolio (
+            CREATE TABLE IF NOT EXISTS user_portfolio (
                 id INT AUTO_INCREMENT PRIMARY KEY,
                 ticker VARCHAR(10),
                 date Date,
                 stock_count BIGINT)
         """)
+       
     
     
     except mysql.connector.Error as err:
@@ -68,33 +69,34 @@ def add_stock(available_stock_names,start_date,end_date,requested_stock,stock_co
         print("request stock not available")
         return 
     
-    if requested_buy_date != end_date.strftime("%Y-%m-%d"):
-        print("Market is Closed")
-        return 
-    
-    try:
-        conn = mysql.connector.connect(**db_config)
-        cursor = conn.cursor()
+    #if requested_buy_date != end_date.strftime("%Y-%m-%d"):
+    #    print("Market is Closed")
+    #    return 
+    else:
+        print("name,date,count",requested_stock,requested_buy_date,stock_count)
+        try:
+            conn = mysql.connector.connect(**db_config)
+            cursor = conn.cursor()
+            
+            cursor.execute("""
+                    INSERT INTO user_portfolio (ticker,date,stock_count)
+                    VALUES (%s, %s, %s );
+                """, (
+                    requested_stock,
+                    requested_buy_date,
+                    stock_count
+                ))
+            conn.commit()
         
-        cursor.execute("""
-                INSERT INTO portfolio (ticker,date,stock_count)
-                VALUES (%s, %s, %s )
-            """, (
-                requested_stock,
-                requested_buy_date,
-                stock_count
-            ))
-        conn.commit()
+            print(f" {stock_count} {requested_stock} stocks successfully bought.")
 
-        print(f" {stock_count} {requested_stock} stocks successfully bought.")
-
-    except mysql.connector.Error as err:
-        print(f"Error: {err}")
-    finally:
-        cursor.close()
-        conn.close()
-    
-    return None
+        except mysql.connector.Error as err:
+            print(f"Error: {err}")
+        finally:
+            cursor.close()
+            conn.close()
+        
+        return None
     
 def remove_stock(available_stock_names,start_date,end_date,requested_stock,stock_count):
     requested_buy_date = '2025-01-28'#.strftime("%Y-%m-%d")
@@ -104,52 +106,53 @@ def remove_stock(available_stock_names,start_date,end_date,requested_stock,stock
         print("request stock not available")
         return 
     
-    if requested_buy_date != end_date.strftime("%Y-%m-%d"):
-        print("Market is Closed")
-        return 
-    
-    try:
-        conn = mysql.connector.connect(**db_config)
-        cursor = conn.cursor()
-        
-        cursor.execute("""
-            select sum(stock_count)
-            from portfolio
-            where ticker = %s
-        """
-        ,(requested_stock,))
-        
-        total_stock = cursor.fetchone()
-        if total_stock is None:
-            print('You have no stocks to sell of this company')
-            return 
-        else:
-            total_stock = total_stock[0]
-            if total_stock < stock_count:
-                print("Invalid, Stocks to sell less than total stocks present")
-                return   
-            #print('total stock = ',total_stock)
-        
-        
-        cursor.execute("""
-                INSERT INTO portfolio (ticker,date,stock_count)
-                VALUES (%s, %s, %s )
-            """, (
-                requested_stock,
-                requested_buy_date,
-                -stock_count
-            ))
-        conn.commit()
+    else:
 
-        print(f" {stock_count} {requested_stock} stocks successfully sold.")
+        try:
+            conn = mysql.connector.connect(**db_config)
+            cursor = conn.cursor()
+        
+            cursor.execute("""
+                select sum(stock_count)
+                from user_portfolio
+                where ticker = %s
+            """
+            ,(requested_stock,))
+        
+            total_stock = cursor.fetchone()
+            if total_stock is None:
+                print('You have no stocks to sell of this company')
+                return 
+            else:
+                total_stock = total_stock[0]
+                print("total stock available",total_stock)
+                if total_stock < stock_count:
+                    print("Invalid, Stocks to sell less than total stocks present")
+                    return   
+                #print('total stock = ',total_stock)
+            
+        
+            cursor.execute("""
+                    INSERT INTO user_portfolio (ticker,date,stock_count)
+                    VALUES (%s, %s, %s )
+                """, (
+                    requested_stock,
+                    requested_buy_date,
+                    -stock_count
+                ))
+            conn.commit()
+        
+     
+            print(f" {stock_count} {requested_stock} stocks successfully sold.")
+            
 
-    except mysql.connector.Error as err:
-        print(f"Error: {err}")
-    finally:
-        cursor.close()
-        conn.close()
+        except mysql.connector.Error as err:
+            print(f"Error: {err}")
+        finally:
+            cursor.close()
+            conn.close()
     
-    return None
+        return None
     
 
 def display():
@@ -160,7 +163,7 @@ def display():
         
         query = """ 
         select ticker,sum(stock_count)
-        from portfolio
+        from user_portfolio
         group by ticker
         
                 """
@@ -172,10 +175,11 @@ def display():
             print("Stock Name:",stock[0],"Stock Count:",stock[1])
     
         # Buying History
+        print("")
         print("Buying History")
         query = """ 
             select ticker,date,stock_count
-            from portfolio
+            from user_portfolio
             where stock_count > 0
                 """
         cursor.execute(query)
@@ -186,10 +190,11 @@ def display():
             print("Date :",stock[1],"Stock Name:",stock[0],"Bought",stock[2])
         
         # Selling History
-        print("Buying History")
+        print("")
+        print("Selling History")
         query = """ 
             select ticker,date,stock_count
-            from portfolio
+            from user_portfolio
             where stock_count < 0
                 """
         cursor.execute(query)
@@ -216,9 +221,8 @@ def display():
 # Main code
 create_portfolio_table()
 available_stock_names, start_date, end_date = get_available_stock_data()
+
 while True:
-
-
 
     # Input operations
     print("\nChoose an operation:")
@@ -255,6 +259,7 @@ while True:
     # get data of available stocks
     #available_stock_names,start_date,end_date = get_available_stock_data()
     #print("Available stocks:",available_stock_names)
+    #print("")
     # operations
     
     #ADD
