@@ -6,11 +6,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 from datetime import datetime
 import math
-import warnings
-warnings.filterwarnings("ignore")
 
 ############################################
-# TECHNICAL INDICATOR & TRADING FUNCTIONS
+# TECHNICAL INDICATOR & SIGNAL FUNCTIONS
 ############################################
 
 def calculate_sma(df, window):
@@ -19,245 +17,194 @@ def calculate_sma(df, window):
     """
     return df['close_price'].rolling(window=window, min_periods=1).mean()
 
-def calculate_rsi(df, window):
-    """
-    Calculate the Relative Strength Index (RSI) for the 'close_price' column.
-    """
-    delta = df['close_price'].diff()
-    up = delta.clip(lower=0)
-    down = -delta.clip(upper=0)
-    ma_up = up.rolling(window=window, min_periods=1).mean()
-    ma_down = down.rolling(window=window, min_periods=1).mean()
-    rsi = 100 - (100 / (1 + ma_up / ma_down))
-    return rsi
-
 def generate_signals(df):
     """
-    Generate buy and sell signals.
+    Generate buy and sell signals using a simple moving average crossover.
     
-    Rules:
-      - Buy Signal (1): When sma_short > sma_long and RSI < 40, and no current "long" position.
-      - Sell Signal (-1): When sma_short < sma_long or RSI > 60, and a long position is held.
+    Strategy:
+      - Buy signal (set to 1): When the 5-day SMA crosses above the 20-day SMA and you are not currently holding shares.
+      - Sell signal (set to -1): When the 5-day SMA crosses below the 20-day SMA and you are currently holding shares.
+      
+    The function iterates sequentially so that only one signal is generated until the position is switched.
     """
     df['buy_signal'] = 0
     df['sell_signal'] = 0
-    position = None  # Track whether we hold a 'long' position
-
-    for idx, row in df.iterrows():
-        if row['sma_short'] > row['sma_long'] and row['rsi'] < 40:
-            if position != 'long':
-                df.at[idx, 'buy_signal'] = 1
-                position = 'long'
-        elif row['sma_short'] < row['sma_long'] or row['rsi'] > 60:
-            if position == 'long':
-                df.at[idx, 'sell_signal'] = -1
-                position = None
+    position = 0  # 0 means no position; 1 means long (shares held)
+    
+    # Loop over the rows (starting from the second row)
+    for i in range(1, len(df)):
+        # Buy signal: if short SMA > long SMA and not holding shares
+        if df.iloc[i]['sma_short'] > df.iloc[i]['sma_long'] and position == 0:
+            df.at[df.index[i], 'buy_signal'] = 1
+            position = 1
+        # Sell signal: if short SMA < long SMA and shares are held
+        elif df.iloc[i]['sma_short'] < df.iloc[i]['sma_long'] and position == 1:
+            df.at[df.index[i], 'sell_signal'] = -1
+            position = 0
     return df
 
-def mock_trading(df, initial_fund):
-    """
-    Mock Trading Environment:
-      - Start with initial_fund as cash.
-      - On a buy signal, buy as many shares as possible.
-      - On a sell signal, sell all held shares.
-      - Record transactions and update the portfolio value over time.
-    """
-    cash = initial_fund
-    shares_held = 0
-    portfolio_values = []
-    transaction_log = []  # Records tuples: (Date, Action, Shares, Price)
+############################################
+# MOCK TRADING ENVIRONMENT FUNCTIONS
+############################################
 
+def simulate_trading(df, initial_cash):
+    """
+    Simulate a trading environment:
+      - Start with an initial amount of cash.
+      - When a buy signal occurs, buy as many shares as possible.
+      - When a sell signal occurs, sell all shares held.
+      - At each step, update and record the portfolio value (cash + shares * current price)
+      - Record the number of shares held.
+      
+    Returns the updated DataFrame (with portfolio value and shares held) and a transaction log.
+    """
+    cash = initial_cash
+    shares = 0
+    portfolio_values = []
+    shares_held_list = []
+    transactions = []  # Each transaction is a dict: {date, action, shares, price}
+    
     for idx, row in df.iterrows():
         price = row['close_price']
-        # Execute buy if buy_signal is set and not already in a long position.
-        if row['buy_signal'] == 1:
+        current_date = idx  # index is a datetime
+        # Buy signal: buy as many shares as possible if not holding
+        if row['buy_signal'] == 1 and cash > 0:
             shares_to_buy = int(cash // price)
             if shares_to_buy > 0:
                 cash -= shares_to_buy * price
-                shares_held += shares_to_buy
-                transaction_log.append((row.name, 'BUY', shares_to_buy, price))
-        # Execute sell if sell_signal is set and shares are held.
-        elif row['sell_signal'] == -1 and shares_held > 0:
-            cash += shares_held * price
-            transaction_log.append((row.name, 'SELL', shares_held, price))
-            shares_held = 0
-
-        portfolio_values.append(cash + shares_held * price)
-
+                shares += shares_to_buy
+                transactions.append({'date': current_date, 'action': 'BUY', 'shares': shares_to_buy, 'price': price})
+        # Sell signal: if holding shares, sell all
+        elif row['sell_signal'] == -1 and shares > 0:
+            cash += shares * price
+            transactions.append({'date': current_date, 'action': 'SELL', 'shares': shares, 'price': price})
+            shares = 0
+        # Record portfolio value and shares held at this point
+        portfolio_value = cash + shares * price
+        portfolio_values.append(portfolio_value)
+        shares_held_list.append(shares)
+    
     df['portfolio_value'] = portfolio_values
-    transaction_df = pd.DataFrame(transaction_log, columns=['Date', 'Action', 'Shares', 'Price'])
-    return df, transaction_df
+    df['shares_held'] = shares_held_list
+    return df, transactions
 
-def calculate_annualized_returns(df, initial_fund):
+def compute_performance_metrics(df, initial_cash):
     """
-    Calculate the annualized return from the portfolio value time series.
+    Compute performance metrics:
+      - Final portfolio value.
+      - Total return.
+      - Annualized return.
+      - Sharpe ratio (using daily returns).
     """
+    # Assume the DataFrame index is datetime and sorted in ascending order
     start_date = df.index[0]
     end_date = df.index[-1]
-    years = (end_date - start_date).days / 365.0
+    days = (end_date - start_date).days
+    years = days / 365.0 if days > 0 else 0
     final_value = df['portfolio_value'].iloc[-1]
-    annualized_return = ((final_value / initial_fund) ** (1 / years)) - 1 if years > 0 else 0
-    return annualized_return
+    total_return = (final_value - initial_cash) / initial_cash
+    annualized_return = ((final_value / initial_cash) ** (1/years)) - 1 if years > 0 else 0
 
-def calculate_sharpe_ratio(df, risk_free_rate=0.0001):
+    # Compute daily returns for Sharpe ratio calculation
+    df['daily_return'] = df['portfolio_value'].pct_change().fillna(0)
+    avg_daily_return = df['daily_return'].mean()
+    std_daily_return = df['daily_return'].std()
+    sharpe_ratio = (avg_daily_return * 365 / (std_daily_return * np.sqrt(365))
+                    if std_daily_return != 0 else np.nan)
+    return final_value, total_return, annualized_return, sharpe_ratio
+
+def simulate_trading_for_ticker(df_ticker, initial_cash):
     """
-    Calculate the Sharpe ratio using the daily returns of the portfolio.
-    """
-    daily_returns = df['portfolio_value'].pct_change().fillna(0)
-    avg_daily_return = daily_returns.mean()
-    std_daily_return = daily_returns.std()
-    annualized_avg_return = avg_daily_return * 365
-    annualized_std = std_daily_return * np.sqrt(365)
-    sharpe_ratio = ((annualized_avg_return - risk_free_rate) / annualized_std
-                    if annualized_std != 0 else float('nan'))
-    return sharpe_ratio
-
-############################################
-# PREDICTION FUNCTION USING ARIMA
-############################################
-
-def forecast_arima(df, forecast_steps=5):
-    """
-    Fit an ARIMA model on the 'close_price' series and forecast future prices.
-    Returns the forecasted mean and confidence intervals.
-    """
-    from statsmodels.tsa.arima.model import ARIMA
-
-    series = df['close_price']
-    try:
-        # ARIMA order (4,1,1) is chosen as an example – adjust as needed
-        model = ARIMA(series, order=(4, 1, 1))
-        fitted_model = model.fit()
-        forecast = fitted_model.get_forecast(steps=forecast_steps)
-        forecast_mean = forecast.predicted_mean
-        conf_int = forecast.conf_int(alpha=0.05)
-    except Exception as e:
-        print("ARIMA forecasting error:", e)
-        forecast_mean, conf_int = None, None
-    return forecast_mean, conf_int
-
-############################################
-# SIMULATION FOR EACH TICKER
-############################################
-
-def simulate_trading_for_ticker(df, initial_fund):
-    """
-    For a single ticker DataFrame:
-      - Ensure data is sorted and the 'date' column is parsed.
-      - Calculate technical indicators (SMA, RSI).
+    For a single ticker's DataFrame:
+      - Parse and sort dates.
+      - Compute technical indicators (5-day and 20-day SMAs).
       - Generate buy/sell signals.
       - Run the mock trading simulation.
       - Compute performance metrics.
+      
+    Returns the updated DataFrame, transaction log, and performance metrics.
     """
-    # Convert 'date' column to datetime and sort
-    df['date'] = pd.to_datetime(df['date'])
-    df.sort_values(by='date', inplace=True)
-    df.set_index('date', inplace=True)
-
-    # Define technical indicator parameters
-    sma_short_window = 50
-    sma_long_window = 200
-    rsi_window = 20
-
-    # Calculate technical indicators using 'close_price'
-    df['sma_short'] = calculate_sma(df, sma_short_window)
-    df['sma_long'] = calculate_sma(df, sma_long_window)
-    df['rsi'] = calculate_rsi(df, rsi_window)
-
-    # Generate buy/sell signals
-    df = generate_signals(df)
-
-    # Run the mock trading simulation
-    df, transaction_log = mock_trading(df, initial_fund)
-
-    # Compute performance metrics
-    annual_return = calculate_annualized_returns(df, initial_fund)
-    sharpe_ratio = calculate_sharpe_ratio(df)
+    # Ensure the 'date' column is datetime and set it as index
+    df_ticker['date'] = pd.to_datetime(df_ticker['date'])
+    df_ticker = df_ticker.sort_values(by='date')
+    df_ticker.set_index('date', inplace=True)
     
-    return df, transaction_log, annual_return, sharpe_ratio
+    # Compute moving averages (adjust windows as desired)
+    df_ticker['sma_short'] = calculate_sma(df_ticker, window=5)
+    df_ticker['sma_long'] = calculate_sma(df_ticker, window=20)
+    
+    # Generate buy/sell signals
+    df_ticker = generate_signals(df_ticker)
+    
+    # Run the trading simulation
+    df_ticker, transactions = simulate_trading(df_ticker, initial_cash)
+    
+    # Compute performance metrics
+    final_value, total_return, annualized_return, sharpe_ratio = compute_performance_metrics(df_ticker, initial_cash)
+    
+    return df_ticker, transactions, final_value, total_return, annualized_return, sharpe_ratio
 
 ############################################
 # MAIN EXECUTION
 ############################################
 
 if __name__ == "__main__":
-    # Load the processed CSV file (generated by your MySQL extraction/preprocessing code)
-    csv_file = 'processed_stock_data.csv'
-    all_data = pd.read_csv(csv_file)
+    # Load the processed CSV file.
+    # The CSV is expected to have at least the following columns:
+    #   ticker, date, close_price, ...
+    csv_file = "processed_stock_data.csv"
+    data = pd.read_csv(csv_file)
     
-    # Ensure the date column is in datetime format
-    all_data['date'] = pd.to_datetime(all_data['date'])
+    # Check that required columns exist.
+    required_columns = ['ticker', 'date', 'close_price']
+    for col in required_columns:
+        if col not in data.columns:
+            print(f"Error: Missing required column '{col}' in CSV.")
+            exit(1)
     
-    # Define initial investment fund per ticker
-    initial_investment = 10000
-
-    # Dictionaries to store results per ticker
-    portfolios = {}
-    annual_returns = {}
-    sharpe_ratios = {}
-    overall_transactions = {}
-
-    # Group the data by ticker (each group is one stock)
-    tickers = all_data['ticker'].unique()
+    # Define total initial investment and allocate equally across tickers.
+    total_initial_fund = 100000  # e.g., $100,000 total
+    tickers = data['ticker'].unique()
+    allocation = total_initial_fund / len(tickers)  # equal allocation per ticker
+    
+    overall_portfolio_value = 0
+    performance_summary = {}
     
     for ticker in tickers:
-        print(f"\nProcessing ticker: {ticker}")
-        df_ticker = all_data[all_data['ticker'] == ticker].copy()
+        print(f"\n--- Simulating for ticker: {ticker} ---")
+        df_ticker = data[data['ticker'] == ticker].copy()
         
-        # Run the trading simulation for this ticker
-        sim_df, transactions, ann_return, sharpe = simulate_trading_for_ticker(df_ticker, initial_investment)
+        # Run simulation for this ticker using its allocated fund.
+        sim_df, transactions, final_value, total_return, annualized_return, sharpe_ratio = simulate_trading_for_ticker(df_ticker, allocation)
         
-        # Plot historical close_price with buy/sell signals
-        plt.figure(figsize=(12,6))
-        plt.plot(sim_df.index, sim_df['close_price'], label='Close Price', alpha=0.7)
-        buy_signals = sim_df[sim_df['buy_signal'] == 1]
-        sell_signals = sim_df[sim_df['sell_signal'] == -1]
-        plt.scatter(buy_signals.index, buy_signals['close_price'], marker='^', color='green', label='Buy Signal', s=100)
-        plt.scatter(sell_signals.index, sell_signals['close_price'], marker='v', color='red', label='Sell Signal', s=100)
-        plt.title(f"{ticker} - Buy and Sell Signals")
+        print(f"Ticker: {ticker}")
+        print(f"Final Portfolio Value: ${final_value:.2f}")
+        print(f"Total Return: {total_return*100:.2f}%")
+        print(f"Annualized Return: {annualized_return*100:.2f}%")
+        print(f"Sharpe Ratio: {sharpe_ratio:.2f}")
+        performance_summary[ticker] = {
+            'final_value': final_value,
+            'total_return': total_return,
+            'annualized_return': annualized_return,
+            'sharpe_ratio': sharpe_ratio,
+            'transactions': transactions
+        }
+        
+        # Plot portfolio value over time for this ticker.
+        plt.figure(figsize=(10, 5))
+        plt.plot(sim_df.index, sim_df['portfolio_value'], label='Portfolio Value', color='blue')
+        plt.title(f"{ticker} Portfolio Value Over Time")
         plt.xlabel("Date")
-        plt.ylabel("Price")
+        plt.ylabel("Portfolio Value ($)")
         plt.legend()
         plt.grid(True)
         plt.show()
-
-        # Print transaction log and performance metrics for this ticker
-        print(f"Transaction Log for {ticker}:\n{transactions}")
-        final_value = sim_df['portfolio_value'].iloc[-1]
-        print(f"Final Portfolio Value for {ticker}: ${final_value:.2f}")
-        print(f"Annualized Return for {ticker}: {ann_return:.2%}")
-        print(f"Sharpe Ratio for {ticker}: {sharpe:.2f}")
         
-        portfolios[ticker] = final_value
-        annual_returns[ticker] = ann_return
-        sharpe_ratios[ticker] = sharpe
-        overall_transactions[ticker] = transactions
+        overall_portfolio_value += final_value
 
-        # --- Prediction using ARIMA ---
-        forecast_steps = 5  # number of days to forecast
-        forecast_mean, conf_int = forecast_arima(sim_df, forecast_steps=forecast_steps)
-        if forecast_mean is not None:
-            plt.figure(figsize=(12,6))
-            plt.plot(sim_df.index, sim_df['close_price'], label='Historical Close Price')
-            plt.plot(forecast_mean.index, forecast_mean, label='Forecast', color='orange', marker='o')
-            plt.fill_between(forecast_mean.index,
-                             conf_int.iloc[:, 0],
-                             conf_int.iloc[:, 1],
-                             color='grey', alpha=0.3, label='95% Confidence Interval')
-            plt.title(f"{ticker} ARIMA Forecast (Next {forecast_steps} Days)")
-            plt.xlabel("Date")
-            plt.ylabel("Price")
-            plt.legend()
-            plt.grid(True)
-            plt.show()
-        else:
-            print(f"Forecasting failed for ticker {ticker}.")
-
-    # Overall summary
-    print("\n--- OVERALL SUMMARY ---")
-    print("Final Portfolio Values:")
-    print(portfolios)
-    print("\nAnnualized Returns:")
-    print(annual_returns)
-    print("\nSharpe Ratios:")
-    print(sharpe_ratios)
+    # Print overall summary.
+    print("\n--- OVERALL PORTFOLIO SUMMARY ---")
+    print(f"Total Portfolio Value: ${overall_portfolio_value:.2f}")
+    print("Performance by Ticker:")
+    for ticker, metrics in performance_summary.items():
+        print(f"{ticker}: Final Value = ${metrics['final_value']:.2f}, Annualized Return = {metrics['annualized_return']*100:.2f}%, Sharpe Ratio = {metrics['sharpe_ratio']:.2f}")
