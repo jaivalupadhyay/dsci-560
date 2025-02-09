@@ -173,7 +173,8 @@ if __name__ == "__main__":
             exit(1)
     
     # Define total initial investment and allocate equally across tickers.
-    total_initial_fund = 100000  # For example, $100,000 total
+    # total_initial_fund = 100000  # For example, $100,000 total
+    total_initial_fund = float(input("Initial total allocated fund:"))
     tickers = data['ticker'].unique()
     allocation = total_initial_fund / len(tickers)  # equal allocation per ticker
     
@@ -225,6 +226,8 @@ if __name__ == "__main__":
     # Print overall summary.
     print("\n--- OVERALL PORTFOLIO SUMMARY ---")
     print(f"Total Portfolio Value: ${overall_portfolio_value:.2f}")
+    profit = overall_portfolio_value - total_initial_fund
+    print(f"Total Profit: ${profit:.2f}")
     print("Performance by Ticker:")
     for ticker, metrics in performance_summary.items():
         print(f"{ticker}: Final Value = ${metrics['final_value']:.2f}, Annualized Return = {metrics['annualized_return']*100:.2f}%, Sharpe Ratio = {metrics['sharpe_ratio']:.2f}")
