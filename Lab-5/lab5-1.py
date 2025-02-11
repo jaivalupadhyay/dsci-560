@@ -121,56 +121,37 @@ def fetch_posts_praw(reddit, subreddit_name, num_posts):
             break
     return posts
 
-def fetch_posts_pushshift(subreddit, num_posts):
+
+def fetch_posts_segmented(reddit, subreddit_name, num_posts):
     """
-    Uses the Pushshift API to fetch posts from a subreddit.
-    Pushshift returns a maximum of 100 posts per call, so we loop using the 'before'
-    parameter to paginate through results. This function includes a retry mechanism
-    to overcome individual request timeouts and is designed to handle large requests.
+    Uses PRAW to fetch posts in segmented batches using time-based pagination.
+    We repeatedly query the subreddit.new() endpoint with the 'before' parameter.
     """
     posts = []
-    base_url = "https://api.pushshift.io/reddit/search/submission/"
-    params = {
-        "subreddit": subreddit,
-        "size": 100,               # Maximum posts per request is typically 100.
-        "sort": "desc",
-        "sort_type": "created_utc"
-    }
-    last_created = None
-    start_time = time.time()
+    subreddit = reddit.subreddit(subreddit_name)
+    last_timestamp = None  # No lower bound for the first batch.
 
     while len(posts) < num_posts:
-        if last_created:
-            params["before"] = last_created
-        success = False
-        attempts = 0
-        # Retry mechanism: try up to 3 times per request.
-        while not success and attempts < 3:
-            try:
-                response = requests.get(base_url, params=params, timeout=60)
-                data = response.json().get("data", [])
-                success = True
-            except requests.exceptions.Timeout:
-                attempts += 1
-                print(f"Request timed out. Retrying... (Attempt {attempts} of 3)")
-                time.sleep(5)
-            except Exception as e:
-                attempts += 1
-                print(f"Pushshift error: {e}. Retrying... (Attempt {attempts} of 3)")
-                time.sleep(5)
-        if not success:
-            print("Failed to retrieve data after 3 attempts. Breaking out of loop.")
+        params = {}
+        if last_timestamp is not None:
+            params["before"] = last_timestamp
+        print(f"Fetching batch with parameters: {params}")
+        # Fetch a batch of up to 1000 posts.
+        batch = list(subreddit.new(limit=1000, params=params))
+        if not batch:
+            print("No more posts returned. Ending segmented fetch.")
             break
-        if not data:
-            print("No more data returned from Pushshift API.")
+        posts.extend(batch)
+        # Update last_timestamp: subtract one second to avoid duplicating the last post.
+        last_timestamp = batch[-1].created_utc - 1
+        print(f"Total posts fetched so far: {len(posts)}")
+        # If fewer than 1000 posts were returned, likely we've reached the end.
+        if len(batch) < 1000:
+            print("Fewer posts returned in the last batch; reached the end.")
             break
 
-        posts.extend(data)
-        # Subtract 1 from the last post's created_utc to avoid duplication in the next call.
-        last_created = data[-1]["created_utc"] - 1
-        elapsed = time.time() - start_time
-        print(f"Fetched {len(posts)} posts so far. Elapsed time: {elapsed:.2f} secs.")
-        time.sleep(1)
+        # Sleep briefly to respect API rate limits.
+        time.sleep(2)
 
     return posts[:num_posts]
 
@@ -179,30 +160,21 @@ def fetch_posts_pushshift(subreddit, num_posts):
 
 # --- Main Processing Function ---
 
-def process_and_store_posts(posts, conn, using_pushshift=False):
+def process_and_store_posts(posts, conn):
     """
-    Preprocess each post and store it in the MySQL database.
-    If using_pushshift is True, the post data is in Pushshift's dict format.
-    Otherwise, posts are PRAW Submission objects.
+    Processes each post (cleans text, extracts keywords, performs OCR on images)
+    and stores the result in the MySQL database.
     """
     cursor = conn.cursor()
     for post in posts:
-        if using_pushshift:
-            post_id = post.get("id")
-            title = post.get("title", "")
-            author = post.get("author")
-            created_utc = datetime.utcfromtimestamp(post.get("created_utc")).strftime('%Y-%m-%d %H:%M:%S')
-            raw_text = post.get("selftext", "")
-            combined_text = title + "\n" + raw_text
-            image_url = post.get("url", "")
-        else:
-            post_id = post.id
-            title = post.title
-            author = post.author.name if post.author else "Anonymous"
-            created_utc = datetime.utcfromtimestamp(post.created_utc).strftime('%Y-%m-%d %H:%M:%S')
-            raw_text = post.selftext
-            combined_text = title + "\n" + raw_text
-            image_url = post.url
+        # Using PRAW submission objects.
+        post_id = post.id
+        title = post.title
+        author = post.author.name if post.author else "Anonymous"
+        created_utc = datetime.utcfromtimestamp(post.created_utc).strftime('%Y-%m-%d %H:%M:%S')
+        raw_text = post.selftext
+        combined_text = title + "\n" + raw_text
+        image_url = post.url
 
         cleaned = clean_text(combined_text)
         keywords = extract_keywords(cleaned)
@@ -222,7 +194,6 @@ def process_and_store_posts(posts, conn, using_pushshift=False):
         except Exception as e:
             print(f"Database insertion error for post {post_id}: {e}")
 
-# --- Main Script Execution ---
 
 def main():
     subreddit_name = input("Enter subreddit name (e.g., tech or cybersecurity): ").strip()
@@ -234,21 +205,23 @@ def main():
 
     conn = init_db()
 
-    reddit = praw.Reddit(client_id='uBNgnwJ71L3PQfAJzkjeow',
-                         client_secret='J_QnMzskGLu7g5nHi2Nl6qD1HUwtCw',
-                         user_agent='reddit-scraper Group-6')
+    # Initialize the Reddit instance for PRAW.
+    reddit = praw.Reddit(client_id='YOUR_CLIENT_ID',
+                         client_secret='YOUR_CLIENT_SECRET',
+                         user_agent='reddit-scraper-example by /u/YourRedditUsername')
 
+    # Use segmented pagination for large requests.
     if num_posts <= 1000:
-        print(f"Fetching {num_posts} posts from r/{subreddit_name} using PRAW...")
+        print(f"Fetching {num_posts} posts from r/{subreddit_name} using PRAW (simple listing)...")
         posts = fetch_posts_praw(reddit, subreddit_name, num_posts)
-        process_and_store_posts(posts, conn, using_pushshift=False)
     else:
-        print(f"Fetching {num_posts} posts from r/{subreddit_name} using Pushshift API for large requests...")
-        posts = fetch_posts_pushshift(subreddit_name, num_posts)
-        process_and_store_posts(posts, conn, using_pushshift=True)
+        print(f"Fetching {num_posts} posts from r/{subreddit_name} using segmented time-based pagination...")
+        posts = fetch_posts_segmented(reddit, subreddit_name, num_posts)
 
+    process_and_store_posts(posts, conn)
     print("Data fetching and processing complete.")
     conn.close()
+
 
 if __name__ == "__main__":
     main()
