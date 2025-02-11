@@ -123,33 +123,59 @@ def fetch_posts_praw(reddit, subreddit_name, num_posts):
 
 def fetch_posts_pushshift(subreddit, num_posts):
     """
-    Fetches posts using the Pushshift API.
-    Pushshift can return more than 1000 posts by using a 'before' parameter.
+    Uses the Pushshift API to fetch posts from a subreddit.
+    Pushshift returns a maximum of 100 posts per call, so we loop using the 'before'
+    parameter to paginate through results. This function includes a retry mechanism
+    to overcome individual request timeouts and is designed to handle large requests.
     """
     posts = []
     base_url = "https://api.pushshift.io/reddit/search/submission/"
     params = {
         "subreddit": subreddit,
-        "size": 100,
+        "size": 100,               # Maximum posts per request is typically 100.
         "sort": "desc",
         "sort_type": "created_utc"
     }
     last_created = None
+    start_time = time.time()
+
     while len(posts) < num_posts:
         if last_created:
             params["before"] = last_created
-        try:
-            response = requests.get(base_url, params=params, timeout=30)
-            data = response.json().get("data", [])
-            if not data:
-                break
-            posts.extend(data)
-            last_created = data[-1]["created_utc"]
-            time.sleep(1)
-        except Exception as e:
-            print(f"Pushshift error: {e}")
-            time.sleep(5)
+        success = False
+        attempts = 0
+        # Retry mechanism: try up to 3 times per request.
+        while not success and attempts < 3:
+            try:
+                response = requests.get(base_url, params=params, timeout=60)
+                data = response.json().get("data", [])
+                success = True
+            except requests.exceptions.Timeout:
+                attempts += 1
+                print(f"Request timed out. Retrying... (Attempt {attempts} of 3)")
+                time.sleep(5)
+            except Exception as e:
+                attempts += 1
+                print(f"Pushshift error: {e}. Retrying... (Attempt {attempts} of 3)")
+                time.sleep(5)
+        if not success:
+            print("Failed to retrieve data after 3 attempts. Breaking out of loop.")
+            break
+        if not data:
+            print("No more data returned from Pushshift API.")
+            break
+
+        posts.extend(data)
+        # Subtract 1 from the last post's created_utc to avoid duplication in the next call.
+        last_created = data[-1]["created_utc"] - 1
+        elapsed = time.time() - start_time
+        print(f"Fetched {len(posts)} posts so far. Elapsed time: {elapsed:.2f} secs.")
+        time.sleep(1)
+
     return posts[:num_posts]
+
+
+
 
 # --- Main Processing Function ---
 
