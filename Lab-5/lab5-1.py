@@ -10,6 +10,7 @@ from io import BytesIO
 import pytesseract
 import nltk
 from nltk.corpus import stopwords
+import csv  # Added for CSV export
 
 # Ensure NLTK stopwords are downloaded (only needed once)
 nltk.download('stopwords')
@@ -20,6 +21,7 @@ MYSQL_HOST = 'localhost'
 MYSQL_USER = 'your_username'
 MYSQL_PASSWORD = 'your_password'
 MYSQL_DATABASE = 'reddit_scraper'  # Make sure this database exists in MySQL
+
 
 def init_db():
     """
@@ -47,6 +49,7 @@ def init_db():
     conn.commit()
     return conn
 
+
 # --- Utility Functions ---
 
 def mask_username(username):
@@ -59,6 +62,7 @@ def mask_username(username):
         return "Anonymous"
     return username[0] + "*" * (len(username) - 1)
 
+
 def clean_text(raw_html):
     """
     Removes HTML tags and special characters from text.
@@ -68,6 +72,7 @@ def clean_text(raw_html):
     text = re.sub(r'[^a-zA-Z0-9\s\.\,\!\?\']', '', text)
     text = re.sub(r'\s+', ' ', text).strip()
     return text
+
 
 def extract_keywords(text, language='english'):
     """
@@ -84,6 +89,7 @@ def extract_keywords(text, language='english'):
             filtered_keywords.append(word)
     return ', '.join(filtered_keywords)
 
+
 def ocr_from_image_url(image_url):
     """
     Downloads an image from a URL and performs OCR to extract text.
@@ -98,6 +104,7 @@ def ocr_from_image_url(image_url):
     except Exception as e:
         print(f"OCR error for image {image_url}: {e}")
     return ""
+
 
 # --- Reddit Scraping Functions ---
 
@@ -156,8 +163,6 @@ def fetch_posts_segmented(reddit, subreddit_name, num_posts):
     return posts[:num_posts]
 
 
-
-
 # --- Main Processing Function ---
 
 def process_and_store_posts(posts, conn):
@@ -195,6 +200,32 @@ def process_and_store_posts(posts, conn):
             print(f"Database insertion error for post {post_id}: {e}")
 
 
+def export_to_csv(csv_filename='reddit_posts.csv'):
+    """
+    Exports all data from the 'posts' table in MySQL to a CSV file.
+    """
+    conn = mysql.connector.connect(
+        host=MYSQL_HOST,
+        user=MYSQL_USER,
+        password=MYSQL_PASSWORD,
+        database=MYSQL_DATABASE
+    )
+    cursor = conn.cursor()
+    query = """
+        SELECT post_id, title, author, created_utc, cleaned_text, keywords, image_text
+        FROM posts
+    """
+    cursor.execute(query)
+    rows = cursor.fetchall()
+    with open(csv_filename, 'w', newline='', encoding='utf-8') as f:
+        csv_writer = csv.writer(f)
+        csv_writer.writerow(['post_id', 'title', 'author', 'created_utc', 'cleaned_text', 'keywords', 'image_text'])
+        csv_writer.writerows(rows)
+    print(f"Exported {len(rows)} rows to {csv_filename}")
+    cursor.close()
+    conn.close()
+
+
 def main():
     subreddit_name = input("Enter subreddit name (e.g., tech or cybersecurity): ").strip()
     try:
@@ -221,6 +252,11 @@ def main():
     process_and_store_posts(posts, conn)
     print("Data fetching and processing complete.")
     conn.close()
+
+    # Export the data from MySQL to CSV.
+    print("Exporting data from MySQL to CSV...")
+    export_to_csv()
+    print("Export complete.")
 
 
 if __name__ == "__main__":
