@@ -48,6 +48,7 @@ best_k = k_range[np.argmax(silhouette_scores)]
 print(f"Optimal number of clusters (K): {best_k}")
 
 # Apply KMeans with optimal K
+
 kmeans = KMeans(n_clusters=best_k, init='k-means++', max_iter=500, random_state=42, n_init=10)
 df['cluster'] = kmeans.fit_predict(X)
 
@@ -117,3 +118,14 @@ plt.show()
 
 # Print the assigned cluster for the new keywords
 print(f"New keywords belong to Cluster: {predicted_cluster}")
+
+unique_clusters = sorted(df['cluster'].unique())  # Get sorted unique cluster values
+
+plt.figure(figsize=(8, 5))
+plt.hist(df['cluster'], bins=len(unique_clusters), edgecolor='black', alpha=0.7, align='mid')
+plt.xticks(unique_clusters)  # Set x-axis ticks to distinct cluster values
+plt.xlabel('Cluster')
+plt.ylabel('Frequency')
+plt.title('Histogram of Cluster Column')
+plt.grid(axis='y', linestyle='--', alpha=0.7)
+plt.show()
