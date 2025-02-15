@@ -78,15 +78,17 @@ def extract_keywords(text, language='english'):
     """
     A simple keyword extraction using stopword filtering.
     """
-    stops = set(stopwords.words(language))
-    words = [word.strip() for word in re.findall(r'\w+', text.lower())]
+    stops = set(stopwords.words(language))  # Ensure stopwords are correctly loaded
+    words = [word.strip() for word in re.findall(r'\w+', text.lower())]  # Ensure stripping of extra spaces
     keywords = [word for word in words if word not in stops and len(word) > 3]
+
     seen = set()
     filtered_keywords = []
     for word in keywords:
         if word not in seen:
             seen.add(word)
             filtered_keywords.append(word)
+
     return ','.join(filtered_keywords)
 
 
