@@ -7,7 +7,26 @@ from sklearn.cluster import KMeans
 from sklearn.decomposition import PCA
 from sklearn.metrics import silhouette_score
 from collections import Counter
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_distances
 
+
+def compute_cosine_distance(word_list, new_keywords):
+    # Convert lists to space-separated strings for vectorization
+    word_list_str = " ".join(word_list)
+    new_keywords_str = " ".join(new_keywords)
+
+    # Vectorize the text
+    vectorizer = TfidfVectorizer()
+    vectors = vectorizer.fit_transform([word_list_str, new_keywords_str])
+
+    # Compute Cosine Distance (1 - Cosine Similarity)
+    cosine_dist = cosine_distances(vectors[0], vectors[1])[0][0]
+
+    return cosine_dist
+
+
+new_keywords = ["AI", "deep learning", "neural networks"]
 # Load dataset
 df = pd.read_csv("reddit_posts.csv")
 
@@ -67,9 +86,13 @@ for cluster in range(best_k):
     words = [word for keywords in df[df['cluster'] == cluster]['keywords'] for word in keywords]
     cluster_keywords[cluster] = Counter(words).most_common(10)  # Top 10 keywords per cluster
 
+
 print("Top Keywords per Cluster:")
 for cluster, keywords in cluster_keywords.items():
+    word_list = [word for word, count in keywords]
+    print(compute_cosine_distance(word_list, new_keywords))
     print(f"Cluster {cluster}: {[word for word, count in keywords]}")
+
 
 # Reduce dimensions using PCA for visualization
 pca = PCA(n_components=2)
@@ -89,7 +112,7 @@ plt.legend(title="Cluster")
 plt.show()
 
 # Define the new keywords
-new_keywords = ["AI", "deep learning", "neural networks"]
+# new_keywords = ["AI", "deep learning", "neural networks"]
 
 # Convert new keywords into a vector using Doc2Vec
 new_vector = doc2vec_model.infer_vector(new_keywords).astype(np.float64)
