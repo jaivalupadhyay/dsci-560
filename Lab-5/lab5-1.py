@@ -79,7 +79,7 @@ def extract_keywords(text, language='english'):
     A simple keyword extraction using stopword filtering.
     """
     stops = set(stopwords.words(language))
-    words = re.findall(r'\w+', text.lower())
+    words = [word.strip() for word in re.findall(r'\w+', text.lower())]
     keywords = [word for word in words if word not in stops and len(word) > 3]
     seen = set()
     filtered_keywords = []
@@ -87,7 +87,7 @@ def extract_keywords(text, language='english'):
         if word not in seen:
             seen.add(word)
             filtered_keywords.append(word)
-    return ', '.join(filtered_keywords)
+    return ','.join(filtered_keywords)
 
 
 def ocr_from_image_url(image_url):
