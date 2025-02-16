@@ -7,26 +7,29 @@ from sklearn.cluster import KMeans
 from sklearn.decomposition import PCA
 from sklearn.metrics import silhouette_score
 from collections import Counter
-from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_distances
+from gensim.models.doc2vec import Doc2Vec
+
+import re
+import nltk
+from nltk.corpus import stopwords
+
+# Ensure stopwords are downloaded
+nltk.download('stopwords')
 
 
-def compute_cosine_distance(word_list, new_keywords):
-    # Convert lists to space-separated strings for vectorization
-    word_list_str = " ".join(word_list)
-    new_keywords_str = " ".join(new_keywords)
-
-    # Vectorize the text
-    vectorizer = TfidfVectorizer()
-    vectors = vectorizer.fit_transform([word_list_str, new_keywords_str])
-
-    # Compute Cosine Distance (1 - Cosine Similarity)
-    cosine_dist = cosine_distances(vectors[0], vectors[1])[0][0]
-
-    return cosine_dist
+def clean_text(text):
+    stop_words = set(stopwords.words('english'))
+    text = re.sub(r'[^a-zA-Z\s]', '', text)
+    words = text.lower().split()
+    return [word for word in words if word not in stop_words]
 
 
-new_keywords = ["AI", "deep learning", "neural networks"]
+text = "DOGE Exposes Once-Secret Government Networks, Making Cyber-Espionage Easier than Ever"
+new_keywords = clean_text(text)
+print("New string to cluster", new_keywords)
+
+# new_keywords = ["researchers", "develop", "unhackable", "ready", "deployment", "building", "models", "immediately"]
 # Load dataset
 df = pd.read_csv("reddit_posts.csv")
 
@@ -34,8 +37,8 @@ df = pd.read_csv("reddit_posts.csv")
 if 'keywords' not in df.columns:
     raise ValueError("Column 'keywords' not found in the dataset")
 
-# Preprocess: Convert keywords into lists of words (assuming comma-separated)
-df['keywords'] = df['keywords'].astype(str).apply(lambda x: x.split(','))
+# Preprocess: Convert keywords into lists of words
+df['keywords'] = df['keywords'].astype(str).apply(lambda x: [word.strip() for word in x.split(',')])
 
 # Prepare data for Doc2Vec (each row needs to be a TaggedDocument)
 documents = [TaggedDocument(words=row['keywords'], tags=[str(index)]) for index, row in df.iterrows()]
@@ -67,7 +70,7 @@ best_k = k_range[np.argmax(silhouette_scores)]
 print(f"Optimal number of clusters (K): {best_k}")
 
 # Apply KMeans with optimal K
-
+# best_k =5
 kmeans = KMeans(n_clusters=best_k, init='k-means++', max_iter=500, random_state=42, n_init=10)
 df['cluster'] = kmeans.fit_predict(X)
 
@@ -84,14 +87,14 @@ print(f"Final Silhouette Score: {final_silhouette_score}")
 cluster_keywords = {}
 for cluster in range(best_k):
     words = [word for keywords in df[df['cluster'] == cluster]['keywords'] for word in keywords]
-    cluster_keywords[cluster] = Counter(words).most_common(10)  # Top 10 keywords per cluster
+    cluster_keywords[cluster] = Counter(words).most_common(8)  # Top 10 keywords per cluster
 
 
 print("Top Keywords per Cluster:")
 for cluster, keywords in cluster_keywords.items():
     word_list = [word for word, count in keywords]
-    print(compute_cosine_distance(word_list, new_keywords))
     print(f"Cluster {cluster}: {[word for word, count in keywords]}")
+    # print("Cosine distance with cluster ",cluster, ":",compute_cosine_distance(word_list, new_keywords,doc2vec_model))
 
 
 # Reduce dimensions using PCA for visualization
