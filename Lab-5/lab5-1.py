@@ -1,4 +1,4 @@
-import praw
+import praw, random
 import mysql.connector
 import time
 import re
@@ -11,6 +11,7 @@ import pytesseract
 import nltk
 from nltk.corpus import stopwords
 import csv  # Added for CSV export
+
 
 # Ensure NLTK stopwords are downloaded (only needed once)
 nltk.download('stopwords')
@@ -154,6 +155,7 @@ def fetch_posts_segmented(reddit, subreddit_name, num_posts):
     - Ensures no request exceeds 1000 posts at a time.
     - Implements a timeout mechanism to prevent exceeding API limits.
     - Handles the global timeout of 400 seconds.
+    - Introduces a randomized sleep interval to avoid rate-limiting.
     """
     posts = []
     subreddit = reddit.subreddit(subreddit_name)
@@ -186,7 +188,7 @@ def fetch_posts_segmented(reddit, subreddit_name, num_posts):
         # Respect API timeout limits
         if time.time() - start_time >= 60:
             print("API timeout limit reached, pausing for safety...")
-            time.sleep(10)  # Pause before continuing
+            time.sleep(random.uniform(8, 12))  # Randomized pause before continuing
             start_time = time.time()  # Reset the timeout counter
 
         # Stop if total execution time exceeds 400 seconds
@@ -194,9 +196,13 @@ def fetch_posts_segmented(reddit, subreddit_name, num_posts):
             print("Global timeout reached. Stopping further API calls.")
             break
 
-        time.sleep(2)  # Respect API rate limits
+        # Introduce a random sleep time to prevent rate limiting
+        sleep_time = random.uniform(1.5, 4.5)
+        print(f"Sleeping for {sleep_time:.2f} seconds to respect API limits...")
+        time.sleep(sleep_time)
 
     return posts[:num_posts]
+
 
 
 # def fetch_posts_praw(reddit, subreddit_name, num_posts):
