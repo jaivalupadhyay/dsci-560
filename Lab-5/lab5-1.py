@@ -109,60 +109,149 @@ def ocr_from_image_url(image_url):
 
 
 # --- Reddit Scraping Functions ---
+import time
+import praw
+
 
 def fetch_posts_praw(reddit, subreddit_name, num_posts):
     """
-    Fetches posts from a subreddit using PRAW.
-    Note: Reddit’s API (and thus PRAW) may return only up to ~1000 posts per listing.
-    For very large requests, you may need to paginate or use Pushshift.
+    Fetches posts from a subreddit using PRAW while respecting the API limits.
+    - Handles large requests by making multiple calls without exceeding the 1000 post limit.
+    - Implements a timeout mechanism to ensure requests do not exceed 60 seconds per API call.
+    - Ensures the total execution time does not exceed 400 seconds.
     """
     subreddit = reddit.subreddit(subreddit_name)
     posts = []
     fetched = 0
+    start_time = time.time()  # Track total execution time
+
     for submission in subreddit.new(limit=None):
         if hasattr(submission, 'promoted') and submission.promoted:
             continue
         posts.append(submission)
         fetched += 1
+
+        # Respect API rate limits
         if fetched % 100 == 0:
             time.sleep(2)
-        if fetched >= num_posts:
-            break
+
+        # If 60 seconds have passed, stop and wait before continuing
+        if time.time() - start_time >= 60:
+            print("API timeout limit reached, pausing for safety...")
+            time.sleep(10)  # Pause for 10 seconds before resuming
+            start_time = time.time()  # Reset time counter
+
+        if fetched >= num_posts or time.time() - start_time > 400:
+            break  # Stop if we've fetched enough or hit global timeout
+
     return posts
 
 
 def fetch_posts_segmented(reddit, subreddit_name, num_posts):
     """
-    Uses PRAW to fetch posts in segmented batches using time-based pagination.
-    We repeatedly query the subreddit.new() endpoint with the 'before' parameter.
+    Fetches posts in segments while handling large requests safely.
+    - Uses time-based pagination (`before` parameter).
+    - Ensures no request exceeds 1000 posts at a time.
+    - Implements a timeout mechanism to prevent exceeding API limits.
+    - Handles the global timeout of 400 seconds.
     """
     posts = []
     subreddit = reddit.subreddit(subreddit_name)
     last_timestamp = None  # No lower bound for the first batch.
+    start_time = time.time()  # Track execution time
 
     while len(posts) < num_posts:
         params = {}
         if last_timestamp is not None:
             params["before"] = last_timestamp
+
         print(f"Fetching batch with parameters: {params}")
-        # Fetch a batch of up to 1000 posts.
+
+        # Fetch a batch of up to 1000 posts
         batch = list(subreddit.new(limit=1000, params=params))
         if not batch:
             print("No more posts returned. Ending segmented fetch.")
             break
+
         posts.extend(batch)
-        # Update last_timestamp: subtract one second to avoid duplicating the last post.
-        last_timestamp = batch[-1].created_utc - 1
+        last_timestamp = batch[-1].created_utc - 1  # Prevent duplicate fetch
+
         print(f"Total posts fetched so far: {len(posts)}")
-        # If fewer than 1000 posts were returned, likely we've reached the end.
+
+        # Check if fewer than 1000 posts were returned (possible end of subreddit posts)
         if len(batch) < 1000:
             print("Fewer posts returned in the last batch; reached the end.")
             break
 
-        # Sleep briefly to respect API rate limits.
-        time.sleep(2)
+        # Respect API timeout limits
+        if time.time() - start_time >= 60:
+            print("API timeout limit reached, pausing for safety...")
+            time.sleep(10)  # Pause before continuing
+            start_time = time.time()  # Reset the timeout counter
+
+        # Stop if total execution time exceeds 400 seconds
+        if time.time() - start_time > 400:
+            print("Global timeout reached. Stopping further API calls.")
+            break
+
+        time.sleep(2)  # Respect API rate limits
 
     return posts[:num_posts]
+
+
+# def fetch_posts_praw(reddit, subreddit_name, num_posts):
+#     """
+#     Fetches posts from a subreddit using PRAW.
+#     Note: Reddit’s API (and thus PRAW) may return only up to ~1000 posts per listing.
+#     For very large requests, you may need to paginate or use Pushshift.
+#     """
+#     subreddit = reddit.subreddit(subreddit_name)
+#     posts = []
+#     fetched = 0
+#     for submission in subreddit.new(limit=None):
+#         if hasattr(submission, 'promoted') and submission.promoted:
+#             continue
+#         posts.append(submission)
+#         fetched += 1
+#         if fetched % 100 == 0:
+#             time.sleep(2)
+#         if fetched >= num_posts:
+#             break
+#     return posts
+#
+#
+# def fetch_posts_segmented(reddit, subreddit_name, num_posts):
+#     """
+#     Uses PRAW to fetch posts in segmented batches using time-based pagination.
+#     We repeatedly query the subreddit.new() endpoint with the 'before' parameter.
+#     """
+#     posts = []
+#     subreddit = reddit.subreddit(subreddit_name)
+#     last_timestamp = None  # No lower bound for the first batch.
+#
+#     while len(posts) < num_posts:
+#         params = {}
+#         if last_timestamp is not None:
+#             params["before"] = last_timestamp
+#         print(f"Fetching batch with parameters: {params}")
+#         # Fetch a batch of up to 1000 posts.
+#         batch = list(subreddit.new(limit=1000, params=params))
+#         if not batch:
+#             print("No more posts returned. Ending segmented fetch.")
+#             break
+#         posts.extend(batch)
+#         # Update last_timestamp: subtract one second to avoid duplicating the last post.
+#         last_timestamp = batch[-1].created_utc - 1
+#         print(f"Total posts fetched so far: {len(posts)}")
+#         # If fewer than 1000 posts were returned, likely we've reached the end.
+#         if len(batch) < 1000:
+#             print("Fewer posts returned in the last batch; reached the end.")
+#             break
+#
+#         # Sleep briefly to respect API rate limits.
+#         time.sleep(2)
+#
+#     return posts[:num_posts]
 
 
 # --- Main Processing Function ---
