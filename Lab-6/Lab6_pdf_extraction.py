@@ -120,7 +120,7 @@ def csv_to_sql():
         'host': 'localhost',
         'user': 'root',
         'password': 'Password@123',
-        # 'database': 'OilWellAnalysis'
+        # 'database': 'OilWellAnalysis'  # We'll create/use a DB dynamically
     }
 
     # Connect to MySQL server (without specifying a database)
@@ -131,86 +131,72 @@ def csv_to_sql():
     )
     cursor = connection.cursor()
 
-    # Create Database
+    # 1) Create Database if not exists
     cursor.execute("CREATE DATABASE IF NOT EXISTS Lab6_database")
     print("Database 'Lab6_database' created or already exists.")
 
-    # Connect to the newly created database
+    # 2) Switch to that database
     connection.database = "Lab6_database"
 
-    # Create Table 'oilwell_data'
-    create_table_query = """
-    CREATE TABLE IF NOT EXISTS oilwell_data (
-        id INT AUTO_INCREMENT PRIMARY KEY,
-        pdf_path VARCHAR(255),
-        page_no INT,
-        operator VARCHAR(255),
-        well_name VARCHAR(255),
-        enseco_job VARCHAR(50),
-        job_type VARCHAR(100),
-        county VARCHAR(100),
-        latitude VARCHAR(50),
-        longitude VARCHAR(50),
-        datum VARCHAR(50),
-        date_simulated DATE,
-        formation VARCHAR(255),
-        top_ft INT,
-        bottom_ft INT,
-        stimulation_stages INT,
-        psi INT,
-        lbs_proppant INT,
-        type_treatment VARCHAR(255),
-        volume FLOAT,
-        volume_units VARCHAR(50),
-        max_treatment_rate FLOAT,
-        api VARCHAR(500)
-    );
-    """
-
-    cursor.execute(create_table_query)
-    print("Table 'oilwell_data' created or already exists.")
-
+    # 3) CSV file path
     csv_file = "extracted_data.csv"
+    table_name = "oilwell_data"
 
-    # Insert CSV Data into MySQL
-    if os.path.exists(csv_file):
-        with open(csv_file, mode="r", encoding="utf-8") as file:
-            reader = csv.reader(file)
-            headers = next(reader)  # Read column names
+    # 4) If CSV exists, read its headers to create table dynamically
+    if not os.path.exists(csv_file):
+        print(f"CSV file '{csv_file}' not found.")
+        return
 
-            # Ensure CSV headers match the MySQL table
-            expected_columns = [
-                "pdf_path", "page_no", "operator", "well_name", "enseco_job",
-                "job_type", "county", "latitude", "longitude", "datum",
-                "date_simulated", "formation", "top_ft", "bottom_ft",
-                "stimulation_stages", "psi", "lbs_proppant", "type_treatment",
-                "volume", "volume_units", "max_treatment_rate", "api"
-            ]
+    with open(csv_file, mode="r", encoding="utf-8") as file:
+        reader = csv.reader(file)
+        headers = next(reader, None)
 
-            if headers != expected_columns:
-                print(" CSV column names do not match table structure. Please check the headers.")
-            else:
-                # Prepare SQL Insert Statement
-                placeholders = ", ".join(["%s"] * len(headers))
-                sql_query = f"INSERT INTO oilwell_data ({', '.join(headers)}) VALUES ({placeholders})"
+        if not headers:
+            print("CSV file is empty or missing headers.")
+            return
 
-                for row in reader:
-                    cursor.execute(sql_query, row)
+        columns_sql = []
+        for col in headers:
+            # Escape backticks or reserved words if needed
+            safe_col = col.replace("`", "``")
+            columns_sql.append(f"`{safe_col}` TEXT")
 
-                connection.commit()
-                print(f" Data from '{csv_file}' successfully inserted into 'oilwell_data'.")
-    else:
-        print(f" CSV file '{csv_file}' not found. Please ensure it exists.")
+        # Include an AUTO_INCREMENT PRIMARY KEY
+        create_table_query = f"""
+        CREATE TABLE IF NOT EXISTS {table_name} (
+            id INT AUTO_INCREMENT PRIMARY KEY,
+            {", ".join(columns_sql)}
+        );
+        """
+        cursor.execute(create_table_query)
+        print(f"Table '{table_name}' created or already exists with columns from CSV headers.")
 
-    # Close Database Connection
+        # 6) Prepare SQL Insert Statement using placeholders
+        placeholders = ", ".join(["%s"] * len(headers))
+        safe_headers = [f"`{col.replace('`','``')}`" for col in headers]  # escape backticks
+        insert_query = f"INSERT INTO {table_name} ({', '.join(safe_headers)}) VALUES ({placeholders})"
+
+        # 7) Insert each row from the CSV
+        row_count = 0
+        for row in reader:
+            cursor.execute(insert_query, row)
+            row_count += 1
+
+        connection.commit()
+        print(f"Inserted {row_count} rows into '{table_name}' from '{csv_file}'.")
+
+    # 8) Close Database Connection
     cursor.close()
     connection.close()
     print("MySQL Connection Closed.")
 
     return None
 
+if __name__ == "__main__":
+    Extract_data_from_pdfs()
 
-Extract_data_from_pdfs()
+    csv_to_sql()
+
 
 
 
