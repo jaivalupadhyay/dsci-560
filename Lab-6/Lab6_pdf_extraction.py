@@ -42,7 +42,7 @@ def read_text_extracted_from_PDF_page(page_no,text,filename):
 
     extracted_data = {}  # Dictionary to store results
     processed_keys = set()  # Set to track extracted keys
-    print(f"API : {get_api()}") if get_api() else None
+    # print(f"API : {get_api()}") if get_api() else None
     patterns = {
         "operator": r"Well Operator : (.*?)\n",
         "well_name": r"Well Name\s*:\s*(.*)\n",
@@ -86,7 +86,7 @@ def read_text_extracted_from_PDF_page(page_no,text,filename):
             "API": get_api()
         })
 
-    print(f"Extracted data saved to {output_csv}")
+    # print(f"Extracted data saved to {output_csv}")
 
     return extracted_data
 
@@ -107,12 +107,107 @@ def Extract_data_from_pdfs():
 
         if os.path.isfile(file_path):  # Ensure it's a file
             count += 1
-            print(f"file name {file_path} \n\n")
+            print(f"\n\n file name {file_path} \n")
             read_pdf(file_path, filename)
 
     print("Count of pdf files", count)
     return None
 
+
+def csv_to_sql():
+
+    db_config = {
+        'host': 'localhost',
+        'user': 'root',
+        'password': 'Password@123',
+        # 'database': 'OilWellAnalysis'
+    }
+
+    # Connect to MySQL server (without specifying a database)
+    connection = mysql.connector.connect(
+        host=db_config["host"],
+        user=db_config["user"],
+        password=db_config["password"]
+    )
+    cursor = connection.cursor()
+
+    # Create Database
+    cursor.execute("CREATE DATABASE IF NOT EXISTS Lab6_database")
+    print("Database 'Lab6_database' created or already exists.")
+
+    # Connect to the newly created database
+    connection.database = "Lab6_database"
+
+    # Create Table 'oilwell_data'
+    create_table_query = """
+    CREATE TABLE IF NOT EXISTS oilwell_data (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        pdf_path VARCHAR(255),
+        page_no INT,
+        operator VARCHAR(255),
+        well_name VARCHAR(255),
+        enseco_job VARCHAR(50),
+        job_type VARCHAR(100),
+        county VARCHAR(100),
+        latitude VARCHAR(50),
+        longitude VARCHAR(50),
+        datum VARCHAR(50),
+        date_simulated DATE,
+        formation VARCHAR(255),
+        top_ft INT,
+        bottom_ft INT,
+        stimulation_stages INT,
+        psi INT,
+        lbs_proppant INT,
+        type_treatment VARCHAR(255),
+        volume FLOAT,
+        volume_units VARCHAR(50),
+        max_treatment_rate FLOAT,
+        api VARCHAR(500)
+    );
+    """
+
+    cursor.execute(create_table_query)
+    print("Table 'oilwell_data' created or already exists.")
+
+    csv_file = "extracted_data.csv"
+
+    # Insert CSV Data into MySQL
+    if os.path.exists(csv_file):
+        with open(csv_file, mode="r", encoding="utf-8") as file:
+            reader = csv.reader(file)
+            headers = next(reader)  # Read column names
+
+            # Ensure CSV headers match the MySQL table
+            expected_columns = [
+                "pdf_path", "page_no", "operator", "well_name", "enseco_job",
+                "job_type", "county", "latitude", "longitude", "datum",
+                "date_simulated", "formation", "top_ft", "bottom_ft",
+                "stimulation_stages", "psi", "lbs_proppant", "type_treatment",
+                "volume", "volume_units", "max_treatment_rate", "api"
+            ]
+
+            if headers != expected_columns:
+                print(" CSV column names do not match table structure. Please check the headers.")
+            else:
+                # Prepare SQL Insert Statement
+                placeholders = ", ".join(["%s"] * len(headers))
+                sql_query = f"INSERT INTO oilwell_data ({', '.join(headers)}) VALUES ({placeholders})"
+
+                for row in reader:
+                    cursor.execute(sql_query, row)
+
+                connection.commit()
+                print(f" Data from '{csv_file}' successfully inserted into 'oilwell_data'.")
+    else:
+        print(f" CSV file '{csv_file}' not found. Please ensure it exists.")
+
+    # Close Database Connection
+    cursor.close()
+    connection.close()
+    print("MySQL Connection Closed.")
+
+    return None
 
 
 Extract_data_from_pdfs()
