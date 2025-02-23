@@ -1,0 +1,75 @@
+API Number,Well Name,Oil Produced,Gas Produced,Well Status,Well Type,Closest City
+'33-053-06028',Kline Federal 5300 41-18 13T2X,N/A,N/A,Plugged and Abandoned,Oil & Gas,Williston
+'33-053-03912',Achilles 5301 41-12B,N/A,N/A,Plugged and Abandoned,Oil & Gas,Williston
+'33-053-03609',Bray 5301 43-12H,420,1.4 k,Active,Oil & Gas,Williston
+'33-053-03937',Innoko 5301 43-12T,724,2 k,Active,Oil & Gas,Williston
+'33-053-03911',Yukon 5301 41-12T,725,1.5 k,Active,Oil & Gas,Williston
+'33-053-04071',Larry 5301 44-12B,557,1.4 k,Active,Oil & Gas,Williston
+'33-053-03936',Jefferies 5301 43-12B,1 k,1.3 k,Active,Oil & Gas,Williston
+'33-053-04981',Colville 5301 44-12T,1.2 k,2.9 k,Active,Oil & Gas,Williston
+'33-053-08946',Lewis Federal 5300 11-31 4BR,1.8 k,2.7 k,Active,Oil & Gas,Williston
+'33-053-03433',Lewis Federal 5300 31-31H,347,371,Active,Oil & Gas,Williston
+'33-053-06029',Kline Federal 5300 41-18 14BX,475,2.8 k,Active,Oil & Gas,Williston
+'33-053-04855',Columbus Federal 2-16H,675,1.5 k,Active,Oil & Gas,Williston
+'33-053-03413',Wade Federal 5300 21-30H,N/A,N/A,Inactive,Oil & Gas,Williston
+'33-053-04854',Tallahassee 2-16H,209,1.1 k,Active,Oil & Gas,Williston
+'33-053-90244',Buck Shot SWD 5300 31-31,N/A,N/A,Inactive,Salt Water Disposal,Williston
+'33-053-06026',Kline Federal 5300 41-18 10B,957,1.9 k,Active,Oil & Gas,Williston
+'33-053-04856',Columbus Federal 3-16H,763,924,Active,Oil & Gas,Williston
+'33-053-06025',Kline Federal 5300 41-18 9T,534,2.8 k,Active,Oil & Gas,Williston
+'33-053-06022',Chalmers 5300 21-19 10T,351,2.9 k,Active,Oil & Gas,Williston
+'33-105-02732',Atlanta 1-6H,362,715,Active,Oil & Gas,Williston
+'33-105-02726',Atlanta Federal 7-6H,793,1.3 k,Active,Oil & Gas,Williston
+'33-053-06057',Kline Federal 5300 31-18 6B,N/A,N/A,Inactive,Oil & Gas,Williston
+'33-053-03426',Kline Federal 5300 11-18H,N/A,N/A,Plugged and Abandoned,Oil & Gas,Williston
+'33-053-05995',Wade Federal 5300 31-30 2B,557,4.5 k,Active,Oil & Gas,Williston
+'33-053-05943',Wade Federal 5300 41-30 4T,N/A,N/A,Abandoned,Oil & Gas,Williston
+'33-053-05997',Wade Federal 5300 41-30 5T2,N/A,N/A,Plugged and Abandoned,Oil & Gas,Williston
+'33-053-05998',Wade Federal 5300 41-30 7T,287,1.7 k,Active,Oil & Gas,Williston
+'33-053-05954',Wade Federal 5300 41-30 6B,331,1.4 k,Active,Oil & Gas,Williston
+'33-105-02727',Atlanta Federal 6-6H,81,316,Active,Oil & Gas,Williston
+'33-053-06021',Chalmers 5300 21-19 8T,269,1.7 k,Active,Oil & Gas,Williston
+'33-053-06019',Chalmers 5300 21-19 6B,168,503,Active,Oil & Gas,Williston
+'33-105-02725',Atlanta Federal 8-6H,329,668,Active,Oil & Gas,Williston
+'33-105-02731',Atlanta 2-6H,379,740,Active,Oil & Gas,Williston
+'33-105-02719',Atlanta 14-6H,789,1.3 k,Active,Oil & Gas,Williston
+'33-053-06055',Kline Federal 5300 31-18 8B,153,1.6 k,Active,Oil & Gas,Williston
+'33-053-06056',Kline Federal 5300 31-18 7T,522,3.2 k,Active,Oil & Gas,Williston
+'33-105-02730',Atlanta 3-6H,226,526,Active,Oil & Gas,Williston
+'33-105-02724',Atlanta Federal 9-6H,349,697,Active,Oil & Gas,Williston
+'33-053-05845',Lewis Federal 5300 21-31 6B,1.9 k,6.8 k,Active,Oil & Gas,Williston
+'33-053-05849',Lewis Federal 5300 21-31 5B,1.3 k,3.9 k,Active,Oil & Gas,Williston
+'33-105-02720',Atlanta 13-6H,471,872,Active,Oil & Gas,Williston
+'33-053-06129',Wade Federal 5300 21-30 12T,483,4.9 k,Active,Oil & Gas,Williston
+'33-053-06051',Wade Federal 5300 41-30 9B,953,7.9 k,Active,Oil & Gas,Williston
+'33-105-02721',Atlanta 12-6H,214,509,Active,Oil & Gas,Williston
+'33-053-04069',Magnum 3-36-25H,N/A,N/A,Inactive,Oil & Gas,Williston
+'33-005-30347',N/A,N/A,N/A,N/A,N/A,N/A
+'33-053-06010',Chalmers 5301 44-24 3BR,657,6.1 k,Active,Oil & Gas,Williston
+'33-053-06011',Chalmers 5301 44-24 4T2R,N/A,N/A,Abandoned,Oil & Gas,Williston
+'33-053-05924',Chalmers 5301 44-24 2TR,370,4 k,Active,Oil & Gas,Williston
+'33-105-02723',Atlanta Federal 10-6H,645,1.1 k,Active,Oil & Gas,Williston
+'33-053-06231',Gramma Federal 5300 41-31 12B,100,235,Active,Oil & Gas,Williston
+'33-053-06232',Gramma Federal 5300 41-31 13T,48,268,Active,Oil & Gas,Williston
+'33-105-02722',Atlanta 11-6H,389,763,Active,Oil & Gas,Williston
+'33-053-06018',Chalmers 5300 21-19 5T,479,1.6 k,Active,Oil & Gas,Williston
+'33-053-06131',Wade Federal 5300 21-30 13B,644,1.9 k,Active,Oil & Gas,Williston
+'33-053-06012',Chalmers Wade Federal 5301 44-24 12TXR,280,52,Active,Oil & Gas,Williston
+'33-053-04211',Ash Federal 5300 11-18T,218,181,Active,Oil & Gas,Williston
+'33-053-06225',Kline Federal 5300 11-18 3T,296,3.7 k,Active,Oil & Gas,Williston
+'33-105-02729',Atlanta 4-6H,430,813,Active,Oil & Gas,Williston
+'33-053-06243',Kline Federal 5300 11-18 2B,332,2.5 k,Active,Oil & Gas,Williston
+'33-053-03944',Magnum 2-36-25H,N/A,N/A,Inactive,Oil & Gas,Williston
+'33-105-02728',Atlanta Federal 5-6H,305,639,Active,Oil & Gas,Williston
+'33-053-06223',Kline Federal 5300 11-18 5B,536,5 k,Active,Oil & Gas,Williston
+'33-053-06024',Chalmers 5300 21-19 11B,311,3.5 k,Active,Oil & Gas,Williston
+'33-053-03472',Chalmers 5300 31-19H,N/A,N/A,Abandoned,Oil & Gas,Williston
+'33-053-06023',Chalmers 5300 21-19 9B,489,1.5 k,Active,Oil & Gas,Williston
+'33-053-06755',Kline Federal 5300 31-18 15T,511,246,Active,Oil & Gas,Williston
+'33-053-05906',Wade Federal 5300 31-30 11T,175,1.2 k,Active,Oil & Gas,Williston
+'33-053-90329',Carson SWD 5301 12-24,N/A,N/A,Inactive,Salt Water Disposal,Williston
+'33-053-06030',Kline Federal 5300 41-18 12TX,421,1.9 k,Active,Oil & Gas,Williston
+'33-053-04852',Columbus Federal 1-16H,900,939,Active,Oil & Gas,Williston
+'33-053-06548',Lewis Federal 5300 11-31 3B,760,2.1 k,Active,Oil & Gas,Williston
+'33-053-06549',Lewis Federal 5300 11-31 2B,730,3.4 k,Active,Oil & Gas,Williston
+'33-053-04853',Tallahassee 3-16H,311,688,Active,Oil & Gas,Williston
