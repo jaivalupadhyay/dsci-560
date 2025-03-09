@@ -21,14 +21,13 @@ from sklearn.cluster import KMeans
 from sklearn.metrics import silhouette_score
 from sklearn.decomposition import PCA
 
-nltk.download('punkt_tab')  # ensure tokenizer is available
+nltk.download('punkt_tab') 
 
 # -----------------------------------------------------
 # 2. Load CSV and Preprocess
 # -----------------------------------------------------
-# Replace 'your_data.csv' with your actual CSV file
 df = pd.read_csv('reddit_posts.csv')
-text_column = "cleaned_text"  # adjust if your column name is different
+text_column = "cleaned_text"
 
 
 def preprocess_text(text):
